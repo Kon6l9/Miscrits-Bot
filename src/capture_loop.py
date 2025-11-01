@@ -52,6 +52,17 @@ class Bot:
         self.window_xywh = None
         self.hwnd = None
         
+        # Initialize stats dictionary - FIX FOR THE ERROR
+        self.stats = {
+            "clicks": 0,
+            "matches": 0,
+            "misses": 0,
+            "errors": 0,
+            "encounters": 0,
+            "captures": 0,
+            "skipped": 0
+        }
+        
         # Template matching variables
         self.tpl_path = ""
         self.tpl_bgr = None

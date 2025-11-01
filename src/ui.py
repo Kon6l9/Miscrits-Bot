@@ -50,7 +50,7 @@ class BotUI:
         self.var_auto_defeat = tk.BooleanVar(value=self.cfg.get("battle", {}).get("auto_defeat", True))
         
         # Advanced settings
-        self.var_use_directinput = tk.BooleanVar(value=self.cfg.get("input", {}).get("backend", "pyautogui") == "pydirectinput")
+        self.var_use_directinput = tk.BooleanVar(value=self.cfg.get("input", {}).get("backend", "directinput") == "directinput")
         self.var_minimize_to_tray = tk.BooleanVar(value=False)
 
         self._build_ui()
@@ -117,6 +117,10 @@ class BotUI:
         if self.spot_choices:
             self.cb_spot.current(0)
         
+        # Add refresh button next to spot dropdown - FIX FOR DASHBOARD NOT UPDATING
+        ttk.Button(quick_frame, text="🔄 Refresh", command=self._refresh_dashboard_spots, width=10)\
+            .grid(row=0, column=2, sticky="w", padx=5, pady=5)
+        
         ttk.Label(quick_frame, text="Spot Click Interval:").grid(row=1, column=0, sticky="e", padx=5, pady=5)
         interval_frame = ttk.Frame(quick_frame)
         interval_frame.grid(row=1, column=1, sticky="w", padx=5, pady=5)
@@ -125,7 +129,7 @@ class BotUI:
         ttk.Label(interval_frame, text="seconds").pack(side="left", padx=5)
         
         ttk.Checkbutton(quick_frame, text="Show overlay (visual feedback)", 
-                       variable=self.var_show_overlay).grid(row=2, column=0, columnspan=2, 
+                       variable=self.var_show_overlay).grid(row=2, column=0, columnspan=3, 
                                                             sticky="w", padx=5, pady=5)
         
         # Statistics Section
@@ -146,6 +150,21 @@ class BotUI:
         
         ttk.Button(stats_frame, text="Reset Statistics", command=self._reset_stats)\
             .pack(anchor="w", pady=10)
+
+    def _refresh_dashboard_spots(self):
+        """Refresh spot dropdown in dashboard"""
+        self._reload_spot_choices()
+        self.cb_spot['values'] = self.spot_choices
+        if self.spot_choices:
+            # Try to keep current selection if it still exists
+            current = self.var_spot_choice.get()
+            if current in self.spot_choices:
+                self.cb_spot.set(current)
+            else:
+                self.cb_spot.current(0)
+        else:
+            self.cb_spot.set('')
+        messagebox.showinfo("Refreshed", f"Spot list refreshed. Found {len(self.spot_choices)} spot(s) with templates.")
 
     def _build_tab_spots(self):
         frame = self.tab_spots
@@ -394,12 +413,13 @@ class BotUI:
         data = _read_json(SPOTS_PATH, {"spots": []})
         for s in data.get("spots", []):
             name = s.get("name","Spot")
-            tpl = s.get("template","(no template)")
+            tpl = s.get("template","")
             thr = s.get("threshold", 0.82)
-            status = "✓" if tpl and tpl != "(no template)" else "✗"
+            status = "✓" if tpl else "✗"
             self.listbox_spots.insert("end", f"{status} {name}  —  thr={thr:.2f}")
 
     def _reload_spot_choices(self):
+        """Load spots that have templates for dashboard dropdown"""
         self.spot_choices = []
         data = _read_json(SPOTS_PATH, {"spots": []})
         for s in data.get("spots", []):
@@ -523,12 +543,17 @@ class BotUI:
         self.cfg["battle"]["attempts"] = int(self.var_attempts.get())
         self.cfg["battle"]["capture_mode"] = bool(self.var_capture_mode.get())
         self.cfg["battle"]["auto_defeat"] = bool(self.var_auto_defeat.get())
-        self.cfg["battle"]["hp_bar_roi"] = [int(x) for x in self.entry_hp_roi.get().split(",")]
-        self.cfg["battle"]["grade_roi"] = [int(x) for x in self.entry_grade_roi.get().split(",")]
-        self.cfg["battle"]["rarity_roi"] = [int(x) for x in self.entry_rarity_roi.get().split(",")]
+        
+        try:
+            self.cfg["battle"]["hp_bar_roi"] = [int(x.strip()) for x in self.entry_hp_roi.get().split(",")]
+            self.cfg["battle"]["grade_roi"] = [int(x.strip()) for x in self.entry_grade_roi.get().split(",")]
+            self.cfg["battle"]["rarity_roi"] = [int(x.strip()) for x in self.entry_rarity_roi.get().split(",")]
+        except ValueError:
+            if not silent:
+                messagebox.showwarning("Invalid ROI", "One or more ROI values are invalid. Using defaults.")
 
-        # Input method
-        backend = "pydirectinput" if self.var_use_directinput.get() else "pyautogui"
+        # Input method - FIX: Use directinput by default when checkbox is checked
+        backend = "directinput" if self.var_use_directinput.get() else "pyautogui"
         self.cfg.setdefault("input", {})["backend"] = backend
 
         _write_json(CFG_PATH, self.cfg)
@@ -540,6 +565,15 @@ class BotUI:
     def add_spot(self):
         name = self.entry_spot_name.get().strip() or "Spot"
         data = _read_json(SPOTS_PATH, {"spots": []})
+        
+        # Check for duplicate names
+        existing_names = [s.get("name", "") for s in data.get("spots", [])]
+        if name in existing_names:
+            messagebox.showwarning("Duplicate Name", 
+                                 f"A spot named '{name}' already exists.\n"
+                                 "Please use a different name.")
+            return
+        
         data.setdefault("spots", []).append({
             "name": name,
             "template": "",
@@ -548,10 +582,15 @@ class BotUI:
         })
         _write_json(SPOTS_PATH, data)
         self._reload_spots_listbox()
-        self._reload_spot_choices()
+        
+        # Auto-select the newly added spot
+        self.listbox_spots.selection_clear(0, "end")
+        self.listbox_spots.selection_set("end")
+        self.listbox_spots.see("end")
+        
         messagebox.showinfo("Spot Added", 
                           f"Added spot '{name}'.\n\n"
-                          "Next step: Select it and paste a template from clipboard.")
+                          "Next step: Select it and paste a template from clipboard or load from file.")
 
     def _clipboard_to_template_file(self):
         """Save clipboard image to project folder and return relative path"""
@@ -600,14 +639,14 @@ class BotUI:
 
         _write_json(SPOTS_PATH, data)
         self._reload_spots_listbox()
-        self._reload_spot_choices()
         self._on_spot_select(None)  # Refresh preview
         
         messagebox.showinfo("Template Saved", 
                           f"Template saved successfully!\n\n"
                           f"Spot: {s.get('name','Spot')}\n"
                           f"File: {rel}\n"
-                          f"Threshold: {s.get('threshold', 0.82):.2f}")
+                          f"Threshold: {s.get('threshold', 0.82):.2f}\n\n"
+                          f"Refresh the Dashboard to see this spot in the dropdown.")
 
     def import_template_from_file(self):
         idxs = self.listbox_spots.curselection()
@@ -653,13 +692,13 @@ class BotUI:
 
             _write_json(SPOTS_PATH, data)
             self._reload_spots_listbox()
-            self._reload_spot_choices()
             self._on_spot_select(None)
             
             messagebox.showinfo("Template Saved", 
                               f"Template imported successfully!\n\n"
                               f"Spot: {s.get('name','Spot')}\n"
-                              f"File: {rel}")
+                              f"File: {rel}\n\n"
+                              f"Refresh the Dashboard to see this spot in the dropdown.")
         except Exception as e:
             messagebox.showerror("Import Error", f"Failed to import template:\n{str(e)}")
 
@@ -710,8 +749,8 @@ class BotUI:
                 data["spots"] = spots
                 _write_json(SPOTS_PATH, data)
                 self._reload_spots_listbox()
-                self._reload_spot_choices()
                 self.preview_label.config(text="No template", image="")
+                messagebox.showinfo("Deleted", f"Spot '{spot_name}' has been deleted.")
 
     # ============ Bot Control Methods ============
 
@@ -723,7 +762,8 @@ class BotUI:
         # Validate spot selection
         if not hasattr(self, "cb_spot") or not self.cb_spot.get():
             messagebox.showerror("No Spot Selected", 
-                               "Please select a spot from the dropdown in the Dashboard tab.")
+                               "Please select a spot from the dropdown in the Dashboard tab.\n\n"
+                               "If the dropdown is empty, go to the Spots tab and add a template to a spot.")
             return
 
         # Save config silently
@@ -774,7 +814,8 @@ class BotUI:
                 self.bot.start()
             except Exception as e:
                 self._log(f"ERROR: {str(e)}")
-                messagebox.showerror("Bot Error", f"Bot encountered an error:\n\n{str(e)}")
+                self.root.after(0, lambda: messagebox.showerror("Bot Error", 
+                                                                f"Bot encountered an error:\n\n{str(e)}"))
             finally:
                 self._log("Bot stopped.")
                 self._log("=" * 80 + "\n")

@@ -2,7 +2,7 @@
   "spots": [
     {
       "name": "NewSpot",
-      "template": "assets/templates/spots/spot_1762004611.png",
+      "template": "assets/templates/spots/spot_1762013814.png",
       "threshold": 0.82,
       "roi": [
         0,
@@ -24,7 +24,7 @@
     },
     {
       "name": "Test",
-      "template": "",
+      "template": "assets/templates/spots/spot_1762013740.png",
       "threshold": 0.82,
       "roi": [
         0,

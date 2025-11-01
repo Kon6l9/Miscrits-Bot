@@ -233,3 +233,124 @@
 2025-11-01 21:46:42,904 | INFO | Match threshold: 0.82
 2025-11-01 21:46:42,904 | INFO | ============================================================
 2025-11-01 21:46:42,992 | ERROR | Unexpected error in main loop: 'Bot' object has no attribute 'stats'
+2025-11-01 22:00:50,977 | INFO | Battle system enabled
+2025-11-01 22:00:50,978 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-01 22:00:50,981 | INFO | Template loaded: 101x143 pixels
+2025-11-01 22:00:50,983 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-01 22:00:50,983 | INFO | Client area: x=4, y=176, w=1152, h=648
+2025-11-01 22:00:51,418 | INFO | ============================================================
+2025-11-01 22:00:51,419 | INFO | Bot started - Press configured hotkeys to control
+2025-11-01 22:00:51,419 | INFO | Search interval: 10.0s
+2025-11-01 22:00:51,420 | INFO | Match threshold: 0.82
+2025-11-01 22:00:51,420 | INFO | ============================================================
+2025-11-01 22:01:01,132 | INFO | Stop signal received
+2025-11-01 22:01:01,509 | INFO | ============================================================
+2025-11-01 22:01:01,509 | INFO | Bot stopped
+2025-11-01 22:01:01,510 | INFO | Session stats: 0 clicks, 0 matches, 1 misses, 0 errors
+2025-11-01 22:01:01,510 | INFO | ============================================================
+2025-11-01 22:01:07,123 | INFO | Battle system enabled
+2025-11-01 22:01:07,125 | INFO | Selected spot: 'Test'  threshold=0.82
+2025-11-01 22:01:07,126 | INFO | Template loaded: 82x83 pixels
+2025-11-01 22:01:07,128 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-01 22:01:07,128 | INFO | Client area: x=4, y=176, w=1152, h=648
+2025-11-01 22:01:07,574 | INFO | ============================================================
+2025-11-01 22:01:07,574 | INFO | Bot started - Press configured hotkeys to control
+2025-11-01 22:01:07,574 | INFO | Search interval: 10.0s
+2025-11-01 22:01:07,575 | INFO | Match threshold: 0.82
+2025-11-01 22:01:07,575 | INFO | ============================================================
+2025-11-01 22:01:07,839 | INFO | ✓ MATCH [0.945] at client(563,385) → clicked screen(567,561)
+2025-11-01 22:01:12,434 | INFO | Stop signal received
+2025-11-01 22:01:17,840 | INFO | ============================================================
+2025-11-01 22:01:17,840 | INFO | Bot stopped
+2025-11-01 22:01:17,840 | INFO | Session stats: 1 clicks, 1 matches, 0 misses, 0 errors
+2025-11-01 22:01:17,841 | INFO | ============================================================
+2025-11-01 22:01:20,374 | INFO | Battle system enabled
+2025-11-01 22:01:20,375 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-01 22:01:20,376 | INFO | Template loaded: 101x143 pixels
+2025-11-01 22:01:20,378 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-01 22:01:20,379 | INFO | Client area: x=4, y=176, w=1152, h=648
+2025-11-01 22:01:20,818 | INFO | ============================================================
+2025-11-01 22:01:20,819 | INFO | Bot started - Press configured hotkeys to control
+2025-11-01 22:01:20,820 | INFO | Search interval: 10.0s
+2025-11-01 22:01:20,820 | INFO | Match threshold: 0.82
+2025-11-01 22:01:20,820 | INFO | ============================================================
+2025-11-01 22:01:24,422 | INFO | Stop signal received
+2025-11-01 22:01:30,882 | INFO | ============================================================
+2025-11-01 22:01:30,883 | INFO | Bot stopped
+2025-11-01 22:01:30,883 | INFO | Session stats: 0 clicks, 0 matches, 1 misses, 0 errors
+2025-11-01 22:01:30,883 | INFO | ============================================================
+2025-11-01 22:01:32,649 | INFO | Battle system enabled
+2025-11-01 22:01:32,650 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-01 22:01:32,651 | INFO | Template loaded: 101x143 pixels
+2025-11-01 22:01:32,652 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-01 22:01:32,652 | INFO | Client area: x=4, y=176, w=1152, h=648
+2025-11-01 22:01:33,095 | INFO | ============================================================
+2025-11-01 22:01:33,095 | INFO | Bot started - Press configured hotkeys to control
+2025-11-01 22:01:33,095 | INFO | Search interval: 10.0s
+2025-11-01 22:01:33,096 | INFO | Match threshold: 0.82
+2025-11-01 22:01:33,096 | INFO | ============================================================
+2025-11-01 22:01:40,923 | INFO | Stop signal received
+2025-11-01 22:01:43,175 | INFO | ============================================================
+2025-11-01 22:01:43,176 | INFO | Bot stopped
+2025-11-01 22:01:43,176 | INFO | Session stats: 0 clicks, 0 matches, 1 misses, 0 errors
+2025-11-01 22:01:43,187 | INFO | ============================================================
+2025-11-01 22:02:07,219 | INFO | Battle system enabled
+2025-11-01 22:02:07,220 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-01 22:02:07,220 | INFO | Template loaded: 37x43 pixels
+2025-11-01 22:02:07,221 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-01 22:02:07,222 | INFO | Client area: x=4, y=176, w=1152, h=648
+2025-11-01 22:02:07,664 | INFO | ============================================================
+2025-11-01 22:02:07,664 | INFO | Bot started - Press configured hotkeys to control
+2025-11-01 22:02:07,664 | INFO | Search interval: 10.0s
+2025-11-01 22:02:07,665 | INFO | Match threshold: 0.82
+2025-11-01 22:02:07,665 | INFO | ============================================================
+2025-11-01 22:02:08,015 | INFO | ✓ MATCH [0.914] at client(626,309) → clicked screen(630,485)
+2025-11-01 22:02:12,455 | INFO | Stop signal received
+2025-11-01 22:02:18,016 | INFO | ============================================================
+2025-11-01 22:02:18,016 | INFO | Bot stopped
+2025-11-01 22:02:18,016 | INFO | Session stats: 1 clicks, 1 matches, 0 misses, 0 errors
+2025-11-01 22:02:18,016 | INFO | ============================================================
+2025-11-01 22:02:18,913 | INFO | Battle system enabled
+2025-11-01 22:02:18,915 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-01 22:02:18,916 | INFO | Template loaded: 37x43 pixels
+2025-11-01 22:02:18,919 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-01 22:02:18,919 | INFO | Client area: x=4, y=176, w=1152, h=648
+2025-11-01 22:02:19,386 | INFO | ============================================================
+2025-11-01 22:02:19,387 | INFO | Bot started - Press configured hotkeys to control
+2025-11-01 22:02:19,387 | INFO | Search interval: 10.0s
+2025-11-01 22:02:19,387 | INFO | Match threshold: 0.82
+2025-11-01 22:02:19,387 | INFO | ============================================================
+2025-11-01 22:02:19,698 | INFO | ✓ MATCH [0.856] at client(596,333) → clicked screen(600,509)
+2025-11-01 22:02:23,366 | INFO | Stop signal received
+2025-11-01 22:02:29,698 | INFO | ============================================================
+2025-11-01 22:02:29,699 | INFO | Bot stopped
+2025-11-01 22:02:29,699 | INFO | Session stats: 1 clicks, 1 matches, 0 misses, 0 errors
+2025-11-01 22:02:29,699 | INFO | ============================================================
+2025-11-01 22:03:27,957 | INFO | Battle system enabled
+2025-11-01 22:03:27,958 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-01 22:03:27,959 | INFO | Template loaded: 37x43 pixels
+2025-11-01 22:03:27,960 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-01 22:03:27,960 | INFO | Client area: x=4, y=176, w=1152, h=648
+2025-11-01 22:03:28,392 | INFO | ============================================================
+2025-11-01 22:03:28,393 | INFO | Bot started - Press configured hotkeys to control
+2025-11-01 22:03:28,393 | INFO | Search interval: 10.0s
+2025-11-01 22:03:28,393 | INFO | Match threshold: 0.82
+2025-11-01 22:03:28,393 | INFO | ============================================================
+2025-11-01 22:03:28,633 | INFO | ✓ MATCH [0.856] at client(596,333) → clicked screen(600,509)
+2025-11-01 22:04:06,901 | INFO | Stop signal received
+2025-11-01 22:04:08,792 | INFO | ============================================================
+2025-11-01 22:04:08,792 | INFO | Bot stopped
+2025-11-01 22:04:08,793 | INFO | Session stats: 1 clicks, 1 matches, 3 misses, 0 errors
+2025-11-01 22:04:08,793 | INFO | ============================================================
+2025-11-01 22:04:16,180 | INFO | Battle system enabled
+2025-11-01 22:04:16,181 | INFO | Selected spot: 'Test'  threshold=0.82
+2025-11-01 22:04:16,182 | INFO | Template loaded: 82x83 pixels
+2025-11-01 22:04:16,183 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-01 22:04:16,183 | INFO | Client area: x=4, y=176, w=1152, h=648
+2025-11-01 22:04:16,620 | INFO | ============================================================
+2025-11-01 22:04:16,620 | INFO | Bot started - Press configured hotkeys to control
+2025-11-01 22:04:16,620 | INFO | Search interval: 10.0s
+2025-11-01 22:04:16,621 | INFO | Match threshold: 0.82
+2025-11-01 22:04:16,621 | INFO | ============================================================
+2025-11-01 22:04:16,854 | INFO | ✓ MATCH [0.961] at client(483,359) → clicked screen(487,535)
+2025-11-01 22:04:40,303 | INFO | Stop signal received

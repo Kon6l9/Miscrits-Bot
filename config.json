@@ -28,7 +28,7 @@
   },
   "battle": {
     "enabled": true,
-    "capture_hp_percent": 45,
+    "capture_hp_percent": 80,
     "attempts": 1,
     "capture_mode": false,
     "auto_defeat": true,
@@ -72,17 +72,17 @@
         "comment": "Common Miscrits disabled by default"
       },
       "Rare": {
-        "enabled": true,
+        "enabled": false,
         "min_grade": "A",
         "comment": "Capture Rare with grade A or better"
       },
       "Epic": {
-        "enabled": true,
+        "enabled": false,
         "min_grade": "A+",
         "comment": "Capture Epic with grade A+ or better"
       },
       "Exotic": {
-        "enabled": true,
+        "enabled": false,
         "min_grade": "S",
         "comment": "Capture Exotic with grade S or better"
       },
@@ -101,7 +101,7 @@
     "comment": "Auto-level bonus allocation (not yet implemented)"
   },
   "input": {
-    "backend": "pyautogui",
+    "backend": "directinput",
     "move_duration_range": [
       0.04,
       0.11
@@ -125,7 +125,7 @@
     "comment_level": "Options: DEBUG, INFO, WARNING, ERROR"
   },
   "run": {
-    "selected_spot_index": 0,
+    "selected_spot_index": 2,
     "bound_hwnd": null,
     "comment": "Runtime state - managed by UI"
   },
