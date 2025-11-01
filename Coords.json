@@ -13,7 +13,7 @@
     },
     {
       "name": "sadasd",
-      "template": "",
+      "template": "assets/templates/spots/spot_1762012862.png",
       "threshold": 0.82,
       "roi": [
         0,

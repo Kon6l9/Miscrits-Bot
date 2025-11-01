@@ -2,29 +2,36 @@
   "window_title_hint": "Miscrits",
   "resolution": {
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "comment": "Game window resolution for ROI calculations"
   },
   "ui_scale": 1.0,
   "capture_engine": "mss",
   "hotkeys": {
     "record_spot": "x",
     "pause_resume": "f9",
-    "stop": "f10"
+    "stop": "f10",
+    "comment": "Global hotkeys for bot control (optional, requires keyboard library)"
   },
   "search": {
     "use_custom_spots": true,
     "cooldown_seconds": 25,
     "delay_click_ms": 5,
-    "search_delay_ms": 10000
+    "search_delay_ms": 10000,
+    "comment": "search_delay_ms is how often to scan for the spot template (10000ms = 10 seconds)"
   },
   "alerts": {
     "play_sound": true,
-    "delay_after_alert_seconds": 0
+    "delay_after_alert_seconds": 0,
+    "sound_file": "",
+    "comment": "Play system beep on eligible Miscrit found"
   },
   "battle": {
+    "enabled": true,
     "capture_hp_percent": 45,
     "attempts": 1,
     "capture_mode": false,
+    "auto_defeat": true,
     "skill1_template": "assets/templates/skill1.png",
     "skill2_template": "assets/templates/skill2.png",
     "capture_button_template": "assets/templates/capture_button.png",
@@ -53,37 +60,45 @@
       140,
       90,
       40
-    ]
+    ],
+    "comment_battle": "Battle features are framework-ready but not fully implemented yet"
   },
   "eligibility": {
     "name_filter": [],
     "per_rarity": {
       "Common": {
         "enabled": false,
-        "min_grade": "All"
+        "min_grade": "All",
+        "comment": "Common Miscrits disabled by default"
       },
       "Rare": {
         "enabled": true,
-        "min_grade": "A"
+        "min_grade": "A",
+        "comment": "Capture Rare with grade A or better"
       },
       "Epic": {
         "enabled": true,
-        "min_grade": "A+"
+        "min_grade": "A+",
+        "comment": "Capture Epic with grade A+ or better"
       },
       "Exotic": {
         "enabled": true,
-        "min_grade": "S"
+        "min_grade": "S",
+        "comment": "Capture Exotic with grade S or better"
       },
       "Legendary": {
         "enabled": true,
-        "min_grade": "S"
+        "min_grade": "S",
+        "comment": "Capture all Legendary with grade S or better"
       }
-    }
+    },
+    "comment_eligibility": "Eligibility filters will be used once battle detection is implemented"
   },
   "world": {
     "levelup_slot": 1,
     "enable_bonus": false,
-    "levelup_ok_template": "assets/templates/levelup_ok.png"
+    "levelup_ok_template": "assets/templates/levelup_ok.png",
+    "comment": "Auto-level bonus allocation (not yet implemented)"
   },
   "input": {
     "backend": "pyautogui",
@@ -98,16 +113,39 @@
     "move_delay_ms_range": [
       60,
       140
-    ]
+    ],
+    "comment_backend": "Options: 'directinput' (non-intrusive), 'pydirectinput' (game focus), 'pyautogui' (fallback)",
+    "comment_timing": "Random delays simulate human behavior"
   },
   "logging": {
     "file": "bot.log",
-    "level": "INFO"
+    "level": "INFO",
+    "max_file_size_mb": 10,
+    "backup_count": 3,
+    "comment_level": "Options: DEBUG, INFO, WARNING, ERROR"
   },
   "run": {
-    "selected_spot_index": 0
+    "selected_spot_index": 0,
+    "bound_hwnd": null,
+    "comment": "Runtime state - managed by UI"
   },
   "debug": {
-    "show_preview": true
+    "show_preview": false,
+    "save_failed_matches": false,
+    "screenshot_dir": "debug_screenshots",
+    "comment_preview": "Enable overlay showing matched templates and stats"
+  },
+  "performance": {
+    "template_scale": 0.5,
+    "capture_method": "mss",
+    "max_fps": 2,
+    "comment_scale": "Templates are downscaled for faster matching (0.5 = 50%)",
+    "comment_fps": "Maximum scans per second (2 = every 0.5s minimum)"
+  },
+  "safety": {
+    "max_consecutive_errors": 5,
+    "error_cooldown_seconds": 3,
+    "auto_stop_on_window_loss": true,
+    "comment": "Safety features to prevent issues"
   }
 }
