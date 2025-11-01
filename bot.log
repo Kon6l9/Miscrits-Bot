@@ -388,3 +388,77 @@
 2025-11-01 22:52:05,346 | INFO | Bot stopped
 2025-11-01 22:52:05,346 | INFO | Session stats: 3 clicks, 3 matches, 3 misses, 0 errors
 2025-11-01 22:52:05,346 | INFO | ============================================================
+2025-11-01 23:38:59,857 | INFO | ⚔️ Battle system enabled
+2025-11-01 23:38:59,860 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-01 23:38:59,893 | INFO | Template loaded: 37x43 pixels
+2025-11-01 23:38:59,895 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-01 23:38:59,896 | INFO | Client area: x=-9, y=213, w=1152, h=648
+2025-11-01 23:39:00,345 | INFO | ============================================================
+2025-11-01 23:39:00,345 | INFO | 🤖 Bot started - Press configured hotkeys to control
+2025-11-01 23:39:00,346 | INFO | 🔍 Search interval: 10.0s
+2025-11-01 23:39:00,346 | INFO | 🎯 Match threshold: 0.82
+2025-11-01 23:39:00,346 | INFO | ⚔️  Auto-battle: ENABLED
+2025-11-01 23:39:00,347 | INFO | ============================================================
+2025-11-01 23:39:00,350 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
+2025-11-01 23:39:00,576 | INFO | ✓ MATCH [0.997] at client(672,291) → clicked screen(663,504)
+2025-11-01 23:39:00,853 | INFO | ⏳ Waiting for battle to start...
+2025-11-01 23:39:12,854 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
+2025-11-01 23:39:22,306 | INFO | 🛑 Stop signal received
+2025-11-01 23:39:22,940 | INFO | ============================================================
+2025-11-01 23:39:22,940 | INFO | 🛑 Bot stopped
+2025-11-01 23:39:22,940 | INFO | 📊 Session stats:
+2025-11-01 23:39:22,941 | INFO |    • Spot clicks: 1
+2025-11-01 23:39:22,941 | INFO |    • Template matches: 1
+2025-11-01 23:39:22,941 | INFO |    • Template misses: 1
+2025-11-01 23:39:22,941 | INFO |    • Total battles: 0
+2025-11-01 23:39:22,942 | INFO |    • Captures successful: 0
+2025-11-01 23:39:22,942 | INFO |    • Skipped (not eligible): 0
+2025-11-01 23:39:22,942 | INFO |    • Defeated: 0
+2025-11-01 23:39:22,943 | INFO |    • Errors: 0
+2025-11-01 23:39:22,943 | INFO | ============================================================
+2025-11-01 23:44:12,439 | INFO | ⚔️ Battle system enabled
+2025-11-01 23:44:12,440 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-01 23:44:12,442 | INFO | Template loaded: 37x43 pixels
+2025-11-01 23:44:12,443 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-01 23:44:12,444 | INFO | Client area: x=208, y=230, w=1152, h=648
+2025-11-01 23:44:12,875 | INFO | ============================================================
+2025-11-01 23:44:12,876 | INFO | 🤖 Bot started - Press configured hotkeys to control
+2025-11-01 23:44:12,876 | INFO | 🔍 Search interval: 10.0s
+2025-11-01 23:44:12,877 | INFO | 🎯 Match threshold: 0.82
+2025-11-01 23:44:12,877 | INFO | ⚔️  Auto-battle: ENABLED
+2025-11-01 23:44:12,877 | INFO | ============================================================
+2025-11-01 23:44:12,880 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
+2025-11-01 23:44:13,103 | INFO | ✓ MATCH [0.930] at client(618,337) → clicked screen(826,567)
+2025-11-01 23:44:13,324 | INFO | ⏳ Waiting for battle to start...
+2025-11-01 23:44:25,325 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
+2025-11-01 23:44:28,957 | INFO | 🛑 Stop signal received
+2025-11-01 23:44:35,400 | INFO | ============================================================
+2025-11-01 23:44:35,401 | INFO | 🛑 Bot stopped
+2025-11-01 23:44:35,401 | INFO | 📊 Session stats:
+2025-11-01 23:44:35,401 | INFO |    • Spot clicks: 1
+2025-11-01 23:44:35,402 | INFO |    • Template matches: 1
+2025-11-01 23:44:35,402 | INFO |    • Template misses: 1
+2025-11-01 23:44:35,402 | INFO |    • Total battles: 0
+2025-11-01 23:44:35,402 | INFO |    • Captures successful: 0
+2025-11-01 23:44:35,402 | INFO |    • Skipped (not eligible): 0
+2025-11-01 23:44:35,403 | INFO |    • Defeated: 0
+2025-11-01 23:44:35,403 | INFO |    • Errors: 0
+2025-11-01 23:44:35,403 | INFO | ============================================================
+2025-11-01 23:44:37,035 | INFO | ⚔️ Battle system enabled
+2025-11-01 23:44:37,035 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-01 23:44:37,036 | INFO | Template loaded: 37x43 pixels
+2025-11-01 23:44:37,038 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-01 23:44:37,038 | INFO | Client area: x=208, y=230, w=1152, h=648
+2025-11-01 23:44:37,474 | INFO | ============================================================
+2025-11-01 23:44:37,475 | INFO | 🤖 Bot started - Press configured hotkeys to control
+2025-11-01 23:44:37,475 | INFO | 🔍 Search interval: 10.0s
+2025-11-01 23:44:37,475 | INFO | 🎯 Match threshold: 0.82
+2025-11-01 23:44:37,476 | INFO | ⚔️  Auto-battle: ENABLED
+2025-11-01 23:44:37,476 | INFO | ============================================================
+2025-11-01 23:44:37,477 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
+2025-11-01 23:44:37,774 | INFO | ✓ MATCH [0.878] at client(602,337) → clicked screen(810,567)
+2025-11-01 23:44:37,774 | INFO | ⏳ Waiting for battle to start...
+2025-11-01 23:44:49,776 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
+2025-11-01 23:44:59,848 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
+2025-11-01 23:45:09,944 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
+2025-11-01 23:45:20,008 | ERROR | Battle detection error: 'function' object has no attribute 'mss'

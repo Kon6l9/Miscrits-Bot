@@ -1,4 +1,4 @@
-# src/capture_loop.py
+# src/capture_loop.py - Integrated with Auto-Battle System
 import os, json, time
 import cv2
 import numpy as np
@@ -52,7 +52,7 @@ class Bot:
         self.window_xywh = None
         self.hwnd = None
         
-        # Initialize stats dictionary - FIX FOR THE ERROR
+        # Initialize stats dictionary
         self.stats = {
             "clicks": 0,
             "matches": 0,
@@ -71,14 +71,16 @@ class Bot:
         self.tpl_h = 0
         self.threshold = 0.82
 
-        from .battle import BattleManager
-        
         # Battle management (optional, based on config)
         self.battle_enabled = bool(self.cfg.get("battle", {}).get("enabled", False))
         self.battle_manager = None
+        
         if self.battle_enabled:
+            from .battle import BattleManager
             self.battle_manager = BattleManager(self.cfg, self.vision, self.io, self.log)
-            self.log.info("Battle system enabled")
+            self.log.info("⚔️ Battle system enabled")
+        else:
+            self.log.info("⚠️  Battle system disabled (enable in config.json)")
 
         self._load_selected_spot()
         self._bind_window()
@@ -162,22 +164,26 @@ class Bot:
         """Start the bot main loop"""
         self.running = True
         self.log.info("=" * 60)
-        self.log.info("Bot started - Press configured hotkeys to control")
-        self.log.info(f"Search interval: {self.search_delay:.1f}s")
-        self.log.info(f"Match threshold: {self.threshold:.2f}")
+        self.log.info("🤖 Bot started - Press configured hotkeys to control")
+        self.log.info(f"🔍 Search interval: {self.search_delay:.1f}s")
+        self.log.info(f"🎯 Match threshold: {self.threshold:.2f}")
+        if self.battle_enabled:
+            self.log.info("⚔️  Auto-battle: ENABLED")
+        else:
+            self.log.info("⚠️  Auto-battle: DISABLED")
         self.log.info("=" * 60)
         self._loop()
 
     def stop(self):
         """Stop the bot"""
         self.running = False
-        self.log.info("Stop signal received")
+        self.log.info("🛑 Stop signal received")
 
     def pause_toggle(self):
         """Toggle pause state"""
         self.paused = not self.paused
         status = "PAUSED" if self.paused else "RESUMED"
-        self.log.info(f"Bot {status}")
+        self.log.info(f"⏸️  Bot {status}")
 
     def _loop(self):
         """Main bot loop - continuously scan for template and click"""
@@ -186,6 +192,9 @@ class Bot:
         
         consecutive_errors = 0
         max_errors = 5
+        
+        last_battle_check = 0
+        battle_check_interval = 2.0  # Check for battles every 2 seconds
 
         while self.running:
             try:
@@ -201,6 +210,28 @@ class Bot:
                     except Exception:
                         pass
 
+                # === BATTLE DETECTION & HANDLING ===
+                if self.battle_enabled and time.time() - last_battle_check >= battle_check_interval:
+                    last_battle_check = time.time()
+                    
+                    # Check if battle started and handle it
+                    if self.battle_manager.check_and_handle_battle():
+                        # Battle was handled, update stats
+                        battle_stats = self.battle_manager.get_statistics()
+                        self.stats["encounters"] = battle_stats.get("total_battles", 0)
+                        self.stats["captures"] = battle_stats.get("captures_successful", 0)
+                        self.stats["skipped"] = battle_stats.get("skipped", 0)
+                        
+                        # Add cooldown after battle
+                        cooldown = float(self.cfg.get("search", {}).get("cooldown_seconds", 5))
+                        if cooldown > 0:
+                            self.log.info(f"⏳ Cooldown: {cooldown:.1f}s before next search")
+                            time.sleep(cooldown)
+                        
+                        # Continue to next iteration (search for spot again)
+                        continue
+
+                # === SPOT DETECTION ===
                 # Capture game window
                 try:
                     frame_bgr = np.array(
@@ -248,6 +279,21 @@ class Bot:
                             f"✓ MATCH [{maxv:.3f}] at client({cx},{cy}) "
                             f"→ clicked screen({screen_x},{screen_y})"
                         )
+                        
+                        # Play alert sound if configured
+                        if self.cfg.get("alerts", {}).get("play_sound", False):
+                            try:
+                                import winsound
+                                winsound.Beep(1000, 200)
+                            except Exception:
+                                pass
+                        
+                        # If battle system enabled, wait for battle to start
+                        if self.battle_enabled:
+                            self.log.info("⏳ Waiting for battle to start...")
+                            time.sleep(2.0)  # Give time for battle transition
+                            # Battle will be detected in next iteration
+                        
                     except Exception as e:
                         self.log.error(f"Click failed: {e}")
                         self.stats["errors"] += 1
@@ -257,20 +303,22 @@ class Bot:
                         rects = [(x, y, x + self.tpl_w, y + self.tpl_h, (0, 255, 0, 220))]
                         texts = [
                             (x, max(y - 25, 5), f"Match: {maxv:.2f}", (0, 255, 0, 220)),
-                            (10, 10, f"Clicks: {self.stats['clicks']}", (255, 255, 255, 220))
+                            (10, 10, f"Clicks: {self.stats['clicks']}", (255, 255, 255, 220)),
+                            (10, 35, f"Battles: {self.stats['encounters']}", (255, 255, 255, 220))
                         ]
                         self.overlay.update(rects, texts)
                 else:
                     self.stats["misses"] += 1
                     
-                    if self.stats["misses"] % 10 == 0:  # Log every 10 misses
-                        self.log.debug(f"No match (best: {maxv:.3f} < {self.threshold:.3f})")
+                    if self.stats["misses"] % 20 == 0:  # Log every 20 misses
+                        self.log.debug(f"Scanning... (best: {maxv:.3f} < {self.threshold:.3f})")
 
                     # Update overlay with status
                     if self.overlay:
                         texts = [
                             (10, 10, f"Scanning... ({maxv:.2f})", (255, 100, 100, 220)),
-                            (10, 35, f"Clicks: {self.stats['clicks']}", (255, 255, 255, 220))
+                            (10, 35, f"Clicks: {self.stats['clicks']}", (255, 255, 255, 220)),
+                            (10, 60, f"Battles: {self.stats['encounters']}", (255, 255, 255, 220))
                         ]
                         self.overlay.update([], texts)
 
@@ -281,7 +329,7 @@ class Bot:
                 self.log.info("Interrupted by user")
                 break
             except Exception as e:
-                self.log.error(f"Unexpected error in main loop: {e}")
+                self.log.error(f"Unexpected error in main loop: {e}", exc_info=True)
                 self.stats["errors"] += 1
                 time.sleep(2)
 
@@ -298,11 +346,22 @@ class Bot:
                 pass
 
         self.log.info("=" * 60)
-        self.log.info("Bot stopped")
-        self.log.info(f"Session stats: {self.stats['clicks']} clicks, "
-                     f"{self.stats['matches']} matches, "
-                     f"{self.stats['misses']} misses, "
-                     f"{self.stats['errors']} errors")
+        self.log.info("🛑 Bot stopped")
+        self.log.info(f"📊 Session stats:")
+        self.log.info(f"   • Spot clicks: {self.stats['clicks']}")
+        self.log.info(f"   • Template matches: {self.stats['matches']}")
+        self.log.info(f"   • Template misses: {self.stats['misses']}")
+        
+        if self.battle_enabled and self.battle_manager:
+            battle_stats = self.battle_manager.get_statistics()
+            self.log.info(f"   • Total battles: {battle_stats.get('total_battles', 0)}")
+            self.log.info(f"   • Captures successful: {battle_stats.get('captures_successful', 0)}")
+            self.log.info(f"   • Skipped (not eligible): {battle_stats.get('skipped', 0)}")
+            self.log.info(f"   • Defeated: {battle_stats.get('defeated', 0)}")
+            if battle_stats.get('capture_success_rate', 0) > 0:
+                self.log.info(f"   • Capture success rate: {battle_stats['capture_success_rate']:.1f}%")
+        
+        self.log.info(f"   • Errors: {self.stats['errors']}")
         self.log.info("=" * 60)
 
 
@@ -318,7 +377,7 @@ def setup_hotkeys(bot: Bot, cfg: dict):
         keyboard.add_hotkey(pause_key, bot.pause_toggle)
         keyboard.add_hotkey(stop_key, bot.stop)
         
-        bot.log.info(f"Hotkeys registered: {pause_key}=pause/resume, {stop_key}=stop")
+        bot.log.info(f"⌨️  Hotkeys registered: {pause_key}=pause/resume, {stop_key}=stop")
         return True
     except Exception as e:
         bot.log.warning(f"Could not setup hotkeys: {e}")

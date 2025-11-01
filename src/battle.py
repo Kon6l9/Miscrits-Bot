@@ -1,23 +1,26 @@
-# src/battle.py
+# src/battle.py - Complete Auto-Battle & Auto-Capture System
 import time
 import cv2
 import numpy as np
-from typing import Optional, Tuple, Dict
-from .utils import ip_rating_meets_minimum
 import re
+from typing import Optional, Tuple, Dict, List
+from .utils import ip_rating_meets_minimum
+
+# ============================================================================
+# CONSTANTS & DATA TABLES
+# ============================================================================
 
 # IP Rating order from strongest to weakest
-IP_RATINGS_ORDER = ["S+", "S", "A+", "A", "B+", "B", "C+", "C", "D+", "D", "F+", "F"]
+IP_RATINGS_ORDER = ["S+", "S", "A+", "A", "B+", "B", "C+", "C", "D+", "D", "F+", "F", "F-"]
 
-# Capture rate table at 100% HP (from image)
-CAPTURE_RATE_TABLE = {
-    # Rating: {Rarity: capture_rate_percent}
-    "F-": {"Common": 45, "Rare": 35, "Epic": 25, "Exotic": 15},
-    "F": {"Common": 43, "Rare": 33, "Epic": 23, "Exotic": 13},
-    "F+": {"Common": 42, "Rare": 32, "Epic": 22, "Exotic": 12},
-    "D": {"Common": 40, "Rare": 30, "Epic": 20, "Exotic": 10},
-    "D+": {"Common": 39, "Rare": 29, "Epic": 19, "Exotic": 9},
-    "C": {"Common": 37, "Rare": 27, "Epic": 17, "Exotic": 7},
+# Capture rate table at 100% HP (from image 3)
+CAPTURE_RATE_TABLE_100HP = {
+    "F-": {"Common": 45, "Rare": 35, "Epic": 25, "Exotic": 15, "Legendary": 100},
+    "F": {"Common": 43, "Rare": 33, "Epic": 23, "Exotic": 13, "Legendary": 100},
+    "F+": {"Common": 42, "Rare": 32, "Epic": 22, "Exotic": 12, "Legendary": 100},
+    "D": {"Common": 40, "Rare": 30, "Epic": 20, "Exotic": 10, "Legendary": 100},
+    "D+": {"Common": 39, "Rare": 29, "Epic": 19, "Exotic": 9, "Legendary": 100},
+    "C": {"Common": 37, "Rare": 27, "Epic": 17, "Exotic": 7, "Legendary": 100},
     "C+": {"Common": 36, "Rare": 26, "Epic": 16, "Exotic": 6, "Legendary": 95},
     "B": {"Common": 34, "Rare": 24, "Epic": 14, "Exotic": 4, "Legendary": 93},
     "B+": {"Common": 33, "Rare": 23, "Epic": 13, "Exotic": 3, "Legendary": 92},
@@ -27,17 +30,152 @@ CAPTURE_RATE_TABLE = {
     "S+": {"Common": 27, "Rare": 17, "Epic": 7, "Exotic": 1, "Legendary": 86},
 }
 
-# Reverse lookup: given capture rate and possible rarities, determine IP rating
-def estimate_ip_rating_from_capture_rate(capture_rate: int, possible_rarities=None) -> Tuple[str, str]:
+# Capture rate table at 1% HP (from image 3)
+CAPTURE_RATE_TABLE_1HP = {
+    "C+": {"Legendary": 95},
+    "B": {"Legendary": 93},
+    "B+": {"Legendary": 92},
+    "A": {"Legendary": 90},
+    "A+": {"Exotic": 99, "Legendary": 89},
+    "S": {"Exotic": 97, "Legendary": 87},
+    "S+": {"Exotic": 96, "Legendary": 86},
+}
+
+# ============================================================================
+# ROI DEFINITIONS (Based on 1152x648 game window - ACTUAL SCREENSHOTS)
+# ============================================================================
+
+# All coordinates relative to game client area (0,0 = top-left of game window)
+# CALIBRATED FROM REAL GAME SCREENSHOTS PROVIDED BY USER
+DEFAULT_ROIS = {
+    # Capture percentage (top center) - "31%" visible in screenshot
+    "capture_rate": {
+        "x": 560,
+        "y": 235,
+        "w": 80,
+        "h": 40,
+        "description": "Capture percentage display above 'Capture!' text"
+    },
+    
+    # Enemy HP bar (top right) - thin green bar below "Kopper"
+    "enemy_hp_bar": {
+        "x": 755,
+        "y": 205,
+        "w": 70,
+        "h": 8,
+        "description": "Enemy HP bar - thin green/yellow/red fill"
+    },
+    
+    # Enemy HP text
+    "enemy_hp_text": {
+        "x": 750,
+        "y": 210,
+        "w": 80,
+        "h": 20,
+        "description": "Enemy HP text (e.g., '127/127')"
+    },
+    
+    # Player HP bar (top left) - below "Chamille Machla"
+    "player_hp_bar": {
+        "x": 390,
+        "y": 205,
+        "w": 85,
+        "h": 8,
+        "description": "Player HP bar - thin green/yellow/red fill"
+    },
+    
+    # Turn indicator - "It's your turn!" banner
+    "turn_indicator": {
+        "x": 450,
+        "y": 580,
+        "w": 250,
+        "h": 30,
+        "description": "Turn indicator banner above skills"
+    },
+    
+    # Skills bar (bottom) - "Abilities" tab with 4 visible skills
+    "skills_bar": {
+        "x": 340,
+        "y": 600,
+        "w": 540,
+        "h": 70,
+        "description": "Skills bar area with visible abilities"
+    },
+    
+    # Abilities/Items tabs
+    "abilities_tab": {
+        "x": 380,
+        "y": 585,
+        "w": 80,
+        "h": 25,
+        "description": "Abilities tab button"
+    },
+    
+    "items_tab": {
+        "x": 470,
+        "y": 585,
+        "w": 80,
+        "h": 25,
+        "description": "Items tab button"
+    },
+    
+    # Individual skill slots (centers for clicking)
+    # From screenshot: FOIL LIGHTNING BARB, KILOBLITZ, HYPER-POWER, VOLTAGE
+    "skill_slot_1": {"x": 405, "y": 628, "description": "First visible skill (leftmost)"},
+    "skill_slot_2": {"x": 488, "y": 628, "description": "Second skill"},
+    "skill_slot_3": {"x": 655, "y": 628, "description": "Third skill"},
+    "skill_slot_4": {"x": 738, "y": 628, "description": "Fourth skill (rightmost visible)"},
+    
+    # Skill navigation arrows
+    "skill_arrow_left": {"x": 330, "y": 628, "description": "Left arrow - scroll to previous skills"},
+    "skill_arrow_right": {"x": 865, "y": 628, "description": "Right arrow - scroll to next skills"},
+    
+    # Battle end screens
+    "continue_button": {
+        "x": 576,
+        "y": 580,
+        "w": 100,
+        "h": 40,
+        "description": "Continue button after battle"
+    },
+    
+    "victory_text": {
+        "x": 400,
+        "y": 200,
+        "w": 350,
+        "h": 80,
+        "description": "Victory/defeat message area"
+    },
+    
+    # Additional helpful ROIs
+    "capture_text": {
+        "x": 530,
+        "y": 230,
+        "w": 100,
+        "h": 30,
+        "description": "'Capture!' text indicator"
+    },
+    
+    "battle_circles": {
+        "x": 350,
+        "y": 250,
+        "w": 180,
+        "h": 40,
+        "description": "Four circles indicator (battle status)"
+    },
+}
+
+
+def estimate_ip_rating_from_capture_rate(capture_rate: int, possible_rarities=None) -> Tuple[Optional[str], Optional[str]]:
     """
-    Estimate IP rating and rarity from capture rate percentage
+    Estimate IP rating and rarity from capture rate percentage at battle start (100% HP)
     
     Args:
         capture_rate: The detected capture rate (e.g., 27, 35, 90)
         possible_rarities: Optional list of rarities to consider
     
     Returns:
-        Tuple of (ip_rating, rarity) - best match
+        Tuple of (ip_rating, rarity) - best match or (None, None)
     """
     if possible_rarities is None:
         possible_rarities = ["Common", "Rare", "Epic", "Exotic", "Legendary"]
@@ -45,7 +183,7 @@ def estimate_ip_rating_from_capture_rate(capture_rate: int, possible_rarities=No
     best_match = None
     best_diff = 999
     
-    for rating, rarity_rates in CAPTURE_RATE_TABLE.items():
+    for rating, rarity_rates in CAPTURE_RATE_TABLE_100HP.items():
         for rarity, expected_rate in rarity_rates.items():
             if rarity not in possible_rarities:
                 continue
@@ -56,188 +194,293 @@ def estimate_ip_rating_from_capture_rate(capture_rate: int, possible_rarities=No
                 best_diff = diff
                 best_match = (rating, rarity)
     
-    if best_match and best_diff <= 3:  # Within 3% tolerance
+    # Accept match if within 3% tolerance
+    if best_match and best_diff <= 3:
         return best_match
     
     return (None, None)
 
 
+# ============================================================================
+# BATTLE DETECTION
+# ============================================================================
+
 class BattleDetector:
-    """Detect when a battle has started"""
+    """Detect when a battle has started and ended"""
     
     def __init__(self, cfg, vision, log):
         self.cfg = cfg
         self.vision = vision
         self.log = log
-        
-        # Load battle indicators (templates or color patterns)
-        self.battle_templates = self._load_battle_templates()
-        
-    def _load_battle_templates(self):
-        """Load templates that indicate battle state"""
-        import os
-        templates = {}
-        template_dir = "assets/templates/battle"
-        
-        if os.path.exists(template_dir):
-            for filename in os.listdir(template_dir):
-                if filename.endswith('.png'):
-                    name = filename.replace('.png', '')
-                    path = os.path.join(template_dir, filename)
-                    templates[name] = cv2.imread(path)
-                    self.log.info(f"Loaded battle template: {name}")
-        
-        return templates
+        self.rois = DEFAULT_ROIS
     
-    def is_in_battle(self, frame_bgr) -> bool:
-        """Check if currently in battle by looking for battle UI elements"""
-        # Method 1: Template matching for battle UI
-        if self.battle_templates:
-            for name, template in self.battle_templates.items():
-                if template is None:
-                    continue
-                res = cv2.matchTemplate(frame_bgr, template, cv2.TM_CCOEFF_NORMED)
-                _, max_val, _, _ = cv2.minMaxLoc(res)
-                if max_val > 0.8:
-                    self.log.debug(f"Battle detected via template: {name} ({max_val:.2f})")
-                    return True
+    def is_in_battle(self) -> bool:
+        """Check if currently in battle by detecting turn indicator"""
+        try:
+            roi = self.rois["turn_indicator"]
+            frame = self.vision.screen_grab_region(roi["x"], roi["y"], roi["w"], roi["h"])
+            
+            if frame.size == 0:
+                return False
+            
+            # Convert to HSV for better detection
+            hsv = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
+            
+            # Look for blue banner color (turn indicator is blue)
+            blue_lower = np.array([100, 50, 50])
+            blue_upper = np.array([130, 255, 255])
+            blue_mask = cv2.inRange(hsv, blue_lower, blue_upper)
+            
+            blue_ratio = np.count_nonzero(blue_mask) / blue_mask.size
+            
+            # If significant blue detected, we're in battle
+            return blue_ratio > 0.15
+            
+        except Exception as e:
+            self.log.error(f"Battle detection error: {e}")
+            return False
+    
+    def is_battle_ended(self) -> bool:
+        """Check if battle has ended (victory/defeat screen)"""
+        try:
+            roi = self.rois["victory_text"]
+            frame = self.vision.screen_grab_region(roi["x"], roi["y"], roi["w"], roi["h"])
+            
+            if frame.size == 0:
+                return False
+            
+            # Look for "You Win!" or victory screen indicators
+            # Green background or specific colors
+            hsv = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
+            
+            # Green victory banner
+            green_lower = np.array([40, 50, 50])
+            green_upper = np.array([80, 255, 255])
+            green_mask = cv2.inRange(hsv, green_lower, green_upper)
+            
+            green_ratio = np.count_nonzero(green_mask) / green_mask.size
+            
+            return green_ratio > 0.1
+            
+        except Exception as e:
+            self.log.error(f"Battle end detection error: {e}")
+            return False
+    
+    def wait_for_battle_start(self, timeout: float = 8.0) -> bool:
+        """Wait for battle to start after clicking spot"""
+        start_time = time.time()
+        check_interval = 0.3
         
-        # Method 2: Check for HP bar colors
-        hp_roi = self.cfg.get("battle", {}).get("hp_bar_roi", [100, 100, 400, 20])
-        if hp_roi and len(hp_roi) == 4:
-            x, y, w, h = hp_roi
-            if 0 <= x < frame_bgr.shape[1] and 0 <= y < frame_bgr.shape[0]:
-                hp_region = frame_bgr[y:y+h, x:x+w]
-                if hp_region.size > 0:
-                    hsv = cv2.cvtColor(hp_region, cv2.COLOR_BGR2HSV)
-                    # Green range for HP
-                    green_lower = np.array([40, 50, 50])
-                    green_upper = np.array([80, 255, 255])
-                    green_mask = cv2.inRange(hsv, green_lower, green_upper)
-                    green_ratio = np.count_nonzero(green_mask) / green_mask.size
-                    
-                    if green_ratio > 0.1:
-                        self.log.debug(f"Battle detected via HP bar ({green_ratio:.2%})")
-                        return True
+        self.log.info("⏳ Waiting for battle to start...")
         
+        while time.time() - start_time < timeout:
+            if self.is_in_battle():
+                self.log.info("✓ Battle started!")
+                return True
+            time.sleep(check_interval)
+        
+        self.log.warning("⚠ Battle did not start within timeout")
         return False
     
-    def wait_for_battle_start(self, timeout: float = 5.0) -> bool:
-        """Wait for battle to start after clicking spot"""
+    def wait_for_battle_end(self, timeout: float = 30.0) -> bool:
+        """Wait for battle to end"""
         start_time = time.time()
         check_interval = 0.5
         
-        self.log.info("Waiting for battle to start...")
-        
         while time.time() - start_time < timeout:
-            frame = self._get_game_frame()
-            if frame is not None and self.is_in_battle(frame):
-                self.log.info("✓ Battle started!")
+            if self.is_battle_ended():
+                self.log.info("✓ Battle ended!")
                 return True
-            
             time.sleep(check_interval)
         
-        self.log.warning("Battle did not start within timeout")
+        self.log.warning("⚠ Battle did not end within timeout")
         return False
-    
-    def _get_game_frame(self):
-        """Get current game window frame"""
-        # This should use the same capture logic as capture_loop
-        return None
 
+
+# ============================================================================
+# SKILL MANAGEMENT SYSTEM
+# ============================================================================
 
 class SkillManager:
-    """Manages skill selection and navigation (Skills 1-12)"""
+    """
+    Manages skill selection and navigation
+    
+    Skill Layout:
+    - 12 total skills across 3 pages
+    - Page 1: Skills 1-4 (Skill 1 = strongest, leftmost after battle starts)
+    - Page 2: Skills 5-8
+    - Page 3: Skills 9-12 (Skill 12 = weakest)
+    - Navigate with left/right arrows
+    """
     
     def __init__(self, cfg, io, log):
         self.cfg = cfg
         self.io = io
         self.log = log
-        self.current_visible_skills = [1, 2, 3, 4]  # Assume 4 skills visible at once
+        self.rois = DEFAULT_ROIS
         
-    def use_skill(self, skill_name: str):
-        """
-        Use a specific skill (e.g., "Skill 1", "Skill 12")
-        Navigates skill carousel if needed
-        """
-        try:
-            skill_num = int(skill_name.split()[-1])
-        except (ValueError, IndexError):
-            self.log.error(f"Invalid skill name: {skill_name}")
-            return False
+        # Track current page (1, 2, or 3)
+        self.current_page = 1
         
+        # Skills visible on current page
+        self.visible_skills = [1, 2, 3, 4]
+    
+    def reset_to_page_1(self):
+        """Reset to page 1 (strongest skills) at battle start"""
+        self.current_page = 1
+        self.visible_skills = [1, 2, 3, 4]
+        self.log.debug("Skill manager reset to page 1 (Skills 1-4)")
+    
+    def get_page_for_skill(self, skill_num: int) -> int:
+        """Get which page a skill is on"""
+        return ((skill_num - 1) // 4) + 1
+    
+    def navigate_to_skill(self, skill_num: int):
+        """Navigate to the page containing the target skill"""
         if not (1 <= skill_num <= 12):
-            self.log.error(f"Skill number {skill_num} out of range (1-12)")
+            self.log.error(f"Invalid skill number: {skill_num}")
             return False
         
-        self.log.info(f"Using {skill_name} (strength: {'high' if skill_num <= 3 else 'medium' if skill_num <= 8 else 'low'})")
+        target_page = self.get_page_for_skill(skill_num)
         
-        # Navigate to skill if not visible
-        if not self._is_skill_visible(skill_num):
-            self._navigate_to_skill(skill_num)
+        if target_page == self.current_page:
+            self.log.debug(f"Skill {skill_num} already visible on page {self.current_page}")
+            return True
         
-        # Click the skill
-        self._click_skill(skill_num)
+        # Navigate to target page
+        if target_page > self.current_page:
+            # Scroll right (toward weaker skills)
+            clicks_needed = target_page - self.current_page
+            self.log.debug(f"Scrolling right {clicks_needed} page(s) to reach Skill {skill_num}")
+            
+            for _ in range(clicks_needed):
+                self._click_right_arrow()
+                time.sleep(0.3)
+                self.current_page += 1
+                self._update_visible_skills()
         
-        # Wait for skill animation
-        time.sleep(2.0)
+        elif target_page < self.current_page:
+            # Scroll left (toward stronger skills)
+            clicks_needed = self.current_page - target_page
+            self.log.debug(f"Scrolling left {clicks_needed} page(s) to reach Skill {skill_num}")
+            
+            for _ in range(clicks_needed):
+                self._click_left_arrow()
+                time.sleep(0.3)
+                self.current_page -= 1
+                self._update_visible_skills()
+        
+        self.log.debug(f"Now on page {self.current_page}, visible skills: {self.visible_skills}")
         return True
     
-    def _is_skill_visible(self, skill_num: int) -> bool:
-        """Check if skill is currently visible on screen"""
-        return skill_num in self.current_visible_skills
+    def _update_visible_skills(self):
+        """Update list of currently visible skills based on page"""
+        start_skill = ((self.current_page - 1) * 4) + 1
+        self.visible_skills = [start_skill + i for i in range(4)]
     
-    def _navigate_to_skill(self, skill_num: int):
-        """Navigate skill carousel to make target skill visible"""
-        # Determine which "page" the skill is on
-        # Page 1: Skills 1-4, Page 2: Skills 5-8, Page 3: Skills 9-12
-        target_page = ((skill_num - 1) // 4) + 1
-        current_page = ((self.current_visible_skills[0] - 1) // 4) + 1
-        
-        self.log.debug(f"Navigating from page {current_page} to page {target_page}")
-        
-        if target_page > current_page:
-            # Scroll right (toward weaker skills)
-            clicks_needed = target_page - current_page
-            for _ in range(clicks_needed):
-                self.io.key("right")  # Or click right arrow
-                time.sleep(0.3)
-                self.current_visible_skills = [
-                    s + 4 for s in self.current_visible_skills
-                ]
-        elif target_page < current_page:
-            # Scroll left (toward stronger skills)
-            clicks_needed = current_page - target_page
-            for _ in range(clicks_needed):
-                self.io.key("left")  # Or click left arrow
-                time.sleep(0.3)
-                self.current_visible_skills = [
-                    s - 4 for s in self.current_visible_skills
-                ]
+    def _click_left_arrow(self):
+        """Click left arrow to scroll to stronger skills"""
+        roi = self.rois["skill_arrow_left"]
+        self.io.click_xy(roi["x"], roi["y"])
+        self.log.debug("← Clicked left arrow")
     
-    def _click_skill(self, skill_num: int):
-        """Click the skill button"""
-        # Find position within visible skills
-        if skill_num not in self.current_visible_skills:
-            self.log.error(f"Skill {skill_num} not visible, navigation failed")
-            return
+    def _click_right_arrow(self):
+        """Click right arrow to scroll to weaker skills"""
+        roi = self.rois["skill_arrow_right"]
+        self.io.click_xy(roi["x"], roi["y"])
+        self.log.debug("→ Clicked right arrow")
+    
+    def use_skill(self, skill_num: int) -> bool:
+        """
+        Use a specific skill (1-12)
+        Automatically navigates if needed
+        """
+        if not (1 <= skill_num <= 12):
+            self.log.error(f"Invalid skill number: {skill_num}")
+            return False
         
-        position = self.current_visible_skills.index(skill_num)
+        # Navigate to correct page
+        if not self.navigate_to_skill(skill_num):
+            return False
         
-        # Press key based on position (1-4)
-        key = str(position + 1)
-        self.io.key(key)
-        self.log.debug(f"Clicked skill position {position + 1} (Skill {skill_num})")
+        # Find position in visible skills (1-4)
+        if skill_num not in self.visible_skills:
+            self.log.error(f"Skill {skill_num} not visible after navigation")
+            return False
+        
+        position = self.visible_skills.index(skill_num) + 1  # 1-based
+        
+        # Click the skill slot
+        slot_key = f"skill_slot_{position}"
+        roi = self.rois[slot_key]
+        
+        strength = self._get_skill_strength_label(skill_num)
+        self.log.info(f"⚔️ Using Skill {skill_num} ({strength})")
+        
+        self.io.click_xy(roi["x"], roi["y"])
+        time.sleep(0.5)  # Wait for skill animation to start
+        
+        return True
+    
+    def _get_skill_strength_label(self, skill_num: int) -> str:
+        """Get human-readable strength label"""
+        if skill_num <= 3:
+            return "STRONGEST"
+        elif skill_num <= 6:
+            return "STRONG"
+        elif skill_num <= 9:
+            return "MODERATE"
+        else:
+            return "WEAK"
+    
+    def wait_for_turn(self, timeout: float = 10.0) -> bool:
+        """Wait for player's turn (animation/enemy turn to complete)"""
+        start_time = time.time()
+        check_interval = 0.5
+        
+        self.log.debug("Waiting for turn...")
+        
+        # Wait for turn indicator to appear
+        detector = BattleDetector(self.cfg, None, self.log)
+        detector.vision = self.io.__dict__.get('vision')  # Hack to get vision
+        
+        while time.time() - start_time < timeout:
+            try:
+                roi = self.rois["turn_indicator"]
+                frame = detector.vision.screen_grab_region(roi["x"], roi["y"], roi["w"], roi["h"]) if detector.vision else None
+                
+                if frame is not None and frame.size > 0:
+                    # Look for blue turn indicator
+                    hsv = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
+                    blue_lower = np.array([100, 50, 50])
+                    blue_upper = np.array([130, 255, 255])
+                    blue_mask = cv2.inRange(hsv, blue_lower, blue_upper)
+                    blue_ratio = np.count_nonzero(blue_mask) / blue_mask.size
+                    
+                    if blue_ratio > 0.15:
+                        self.log.debug("✓ Turn ready")
+                        return True
+            except Exception:
+                pass
+            
+            time.sleep(check_interval)
+        
+        self.log.warning("Turn timeout - proceeding anyway")
+        return False
 
+
+# ============================================================================
+# HP MONITORING
+# ============================================================================
 
 class HPMonitor:
-    """Monitor enemy HP percentage"""
+    """Monitor enemy HP percentage with high precision"""
     
     def __init__(self, cfg, vision, log):
         self.cfg = cfg
         self.vision = vision
         self.log = log
-        self.hp_roi = cfg.get("battle", {}).get("hp_bar_roi", [100, 100, 400, 20])
+        self.rois = DEFAULT_ROIS
     
     def get_hp_percent(self) -> Optional[float]:
         """
@@ -245,39 +488,88 @@ class HPMonitor:
         Returns: HP as percentage (0-100), or None if unreadable
         """
         try:
-            x, y, w, h = self.hp_roi
-            hp_region = self.vision.screen_grab_region(x, y, w, h)
+            roi = self.rois["enemy_hp_bar"]
+            frame = self.vision.screen_grab_region(roi["x"], roi["y"], roi["w"], roi["h"])
             
-            if hp_region.size == 0:
+            if frame.size == 0:
                 return None
             
             # Convert to HSV for color detection
-            hsv = cv2.cvtColor(hp_region, cv2.COLOR_RGB2HSV)
+            hsv = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
             
-            # Detect green/yellow/red HP bar
+            # Detect HP bar colors (green/yellow/red)
             green_mask = cv2.inRange(hsv, np.array([40, 50, 50]), np.array([80, 255, 255]))
             yellow_mask = cv2.inRange(hsv, np.array([20, 50, 50]), np.array([40, 255, 255]))
             red_mask = cv2.inRange(hsv, np.array([0, 50, 50]), np.array([10, 255, 255]))
             
-            # Combine masks
+            # Combine all HP colors
             hp_mask = green_mask | yellow_mask | red_mask
             
-            # Calculate filled percentage based on horizontal fill
-            if hp_mask.sum() > 0:
-                # Find rightmost filled pixel
-                cols_sum = hp_mask.sum(axis=0)
-                filled_cols = np.where(cols_sum > 0)[0]
-                if len(filled_cols) > 0:
-                    rightmost = filled_cols[-1]
-                    percent = (rightmost / w) * 100
-                    return min(100.0, max(0.0, percent))
+            if hp_mask.sum() == 0:
+                return None
             
-            return None
+            # Calculate filled percentage based on horizontal fill
+            # Find rightmost filled pixel in each row
+            filled_cols = []
+            for row in range(hp_mask.shape[0]):
+                row_pixels = np.where(hp_mask[row] > 0)[0]
+                if len(row_pixels) > 0:
+                    filled_cols.append(row_pixels[-1])
+            
+            if not filled_cols:
+                return 0.0
+            
+            # Average rightmost position across rows
+            avg_rightmost = np.mean(filled_cols)
+            percent = (avg_rightmost / frame.shape[1]) * 100
+            
+            return min(100.0, max(0.0, percent))
             
         except Exception as e:
             self.log.error(f"HP reading error: {e}")
             return None
+    
+    def get_hp_text(self) -> Optional[str]:
+        """
+        Read HP as text (e.g., "127/127") using OCR
+        Returns: HP text or None
+        """
+        try:
+            import pytesseract
+            
+            roi = self.rois["enemy_hp_text"]
+            frame = self.vision.screen_grab_region(roi["x"], roi["y"], roi["w"], roi["h"])
+            
+            if frame.size == 0:
+                return None
+            
+            # Preprocess for OCR
+            gray = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
+            _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+            
+            # Read text
+            text = pytesseract.image_to_string(
+                thresh,
+                config='--psm 7 -c tessedit_char_whitelist=0123456789/'
+            ).strip()
+            
+            # Validate format (e.g., "127/127")
+            if '/' in text:
+                return text
+            
+            return None
+            
+        except ImportError:
+            self.log.debug("pytesseract not available for text HP reading")
+            return None
+        except Exception as e:
+            self.log.error(f"HP text reading error: {e}")
+            return None
 
+
+# ============================================================================
+# CAPTURE RATE DETECTION
+# ============================================================================
 
 class CaptureRateDetector:
     """Detect capture rate percentage and derive IP rating + rarity"""
@@ -286,81 +578,80 @@ class CaptureRateDetector:
         self.cfg = cfg
         self.vision = vision
         self.log = log
-        # ROI where capture rate percentage is displayed (e.g., "35%", "90%")
-        self.capture_rate_roi = cfg.get("battle", {}).get("capture_rate_roi", [500, 300, 100, 40])
+        self.rois = DEFAULT_ROIS
         
-        # Try to import OCR
+        # Check OCR availability
         try:
             import pytesseract
             self.has_ocr = True
         except ImportError:
             self.has_ocr = False
-            self.log.warning("pytesseract not available - capture rate detection will be limited")
+            self.log.warning("⚠ pytesseract not available - using visual estimation for capture rate")
     
     def detect_capture_rate(self) -> Optional[int]:
         """
-        Read capture rate percentage from screen
-        Returns: Integer percentage (e.g., 35, 90) or None
+        Read capture rate percentage from screen (e.g., "37%")
+        Returns: Integer percentage (0-100) or None
         """
         try:
-            x, y, w, h = self.capture_rate_roi
-            rate_region = self.vision.screen_grab_region(x, y, w, h)
+            roi = self.rois["capture_rate"]
+            frame = self.vision.screen_grab_region(roi["x"], roi["y"], roi["w"], roi["h"])
             
-            if rate_region.size == 0:
+            if frame.size == 0:
                 return None
             
             # Convert to grayscale
-            gray = cv2.cvtColor(rate_region, cv2.COLOR_RGB2GRAY)
+            gray = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
             
-            # Apply preprocessing for better OCR
-            # Threshold to get white text on black background
+            # Preprocess for OCR (white text on dark/colored background)
             _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
             
-            # Invert if needed (OCR works better with dark text on light bg)
+            # Invert if needed (OCR works best with dark text on light bg)
             if thresh[0, 0] < 128:
                 thresh = cv2.bitwise_not(thresh)
             
+            # Scale up for better OCR
+            thresh = cv2.resize(thresh, (0, 0), fx=2, fy=2)
+            
             if self.has_ocr:
-                # Use OCR to read percentage
                 import pytesseract
+                
+                # Read text
                 text = pytesseract.image_to_string(
-                    thresh, 
+                    thresh,
                     config='--psm 7 -c tessedit_char_whitelist=0123456789%'
                 ).strip()
                 
-                # Extract number from text
+                # Extract number
                 match = re.search(r'(\d+)', text)
                 if match:
                     rate = int(match.group(1))
                     if 0 <= rate <= 100:
-                        self.log.info(f"Detected capture rate: {rate}%")
+                        self.log.debug(f"Detected capture rate: {rate}%")
                         return rate
                     else:
                         self.log.warning(f"Capture rate out of range: {rate}%")
                 else:
                     self.log.warning(f"Could not parse capture rate from: '{text}'")
             else:
-                # Fallback: Try to estimate from visual patterns
-                # This is less reliable but works without OCR
-                self.log.warning("OCR not available, using visual estimation")
+                # Fallback: visual estimation (less accurate)
                 return self._estimate_from_visual(thresh)
             
             return None
             
         except Exception as e:
-            self.log.error(f"Capture rate detection error: {e}", exc_info=True)
+            self.log.error(f"Capture rate detection error: {e}")
             return None
     
     def _estimate_from_visual(self, thresh) -> Optional[int]:
-        """Fallback method: estimate capture rate from visual patterns"""
-        # Count white pixels as rough estimate
-        # This is very approximate and game-specific
+        """Fallback: estimate capture rate from visual patterns"""
+        # Count white pixels (more digits = higher number)
         white_ratio = np.count_nonzero(thresh) / thresh.size
         
-        # Very rough estimation (needs calibration per game)
-        if white_ratio > 0.7:
-            return 90  # High percentage has more digits
-        elif white_ratio > 0.5:
+        # Very rough estimation
+        if white_ratio > 0.4:
+            return 90  # "100%" or high number
+        elif white_ratio > 0.25:
             return 35  # Medium
         else:
             return 10  # Low
@@ -382,12 +673,16 @@ class CaptureRateDetector:
             self.log.info(f"📊 Capture Rate: {capture_rate}% → {rarity} {ip_rating}")
             return (capture_rate, ip_rating, rarity)
         else:
-            self.log.warning(f"Could not determine IP/rarity from capture rate {capture_rate}%")
+            self.log.warning(f"⚠ Could not determine IP/rarity from capture rate {capture_rate}%")
             return (capture_rate, None, None)
 
 
+# ============================================================================
+# MAIN BATTLE CONTROLLER
+# ============================================================================
+
 class Battle:
-    """Handle battle logic and capture decisions"""
+    """Main battle logic controller - handles combat and capture decisions"""
     
     def __init__(self, cfg, vision, input_ctl, log):
         self.cfg = cfg
@@ -395,30 +690,41 @@ class Battle:
         self.io = input_ctl
         self.log = log
         
+        # Initialize sub-systems
         self.detector = BattleDetector(cfg, vision, log)
         self.skill_mgr = SkillManager(cfg, input_ctl, log)
         self.hp_monitor = HPMonitor(cfg, vision, log)
         self.capture_detector = CaptureRateDetector(cfg, vision, log)
-
+        
+        # Statistics
+        self.stats = {
+            "total_battles": 0,
+            "captures_attempted": 0,
+            "captures_successful": 0,
+            "skipped": 0,
+            "defeated": 0
+        }
+    
     def is_eligible(self, rarity: str, ip_rating: str) -> bool:
-        """Check if Miscrit meets capture criteria"""
+        """Check if Miscrit meets capture criteria based on config"""
         if not rarity:
-            self.log.warning("No rarity detected, cannot determine eligibility")
+            self.log.warning("⚠ No rarity detected, cannot determine eligibility")
             return False
         
+        # Get rarity configuration
         elig = self.cfg.get("eligibility", {}).get("per_rarity", {})
         rarity_cfg = elig.get(rarity, {})
         
-        # Check if rarity is enabled
+        # Check if rarity is enabled for capture
         if not rarity_cfg.get("enabled", False):
-            self.log.info(f"❌ {rarity} is disabled in config")
+            self.log.info(f"❌ {rarity} capture is disabled in config")
             return False
         
         # Check IP rating requirement
         min_ip = rarity_cfg.get("min_ip_rating", "A")
         
         if not ip_rating:
-            self.log.warning(f"No IP rating detected for {rarity}, rejecting")
+            self.log.warning(f"⚠ No IP rating detected for {rarity}, rejecting")
             return False
         
         # Handle "B+ and Below" special case
@@ -434,169 +740,440 @@ class Battle:
         
         self.log.info(f"✅ ELIGIBLE: {rarity} {ip_rating} meets criteria (min: {min_ip})")
         return True
-
-    def chip_hp_to_threshold(self, rarity: str):
-        """Chip HP down using appropriate skill for this rarity"""
-        threshold = self.cfg.get("battle", {}).get("capture_hp_percent", 45)
-        max_attempts = 15
+    
+    def chip_hp_safely(self, rarity: str, target_hp_percent: float) -> bool:
+        """
+        Chip HP down to target percentage using appropriate skill
+        
+        Args:
+            rarity: Rarity of Miscrit (determines which skill to use)
+            target_hp_percent: Target HP percentage (e.g., 10.0 for 10%)
+        
+        Returns:
+            True if successful, False if failed
+        """
+        max_attempts = 20  # Safety limit
         
         # Get rarity-specific damage skill
         rarity_cfg = self.cfg.get("eligibility", {}).get("per_rarity", {}).get(rarity, {})
-        damage_skill = rarity_cfg.get("damage_skill", "Skill 11")
+        damage_skill_str = rarity_cfg.get("damage_skill", "Skill 12")
         
-        self.log.info(f"Chipping HP to {threshold}% using {damage_skill}...")
+        # Extract skill number
+        try:
+            damage_skill = int(damage_skill_str.split()[-1])
+        except (ValueError, IndexError):
+            self.log.error(f"Invalid damage skill config: {damage_skill_str}")
+            damage_skill = 12  # Default to weakest
         
-        for attempt in range(max_attempts):
+        self.log.info(f"💥 Chipping HP to {target_hp_percent:.1f}% using Skill {damage_skill}")
+        
+        for attempt in range(1, max_attempts + 1):
+            # Read current HP
             hp = self.hp_monitor.get_hp_percent()
             
             if hp is None:
-                self.log.warning("Cannot read HP, using skill anyway")
-                hp = 100.0
+                self.log.warning(f"⚠ Cannot read HP (attempt {attempt}/{max_attempts}), attacking anyway")
+                hp = 100.0  # Assume full HP if unreadable
             else:
                 self.log.debug(f"Enemy HP: {hp:.1f}%")
             
-            if hp <= threshold:
-                self.log.info(f"✓ HP threshold reached: {hp:.1f}% <= {threshold}%")
-                break
+            # Check if target reached
+            if hp <= target_hp_percent:
+                self.log.info(f"✓ HP threshold reached: {hp:.1f}% ≤ {target_hp_percent:.1f}%")
+                return True
             
-            # Use configured damage skill
-            self.skill_mgr.use_skill(damage_skill)
-            time.sleep(2.5)  # Wait for damage and animation
-        else:
-            self.log.warning(f"Could not chip HP after {max_attempts} attempts")
-
-    def attempt_capture(self, rarity: str) -> bool:
-        """Attempt to capture using rarity-specific capture skill"""
-        attempts = self.cfg.get("battle", {}).get("attempts", 3)
-        
-        # Get rarity-specific capture skill
-        rarity_cfg = self.cfg.get("eligibility", {}).get("per_rarity", {}).get(rarity, {})
-        capture_skill = rarity_cfg.get("capture_skill", "Skill 12")
-        
-        self.log.info(f"Attempting capture with {capture_skill} ({attempts} attempts)")
-        
-        for attempt in range(1, attempts + 1):
-            self.log.info(f"Capture attempt {attempt}/{attempts}")
-            
-            # Use capture skill (optional, for effects)
-            # self.skill_mgr.use_skill(capture_skill)
-            # time.sleep(1.0)
-            
-            # Press capture button (C key or click button)
-            self.io.key("c")
-            time.sleep(3.0)  # Wait for capture animation
-            
-            # TODO: Check if capture was successful by detecting success/failure dialog
-            # For now, assume failure and continue
-        
-        self.log.warning("All capture attempts failed")
-        return False
-
-    def defeat_miscrit(self):
-        """Quickly defeat non-target Miscrit"""
-        defeat_skill = self.cfg.get("battle", {}).get("defeat_skill", "Skill 1")
-        quick_defeat = self.cfg.get("battle", {}).get("quick_defeat", True)
-        
-        self.log.info(f"Defeating Miscrit with {defeat_skill}...")
-        
-        if quick_defeat:
-            # Spam strongest skill without checking
-            for _ in range(5):
-                self.skill_mgr.use_skill(defeat_skill)
-                time.sleep(1.5)
-        else:
-            # Check HP and stop when defeated
-            for _ in range(10):
-                hp = self.hp_monitor.get_hp_percent()
-                if hp is not None and hp <= 0:
-                    break
-                self.skill_mgr.use_skill(defeat_skill)
-                time.sleep(1.5)
-        
-        # Click through end-battle dialogs
-        self._dismiss_dialogs()
-
-    def _dismiss_dialogs(self):
-        """Click through post-battle dialogs"""
-        self.log.debug("Dismissing dialogs...")
-        for _ in range(3):
-            self.io.key("enter")
-            time.sleep(0.5)
-
-    def handle_encounter(self) -> bool:
-        """Main battle handler - returns True if handled successfully"""
-        try:
-            # Wait for battle to start
-            if not self.detector.wait_for_battle_start(timeout=5.0):
-                self.log.error("Battle did not start")
+            # Use damage skill
+            if not self.skill_mgr.use_skill(damage_skill):
+                self.log.error(f"Failed to use Skill {damage_skill}")
                 return False
             
-            # Wait for UI to stabilize and capture rate to appear
+            # Wait for damage animation and turn
             time.sleep(2.0)
+            self.skill_mgr.wait_for_turn(timeout=8.0)
+        
+        self.log.warning(f"⚠ Could not chip HP after {max_attempts} attempts")
+        return False
+    
+    def attempt_capture(self, rarity: str, max_attempts: int) -> bool:
+        """
+        Attempt to capture Miscrit
+        
+        Args:
+            rarity: Rarity of Miscrit (determines capture skill)
+            max_attempts: Maximum capture attempts
+        
+        Returns:
+            True if capture successful, False otherwise
+        """
+        # Get rarity-specific capture skill
+        rarity_cfg = self.cfg.get("eligibility", {}).get("per_rarity", {}).get(rarity, {})
+        capture_skill_str = rarity_cfg.get("capture_skill", "Skill 12")
+        
+        # Extract skill number
+        try:
+            capture_skill = int(capture_skill_str.split()[-1])
+        except (ValueError, IndexError):
+            self.log.error(f"Invalid capture skill config: {capture_skill_str}")
+            capture_skill = 12  # Default to weakest
+        
+        self.log.info(f"🎯 Attempting capture using Skill {capture_skill} ({max_attempts} attempts max)")
+        
+        for attempt in range(1, max_attempts + 1):
+            self.log.info(f"📦 Capture attempt {attempt}/{max_attempts}")
+            
+            # Use capture skill before capture attempt (optional, some strategies use this)
+            # self.skill_mgr.use_skill(capture_skill)
+            # time.sleep(1.5)
+            
+            # Click capture button (assuming 'C' key or specific position)
+            # NOTE: This needs to be configured based on actual game UI
+            self.io.key("c")  # Press C for capture
+            time.sleep(3.5)  # Wait for capture animation
+            
+            # Check if capture was successful
+            # In a real implementation, we'd detect success/failure dialog
+            # For now, we'll check if battle ended
+            if self.detector.is_battle_ended():
+                self.log.info("✅ CAPTURE SUCCESSFUL!")
+                self.stats["captures_successful"] += 1
+                return True
+            
+            # If still in battle, capture failed
+            self.log.warning(f"❌ Capture attempt {attempt} failed")
+            
+            # Wait for turn before next attempt
+            self.skill_mgr.wait_for_turn(timeout=5.0)
+        
+        self.log.warning(f"❌ All {max_attempts} capture attempts failed")
+        self.stats["captures_attempted"] += max_attempts
+        return False
+    
+    def defeat_miscrit(self, quick_mode: bool = True):
+        """
+        Defeat non-target Miscrit quickly
+        
+        Args:
+            quick_mode: If True, spam strongest skill without checking HP
+        """
+        defeat_skill_str = self.cfg.get("battle", {}).get("defeat_skill", "Skill 1")
+        
+        # Extract skill number
+        try:
+            defeat_skill = int(defeat_skill_str.split()[-1])
+        except (ValueError, IndexError):
+            self.log.error(f"Invalid defeat skill config: {defeat_skill_str}")
+            defeat_skill = 1  # Default to strongest
+        
+        self.log.info(f"⚔️ Defeating Miscrit with Skill {defeat_skill} (quick={quick_mode})")
+        
+        if quick_mode:
+            # Spam strongest skill without checking (faster)
+            for i in range(1, 8):  # Max 7 attacks should be enough
+                if self.detector.is_battle_ended():
+                    self.log.info("✓ Miscrit defeated!")
+                    break
+                
+                self.log.debug(f"Attack {i}/7")
+                self.skill_mgr.use_skill(defeat_skill)
+                time.sleep(1.8)  # Wait for animation
+        else:
+            # Check HP after each attack (safer but slower)
+            for i in range(1, 12):  # Max 11 attacks
+                hp = self.hp_monitor.get_hp_percent()
+                
+                if hp is not None and hp <= 0:
+                    self.log.info("✓ Miscrit defeated (HP = 0)")
+                    break
+                
+                if self.detector.is_battle_ended():
+                    self.log.info("✓ Miscrit defeated!")
+                    break
+                
+                self.log.debug(f"Attack {i}/11 (Enemy HP: {hp:.1f}% if hp else 'unknown')")
+                self.skill_mgr.use_skill(defeat_skill)
+                time.sleep(1.8)
+                self.skill_mgr.wait_for_turn(timeout=6.0)
+        
+        # Wait for battle end screen
+        self.detector.wait_for_battle_end(timeout=5.0)
+        self.stats["defeated"] += 1
+    
+    def click_continue(self) -> bool:
+        """Click Continue button after battle ends"""
+        self.log.info("Clicking Continue...")
+        
+        # Wait a moment for button to be clickable
+        time.sleep(1.0)
+        
+        roi = DEFAULT_ROIS["continue_button"]
+        self.io.click_xy(roi["x"], roi["y"])
+        
+        time.sleep(1.5)  # Wait for transition
+        
+        self.log.info("✓ Clicked Continue")
+        return True
+    
+    def handle_encounter(self) -> bool:
+        """
+        Main battle handler - complete battle flow
+        
+        Returns:
+            True if handled successfully, False on error
+        """
+        try:
+            self.stats["total_battles"] += 1
+            
+            # Wait for battle UI to stabilize
+            time.sleep(1.5)
+            
+            # Reset skill manager to page 1 (strongest skills visible)
+            self.skill_mgr.reset_to_page_1()
+            
+            # Wait for turn
+            self.skill_mgr.wait_for_turn(timeout=10.0)
+            time.sleep(0.5)
             
             # Detect Miscrit info from capture rate
             capture_rate, ip_rating, rarity = self.capture_detector.get_miscrit_info()
             
             if not rarity or not ip_rating:
-                self.log.warning("Could not detect Miscrit info from capture rate")
-                # Default to defeat
-                self.defeat_miscrit()
+                self.log.warning("⚠ Could not detect Miscrit info - defaulting to defeat")
+                self.defeat_miscrit(quick_mode=True)
+                time.sleep(1.0)
+                self.click_continue()
                 return True
             
-            self.log.info(f"═══ Encountered: {rarity} {ip_rating} ({capture_rate}% catch rate) ═══")
+            self.log.info("═" * 70)
+            self.log.info(f"🎮 ENCOUNTER: {rarity} {ip_rating} (Base capture rate: {capture_rate}%)")
+            self.log.info("═" * 70)
             
             # Check eligibility
             if not self.is_eligible(rarity, ip_rating):
-                # Not a target - defeat it
-                self.defeat_miscrit()
+                self.log.info("⏭️  Not eligible - defeating quickly")
+                self.stats["skipped"] += 1
+                
+                # Quick defeat
+                quick_defeat = self.cfg.get("battle", {}).get("quick_defeat", True)
+                self.defeat_miscrit(quick_mode=quick_defeat)
+                time.sleep(1.0)
+                self.click_continue()
                 return True
             
-            # Target Miscrit - attempt capture!
-            self.log.info(f"🎯 TARGET MISCRIT! {rarity} {ip_rating} - Initiating capture...")
+            # TARGET MISCRIT - Begin capture sequence!
+            self.log.info("🎯 TARGET MISCRIT DETECTED! Initiating capture protocol...")
+            self.log.info("═" * 70)
             
-            # Chip HP to threshold
-            self.chip_hp_to_threshold(rarity)
+            # Get capture configuration for this rarity
+            rarity_cfg = self.cfg.get("eligibility", {}).get("per_rarity", {}).get(rarity, {})
             
-            # Attempt capture
-            success = self.attempt_capture(rarity)
+            # Get HP threshold (can be rarity-specific or global)
+            hp_threshold = rarity_cfg.get("capture_hp_percent", 
+                                         self.cfg.get("battle", {}).get("capture_hp_percent", 10))
+            
+            # Get max capture attempts
+            max_attempts = self.cfg.get("battle", {}).get("attempts", 3)
+            
+            self.log.info(f"📋 Capture Plan:")
+            self.log.info(f"   • Target HP: {hp_threshold}%")
+            self.log.info(f"   • Max attempts: {max_attempts}")
+            self.log.info(f"   • Damage skill: {rarity_cfg.get('damage_skill', 'Skill 12')}")
+            self.log.info(f"   • Capture skill: {rarity_cfg.get('capture_skill', 'Skill 12')}")
+            
+            # Step 1: Chip HP to threshold
+            self.log.info("📉 Step 1: Reducing enemy HP...")
+            if not self.chip_hp_safely(rarity, float(hp_threshold)):
+                self.log.error("⚠ Failed to chip HP - attempting capture anyway")
+            
+            time.sleep(1.0)
+            
+            # Step 2: Attempt capture
+            self.log.info("🎯 Step 2: Attempting capture...")
+            success = self.attempt_capture(rarity, max_attempts)
             
             if not success:
-                # Capture failed - defeat
-                self.log.warning("Capture failed, defeating...")
-                self.defeat_miscrit()
+                # Capture failed - defeat it
+                self.log.warning("❌ Capture failed - defeating Miscrit")
+                self.defeat_miscrit(quick_mode=True)
+            
+            # Step 3: Click continue
+            time.sleep(1.5)
+            self.click_continue()
+            
+            self.log.info("═" * 70)
+            if success:
+                self.log.info("✅ ENCOUNTER COMPLETE: Capture successful!")
             else:
-                self.log.info("✅ Capture successful!")
+                self.log.info("⚠️  ENCOUNTER COMPLETE: Capture failed, Miscrit defeated")
+            self.log.info("═" * 70)
             
             return True
             
         except Exception as e:
-            self.log.error(f"Error handling encounter: {e}", exc_info=True)
+            self.log.error(f"❌ Error handling encounter: {e}", exc_info=True)
+            
+            # Emergency cleanup - try to end battle
+            try:
+                self.defeat_miscrit(quick_mode=True)
+                time.sleep(1.5)
+                self.click_continue()
+            except Exception:
+                pass
+            
             return False
+    
+    def get_stats(self) -> Dict:
+        """Get battle statistics"""
+        stats = self.stats.copy()
+        
+        if stats["captures_attempted"] > 0:
+            stats["capture_success_rate"] = (
+                stats["captures_successful"] / stats["captures_attempted"] * 100
+            )
+        else:
+            stats["capture_success_rate"] = 0.0
+        
+        return stats
 
+
+# ============================================================================
+# BATTLE MANAGER (Integration with main bot loop)
+# ============================================================================
 
 class BattleManager:
-    """Manages battle state and transitions"""
+    """
+    Manages battle state and transitions
+    Integrates with main bot loop in capture_loop.py
+    """
     
     def __init__(self, cfg, vision, input_ctl, log):
         self.battle = Battle(cfg, vision, input_ctl, log)
         self.in_battle = False
         self.battle_count = 0
+        self.log = log
     
-    def check_and_handle_battle(self, frame_bgr) -> bool:
+    def check_and_handle_battle(self) -> bool:
         """
-        Check if in battle and handle it
-        Returns True if battle was handled
+        Check if in battle and handle it if needed
+        
+        Returns:
+            True if battle was handled, False if no battle detected
         """
+        # Check if battle started
         if not self.in_battle:
-            if self.battle.detector.is_in_battle(frame_bgr):
+            if self.battle.detector.is_in_battle():
                 self.in_battle = True
                 self.battle_count += 1
-                self.battle.log.info(f"═══ Battle #{self.battle_count} Started ═══")
-                return self.battle.handle_encounter()
-        else:
-            # Check if battle ended
-            if not self.battle.detector.is_in_battle(frame_bgr):
+                
+                self.log.info("")
+                self.log.info("╔" + "═" * 68 + "╗")
+                self.log.info(f"║  🎮 BATTLE #{self.battle_count} STARTED" + " " * 42 + "║")
+                self.log.info("╚" + "═" * 68 + "╝")
+                self.log.info("")
+                
+                # Handle the battle
+                result = self.battle.handle_encounter()
+                
                 self.in_battle = False
-                self.battle.log.info("═══ Battle Ended ═══")
+                
+                # Show stats
+                stats = self.battle.get_stats()
+                self.log.info("")
+                self.log.info("📊 Session Statistics:")
+                self.log.info(f"   • Total battles: {stats['total_battles']}")
+                self.log.info(f"   • Captures: {stats['captures_successful']}")
+                self.log.info(f"   • Skipped: {stats['skipped']}")
+                self.log.info(f"   • Defeated: {stats['defeated']}")
+                if stats['capture_success_rate'] > 0:
+                    self.log.info(f"   • Success rate: {stats['capture_success_rate']:.1f}%")
+                self.log.info("")
+                
+                return result
         
         return False
+    
+    def get_statistics(self) -> Dict:
+        """Get battle statistics for UI display"""
+        return self.battle.get_stats()
+
+
+# ============================================================================
+# ROI CONFIGURATION HELPER
+# ============================================================================
+
+def save_rois_to_config(cfg_path: str, custom_rois: Dict = None):
+    """
+    Save ROI configuration to config.json
+    
+    Args:
+        cfg_path: Path to config.json
+        custom_rois: Custom ROI dictionary (if None, uses defaults)
+    """
+    import json
+    
+    with open(cfg_path, 'r', encoding='utf-8') as f:
+        cfg = json.load(f)
+    
+    rois = custom_rois if custom_rois else DEFAULT_ROIS
+    
+    cfg['battle']['rois'] = rois
+    
+    with open(cfg_path, 'w', encoding='utf-8') as f:
+        json.dump(cfg, f, indent=2)
+    
+    print(f"✓ Saved {len(rois)} ROIs to {cfg_path}")
+
+
+def print_roi_guide():
+    """Print guide for configuring ROIs"""
+    print("=" * 80)
+    print("ROI CONFIGURATION GUIDE")
+    print("=" * 80)
+    print()
+    print("Default ROIs are configured for 1152x648 game window.")
+    print("If your game resolution is different, you may need to adjust ROIs.")
+    print()
+    print("Key ROIs to verify:")
+    print()
+    
+    for key, roi in DEFAULT_ROIS.items():
+        if isinstance(roi, dict) and 'description' in roi:
+            print(f"  {key}:")
+            print(f"    Description: {roi['description']}")
+            if 'x' in roi:
+                print(f"    Position: ({roi['x']}, {roi['y']}) Size: {roi.get('w', 'N/A')}x{roi.get('h', 'N/A')}")
+            else:
+                print(f"    Position: ({roi['x']}, {roi['y']})")
+            print()
+    
+    print("=" * 80)
+    print()
+
+
+# ============================================================================
+# USAGE EXAMPLE
+# ============================================================================
+
+if __name__ == "__main__":
+    print("Miscrits Auto-Battle System - Enhanced Edition")
+    print()
+    print_roi_guide()
+    print()
+    print("This module provides:")
+    print("  • Automatic battle detection")
+    print("  • Skill navigation (12 skills across 3 pages)")
+    print("  • HP monitoring with precision")
+    print("  • Capture rate detection and IP/Rarity identification")
+    print("  • Intelligent capture decision making")
+    print("  • Automatic battle completion and continuation")
+    print()
+    print("Integration:")
+    print("  1. Import BattleManager in capture_loop.py")
+    print("  2. Initialize: battle_mgr = BattleManager(cfg, vision, input_ctl, log)")
+    print("  3. In main loop: battle_mgr.check_and_handle_battle()")
+    print()
+    print("Configuration:")
+    print("  • Set capture criteria in config.json -> eligibility -> per_rarity")
+    print("  • Configure skills: damage_skill (for HP chip), capture_skill (before capture)")
+    print("  • Set HP thresholds per rarity: capture_hp_percent")
+    print("  • Choose defeat strategy: defeat_skill, quick_defeat")
+    print()

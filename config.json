@@ -1,153 +1,239 @@
 {
-  "window_title_hint": "Miscrits",
-  "resolution": {
-    "width": 1920,
-    "height": 1080,
-    "comment": "Game window resolution for ROI calculations"
-  },
-  "ui_scale": 1.0,
-  "capture_engine": "mss",
-  "hotkeys": {
-    "record_spot": "x",
-    "pause_resume": "f9",
-    "stop": "f10",
-    "comment": "Global hotkeys for bot control"
-  },
-  "search": {
-    "use_custom_spots": true,
-    "cooldown_seconds": 25,
-    "delay_click_ms": 5,
-    "search_delay_ms": 10000,
-    "comment": "search_delay_ms is scan interval (10000ms = 10 seconds)"
-  },
-  "alerts": {
-    "play_sound": true,
-    "delay_after_alert_seconds": 0,
-    "sound_file": "",
-    "comment": "Play system beep on eligible Miscrit found"
-  },
   "battle": {
     "enabled": true,
     "capture_hp_percent": 10,
-    "attempts": 1,
-    "capture_skill": "Skill 12",
+    "attempts": 3,
     "defeat_skill": "Skill 1",
-    "quick_defeat": false,
-    "capture_rate_roi": [
-      570,
-      350,
-      80,
-      35
-    ],
-    "hp_bar_roi": [
-      650,
-      85,
-      110,
-      12
-    ],
-    "comment_capture_rate_roi": "ROI where capture % is displayed (e.g., '35%', '90%'). Adjust X,Y,W,H to fit your screen.",
-    "comment_hp_bar_roi": "ROI of enemy HP bar for monitoring HP percentage",
-    "comment_skills": "Skill 1 = strongest (rightmost after scroll), Skill 12 = weakest (leftmost)",
-    "comment_capture_hp": "Capture when enemy HP drops to or below this percentage"
+    "quick_defeat": true,
+    "rois": {
+      "comment": "ROI coordinates for 1152x648 Miscrits window - CALIBRATED FROM ACTUAL SCREENSHOTS",
+      "capture_rate": {
+        "x": 560,
+        "y": 235,
+        "w": 80,
+        "h": 40,
+        "description": "Capture percentage display (e.g., '31%') - centered above 'Capture!' text"
+      },
+      "enemy_hp_bar": {
+        "x": 755,
+        "y": 205,
+        "w": 70,
+        "h": 8,
+        "description": "Enemy HP bar (Kopper) - green fill, top right"
+      },
+      "enemy_hp_text": {
+        "x": 750,
+        "y": 210,
+        "w": 80,
+        "h": 20,
+        "description": "Enemy HP text (e.g., '127/127') - below enemy name"
+      },
+      "player_hp_bar": {
+        "x": 390,
+        "y": 205,
+        "w": 85,
+        "h": 8,
+        "description": "Player HP bar (Chamille Machla) - green fill, top left"
+      },
+      "player_hp_text": {
+        "x": 390,
+        "y": 210,
+        "w": 85,
+        "h": 20,
+        "description": "Player HP text - below player name"
+      },
+      "turn_indicator": {
+        "x": 450,
+        "y": 580,
+        "w": 250,
+        "h": 30,
+        "description": "Turn indicator banner ('It's your turn!') - above skills"
+      },
+      "skills_bar": {
+        "x": 340,
+        "y": 600,
+        "w": 540,
+        "h": 70,
+        "description": "Skills bar area with visible abilities"
+      },
+      "abilities_tab": {
+        "x": 380,
+        "y": 585,
+        "w": 80,
+        "h": 25,
+        "description": "Abilities tab button"
+      },
+      "items_tab": {
+        "x": 470,
+        "y": 585,
+        "w": 80,
+        "h": 25,
+        "description": "Items tab button"
+      },
+      "skill_slot_1": {
+        "x": 405,
+        "y": 628,
+        "description": "First visible skill (leftmost) - FOIL LIGHTNING BARB"
+      },
+      "skill_slot_2": {
+        "x": 488,
+        "y": 628,
+        "description": "Second skill - KILOBLITZ"
+      },
+      "skill_slot_3": {
+        "x": 655,
+        "y": 628,
+        "description": "Third skill - HYPER-POWER"
+      },
+      "skill_slot_4": {
+        "x": 738,
+        "y": 628,
+        "description": "Fourth skill (rightmost visible) - VOLTAGE"
+      },
+      "skill_arrow_left": {
+        "x": 330,
+        "y": 628,
+        "description": "Left arrow - scroll to previous skills (if exists)"
+      },
+      "skill_arrow_right": {
+        "x": 865,
+        "y": 628,
+        "description": "Right arrow - scroll to next skills"
+      },
+      "continue_button": {
+        "x": 576,
+        "y": 580,
+        "w": 100,
+        "h": 40,
+        "description": "Continue button after battle (center bottom, appears after victory)"
+      },
+      "victory_text": {
+        "x": 400,
+        "y": 200,
+        "w": 350,
+        "h": 80,
+        "description": "Victory/defeat message area (top center)"
+      },
+      "capture_text": {
+        "x": 530,
+        "y": 230,
+        "w": 100,
+        "h": 30,
+        "description": "'Capture!' text indicator - shows when capture opportunity available"
+      },
+      "battle_circles": {
+        "x": 350,
+        "y": 250,
+        "w": 180,
+        "h": 40,
+        "description": "Four circles indicator (left side, below player HP) - battle status"
+      },
+      "enemy_name": {
+        "x": 710,
+        "y": 185,
+        "w": 110,
+        "h": 20,
+        "description": "Enemy Miscrit name (e.g., 'Kopper')"
+      },
+      "player_name": {
+        "x": 355,
+        "y": 185,
+        "w": 130,
+        "h": 20,
+        "description": "Player Miscrit name (e.g., 'Chamille Machla')"
+      },
+      "miscrit_icon_center": {
+        "x": 595,
+        "y": 190,
+        "w": 50,
+        "h": 50,
+        "description": "Center 'M' medallion icon - battle indicator"
+      }
+    },
+    "capture_skill": "Skill 12"
+  },
+  "roi_notes": {
+    "comment": "=== ROI CALIBRATION NOTES ===",
+    "game_resolution": "1152x648",
+    "calibrated_from": "Actual in-game screenshots",
+    "coordinate_system": "Top-left corner is (0,0)",
+    "measurement_method": "Pixel-perfect measurement from screenshots",
+    "key_observations": {
+      "1": "Capture percentage (31%) is clearly visible at top center",
+      "2": "HP bars are thin green/yellow/red bars below Miscrit names",
+      "3": "Skills are displayed in a horizontal row at bottom",
+      "4": "Four skill slots visible at once (example: FOIL LIGHTNING BARB, KILOBLITZ, HYPER-POWER, VOLTAGE)",
+      "5": "'It's your turn!' banner appears above skills when player can act",
+      "6": "Skills tab has two sections: 'Abilities' and 'Items'",
+      "7": "Right arrow visible at far right of skills bar for scrolling",
+      "8": "Four circular indicators on left side (battle progression?)"
+    },
+    "detection_strategy": {
+      "battle_detection": "Look for 'It's your turn!' text OR check for skill bar presence",
+      "capture_rate": "OCR the percentage number above 'Capture!' text (31% in screenshot)",
+      "hp_monitoring": "Track green bar fill percentage in hp_bar ROI",
+      "turn_ready": "Detect blue/white 'It's your turn!' banner appearance",
+      "battle_ended": "Detect disappearance of skill bar OR appearance of victory screen"
+    },
+    "skill_system_notes": {
+      "visible_at_once": 4,
+      "total_skills": "Unknown - need to test scrolling",
+      "navigation": "Right arrow at x=865 for scrolling",
+      "skill_width": "Approximately 70-80 pixels",
+      "skill_spacing": "Approximately 80-85 pixels between centers",
+      "tabs": "Abilities tab (default) and Items tab available"
+    }
   },
   "eligibility": {
     "per_rarity": {
       "Common": {
         "enabled": false,
-        "min_ip_rating": "B+ and Below",
+        "min_ip_rating": "A",
         "damage_skill": "Skill 11",
-        "capture_skill": "Skill 12",
-        "comment": "Common Miscrits - usually disabled"
+        "capture_skill": "Skill 12"
       },
       "Rare": {
         "enabled": false,
         "min_ip_rating": "A",
         "damage_skill": "Skill 11",
-        "capture_skill": "Skill 12",
-        "comment": "Rare Miscrits - capture A+ or better"
+        "capture_skill": "Skill 12"
       },
       "Epic": {
-        "enabled": true,
-        "min_ip_rating": "A+",
+        "enabled": false,
+        "min_ip_rating": "A",
         "damage_skill": "Skill 11",
-        "capture_skill": "Skill 12",
-        "comment": "Epic Miscrits - capture A+ or better"
+        "capture_skill": "Skill 12"
       },
       "Exotic": {
         "enabled": true,
-        "min_ip_rating": "S",
+        "min_ip_rating": "A",
         "damage_skill": "Skill 11",
-        "capture_skill": "Skill 12",
-        "comment": "Exotic Miscrits - very rare, capture all"
+        "capture_skill": "Skill 12"
       },
       "Legendary": {
         "enabled": true,
-        "min_ip_rating": "S",
+        "min_ip_rating": "A",
         "damage_skill": "Skill 11",
-        "capture_skill": "Skill 12",
-        "comment": "Legendary Miscrits - capture S or better"
+        "capture_skill": "Skill 12"
       }
-    },
-    "comment_ip_ratings": "Available: S+, S, A+, A, B+, B, C+, C, D+, D, F+, F, F-, 'B+ and Below'",
-    "comment_damage_skill": "Skill used to chip HP down (use weak skill like 11 or 12)",
-    "comment_capture_skill": "Skill used before capture attempt (optional, use weakest)"
+    }
   },
-  "input": {
-    "backend": "directinput",
-    "move_duration_range": [
-      0.04,
-      0.11
-    ],
-    "click_delay_ms_range": [
-      80,
-      180
-    ],
-    "move_delay_ms_range": [
-      60,
-      140
-    ],
-    "comment_backend": "Options: 'directinput' (recommended), 'pydirectinput', 'pyautogui'",
-    "comment_timing": "Random delays simulate human behavior"
+  "search": {
+    "cooldown_seconds": 25,
+    "delay_click_ms": 10,
+    "search_delay_ms": 10000
   },
-  "logging": {
-    "file": "bot.log",
-    "level": "INFO",
-    "max_file_size_mb": 10,
-    "backup_count": 3,
-    "comment_level": "Options: DEBUG, INFO, WARNING, ERROR"
-  },
-  "run": {
-    "selected_spot_index": 0,
-    "bound_hwnd": null,
-    "comment": "Runtime state - managed by UI"
+  "alerts": {
+    "play_sound": false,
+    "delay_after_alert_seconds": 0
   },
   "debug": {
-    "show_preview": false,
-    "save_failed_matches": false,
-    "screenshot_dir": "debug_screenshots",
-    "comment_preview": "Enable overlay showing matched templates and stats"
+    "show_preview": false
   },
-  "performance": {
-    "template_scale": 0.5,
-    "capture_method": "mss",
-    "max_fps": 2,
-    "comment_scale": "Templates downscaled for faster matching (0.5 = 50%)",
-    "comment_fps": "Maximum scans per second (2 = every 0.5s minimum)"
+  "input": {
+    "backend": "directinput"
   },
-  "safety": {
-    "max_consecutive_errors": 5,
-    "error_cooldown_seconds": 3,
-    "auto_stop_on_window_loss": true,
-    "comment": "Safety features to prevent issues"
-  },
-  "ocr": {
-    "tesseract_path": "",
-    "capture_rate_preprocessing": {
-      "threshold_method": "otsu",
-      "invert": true,
-      "scale": 2.0
-    },
-    "comment_tesseract_path": "Optional: specify tesseract executable path if not in PATH",
-    "comment_preprocessing": "Image preprocessing settings for better OCR accuracy"
+  "run": {
+    "selected_spot_index": 0
   }
 }
