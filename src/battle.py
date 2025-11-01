@@ -206,25 +206,60 @@ def estimate_ip_rating_from_capture_rate(capture_rate: int, possible_rarities=No
 # ============================================================================
 
 class BattleDetector:
-    """Detect when a battle has started and ended"""
+    """Detect when a battle has started and ended using flee and continue button icons"""
     
-    def __init__(self, cfg, vision, log):
+    def __init__(self, cfg, vision, log, base_dir):
         self.cfg = cfg
         self.vision = vision
         self.log = log
+        self.base_dir = base_dir
         self.rois = DEFAULT_ROIS
+        self.flee_template = None
+        self.continue_template = None
+        self._load_templates()
+    
+    def _load_templates(self):
+        import os
+        flee_path = os.path.join(self.base_dir, "assets", "templates", "battle", "flee_button.png")
+        if os.path.exists(flee_path):
+            self.flee_template = cv2.imread(flee_path, cv2.IMREAD_COLOR)
+            self.log.debug("Loaded flee template")
+        
+        continue_path = os.path.join(self.base_dir, "assets", "templates", "battle", "continue_button.png")
+        if os.path.exists(continue_path):
+            self.continue_template = cv2.imread(continue_path, cv2.IMREAD_COLOR)
+            self.log.debug("Loaded continue template")
     
     def is_in_battle(self) -> bool:
-        """Check if currently in battle by detecting turn indicator"""
+        """Check if currently in battle by detecting flee button or turn indicator"""
+        # First try template matching if available
+        if self.flee_template is not None:
+            found, _, _, _ = self._match_template(self.flee_template, 0.7)
+            if found:
+                return True
+        
+        # Fallback: check turn indicator using color detection
         try:
+            from mss import mss
+            
             roi = self.rois["turn_indicator"]
-            frame = self.vision.screen_grab_region(roi["x"], roi["y"], roi["w"], roi["h"])
+            
+            with mss() as sct:
+                monitor = {
+                    "left": roi["x"],
+                    "top": roi["y"],
+                    "width": roi["w"],
+                    "height": roi["h"]
+                }
+                grab = sct.grab(monitor)
+                frame = np.array(grab)[:, :, :3]  # Get RGB
             
             if frame.size == 0:
                 return False
             
             # Convert to HSV for better detection
-            hsv = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
+            frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            hsv = cv2.cvtColor(frame_rgb, cv2.COLOR_RGB2HSV)
             
             # Look for blue banner color (turn indicator is blue)
             blue_lower = np.array([100, 50, 50])
@@ -241,17 +276,35 @@ class BattleDetector:
             return False
     
     def is_battle_ended(self) -> bool:
-        """Check if battle has ended (victory/defeat screen)"""
+        """Check if battle has ended using continue button or victory screen"""
+        # First try template matching if available
+        if self.continue_template is not None:
+            found, _, _, _ = self._match_template(self.continue_template, 0.7)
+            if found:
+                return True
+        
+        # Fallback: check victory text area
         try:
+            from mss import mss
+            
             roi = self.rois["victory_text"]
-            frame = self.vision.screen_grab_region(roi["x"], roi["y"], roi["w"], roi["h"])
+            
+            with mss() as sct:
+                monitor = {
+                    "left": roi["x"],
+                    "top": roi["y"],
+                    "width": roi["w"],
+                    "height": roi["h"]
+                }
+                grab = sct.grab(monitor)
+                frame = np.array(grab)[:, :, :3]  # Get RGB
             
             if frame.size == 0:
                 return False
             
             # Look for "You Win!" or victory screen indicators
-            # Green background or specific colors
-            hsv = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
+            frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            hsv = cv2.cvtColor(frame_rgb, cv2.COLOR_RGB2HSV)
             
             # Green victory banner
             green_lower = np.array([40, 50, 50])
@@ -265,6 +318,24 @@ class BattleDetector:
         except Exception as e:
             self.log.error(f"Battle end detection error: {e}")
             return False
+    
+    def _match_template(self, template, threshold):
+        """Match template on full screen"""
+        try:
+            from mss import mss
+            with mss() as sct:
+                monitor = sct.monitors[1]
+                grab = sct.grab(monitor)
+                screen = np.array(grab)[:, :, :3]
+            
+            result = cv2.matchTemplate(screen, template, cv2.TM_CCOEFF_NORMED)
+            _, max_val, _, max_loc = cv2.minMaxLoc(result)
+            
+            if max_val >= threshold:
+                return True, max_loc[0], max_loc[1], max_val
+            return False, 0, 0, max_val
+        except:
+            return False, 0, 0, 0.0
     
     def wait_for_battle_start(self, timeout: float = 8.0) -> bool:
         """Wait for battle to start after clicking spot"""
@@ -441,26 +512,37 @@ class SkillManager:
         self.log.debug("Waiting for turn...")
         
         # Wait for turn indicator to appear
-        detector = BattleDetector(self.cfg, None, self.log)
-        detector.vision = self.io.__dict__.get('vision')  # Hack to get vision
-        
         while time.time() - start_time < timeout:
             try:
                 roi = self.rois["turn_indicator"]
-                frame = detector.vision.screen_grab_region(roi["x"], roi["y"], roi["w"], roi["h"]) if detector.vision else None
+                # Use the vision instance from io's parent (Bot class will have it)
+                # But we don't have direct access here, so we'll use mss directly
+                from mss import mss
                 
-                if frame is not None and frame.size > 0:
-                    # Look for blue turn indicator
-                    hsv = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
-                    blue_lower = np.array([100, 50, 50])
-                    blue_upper = np.array([130, 255, 255])
-                    blue_mask = cv2.inRange(hsv, blue_lower, blue_upper)
-                    blue_ratio = np.count_nonzero(blue_mask) / blue_mask.size
+                with mss() as sct:
+                    monitor = {
+                        "left": roi["x"],
+                        "top": roi["y"],
+                        "width": roi["w"],
+                        "height": roi["h"]
+                    }
+                    grab = sct.grab(monitor)
+                    frame = np.array(grab)[:, :, :3]  # Get RGB
                     
-                    if blue_ratio > 0.15:
-                        self.log.debug("✓ Turn ready")
-                        return True
-            except Exception:
+                    if frame.size > 0:
+                        # Look for blue turn indicator
+                        frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                        hsv = cv2.cvtColor(frame_rgb, cv2.COLOR_RGB2HSV)
+                        blue_lower = np.array([100, 50, 50])
+                        blue_upper = np.array([130, 255, 255])
+                        blue_mask = cv2.inRange(hsv, blue_lower, blue_upper)
+                        blue_ratio = np.count_nonzero(blue_mask) / blue_mask.size
+                        
+                        if blue_ratio > 0.15:
+                            self.log.debug("✓ Turn ready")
+                            return True
+            except Exception as e:
+                self.log.debug(f"Turn check error: {e}")
                 pass
             
             time.sleep(check_interval)
@@ -684,14 +766,15 @@ class CaptureRateDetector:
 class Battle:
     """Main battle logic controller - handles combat and capture decisions"""
     
-    def __init__(self, cfg, vision, input_ctl, log):
+    def __init__(self, cfg, vision, input_ctl, log, base_dir):
         self.cfg = cfg
         self.vision = vision
         self.io = input_ctl
         self.log = log
+        self.base_dir = base_dir
         
         # Initialize sub-systems
-        self.detector = BattleDetector(cfg, vision, log)
+        self.detector = BattleDetector(cfg, vision, log, base_dir)
         self.skill_mgr = SkillManager(cfg, input_ctl, log)
         self.hp_monitor = HPMonitor(cfg, vision, log)
         self.capture_detector = CaptureRateDetector(cfg, vision, log)
@@ -889,7 +972,8 @@ class Battle:
                     self.log.info("✓ Miscrit defeated!")
                     break
                 
-                self.log.debug(f"Attack {i}/11 (Enemy HP: {hp:.1f}% if hp else 'unknown')")
+                hp_str = f"{hp:.1f}%" if hp is not None else "unknown"
+                self.log.debug(f"Attack {i}/11 (Enemy HP: {hp_str})")
                 self.skill_mgr.use_skill(defeat_skill)
                 time.sleep(1.8)
                 self.skill_mgr.wait_for_turn(timeout=6.0)
@@ -1045,8 +1129,8 @@ class BattleManager:
     Integrates with main bot loop in capture_loop.py
     """
     
-    def __init__(self, cfg, vision, input_ctl, log):
-        self.battle = Battle(cfg, vision, input_ctl, log)
+    def __init__(self, cfg, vision, input_ctl, log, base_dir):
+        self.battle = Battle(cfg, vision, input_ctl, log, base_dir)
         self.in_battle = False
         self.battle_count = 0
         self.log = log
@@ -1168,7 +1252,7 @@ if __name__ == "__main__":
     print()
     print("Integration:")
     print("  1. Import BattleManager in capture_loop.py")
-    print("  2. Initialize: battle_mgr = BattleManager(cfg, vision, input_ctl, log)")
+    print("  2. Initialize: battle_mgr = BattleManager(cfg, vision, input_ctl, log, base_dir)")
     print("  3. In main loop: battle_mgr.check_and_handle_battle()")
     print()
     print("Configuration:")

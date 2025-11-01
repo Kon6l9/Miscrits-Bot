@@ -476,3 +476,123 @@
 2025-11-01 23:45:40,158 | INFO |    • Defeated: 0
 2025-11-01 23:45:40,158 | INFO |    • Errors: 0
 2025-11-01 23:45:40,159 | INFO | ============================================================
+2025-11-02 00:24:29,841 | INFO | ⚔️ Battle system enabled
+2025-11-02 00:24:29,843 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-02 00:24:29,844 | INFO | Template loaded: 37x43 pixels
+2025-11-02 00:24:29,845 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-02 00:24:29,846 | INFO | Client area: x=46, y=213, w=1152, h=648
+2025-11-02 00:24:30,274 | INFO | ============================================================
+2025-11-02 00:24:30,275 | INFO | 🤖 Bot started - Press configured hotkeys to control
+2025-11-02 00:24:30,275 | INFO | 🔍 Search interval: 10.0s
+2025-11-02 00:24:30,276 | INFO | 🎯 Match threshold: 0.82
+2025-11-02 00:24:30,276 | INFO | ⚔️  Auto-battle: ENABLED
+2025-11-02 00:24:30,276 | INFO | ============================================================
+2025-11-02 00:24:30,569 | INFO | ✓ MATCH [0.840] at client(600,337) → clicked screen(646,550)
+2025-11-02 00:24:30,569 | INFO | ⏳ Waiting for battle to start...
+2025-11-02 00:28:15,892 | INFO | 🛑 Stop signal received
+2025-11-02 00:28:24,536 | INFO | ============================================================
+2025-11-02 00:28:24,536 | INFO | 🛑 Bot stopped
+2025-11-02 00:28:24,536 | INFO | 📊 Session stats:
+2025-11-02 00:28:24,536 | INFO |    • Spot clicks: 1
+2025-11-02 00:28:24,536 | INFO |    • Template matches: 1
+2025-11-02 00:28:24,537 | INFO |    • Template misses: 22
+2025-11-02 00:28:24,537 | INFO |    • Total battles: 0
+2025-11-02 00:28:24,537 | INFO |    • Captures successful: 0
+2025-11-02 00:28:24,537 | INFO |    • Skipped (not eligible): 0
+2025-11-02 00:28:24,538 | INFO |    • Defeated: 0
+2025-11-02 00:28:24,538 | INFO |    • Errors: 0
+2025-11-02 00:28:24,538 | INFO | ============================================================
+2025-11-02 01:15:47,042 | INFO | ⚔️ Battle system enabled
+2025-11-02 01:15:47,042 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-02 01:15:47,044 | INFO | Template loaded: 37x43 pixels
+2025-11-02 01:15:47,045 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-02 01:15:47,045 | INFO | Client area: x=55, y=181, w=1152, h=648
+2025-11-02 01:15:47,471 | INFO | ============================================================
+2025-11-02 01:15:47,471 | INFO | 🤖 Bot started - Press configured hotkeys to control
+2025-11-02 01:15:47,471 | INFO | 🔍 Search interval: 10.0s
+2025-11-02 01:15:47,472 | INFO | 🎯 Match threshold: 0.82
+2025-11-02 01:15:47,472 | INFO | ⚔️  Auto-battle: ENABLED
+2025-11-02 01:15:47,472 | INFO | ============================================================
+2025-11-02 01:15:48,034 | INFO | ✓ MATCH [0.828] at client(594,343) → clicked screen(649,524)
+2025-11-02 01:15:48,035 | INFO | ⏳ Waiting for battle to start...
+2025-11-02 01:16:00,266 | INFO | 
+2025-11-02 01:16:00,266 | INFO | ╔════════════════════════════════════════════════════════════════════╗
+2025-11-02 01:16:00,266 | INFO | ║  🎮 BATTLE #1 STARTED                                          ║
+2025-11-02 01:16:00,267 | INFO | ╚════════════════════════════════════════════════════════════════════╝
+2025-11-02 01:16:00,267 | INFO | 
+2025-11-02 01:16:11,995 | WARNING | Turn timeout - proceeding anyway
+2025-11-02 01:16:12,496 | ERROR | Capture rate detection error: 'function' object has no attribute 'mss'
+2025-11-02 01:16:12,496 | WARNING | ⚠ Could not detect Miscrit info - defaulting to defeat
+2025-11-02 01:16:12,496 | INFO | ⚔️ Defeating Miscrit with Skill 1 (quick=True)
+2025-11-02 01:16:12,805 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:16:15,627 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:16:18,393 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:16:21,182 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:16:24,050 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:16:26,861 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:16:29,649 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:16:37,706 | WARNING | ⚠ Battle did not end within timeout
+2025-11-02 01:16:38,707 | INFO | Clicking Continue...
+2025-11-02 01:16:41,388 | INFO | ✓ Clicked Continue
+2025-11-02 01:16:41,388 | INFO | 
+2025-11-02 01:16:41,388 | INFO | 📊 Session Statistics:
+2025-11-02 01:16:41,388 | INFO |    • Total battles: 1
+2025-11-02 01:16:41,389 | INFO |    • Captures: 0
+2025-11-02 01:16:41,389 | INFO |    • Skipped: 0
+2025-11-02 01:16:41,389 | INFO |    • Defeated: 1
+2025-11-02 01:16:41,389 | INFO | 
+2025-11-02 01:16:41,390 | INFO | ⏳ Cooldown: 25.0s before next search
+2025-11-02 01:16:56,112 | INFO | 🛑 Stop signal received
+2025-11-02 01:17:06,391 | INFO | ============================================================
+2025-11-02 01:17:06,391 | INFO | 🛑 Bot stopped
+2025-11-02 01:17:06,392 | INFO | 📊 Session stats:
+2025-11-02 01:17:06,392 | INFO |    • Spot clicks: 1
+2025-11-02 01:17:06,392 | INFO |    • Template matches: 1
+2025-11-02 01:17:06,392 | INFO |    • Template misses: 0
+2025-11-02 01:17:06,393 | INFO |    • Total battles: 1
+2025-11-02 01:17:06,393 | INFO |    • Captures successful: 0
+2025-11-02 01:17:06,393 | INFO |    • Skipped (not eligible): 0
+2025-11-02 01:17:06,393 | INFO |    • Defeated: 1
+2025-11-02 01:17:06,393 | INFO |    • Errors: 0
+2025-11-02 01:17:06,393 | INFO | ============================================================
+2025-11-02 01:17:08,491 | INFO | ⚔️ Battle system enabled
+2025-11-02 01:17:08,493 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-02 01:17:08,494 | INFO | Template loaded: 37x43 pixels
+2025-11-02 01:17:08,495 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-02 01:17:08,495 | INFO | Client area: x=55, y=181, w=1152, h=648
+2025-11-02 01:17:08,947 | INFO | ============================================================
+2025-11-02 01:17:08,948 | INFO | 🤖 Bot started - Press configured hotkeys to control
+2025-11-02 01:17:08,948 | INFO | 🔍 Search interval: 10.0s
+2025-11-02 01:17:08,948 | INFO | 🎯 Match threshold: 0.82
+2025-11-02 01:17:08,950 | INFO | ⚔️  Auto-battle: ENABLED
+2025-11-02 01:17:08,950 | INFO | ============================================================
+2025-11-02 01:17:09,419 | INFO | ✓ MATCH [0.828] at client(594,343) → clicked screen(649,524)
+2025-11-02 01:17:09,419 | INFO | ⏳ Waiting for battle to start...
+2025-11-02 01:17:21,657 | INFO | 
+2025-11-02 01:17:21,657 | INFO | ╔════════════════════════════════════════════════════════════════════╗
+2025-11-02 01:17:21,658 | INFO | ║  🎮 BATTLE #1 STARTED                                          ║
+2025-11-02 01:17:21,658 | INFO | ╚════════════════════════════════════════════════════════════════════╝
+2025-11-02 01:17:21,658 | INFO | 
+2025-11-02 01:17:33,385 | WARNING | Turn timeout - proceeding anyway
+2025-11-02 01:17:33,886 | ERROR | Capture rate detection error: 'function' object has no attribute 'mss'
+2025-11-02 01:17:33,886 | WARNING | ⚠ Could not detect Miscrit info - defaulting to defeat
+2025-11-02 01:17:33,886 | INFO | ⚔️ Defeating Miscrit with Skill 1 (quick=True)
+2025-11-02 01:17:34,185 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:17:36,994 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:17:39,806 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:17:42,618 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:17:45,461 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:17:48,272 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:17:51,097 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:17:58,621 | WARNING | ⚠ Battle did not end within timeout
+2025-11-02 01:17:59,622 | INFO | Clicking Continue...
+2025-11-02 01:18:02,339 | INFO | 🛑 Stop signal received
+2025-11-02 01:18:02,342 | INFO | ✓ Clicked Continue
+2025-11-02 01:18:02,342 | INFO | 
+2025-11-02 01:18:02,342 | INFO | 📊 Session Statistics:
+2025-11-02 01:18:02,343 | INFO |    • Total battles: 1
+2025-11-02 01:18:02,343 | INFO |    • Captures: 0
+2025-11-02 01:18:02,343 | INFO |    • Skipped: 0
+2025-11-02 01:18:02,343 | INFO |    • Defeated: 1
+2025-11-02 01:18:02,343 | INFO | 
+2025-11-02 01:18:02,343 | INFO | ⏳ Cooldown: 25.0s before next search

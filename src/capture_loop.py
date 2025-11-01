@@ -77,7 +77,7 @@ class Bot:
         
         if self.battle_enabled:
             from .battle import BattleManager
-            self.battle_manager = BattleManager(self.cfg, self.vision, self.io, self.log)
+            self.battle_manager = BattleManager(self.cfg, self.vision, self.io, self.log, self.base_dir)
             self.log.info("⚔️ Battle system enabled")
         else:
             self.log.info("⚠️  Battle system disabled (enable in config.json)")
