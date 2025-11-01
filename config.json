@@ -221,7 +221,7 @@
   "search": {
     "cooldown_seconds": 25,
     "delay_click_ms": 10,
-    "search_delay_ms": 10000
+    "search_delay_ms": 1000
   },
   "alerts": {
     "play_sound": false,

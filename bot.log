@@ -596,3 +596,44 @@
 2025-11-02 01:18:02,343 | INFO |    • Defeated: 1
 2025-11-02 01:18:02,343 | INFO | 
 2025-11-02 01:18:02,343 | INFO | ⏳ Cooldown: 25.0s before next search
+2025-11-02 01:25:28,746 | INFO | ⚔️ Battle system enabled
+2025-11-02 01:25:28,747 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-02 01:25:28,748 | INFO | Template loaded: 37x43 pixels
+2025-11-02 01:25:28,749 | INFO | Bound to 'Miscrits' (HWND=4524280)
+2025-11-02 01:25:28,749 | INFO | Client area: x=76, y=174, w=1152, h=648
+2025-11-02 01:25:29,182 | INFO | ============================================================
+2025-11-02 01:25:29,182 | INFO | 🤖 Bot started - Press configured hotkeys to control
+2025-11-02 01:25:29,183 | INFO | 🔍 Search interval: 1.0s
+2025-11-02 01:25:29,183 | INFO | 🎯 Match threshold: 0.82
+2025-11-02 01:25:29,183 | INFO | ⚔️  Auto-battle: ENABLED
+2025-11-02 01:25:29,183 | INFO | ============================================================
+2025-11-02 01:25:29,761 | INFO | ✓ MATCH [0.859] at client(592,335) → clicked screen(668,509)
+2025-11-02 01:25:29,761 | INFO | ⏳ Waiting for battle to start...
+2025-11-02 01:25:33,023 | INFO | 
+2025-11-02 01:25:33,024 | INFO | ╔════════════════════════════════════════════════════════════════════╗
+2025-11-02 01:25:33,024 | INFO | ║  🎮 BATTLE #1 STARTED                                          ║
+2025-11-02 01:25:33,024 | INFO | ╚════════════════════════════════════════════════════════════════════╝
+2025-11-02 01:25:33,024 | INFO | 
+2025-11-02 01:25:44,760 | WARNING | Turn timeout - proceeding anyway
+2025-11-02 01:25:45,260 | ERROR | Capture rate detection error: 'function' object has no attribute 'mss'
+2025-11-02 01:25:45,261 | WARNING | ⚠ Could not detect Miscrit info - defaulting to defeat
+2025-11-02 01:25:45,261 | INFO | ⚔️ Defeating Miscrit with Skill 1 (quick=True)
+2025-11-02 01:25:45,573 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:25:48,374 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:25:51,262 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:25:54,116 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:25:56,927 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:25:59,761 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:26:02,593 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 01:26:05,091 | INFO | 🛑 Stop signal received
+2025-11-02 01:26:10,941 | WARNING | ⚠ Battle did not end within timeout
+2025-11-02 01:26:11,942 | INFO | Clicking Continue...
+2025-11-02 01:26:14,676 | INFO | ✓ Clicked Continue
+2025-11-02 01:26:14,676 | INFO | 
+2025-11-02 01:26:14,676 | INFO | 📊 Session Statistics:
+2025-11-02 01:26:14,676 | INFO |    • Total battles: 1
+2025-11-02 01:26:14,676 | INFO |    • Captures: 0
+2025-11-02 01:26:14,677 | INFO |    • Skipped: 0
+2025-11-02 01:26:14,677 | INFO |    • Defeated: 1
+2025-11-02 01:26:14,677 | INFO | 
+2025-11-02 01:26:14,677 | INFO | ⏳ Cooldown: 25.0s before next search
