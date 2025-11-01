@@ -1,37 +1,9 @@
 {
   "spots": [
     {
-      "name": "NewSpot",
-      "template": "assets/templates/spots/spot_1762013814.png",
-      "threshold": 0.82,
-      "roi": [
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "sadasd",
-      "template": "assets/templates/spots/spot_1762012862.png",
-      "threshold": 0.82,
-      "roi": [
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Test",
-      "template": "assets/templates/spots/spot_1762013740.png",
-      "threshold": 0.82,
-      "roi": [
-        0,
-        0,
-        0,
-        0
-      ]
+      "name": "Papa",
+      "template": "assets/templates/spots/1762015022870.png",
+      "threshold": 0.5
     }
   ]
 }

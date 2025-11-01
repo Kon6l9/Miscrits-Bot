@@ -1,31 +1,52 @@
 # src/overlay.py
 import win32con, win32gui, win32ui, win32api
-from ctypes import windll, byref, sizeof, c_int
+from ctypes import windll, byref, sizeof, c_void_p, c_uint8, Structure
+from ctypes import c_int, c_uint, c_long, POINTER, create_string_buffer, memmove
+from ctypes import wintypes
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 
-# Simple safe font
+# ---------------- Win32 helpers ----------------
+
+AC_SRC_ALPHA = 0x01
+ULW_ALPHA    = 0x00000002
+SWP_NOACTIVATE = 0x0010
+SWP_SHOWWINDOW = 0x0040
+
+class BLENDFUNCTION(Structure):
+    _fields_ = [
+        ("BlendOp",        c_uint8),
+        ("BlendFlags",     c_uint8),
+        ("SourceConstantAlpha", c_uint8),
+        ("AlphaFormat",    c_uint8),
+    ]
+
+# ---------------- Font ----------------
+
 def _font(size=16):
     try:
         return ImageFont.truetype("arial.ttf", size)
     except Exception:
         return ImageFont.load_default()
 
+# ---------------- Overlay ----------------
+
 class Overlay:
     """
-    Transparent click-through overlay aligned to a target window.
-    Draw by calling update(rects=[(x1,y1,x2,y2, (r,g,b,a))], texts=[(x,y,'msg',(r,g,b,a))])
-    Coordinates are in the CLIENT area of target window.
+    Transparent click-through overlay aligned to a target window's CLIENT area.
+    Call update(rects=[(x1,y1,x2,y2,(r,g,b,a))], texts=[(x,y,'msg',(r,g,b,a))])
     """
     def __init__(self, target_hwnd):
         self.target_hwnd = target_hwnd
         self.hwnd = None
-        self.hdc = None
         self.memdc = None
         self.hbmp = None
+        self.bits_ptr = None   # pointer to DIB section bits
         self.size = (0, 0)
+        self._screen_dc = None
         self._create_window()
 
+    # ---------- window creation ----------
     def _create_window(self):
         class_name = "MiscritsOverlayWnd"
         wc = win32gui.WNDCLASS()
@@ -38,8 +59,8 @@ class Overlay:
             pass  # already registered
 
         exstyle = (win32con.WS_EX_LAYERED |
-                   win32con.WS_EX_TRANSPARENT |
-                   win32con.WS_EX_TOOLWINDOW |   # do not show in alt-tab
+                   win32con.WS_EX_TRANSPARENT |   # let mouse pass through
+                   win32con.WS_EX_TOOLWINDOW |    # hide from Alt-Tab
                    win32con.WS_EX_TOPMOST)
 
         self.hwnd = win32gui.CreateWindowEx(
@@ -48,42 +69,80 @@ class Overlay:
             wc.hInstance, None
         )
 
+        # Do NOT set color key/alpha here; per-pixel alpha via UpdateLayeredWindow
         win32gui.ShowWindow(self.hwnd, win32con.SW_SHOW)
-        # Set a color key for full transparency where pixels are (0,0,0)
-        win32gui.SetLayeredWindowAttributes(self.hwnd, 0x000000, 255, win32con.LWA_ALPHA)
+
+        # Keep a screen DC around
+        self._screen_dc = win32ui.CreateDCFromHandle(win32gui.GetDC(0))
 
     def _on_destroy(self, hwnd, msg, wparam, lparam):
         self.destroy()
         return 0
 
+    # ---------- geometry ----------
     def _get_client_rect_screen(self):
-        # Align overlay to client area (not including title bar/borders)
+        # Client rectangle
         left, top, right, bottom = win32gui.GetClientRect(self.target_hwnd)
-        # Map client (0,0) to screen
-        pt = win32gui.ClientToScreen(self.target_hwnd, (0, 0))
-        L, T = pt
+        # Convert client (0,0) to screen coordinates
+        L, T = win32gui.ClientToScreen(self.target_hwnd, (0, 0))
         W, H = right - left, bottom - top
         return L, T, W, H
 
+    # ---------- surface (32-bit DIB section) ----------
     def _ensure_memdc(self, w, h):
         if self.memdc is not None and self.size == (w, h):
             return
+
+        # cleanup if resizing
+        self._free_surface()
+
         self.size = (w, h)
-        # Clean previous
-        if self.memdc:
-            win32gui.DeleteObject(self.hbmp)
-            win32gui.DeleteDC(self.memdc)
-            self.memdc = None
+        # Create a 32-bit top-down DIB section and select into a compatible DC
+        self.memdc = win32ui.CreateCompatibleDC(self._screen_dc)
 
-        hdc = win32gui.GetDC(self.hwnd)
-        self.memdc = win32ui.CreateCompatibleDC(win32ui.CreateDCFromHandle(hdc))
-        self.hbmp = win32ui.CreateBitmap()
-        self.hbmp.CreateCompatibleBitmap(win32ui.CreateDCFromHandle(hdc), w, h)
+        # Build BITMAPINFO for 32-bit BGRA, top-down
+        bmi = win32gui.BITMAPINFO()
+        bmi.bmiHeader = win32gui.BITMAPINFOHEADER()
+        bmi.bmiHeader.biSize = sizeof(win32gui.BITMAPINFOHEADER())
+        bmi.bmiHeader.biWidth = w
+        bmi.bmiHeader.biHeight = -h  # negative => top-down DIB
+        bmi.bmiHeader.biPlanes = 1
+        bmi.bmiHeader.biBitCount = 32
+        bmi.bmiHeader.biCompression = win32con.BI_RGB
+        bmi.bmiHeader.biSizeImage = w * h * 4
+
+        # CreateDIBSection gives us an HBITMAP and a pointer to the pixel bits
+        bits_ptr = c_void_p()
+        hdc = self._screen_dc.GetSafeHdc()
+        hbmp = windll.gdi32.CreateDIBSection(
+            hdc, byref(bmi), win32con.DIB_RGB_COLORS, byref(bits_ptr), 0, 0
+        )
+        if not hbmp:
+            raise RuntimeError("CreateDIBSection failed")
+
+        self.hbmp = win32ui.CreateBitmapFromHandle(hbmp)
         self.memdc.SelectObject(self.hbmp)
-        win32gui.ReleaseDC(self.hwnd, hdc)
+        self.bits_ptr = bits_ptr
 
+    def _free_surface(self):
+        try:
+            if self.memdc:
+                # hBmp will be deleted automatically when DC is deleted,
+                # but explicitly delete the handle for safety.
+                try:
+                    if self.hbmp:
+                        win32gui.DeleteObject(self.hbmp.GetHandleAttrib())
+                except Exception:
+                    pass
+                self.memdc.DeleteDC()
+        finally:
+            self.memdc = None
+            self.hbmp = None
+            self.bits_ptr = None
+            self.size = (0, 0)
+
+    # ---------- drawing / present ----------
     def update(self, rects=None, texts=None):
-        """Blit a fresh RGBA buffer with drawings onto the overlay and align it."""
         rects = rects or []
         texts = texts or []
 
@@ -93,7 +152,7 @@ class Overlay:
 
         self._ensure_memdc(W, H)
 
-        # Compose an RGBA image (black = fully transparent due to colorkey)
+        # Compose RGBA image (fully transparent background)
         img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         draw = ImageDraw.Draw(img)
 
@@ -106,44 +165,27 @@ class Overlay:
             c = color if color else (0, 255, 0, 200)
             draw.text((x, y), text, fill=c, font=fnt)
 
-        # Push to layered window via UpdateLayeredWindow
-        # Convert PIL image to raw BGRA bytes
-        bgra = np.array(img, dtype=np.uint8)
-        # PIL gives RGBA; Windows expects BGRA
-        bgra = bgra[:, :, [2, 1, 0, 3]]
+        # Convert to BGRA (Windows expects that) and copy into DIB section memory
+        bgra = np.asarray(img, dtype=np.uint8)[:, :, [2, 1, 0, 3]]  # RGBA -> BGRA
+        memmove(self.bits_ptr, bgra.ctypes.data, bgra.size)
 
-        self.memdc.SelectObject(self.hbmp)
-        win32gui.SetWindowPos(self.hwnd, win32con.HWND_TOPMOST, L, T, W, H, 0)
-
-        # Copy the raw buffer into HBITMAP
-        bmi = win32gui.BITMAPINFO()
-        bmi.bmiHeader = win32gui.BITMAPINFOHEADER()
-        bmi.bmiHeader.biSize = sizeof(win32gui.BITMAPINFOHEADER())
-        bmi.bmiHeader.biWidth = W
-        bmi.bmiHeader.biHeight = -H  # top-down DIB
-        bmi.bmiHeader.biPlanes = 1
-        bmi.bmiHeader.biBitCount = 32
-        bmi.bmiHeader.biCompression = win32con.BI_RGB
-
-        windll.gdi32.SetDIBitsToDevice(
-            self.memdc.GetSafeHdc(),             # hdc
-            0, 0, W, H,
-            0, 0, 0, H,
-            bgra.ctypes.data_as(win32api.LPVOID),
-            byref(bmi), win32con.DIB_RGB_COLORS
+        # Position/size overlay without activating it
+        win32gui.SetWindowPos(
+            self.hwnd, win32con.HWND_TOPMOST, L, T, W, H,
+            SWP_NOACTIVATE | SWP_SHOWWINDOW
         )
 
-        # Alpha blend onto screen
-        ptSrc = (0, 0)
-        ptDst = (L, T)
-        sz = (W, H)
-        blend = win32gui.BLENDFUNCTION()
+        # Alpha blend the DIB section to the layered window
+        blend = BLENDFUNCTION()
+        blend.BlendOp = 0          # AC_SRC_OVER
+        blend.BlendFlags = 0
         blend.SourceConstantAlpha = 255
-        blend.AlphaFormat = win32con.AC_SRC_ALPHA
+        blend.AlphaFormat = AC_SRC_ALPHA
 
+        # UpdateLayeredWindow expects src POINT=(0,0), dst POINT=(L,T), size=(W,H)
         win32gui.UpdateLayeredWindow(
-            self.hwnd, 0, ptDst, sz, self.memdc.GetSafeHdc(),
-            ptSrc, 0, blend, win32con.ULW_ALPHA
+            self.hwnd, 0, (L, T), (W, H),
+            self.memdc.GetSafeHdc(), (0, 0), 0, byref(blend), ULW_ALPHA
         )
 
     def clear(self):
@@ -151,10 +193,7 @@ class Overlay:
 
     def destroy(self):
         try:
-            if self.memdc:
-                win32gui.DeleteObject(self.hbmp)
-                win32gui.DeleteDC(self.memdc)
-                self.memdc = None
+            self._free_surface()
             if self.hwnd:
                 win32gui.DestroyWindow(self.hwnd)
                 self.hwnd = None

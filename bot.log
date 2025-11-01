@@ -221,258 +221,1568 @@
 2025-11-01 19:33:39,903 | INFO | Clicked detected spot at screen (1374,740)
 2025-11-01 19:58:26,214 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
 2025-11-01 19:58:30,526 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
-2025-11-01 20:58:29,617 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
-2025-11-01 21:46:42,444 | INFO | Battle system enabled
-2025-11-01 21:46:42,445 | INFO | Selected spot: 'NewSpot'  threshold=0.82
-2025-11-01 21:46:42,447 | INFO | Template loaded: 101x143 pixels
-2025-11-01 21:46:42,449 | INFO | Bound to 'Miscrits' (HWND=265402)
-2025-11-01 21:46:42,450 | INFO | Client area: x=4, y=176, w=1152, h=648
-2025-11-01 21:46:42,900 | INFO | ============================================================
-2025-11-01 21:46:42,900 | INFO | Bot started - Press configured hotkeys to control
-2025-11-01 21:46:42,902 | INFO | Search interval: 10.0s
-2025-11-01 21:46:42,904 | INFO | Match threshold: 0.82
-2025-11-01 21:46:42,904 | INFO | ============================================================
-2025-11-01 21:46:42,992 | ERROR | Unexpected error in main loop: 'Bot' object has no attribute 'stats'
-2025-11-01 22:00:50,977 | INFO | Battle system enabled
-2025-11-01 22:00:50,978 | INFO | Selected spot: 'NewSpot'  threshold=0.82
-2025-11-01 22:00:50,981 | INFO | Template loaded: 101x143 pixels
-2025-11-01 22:00:50,983 | INFO | Bound to 'Miscrits' (HWND=265402)
-2025-11-01 22:00:50,983 | INFO | Client area: x=4, y=176, w=1152, h=648
-2025-11-01 22:00:51,418 | INFO | ============================================================
-2025-11-01 22:00:51,419 | INFO | Bot started - Press configured hotkeys to control
-2025-11-01 22:00:51,419 | INFO | Search interval: 10.0s
-2025-11-01 22:00:51,420 | INFO | Match threshold: 0.82
-2025-11-01 22:00:51,420 | INFO | ============================================================
-2025-11-01 22:01:01,132 | INFO | Stop signal received
-2025-11-01 22:01:01,509 | INFO | ============================================================
-2025-11-01 22:01:01,509 | INFO | Bot stopped
-2025-11-01 22:01:01,510 | INFO | Session stats: 0 clicks, 0 matches, 1 misses, 0 errors
-2025-11-01 22:01:01,510 | INFO | ============================================================
-2025-11-01 22:01:07,123 | INFO | Battle system enabled
-2025-11-01 22:01:07,125 | INFO | Selected spot: 'Test'  threshold=0.82
-2025-11-01 22:01:07,126 | INFO | Template loaded: 82x83 pixels
-2025-11-01 22:01:07,128 | INFO | Bound to 'Miscrits' (HWND=265402)
-2025-11-01 22:01:07,128 | INFO | Client area: x=4, y=176, w=1152, h=648
-2025-11-01 22:01:07,574 | INFO | ============================================================
-2025-11-01 22:01:07,574 | INFO | Bot started - Press configured hotkeys to control
-2025-11-01 22:01:07,574 | INFO | Search interval: 10.0s
-2025-11-01 22:01:07,575 | INFO | Match threshold: 0.82
-2025-11-01 22:01:07,575 | INFO | ============================================================
-2025-11-01 22:01:07,839 | INFO | ✓ MATCH [0.945] at client(563,385) → clicked screen(567,561)
-2025-11-01 22:01:12,434 | INFO | Stop signal received
-2025-11-01 22:01:17,840 | INFO | ============================================================
-2025-11-01 22:01:17,840 | INFO | Bot stopped
-2025-11-01 22:01:17,840 | INFO | Session stats: 1 clicks, 1 matches, 0 misses, 0 errors
-2025-11-01 22:01:17,841 | INFO | ============================================================
-2025-11-01 22:01:20,374 | INFO | Battle system enabled
-2025-11-01 22:01:20,375 | INFO | Selected spot: 'NewSpot'  threshold=0.82
-2025-11-01 22:01:20,376 | INFO | Template loaded: 101x143 pixels
-2025-11-01 22:01:20,378 | INFO | Bound to 'Miscrits' (HWND=265402)
-2025-11-01 22:01:20,379 | INFO | Client area: x=4, y=176, w=1152, h=648
-2025-11-01 22:01:20,818 | INFO | ============================================================
-2025-11-01 22:01:20,819 | INFO | Bot started - Press configured hotkeys to control
-2025-11-01 22:01:20,820 | INFO | Search interval: 10.0s
-2025-11-01 22:01:20,820 | INFO | Match threshold: 0.82
-2025-11-01 22:01:20,820 | INFO | ============================================================
-2025-11-01 22:01:24,422 | INFO | Stop signal received
-2025-11-01 22:01:30,882 | INFO | ============================================================
-2025-11-01 22:01:30,883 | INFO | Bot stopped
-2025-11-01 22:01:30,883 | INFO | Session stats: 0 clicks, 0 matches, 1 misses, 0 errors
-2025-11-01 22:01:30,883 | INFO | ============================================================
-2025-11-01 22:01:32,649 | INFO | Battle system enabled
-2025-11-01 22:01:32,650 | INFO | Selected spot: 'NewSpot'  threshold=0.82
-2025-11-01 22:01:32,651 | INFO | Template loaded: 101x143 pixels
-2025-11-01 22:01:32,652 | INFO | Bound to 'Miscrits' (HWND=265402)
-2025-11-01 22:01:32,652 | INFO | Client area: x=4, y=176, w=1152, h=648
-2025-11-01 22:01:33,095 | INFO | ============================================================
-2025-11-01 22:01:33,095 | INFO | Bot started - Press configured hotkeys to control
-2025-11-01 22:01:33,095 | INFO | Search interval: 10.0s
-2025-11-01 22:01:33,096 | INFO | Match threshold: 0.82
-2025-11-01 22:01:33,096 | INFO | ============================================================
-2025-11-01 22:01:40,923 | INFO | Stop signal received
-2025-11-01 22:01:43,175 | INFO | ============================================================
-2025-11-01 22:01:43,176 | INFO | Bot stopped
-2025-11-01 22:01:43,176 | INFO | Session stats: 0 clicks, 0 matches, 1 misses, 0 errors
-2025-11-01 22:01:43,187 | INFO | ============================================================
-2025-11-01 22:02:07,219 | INFO | Battle system enabled
-2025-11-01 22:02:07,220 | INFO | Selected spot: 'NewSpot'  threshold=0.82
-2025-11-01 22:02:07,220 | INFO | Template loaded: 37x43 pixels
-2025-11-01 22:02:07,221 | INFO | Bound to 'Miscrits' (HWND=265402)
-2025-11-01 22:02:07,222 | INFO | Client area: x=4, y=176, w=1152, h=648
-2025-11-01 22:02:07,664 | INFO | ============================================================
-2025-11-01 22:02:07,664 | INFO | Bot started - Press configured hotkeys to control
-2025-11-01 22:02:07,664 | INFO | Search interval: 10.0s
-2025-11-01 22:02:07,665 | INFO | Match threshold: 0.82
-2025-11-01 22:02:07,665 | INFO | ============================================================
-2025-11-01 22:02:08,015 | INFO | ✓ MATCH [0.914] at client(626,309) → clicked screen(630,485)
-2025-11-01 22:02:12,455 | INFO | Stop signal received
-2025-11-01 22:02:18,016 | INFO | ============================================================
-2025-11-01 22:02:18,016 | INFO | Bot stopped
-2025-11-01 22:02:18,016 | INFO | Session stats: 1 clicks, 1 matches, 0 misses, 0 errors
-2025-11-01 22:02:18,016 | INFO | ============================================================
-2025-11-01 22:02:18,913 | INFO | Battle system enabled
-2025-11-01 22:02:18,915 | INFO | Selected spot: 'NewSpot'  threshold=0.82
-2025-11-01 22:02:18,916 | INFO | Template loaded: 37x43 pixels
-2025-11-01 22:02:18,919 | INFO | Bound to 'Miscrits' (HWND=265402)
-2025-11-01 22:02:18,919 | INFO | Client area: x=4, y=176, w=1152, h=648
-2025-11-01 22:02:19,386 | INFO | ============================================================
-2025-11-01 22:02:19,387 | INFO | Bot started - Press configured hotkeys to control
-2025-11-01 22:02:19,387 | INFO | Search interval: 10.0s
-2025-11-01 22:02:19,387 | INFO | Match threshold: 0.82
-2025-11-01 22:02:19,387 | INFO | ============================================================
-2025-11-01 22:02:19,698 | INFO | ✓ MATCH [0.856] at client(596,333) → clicked screen(600,509)
-2025-11-01 22:02:23,366 | INFO | Stop signal received
-2025-11-01 22:02:29,698 | INFO | ============================================================
-2025-11-01 22:02:29,699 | INFO | Bot stopped
-2025-11-01 22:02:29,699 | INFO | Session stats: 1 clicks, 1 matches, 0 misses, 0 errors
-2025-11-01 22:02:29,699 | INFO | ============================================================
-2025-11-01 22:03:27,957 | INFO | Battle system enabled
-2025-11-01 22:03:27,958 | INFO | Selected spot: 'NewSpot'  threshold=0.82
-2025-11-01 22:03:27,959 | INFO | Template loaded: 37x43 pixels
-2025-11-01 22:03:27,960 | INFO | Bound to 'Miscrits' (HWND=265402)
-2025-11-01 22:03:27,960 | INFO | Client area: x=4, y=176, w=1152, h=648
-2025-11-01 22:03:28,392 | INFO | ============================================================
-2025-11-01 22:03:28,393 | INFO | Bot started - Press configured hotkeys to control
-2025-11-01 22:03:28,393 | INFO | Search interval: 10.0s
-2025-11-01 22:03:28,393 | INFO | Match threshold: 0.82
-2025-11-01 22:03:28,393 | INFO | ============================================================
-2025-11-01 22:03:28,633 | INFO | ✓ MATCH [0.856] at client(596,333) → clicked screen(600,509)
-2025-11-01 22:04:06,901 | INFO | Stop signal received
-2025-11-01 22:04:08,792 | INFO | ============================================================
-2025-11-01 22:04:08,792 | INFO | Bot stopped
-2025-11-01 22:04:08,793 | INFO | Session stats: 1 clicks, 1 matches, 3 misses, 0 errors
-2025-11-01 22:04:08,793 | INFO | ============================================================
-2025-11-01 22:04:16,180 | INFO | Battle system enabled
-2025-11-01 22:04:16,181 | INFO | Selected spot: 'Test'  threshold=0.82
-2025-11-01 22:04:16,182 | INFO | Template loaded: 82x83 pixels
-2025-11-01 22:04:16,183 | INFO | Bound to 'Miscrits' (HWND=265402)
-2025-11-01 22:04:16,183 | INFO | Client area: x=4, y=176, w=1152, h=648
-2025-11-01 22:04:16,620 | INFO | ============================================================
-2025-11-01 22:04:16,620 | INFO | Bot started - Press configured hotkeys to control
-2025-11-01 22:04:16,620 | INFO | Search interval: 10.0s
-2025-11-01 22:04:16,621 | INFO | Match threshold: 0.82
-2025-11-01 22:04:16,621 | INFO | ============================================================
-2025-11-01 22:04:16,854 | INFO | ✓ MATCH [0.961] at client(483,359) → clicked screen(487,535)
-2025-11-01 22:04:40,303 | INFO | Stop signal received
-2025-11-01 22:50:29,421 | INFO | Battle system enabled
-2025-11-01 22:50:29,421 | INFO | Selected spot: 'NewSpot'  threshold=0.82
-2025-11-01 22:50:29,423 | INFO | Template loaded: 37x43 pixels
-2025-11-01 22:50:29,425 | INFO | Bound to 'Miscrits' (HWND=265402)
-2025-11-01 22:50:29,425 | INFO | Client area: x=4, y=176, w=1152, h=648
-2025-11-01 22:50:29,727 | INFO | ============================================================
-2025-11-01 22:50:29,727 | INFO | Bot started - Press configured hotkeys to control
-2025-11-01 22:50:29,727 | INFO | Search interval: 10.0s
-2025-11-01 22:50:29,728 | INFO | Match threshold: 0.82
-2025-11-01 22:50:29,729 | INFO | ============================================================
-2025-11-01 22:50:29,988 | INFO | ✓ MATCH [0.886] at client(598,331) → clicked screen(602,507)
-2025-11-01 22:50:54,742 | INFO | Stop signal received
-2025-11-01 22:51:00,140 | INFO | ============================================================
-2025-11-01 22:51:00,140 | INFO | Bot stopped
-2025-11-01 22:51:00,141 | INFO | Session stats: 1 clicks, 1 matches, 2 misses, 0 errors
-2025-11-01 22:51:00,141 | INFO | ============================================================
-2025-11-01 22:51:04,036 | INFO | Battle system enabled
-2025-11-01 22:51:04,037 | INFO | Selected spot: 'NewSpot'  threshold=0.82
-2025-11-01 22:51:04,038 | INFO | Template loaded: 37x43 pixels
-2025-11-01 22:51:04,039 | INFO | Bound to 'Miscrits' (HWND=265402)
-2025-11-01 22:51:04,039 | INFO | Client area: x=4, y=263, w=1152, h=648
-2025-11-01 22:51:04,485 | INFO | ============================================================
-2025-11-01 22:51:04,486 | INFO | Bot started - Press configured hotkeys to control
-2025-11-01 22:51:04,486 | INFO | Search interval: 10.0s
-2025-11-01 22:51:04,486 | INFO | Match threshold: 0.82
-2025-11-01 22:51:04,487 | INFO | ============================================================
-2025-11-01 22:51:04,746 | INFO | ✓ MATCH [0.886] at client(598,331) → clicked screen(602,594)
-2025-11-01 22:51:35,078 | INFO | ✓ MATCH [0.825] at client(596,333) → clicked screen(600,596)
-2025-11-01 22:51:55,346 | INFO | ✓ MATCH [0.825] at client(596,333) → clicked screen(600,596)
-2025-11-01 22:52:03,902 | INFO | Stop signal received
-2025-11-01 22:52:05,346 | INFO | ============================================================
-2025-11-01 22:52:05,346 | INFO | Bot stopped
-2025-11-01 22:52:05,346 | INFO | Session stats: 3 clicks, 3 matches, 3 misses, 0 errors
-2025-11-01 22:52:05,346 | INFO | ============================================================
-2025-11-01 23:38:59,857 | INFO | ⚔️ Battle system enabled
-2025-11-01 23:38:59,860 | INFO | Selected spot: 'NewSpot'  threshold=0.82
-2025-11-01 23:38:59,893 | INFO | Template loaded: 37x43 pixels
-2025-11-01 23:38:59,895 | INFO | Bound to 'Miscrits' (HWND=265402)
-2025-11-01 23:38:59,896 | INFO | Client area: x=-9, y=213, w=1152, h=648
-2025-11-01 23:39:00,345 | INFO | ============================================================
-2025-11-01 23:39:00,345 | INFO | 🤖 Bot started - Press configured hotkeys to control
-2025-11-01 23:39:00,346 | INFO | 🔍 Search interval: 10.0s
-2025-11-01 23:39:00,346 | INFO | 🎯 Match threshold: 0.82
-2025-11-01 23:39:00,346 | INFO | ⚔️  Auto-battle: ENABLED
-2025-11-01 23:39:00,347 | INFO | ============================================================
-2025-11-01 23:39:00,350 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
-2025-11-01 23:39:00,576 | INFO | ✓ MATCH [0.997] at client(672,291) → clicked screen(663,504)
-2025-11-01 23:39:00,853 | INFO | ⏳ Waiting for battle to start...
-2025-11-01 23:39:12,854 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
-2025-11-01 23:39:22,306 | INFO | 🛑 Stop signal received
-2025-11-01 23:39:22,940 | INFO | ============================================================
-2025-11-01 23:39:22,940 | INFO | 🛑 Bot stopped
-2025-11-01 23:39:22,940 | INFO | 📊 Session stats:
-2025-11-01 23:39:22,941 | INFO |    • Spot clicks: 1
-2025-11-01 23:39:22,941 | INFO |    • Template matches: 1
-2025-11-01 23:39:22,941 | INFO |    • Template misses: 1
-2025-11-01 23:39:22,941 | INFO |    • Total battles: 0
-2025-11-01 23:39:22,942 | INFO |    • Captures successful: 0
-2025-11-01 23:39:22,942 | INFO |    • Skipped (not eligible): 0
-2025-11-01 23:39:22,942 | INFO |    • Defeated: 0
-2025-11-01 23:39:22,943 | INFO |    • Errors: 0
-2025-11-01 23:39:22,943 | INFO | ============================================================
-2025-11-01 23:44:12,439 | INFO | ⚔️ Battle system enabled
-2025-11-01 23:44:12,440 | INFO | Selected spot: 'NewSpot'  threshold=0.82
-2025-11-01 23:44:12,442 | INFO | Template loaded: 37x43 pixels
-2025-11-01 23:44:12,443 | INFO | Bound to 'Miscrits' (HWND=265402)
-2025-11-01 23:44:12,444 | INFO | Client area: x=208, y=230, w=1152, h=648
-2025-11-01 23:44:12,875 | INFO | ============================================================
-2025-11-01 23:44:12,876 | INFO | 🤖 Bot started - Press configured hotkeys to control
-2025-11-01 23:44:12,876 | INFO | 🔍 Search interval: 10.0s
-2025-11-01 23:44:12,877 | INFO | 🎯 Match threshold: 0.82
-2025-11-01 23:44:12,877 | INFO | ⚔️  Auto-battle: ENABLED
-2025-11-01 23:44:12,877 | INFO | ============================================================
-2025-11-01 23:44:12,880 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
-2025-11-01 23:44:13,103 | INFO | ✓ MATCH [0.930] at client(618,337) → clicked screen(826,567)
-2025-11-01 23:44:13,324 | INFO | ⏳ Waiting for battle to start...
-2025-11-01 23:44:25,325 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
-2025-11-01 23:44:28,957 | INFO | 🛑 Stop signal received
-2025-11-01 23:44:35,400 | INFO | ============================================================
-2025-11-01 23:44:35,401 | INFO | 🛑 Bot stopped
-2025-11-01 23:44:35,401 | INFO | 📊 Session stats:
-2025-11-01 23:44:35,401 | INFO |    • Spot clicks: 1
-2025-11-01 23:44:35,402 | INFO |    • Template matches: 1
-2025-11-01 23:44:35,402 | INFO |    • Template misses: 1
-2025-11-01 23:44:35,402 | INFO |    • Total battles: 0
-2025-11-01 23:44:35,402 | INFO |    • Captures successful: 0
-2025-11-01 23:44:35,402 | INFO |    • Skipped (not eligible): 0
-2025-11-01 23:44:35,403 | INFO |    • Defeated: 0
-2025-11-01 23:44:35,403 | INFO |    • Errors: 0
-2025-11-01 23:44:35,403 | INFO | ============================================================
-2025-11-01 23:44:37,035 | INFO | ⚔️ Battle system enabled
-2025-11-01 23:44:37,035 | INFO | Selected spot: 'NewSpot'  threshold=0.82
-2025-11-01 23:44:37,036 | INFO | Template loaded: 37x43 pixels
-2025-11-01 23:44:37,038 | INFO | Bound to 'Miscrits' (HWND=265402)
-2025-11-01 23:44:37,038 | INFO | Client area: x=208, y=230, w=1152, h=648
-2025-11-01 23:44:37,474 | INFO | ============================================================
-2025-11-01 23:44:37,475 | INFO | 🤖 Bot started - Press configured hotkeys to control
-2025-11-01 23:44:37,475 | INFO | 🔍 Search interval: 10.0s
-2025-11-01 23:44:37,475 | INFO | 🎯 Match threshold: 0.82
-2025-11-01 23:44:37,476 | INFO | ⚔️  Auto-battle: ENABLED
-2025-11-01 23:44:37,476 | INFO | ============================================================
-2025-11-01 23:44:37,477 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
-2025-11-01 23:44:37,774 | INFO | ✓ MATCH [0.878] at client(602,337) → clicked screen(810,567)
-2025-11-01 23:44:37,774 | INFO | ⏳ Waiting for battle to start...
-2025-11-01 23:44:49,776 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
-2025-11-01 23:44:59,848 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
-2025-11-01 23:45:09,944 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
-2025-11-01 23:45:20,008 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
-2025-11-01 23:45:30,088 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
-2025-11-01 23:45:35,745 | INFO | 🛑 Stop signal received
-2025-11-01 23:45:40,156 | INFO | ============================================================
-2025-11-01 23:45:40,156 | INFO | 🛑 Bot stopped
-2025-11-01 23:45:40,156 | INFO | 📊 Session stats:
-2025-11-01 23:45:40,156 | INFO |    • Spot clicks: 1
-2025-11-01 23:45:40,156 | INFO |    • Template matches: 1
-2025-11-01 23:45:40,157 | INFO |    • Template misses: 5
-2025-11-01 23:45:40,157 | INFO |    • Total battles: 0
-2025-11-01 23:45:40,158 | INFO |    • Captures successful: 0
-2025-11-01 23:45:40,158 | INFO |    • Skipped (not eligible): 0
-2025-11-01 23:45:40,158 | INFO |    • Defeated: 0
-2025-11-01 23:45:40,158 | INFO |    • Errors: 0
-2025-11-01 23:45:40,159 | INFO | ============================================================
+2025-11-01 20:37:25,297 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:37:25,306 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:37:25,389 | INFO | Bot started.
+2025-11-01 20:37:25,656 | INFO | FOUND score=0.98  client=(368,102)  clicked=(1418,389)
+2025-11-01 20:37:28,078 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:37:28,079 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:37:28,161 | INFO | Bot started.
+2025-11-01 20:37:28,391 | INFO | FOUND score=0.97  client=(338,58)  clicked=(1388,345)
+2025-11-01 20:37:30,243 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:37:30,245 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:37:30,318 | INFO | Bot started.
+2025-11-01 20:37:30,643 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:37:32,272 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:37:32,274 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:37:32,351 | INFO | Bot started.
+2025-11-01 20:37:32,663 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:37:34,931 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:37:34,932 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:37:35,013 | INFO | Bot started.
+2025-11-01 20:37:35,243 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:37:37,601 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:37:37,602 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:37:37,683 | INFO | Bot started.
+2025-11-01 20:37:38,022 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:37:40,101 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:37:40,103 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:37:40,184 | INFO | Bot started.
+2025-11-01 20:37:40,511 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:37:44,745 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:37:44,746 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:37:44,828 | INFO | Bot started.
+2025-11-01 20:37:45,081 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:37:48,656 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:37:48,656 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:37:48,741 | INFO | Bot started.
+2025-11-01 20:37:48,770 | INFO | No match score=0.76 (< 0.82)
+2025-11-01 20:37:50,699 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:37:50,701 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:37:50,785 | INFO | Bot started.
+2025-11-01 20:37:50,817 | INFO | No match score=0.76 (< 0.82)
+2025-11-01 20:37:53,749 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:37:53,750 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:37:53,834 | INFO | Bot started.
+2025-11-01 20:37:54,148 | INFO | FOUND score=0.98  client=(624,40)  clicked=(1674,327)
+2025-11-01 20:37:58,743 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:37:58,745 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:37:58,823 | INFO | Bot started.
+2025-11-01 20:37:59,236 | INFO | FOUND score=0.99  client=(102,126)  clicked=(1152,413)
+2025-11-01 20:38:19,426 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:38:19,427 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:38:19,508 | INFO | Bot started.
+2025-11-01 20:38:19,721 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:38:35,682 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:38:35,683 | INFO | Bound to Miscrits client: (x=0, y=23, w=2560, h=1369)
+2025-11-01 20:38:35,780 | INFO | Bot started.
+2025-11-01 20:38:35,873 | INFO | No match score=0.43 (< 0.82)
+2025-11-01 20:38:40,099 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:38:40,100 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:38:40,178 | INFO | Bot started.
+2025-11-01 20:38:40,492 | INFO | FOUND score=0.96  client=(66,116)  clicked=(1116,403)
+2025-11-01 20:40:53,886 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:40:53,888 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:40:53,973 | INFO | Bot started.
+2025-11-01 20:40:54,193 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:41:03,582 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:41:03,584 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:41:03,662 | INFO | Bot started.
+2025-11-01 20:41:04,001 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:41:13,038 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:41:13,039 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:41:13,123 | INFO | Bot started.
+2025-11-01 20:41:13,414 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:41:50,948 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:41:50,950 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:41:51,031 | INFO | Bot started.
+2025-11-01 20:41:51,304 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:41:58,700 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:41:58,701 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:41:58,789 | INFO | Bot started.
+2025-11-01 20:41:59,039 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:42:01,281 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:42:01,282 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:42:01,362 | INFO | Bot started.
+2025-11-01 20:42:01,676 | INFO | FOUND score=0.98  client=(214,132)  clicked=(1264,419)
+2025-11-01 20:42:04,057 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:42:04,059 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:42:04,142 | INFO | Bot started.
+2025-11-01 20:42:04,420 | INFO | FOUND score=0.97  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:42:08,015 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:42:08,016 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:42:08,097 | INFO | Bot started.
+2025-11-01 20:42:08,388 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:42:09,986 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:42:09,988 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:42:10,068 | INFO | Bot started.
+2025-11-01 20:42:10,331 | INFO | FOUND score=0.99  client=(412,112)  clicked=(1462,399)
+2025-11-01 20:42:11,659 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:42:11,661 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:42:11,741 | INFO | Bot started.
+2025-11-01 20:42:12,056 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:42:39,728 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:42:39,730 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:42:39,811 | INFO | Bot started.
+2025-11-01 20:42:40,859 | INFO | FOUND score=0.96  client=(484,110)  clicked=(1534,397)
+2025-11-01 20:42:49,793 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:42:49,795 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:42:49,873 | INFO | Bot started.
+2025-11-01 20:42:50,928 | INFO | FOUND score=0.97  client=(508,108)  clicked=(1558,395)
+2025-11-01 20:42:53,354 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:42:53,356 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:42:53,437 | INFO | Bot started.
+2025-11-01 20:42:53,462 | INFO | No match score=0.76 (< 0.82)
+2025-11-01 20:42:55,398 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:42:55,399 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:42:55,480 | INFO | Bot started.
+2025-11-01 20:42:55,510 | INFO | No match score=0.73 (< 0.82)
+2025-11-01 20:43:01,214 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:43:01,215 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:43:01,299 | INFO | Bot started.
+2025-11-01 20:43:01,329 | INFO | No match score=0.65 (< 0.82)
+2025-11-01 20:43:07,329 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:43:07,331 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:43:07,412 | INFO | Bot started.
+2025-11-01 20:43:08,437 | INFO | FOUND score=0.98  client=(68,92)  clicked=(1118,379)
+2025-11-01 20:43:36,798 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:43:36,799 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:43:36,879 | INFO | Bot started.
+2025-11-01 20:43:36,905 | INFO | No match score=0.51 (< 0.82)
+2025-11-01 20:43:39,066 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:43:39,068 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:43:39,146 | INFO | Bot started.
+2025-11-01 20:43:39,179 | INFO | No match score=0.51 (< 0.82)
+2025-11-01 20:43:43,832 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:43:43,833 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:43:43,916 | INFO | Bot started.
+2025-11-01 20:43:43,943 | INFO | No match score=0.64 (< 0.82)
+2025-11-01 20:43:50,723 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:43:50,724 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:43:50,811 | INFO | Bot started.
+2025-11-01 20:43:50,839 | INFO | No match score=0.64 (< 0.82)
+2025-11-01 20:43:52,495 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:43:52,496 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:43:52,582 | INFO | Bot started.
+2025-11-01 20:43:52,609 | INFO | No match score=0.64 (< 0.82)
+2025-11-01 20:44:02,154 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:44:02,157 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:44:02,240 | INFO | Bot started.
+2025-11-01 20:44:02,269 | INFO | No match score=0.64 (< 0.82)
+2025-11-01 20:44:04,579 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 20:44:04,581 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 20:44:04,661 | INFO | Bot started.
+2025-11-01 20:44:04,687 | INFO | No match score=0.64 (< 0.82)
+2025-11-01 21:00:59,706 | INFO | Selected spot 'NewSpot'  template=assets/templates/spots/spot_1762004611.png  thr=0.82
+2025-11-01 21:00:59,708 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 21:00:59,785 | INFO | Bot started.
+2025-11-01 21:00:59,821 | INFO | No match score=0.64 (< 0.82)
+2025-11-01 22:21:34,278 | INFO | Selected spot 'test'  template=C:\Users\sahil\Desktop\Miscrits-Bot-1\assets\templates\spots\1762014338604.png  thr=0.70
+2025-11-01 22:21:34,279 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:21:34,356 | INFO | Bot started.
+2025-11-01 22:21:34,387 | INFO | No match score=0.16 (< 0.70)
+2025-11-01 22:21:36,167 | INFO | Selected spot 'test'  template=C:\Users\sahil\Desktop\Miscrits-Bot-1\assets\templates\spots\1762014338604.png  thr=0.70
+2025-11-01 22:21:36,169 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:21:36,252 | INFO | Bot started.
+2025-11-01 22:21:36,278 | INFO | No match score=0.16 (< 0.70)
+2025-11-01 22:21:39,207 | INFO | Selected spot 'test'  template=C:\Users\sahil\Desktop\Miscrits-Bot-1\assets\templates\spots\1762014338604.png  thr=0.70
+2025-11-01 22:21:39,209 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:21:39,292 | INFO | Bot started.
+2025-11-01 22:21:39,319 | INFO | No match score=0.16 (< 0.70)
+2025-11-01 22:21:51,049 | INFO | Selected spot 'test'  template=C:\Users\sahil\Desktop\Miscrits-Bot-1\assets\templates\spots\1762014338604.png  thr=0.70
+2025-11-01 22:21:51,049 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:21:51,129 | INFO | Bot started.
+2025-11-01 22:21:51,156 | INFO | No match score=0.16 (< 0.70)
+2025-11-01 22:22:06,687 | INFO | Selected spot 'test'  template=C:\Users\sahil\Desktop\Miscrits-Bot-1\assets\templates\spots\1762014338604.png  thr=0.70
+2025-11-01 22:22:06,689 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:22:06,768 | INFO | Bot started.
+2025-11-01 22:22:06,800 | INFO | No match score=0.16 (< 0.70)
+2025-11-01 22:22:07,887 | INFO | Selected spot 'test'  template=C:\Users\sahil\Desktop\Miscrits-Bot-1\assets\templates\spots\1762014338604.png  thr=0.70
+2025-11-01 22:22:07,888 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:22:07,969 | INFO | Bot started.
+2025-11-01 22:22:07,998 | INFO | No match score=0.16 (< 0.70)
+2025-11-01 22:22:22,389 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:22:22,390 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:22:22,478 | INFO | Bot started.
+2025-11-01 22:22:23,356 | INFO | FOUND score=0.95  client=(438,98)  clicked=(1477,390)
+2025-11-01 22:22:33,884 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:22:33,887 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:22:33,967 | INFO | Bot started.
+2025-11-01 22:22:34,835 | INFO | FOUND score=0.97  client=(518,98)  clicked=(1557,390)
+2025-11-01 22:22:36,883 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:22:36,885 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:22:36,965 | INFO | Bot started.
+2025-11-01 22:22:37,849 | INFO | FOUND score=0.90  client=(518,104)  clicked=(1557,396)
+2025-11-01 22:31:11,226 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:31:11,229 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:31:11,307 | INFO | Bot started.
+2025-11-01 22:31:11,340 | INFO | FOUND score=0.96  client=(518,104)  clicked=(client 557,180)
+2025-11-01 22:31:13,864 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:31:13,865 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:31:13,944 | INFO | Bot started.
+2025-11-01 22:31:13,971 | INFO | No match score=0.70 (< 0.85)
+2025-11-01 22:31:15,808 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:31:15,810 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:31:15,893 | INFO | Bot started.
+2025-11-01 22:31:15,919 | INFO | No match score=0.68 (< 0.85)
+2025-11-01 22:31:18,482 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:31:18,483 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:31:18,561 | INFO | Bot started.
+2025-11-01 22:31:18,586 | INFO | No match score=0.75 (< 0.85)
+2025-11-01 22:31:21,336 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:31:21,338 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:31:21,417 | INFO | Bot started.
+2025-11-01 22:31:21,449 | INFO | FOUND score=1.00  client=(450,92)  clicked=(client 489,168)
+2025-11-01 22:32:46,234 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:32:46,237 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:32:46,318 | INFO | Bot started.
+2025-11-01 22:32:46,347 | INFO | FOUND score=0.99  client=(68,136)  clicked=(client 107,212)
+2025-11-01 22:35:24,905 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:35:24,907 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:35:24,986 | INFO | Bot started.
+2025-11-01 22:35:25,019 | INFO | FOUND score=0.95  client=(166,96)  clicked=(client 205,172)
+2025-11-01 22:35:27,104 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:35:27,107 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:35:27,183 | INFO | Bot started.
+2025-11-01 22:35:27,207 | INFO | FOUND score=0.94  client=(444,32)  clicked=(client 483,108)
+2025-11-01 22:35:29,973 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:35:29,975 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:35:30,051 | INFO | Bot started.
+2025-11-01 22:35:30,083 | INFO | No match score=0.72 (< 0.85)
+2025-11-01 22:35:31,649 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:35:31,651 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:35:31,729 | INFO | Bot started.
+2025-11-01 22:35:31,759 | INFO | FOUND score=0.98  client=(416,58)  clicked=(client 455,134)
+2025-11-01 22:35:33,688 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:35:33,689 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:35:33,767 | INFO | Bot started.
+2025-11-01 22:35:33,795 | INFO | FOUND score=0.99  client=(366,78)  clicked=(client 405,154)
+2025-11-01 22:35:38,633 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:35:38,635 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:35:38,714 | INFO | Bot started.
+2025-11-01 22:35:38,741 | INFO | No match score=0.67 (< 0.85)
+2025-11-01 22:35:41,362 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:35:41,363 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:35:41,444 | INFO | Bot started.
+2025-11-01 22:35:41,469 | INFO | No match score=0.68 (< 0.85)
+2025-11-01 22:35:44,825 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:35:44,828 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:35:44,910 | INFO | Bot started.
+2025-11-01 22:35:44,936 | INFO | No match score=0.72 (< 0.85)
+2025-11-01 22:35:46,845 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:35:46,846 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:35:46,923 | INFO | Bot started.
+2025-11-01 22:35:46,950 | INFO | FOUND score=0.98  client=(186,92)  clicked=(client 225,168)
+2025-11-01 22:40:51,637 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:40:51,638 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:40:51,716 | INFO | Bot started.
+2025-11-01 22:40:51,749 | INFO | No match score=0.74 (< 0.85)
+2025-11-01 22:41:16,762 | INFO | Bot stopped.
+2025-11-01 22:41:21,562 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:41:21,564 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:41:21,642 | INFO | Bot started.
+2025-11-01 22:41:21,666 | INFO | FOUND score=0.96  client=(386,62)  clicked=(client 425,138)
+2025-11-01 22:41:46,701 | INFO | FOUND score=1.00  client=(396,58)  clicked=(client 435,134)
+2025-11-01 22:42:11,738 | INFO | FOUND score=0.97  client=(392,84)  clicked=(client 431,160)
+2025-11-01 22:42:36,767 | INFO | FOUND score=0.97  client=(422,108)  clicked=(client 461,184)
+2025-11-01 22:42:44,702 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:42:44,704 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:42:44,782 | INFO | Bot started.
+2025-11-01 22:42:44,810 | INFO | FOUND score=0.95  client=(464,68)  clicked=(client 503,144)
+2025-11-01 22:42:49,847 | INFO | No match score=0.79 (< 0.85)
+2025-11-01 22:42:54,869 | INFO | FOUND score=0.98  client=(396,88)  clicked=(client 435,164)
+2025-11-01 22:42:59,893 | INFO | FOUND score=0.98  client=(394,94)  clicked=(client 433,170)
+2025-11-01 22:43:04,924 | INFO | FOUND score=0.97  client=(384,82)  clicked=(client 423,158)
+2025-11-01 22:43:09,947 | INFO | FOUND score=0.94  client=(400,100)  clicked=(client 439,176)
+2025-11-01 22:43:14,980 | INFO | No match score=0.72 (< 0.85)
+2025-11-01 22:43:20,011 | INFO | FOUND score=0.96  client=(202,96)  clicked=(client 241,172)
+2025-11-01 22:43:25,047 | INFO | No match score=0.83 (< 0.85)
+2025-11-01 22:43:30,083 | INFO | No match score=0.83 (< 0.85)
+2025-11-01 22:43:35,118 | INFO | No match score=0.83 (< 0.85)
+2025-11-01 22:43:40,150 | INFO | No match score=0.83 (< 0.85)
+2025-11-01 22:43:45,187 | INFO | No match score=0.83 (< 0.85)
+2025-11-01 22:43:50,222 | INFO | No match score=0.83 (< 0.85)
+2025-11-01 22:43:55,247 | INFO | FOUND score=0.98  client=(320,70)  clicked=(client 359,146)
+2025-11-01 22:44:00,279 | INFO | FOUND score=0.99  client=(492,76)  clicked=(client 531,152)
+2025-11-01 22:44:05,301 | INFO | FOUND score=0.95  client=(30,136)  clicked=(client 69,212)
+2025-11-01 22:44:10,331 | INFO | FOUND score=0.94  client=(272,90)  clicked=(client 311,166)
+2025-11-01 22:44:15,357 | INFO | FOUND score=0.89  client=(552,56)  clicked=(client 591,132)
+2025-11-01 22:44:20,389 | INFO | FOUND score=0.96  client=(398,100)  clicked=(client 437,176)
+2025-11-01 22:44:25,396 | INFO | Bot stopped.
+2025-11-01 22:45:48,828 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:45:48,830 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:45:48,909 | INFO | Bot started.
+2025-11-01 22:45:48,952 | INFO | FOUND score=0.97  client=(412,108)  clicked=(screen 1451,400)
+2025-11-01 22:45:53,955 | INFO | Bot stopped.
+2025-11-01 22:46:00,472 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:46:00,475 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:46:00,555 | INFO | Bot started.
+2025-11-01 22:46:00,600 | INFO | FOUND score=0.97  client=(518,100)  clicked=(screen 1557,392)
+2025-11-01 22:46:05,648 | INFO | FOUND score=0.93  client=(520,100)  clicked=(screen 1559,392)
+2025-11-01 22:46:10,703 | INFO | FOUND score=0.99  client=(414,88)  clicked=(screen 1453,380)
+2025-11-01 22:46:15,734 | INFO | No match score=0.28 (< 0.85)
+2025-11-01 22:46:20,772 | INFO | FOUND score=0.97  client=(518,96)  clicked=(screen 1557,388)
+2025-11-01 22:46:25,821 | INFO | FOUND score=0.98  client=(372,72)  clicked=(screen 1411,364)
+2025-11-01 22:46:30,848 | INFO | No match score=0.84 (< 0.85)
+2025-11-01 22:46:35,899 | INFO | FOUND score=0.96  client=(518,92)  clicked=(screen 1557,384)
+2025-11-01 22:46:40,920 | INFO | No match score=0.28 (< 0.85)
+2025-11-01 22:46:45,959 | INFO | FOUND score=0.96  client=(518,92)  clicked=(screen 1557,384)
+2025-11-01 22:46:50,967 | INFO | Bot stopped.
+2025-11-01 22:48:38,690 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:48:38,693 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:48:38,774 | INFO | Bot started.
+2025-11-01 22:48:38,821 | INFO | FOUND score=0.97  client=(398,74)  clicked=(screen 1437,366)
+2025-11-01 22:48:43,849 | INFO | No match score=0.28 (< 0.85)
+2025-11-01 22:48:48,899 | INFO | FOUND score=0.96  client=(518,92)  clicked=(screen 1557,384)
+2025-11-01 22:48:53,942 | INFO | FOUND score=0.98  client=(338,56)  clicked=(screen 1377,348)
+2025-11-01 22:48:58,984 | INFO | FOUND score=0.99  client=(142,94)  clicked=(screen 1181,386)
+2025-11-01 22:49:04,014 | INFO | No match score=0.30 (< 0.85)
+2025-11-01 22:49:09,038 | INFO | No match score=0.30 (< 0.85)
+2025-11-01 22:49:14,076 | INFO | FOUND score=0.96  client=(518,92)  clicked=(screen 1557,384)
+2025-11-01 22:49:19,105 | INFO | No match score=0.35 (< 0.85)
+2025-11-01 22:49:24,139 | INFO | No match score=0.00 (< 0.85)
+2025-11-01 22:49:38,346 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.85
+2025-11-01 22:49:38,349 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:49:38,429 | INFO | Bot started.
+2025-11-01 22:49:38,457 | INFO | No match score=0.35 (< 0.85)
+2025-11-01 22:49:43,487 | INFO | No match score=0.67 (< 0.85)
+2025-11-01 22:49:48,518 | INFO | No match score=0.22 (< 0.85)
+2025-11-01 22:50:25,929 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-01 22:50:25,930 | INFO | Bound to Miscrits client: (x=1000, y=216, w=1152, h=648)
+2025-11-01 22:50:26,006 | INFO | Bot started.
+2025-11-01 22:50:26,052 | INFO | FOUND score=0.69  client=(342,140)  clicked=(screen 1381,432)
+2025-11-01 22:50:31,093 | INFO | FOUND score=0.72  client=(292,92)  clicked=(screen 1331,384)
+2025-11-01 22:50:36,134 | INFO | FOUND score=0.91  client=(414,54)  clicked=(screen 1453,346)
+2025-11-01 22:50:41,189 | INFO | FOUND score=0.85  client=(494,106)  clicked=(screen 1533,398)
+2025-11-01 22:50:46,231 | INFO | FOUND score=0.94  client=(494,106)  clicked=(screen 1533,398)
+2025-11-01 22:50:51,279 | INFO | FOUND score=0.96  client=(426,84)  clicked=(screen 1465,376)
+2025-11-01 22:50:56,300 | INFO | No match score=0.40 (< 0.50)
+2025-11-01 22:51:01,331 | INFO | No match score=0.40 (< 0.50)
+2025-11-01 22:51:06,369 | INFO | FOUND score=0.97  client=(372,78)  clicked=(screen 1411,370)
+2025-11-01 22:51:11,403 | INFO | No match score=0.29 (< 0.50)
+2025-11-01 22:51:16,446 | INFO | FOUND score=0.96  client=(518,92)  clicked=(screen 1557,384)
+2025-11-01 22:51:21,477 | INFO | No match score=0.38 (< 0.50)
+2025-11-01 22:51:26,506 | INFO | No match score=0.38 (< 0.50)
+2025-11-01 22:51:31,533 | INFO | No match score=0.38 (< 0.50)
+2025-11-01 22:51:36,567 | INFO | No match score=0.38 (< 0.50)
+2025-11-01 22:51:41,592 | INFO | No match score=0.38 (< 0.50)
+2025-11-01 22:51:46,631 | INFO | No match score=0.38 (< 0.50)
+2025-11-01 22:51:51,664 | INFO | FOUND score=0.97  client=(552,46)  clicked=(screen 1591,338)
+2025-11-01 22:51:56,708 | INFO | FOUND score=0.70  client=(422,92)  clicked=(screen 1461,384)
+2025-11-01 22:52:01,714 | INFO | Bot stopped.
+2025-11-01 22:56:05,519 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-01 22:56:05,522 | INFO | Bound to Miscrits client: (x=769, y=282, w=1152, h=648)
+2025-11-01 22:56:05,522 | INFO | Input method: Direct Input (SendMessage)
+2025-11-01 22:56:05,599 | INFO | Bot started.
+2025-11-01 22:56:05,711 | INFO | Direct click at client=(523,154) screen=(1292,436)
+2025-11-01 22:56:05,712 | INFO | FOUND score=0.97 at client=(523,154)
+2025-11-01 22:56:15,869 | INFO | Direct click at client=(135,172) screen=(904,454)
+2025-11-01 22:56:15,869 | INFO | FOUND score=0.72 at client=(135,172)
+2025-11-01 22:56:20,989 | INFO | Direct click at client=(49,126) screen=(818,408)
+2025-11-01 22:56:20,990 | INFO | FOUND score=0.64 at client=(49,126)
+2025-11-01 22:56:31,022 | INFO | Bot stopped.
+2025-11-01 22:58:09,504 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-01 22:58:09,507 | INFO | Bound to Miscrits client: (x=769, y=282, w=1152, h=648)
+2025-11-01 22:58:09,507 | INFO | Input method: Direct Input (SendMessage)
+2025-11-01 22:58:09,591 | INFO | Bot started.
+2025-11-01 22:58:14,743 | INFO | Direct click at client=(425,128) screen=(1194,410)
+2025-11-01 22:58:14,743 | INFO | FOUND score=0.73 at client=(425,128)
+2025-11-01 22:58:19,840 | INFO | Direct click at client=(405,138) screen=(1174,420)
+2025-11-01 22:58:19,841 | INFO | FOUND score=0.97 at client=(405,138)
+2025-11-01 22:58:29,982 | INFO | Direct click at client=(327,152) screen=(1096,434)
+2025-11-01 22:58:29,982 | INFO | FOUND score=0.98 at client=(327,152)
+2025-11-01 22:58:35,097 | INFO | Direct click at client=(393,116) screen=(1162,398)
+2025-11-01 22:58:35,097 | INFO | FOUND score=0.88 at client=(393,116)
+2025-11-01 22:58:40,219 | INFO | Direct click at client=(387,120) screen=(1156,402)
+2025-11-01 22:58:40,219 | INFO | FOUND score=0.92 at client=(387,120)
+2025-11-01 22:58:45,230 | INFO | Bot stopped.
+2025-11-01 22:58:58,962 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-01 22:58:58,963 | INFO | Bound to Miscrits client: (x=769, y=282, w=1152, h=648)
+2025-11-01 22:58:58,963 | INFO | Input method: Direct Input (SendMessage)
+2025-11-01 22:58:59,045 | INFO | Bot started.
+2025-11-01 22:58:59,162 | INFO | Direct click at client=(413,172) screen=(1182,454)
+2025-11-01 22:58:59,162 | INFO | FOUND score=0.95 at client=(413,172)
+2025-11-01 22:59:09,311 | INFO | Direct click at client=(553,170) screen=(1322,452)
+2025-11-01 22:59:09,312 | INFO | FOUND score=1.00 at client=(553,170)
+2025-11-01 22:59:14,326 | INFO | Bot stopped.
+2025-11-01 23:23:02,905 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-01 23:23:02,914 | INFO | Bound to window: (x=754, y=216, w=1152, h=648)
+2025-11-01 23:23:02,914 | INFO | Input method: Direct Input
+2025-11-01 23:23:02,995 | INFO | ============================================================
+2025-11-01 23:23:02,995 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-01 23:23:02,995 | INFO | ============================================================
+2025-11-01 23:23:03,108 | INFO | [SEARCH] Direct click at client=(557,170)
+2025-11-01 23:23:03,108 | INFO | [SEARCH] Spot found! score=0.97
+2025-11-01 23:23:03,325 | INFO | [SEARCH] Direct click at client=(563,170)
+2025-11-01 23:23:03,326 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:23:03,519 | INFO | [SEARCH] Direct click at client=(569,170)
+2025-11-01 23:23:03,519 | INFO | [SEARCH] Spot found! score=0.90
+2025-11-01 23:23:03,737 | INFO | [SEARCH] Direct click at client=(571,170)
+2025-11-01 23:23:03,738 | INFO | [SEARCH] Spot found! score=0.89
+2025-11-01 23:23:03,957 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:03,957 | INFO | [SEARCH] Spot found! score=0.97
+2025-11-01 23:23:04,170 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:04,170 | INFO | [SEARCH] Spot found! score=0.98
+2025-11-01 23:23:12,434 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:12,434 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:23:12,653 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:12,653 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:23:12,873 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:12,873 | INFO | [SEARCH] Spot found! score=0.93
+2025-11-01 23:23:13,086 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:13,086 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:23:13,306 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:13,306 | INFO | [SEARCH] Spot found! score=0.86
+2025-11-01 23:23:13,525 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:13,525 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:23:13,726 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:13,726 | INFO | [SEARCH] Spot found! score=0.93
+2025-11-01 23:23:13,939 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:13,940 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:23:14,159 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:14,159 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:23:14,379 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:14,379 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:23:14,598 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:14,598 | INFO | [SEARCH] Spot found! score=0.92
+2025-11-01 23:23:14,805 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:14,805 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:23:15,023 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:15,023 | INFO | [SEARCH] Spot found! score=0.86
+2025-11-01 23:23:15,242 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:15,243 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:23:15,456 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:15,456 | INFO | [SEARCH] Spot found! score=0.93
+2025-11-01 23:23:15,675 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:15,676 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:23:15,895 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:15,895 | INFO | [SEARCH] Spot found! score=0.86
+2025-11-01 23:23:16,115 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:16,115 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:23:16,328 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:16,328 | INFO | [SEARCH] Spot found! score=0.93
+2025-11-01 23:23:16,547 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:16,547 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:23:16,767 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:16,767 | INFO | [SEARCH] Spot found! score=0.86
+2025-11-01 23:23:16,980 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:16,980 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:23:17,199 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:17,200 | INFO | [SEARCH] Spot found! score=0.92
+2025-11-01 23:23:17,413 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:17,413 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:23:17,634 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:17,635 | INFO | [SEARCH] Spot found! score=0.86
+2025-11-01 23:23:17,853 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:17,853 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:23:18,072 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:18,072 | INFO | [SEARCH] Spot found! score=0.92
+2025-11-01 23:23:18,285 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:18,285 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:23:18,504 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:18,504 | INFO | [SEARCH] Spot found! score=0.86
+2025-11-01 23:23:18,717 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:18,718 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:23:18,937 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:18,938 | INFO | [SEARCH] Spot found! score=0.93
+2025-11-01 23:23:19,157 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:19,157 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:23:19,367 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:19,368 | INFO | [SEARCH] Spot found! score=0.86
+2025-11-01 23:23:19,574 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:19,574 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:23:19,794 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:19,794 | INFO | [SEARCH] Spot found! score=0.92
+2025-11-01 23:23:20,007 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:20,007 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:23:20,233 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:20,233 | INFO | [SEARCH] Spot found! score=0.86
+2025-11-01 23:23:20,446 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:20,446 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:23:20,666 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:20,666 | INFO | [SEARCH] Spot found! score=0.92
+2025-11-01 23:23:20,885 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:20,885 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:23:21,105 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:21,105 | INFO | [SEARCH] Spot found! score=0.86
+2025-11-01 23:23:21,318 | INFO | [SEARCH] Direct click at client=(573,170)
+2025-11-01 23:23:21,318 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:23:21,537 | INFO | [SEARCH] Direct click at client=(571,170)
+2025-11-01 23:23:21,538 | INFO | [SEARCH] Spot found! score=0.98
+2025-11-01 23:23:21,757 | INFO | [SEARCH] Direct click at client=(541,170)
+2025-11-01 23:23:21,757 | INFO | [SEARCH] Spot found! score=1.00
+2025-11-01 23:23:21,971 | INFO | [SEARCH] Direct click at client=(505,166)
+2025-11-01 23:23:21,971 | INFO | [SEARCH] Spot found! score=0.93
+2025-11-01 23:23:22,196 | INFO | [SEARCH] Direct click at client=(505,166)
+2025-11-01 23:23:22,196 | INFO | [SEARCH] Spot found! score=0.99
+2025-11-01 23:23:22,409 | INFO | [SEARCH] Direct click at client=(529,168)
+2025-11-01 23:23:22,410 | INFO | [SEARCH] Spot found! score=0.92
+2025-11-01 23:23:22,617 | INFO | [SEARCH] Direct click at client=(543,168)
+2025-11-01 23:23:22,617 | INFO | [SEARCH] Spot found! score=0.84
+2025-11-01 23:23:22,812 | INFO | [SEARCH] Direct click at client=(551,168)
+2025-11-01 23:23:22,812 | INFO | [SEARCH] Spot found! score=0.79
+2025-11-01 23:23:23,031 | INFO | [SEARCH] Direct click at client=(553,168)
+2025-11-01 23:23:23,032 | INFO | [SEARCH] Spot found! score=0.82
+2025-11-01 23:23:23,245 | INFO | [SEARCH] Direct click at client=(555,168)
+2025-11-01 23:23:23,245 | INFO | [SEARCH] Spot found! score=0.96
+2025-11-01 23:23:23,464 | INFO | [SEARCH] Direct click at client=(555,170)
+2025-11-01 23:23:23,464 | INFO | [SEARCH] Spot found! score=0.92
+2025-11-01 23:23:23,683 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-01 23:23:23,684 | INFO | [SEARCH] Spot found! score=0.88
+2025-11-01 23:23:23,902 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-01 23:23:23,902 | INFO | [SEARCH] Spot found! score=0.89
+2025-11-01 23:23:24,117 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-01 23:23:24,117 | INFO | [SEARCH] Spot found! score=0.95
+2025-11-01 23:23:24,336 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-01 23:23:24,336 | INFO | [SEARCH] Spot found! score=0.93
+2025-11-01 23:23:40,804 | INFO | 🛑 Bot stopped.
+2025-11-01 23:25:31,689 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-01 23:25:31,690 | INFO | Bound to window: (x=754, y=216, w=1152, h=648)
+2025-11-01 23:25:31,691 | INFO | Input method: Direct Input
+2025-11-01 23:25:31,771 | INFO | ============================================================
+2025-11-01 23:25:31,773 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-01 23:25:31,773 | INFO | ============================================================
+2025-11-01 23:25:31,891 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-01 23:25:31,892 | INFO | [SEARCH] Spot found! score=0.96
+2025-11-01 23:25:32,103 | INFO | [SEARCH] Direct click at client=(561,170)
+2025-11-01 23:25:32,103 | INFO | [SEARCH] Spot found! score=0.93
+2025-11-01 23:25:32,323 | INFO | [SEARCH] Direct click at client=(565,170)
+2025-11-01 23:25:32,323 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:25:32,536 | INFO | [SEARCH] Direct click at client=(569,168)
+2025-11-01 23:25:32,537 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:25:32,756 | INFO | [SEARCH] Direct click at client=(569,168)
+2025-11-01 23:25:32,757 | INFO | [SEARCH] Spot found! score=0.96
+2025-11-01 23:25:32,976 | INFO | [SEARCH] Direct click at client=(569,170)
+2025-11-01 23:25:32,976 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:25:47,645 | INFO | [SEARCH] Direct click at client=(569,170)
+2025-11-01 23:25:47,645 | INFO | [SEARCH] Spot found! score=0.93
+2025-11-01 23:25:47,858 | INFO | [SEARCH] Direct click at client=(569,170)
+2025-11-01 23:25:47,859 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:25:48,078 | INFO | [SEARCH] Direct click at client=(569,170)
+2025-11-01 23:25:48,078 | INFO | [SEARCH] Spot found! score=0.92
+2025-11-01 23:25:48,298 | INFO | [SEARCH] Direct click at client=(569,170)
+2025-11-01 23:25:48,298 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:25:48,499 | INFO | [SEARCH] Direct click at client=(569,170)
+2025-11-01 23:25:48,500 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:25:48,609 | INFO | 🛑 Bot stopped.
+2025-11-01 23:27:11,630 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-01 23:27:11,633 | INFO | Bound to window: (x=754, y=216, w=1152, h=648)
+2025-11-01 23:27:11,633 | INFO | Input method: Direct Input
+2025-11-01 23:27:11,710 | INFO | ============================================================
+2025-11-01 23:27:11,711 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-01 23:27:11,711 | INFO | ============================================================
+2025-11-01 23:27:11,838 | INFO | [SEARCH] Direct click at client=(541,182)
+2025-11-01 23:27:11,838 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:27:11,838 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:12,165 | INFO | [SEARCH] Direct click at client=(549,180)
+2025-11-01 23:27:12,165 | INFO | [SEARCH] Spot found! score=0.91
+2025-11-01 23:27:12,165 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:12,474 | INFO | [SEARCH] Direct click at client=(553,182)
+2025-11-01 23:27:12,474 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:27:12,474 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:12,802 | INFO | [SEARCH] Direct click at client=(555,182)
+2025-11-01 23:27:12,802 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:27:12,802 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:13,039 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:13,276 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:13,511 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:13,747 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:13,978 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:14,214 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:14,450 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:14,681 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:14,916 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:15,149 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:15,378 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:15,616 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:15,847 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:16,082 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:16,316 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:16,548 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:16,780 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:17,014 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:17,245 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:17,482 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:17,719 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:17,948 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:18,183 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:18,416 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:18,646 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:18,881 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:19,116 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:19,352 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:19,589 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:19,819 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:20,057 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:20,286 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:20,522 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:20,760 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:20,990 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:21,227 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:21,464 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:21,699 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:21,929 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:22,165 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:22,401 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:22,632 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:22,862 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:23,098 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:23,330 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:23,655 | INFO | [SEARCH] Direct click at client=(557,180)
+2025-11-01 23:27:23,656 | INFO | [SEARCH] Spot found! score=0.96
+2025-11-01 23:27:23,656 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:23,978 | INFO | [SEARCH] Direct click at client=(557,180)
+2025-11-01 23:27:23,979 | INFO | [SEARCH] Spot found! score=0.96
+2025-11-01 23:27:23,979 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:24,307 | INFO | [SEARCH] Direct click at client=(561,178)
+2025-11-01 23:27:24,308 | INFO | [SEARCH] Spot found! score=0.91
+2025-11-01 23:27:24,308 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:24,630 | INFO | [SEARCH] Direct click at client=(563,176)
+2025-11-01 23:27:24,630 | INFO | [SEARCH] Spot found! score=0.89
+2025-11-01 23:27:24,630 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:24,954 | INFO | [SEARCH] Direct click at client=(563,176)
+2025-11-01 23:27:24,954 | INFO | [SEARCH] Spot found! score=0.93
+2025-11-01 23:27:24,955 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:25,271 | INFO | [SEARCH] Direct click at client=(563,176)
+2025-11-01 23:27:25,271 | INFO | [SEARCH] Spot found! score=0.89
+2025-11-01 23:27:25,271 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:25,594 | INFO | [SEARCH] Direct click at client=(563,176)
+2025-11-01 23:27:25,594 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:27:25,594 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:25,922 | INFO | [SEARCH] Direct click at client=(563,176)
+2025-11-01 23:27:25,924 | INFO | [SEARCH] Spot found! score=0.93
+2025-11-01 23:27:25,924 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:26,253 | INFO | [SEARCH] Direct click at client=(563,176)
+2025-11-01 23:27:26,253 | INFO | [SEARCH] Spot found! score=0.88
+2025-11-01 23:27:26,253 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:26,576 | INFO | [SEARCH] Direct click at client=(563,176)
+2025-11-01 23:27:26,576 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:27:26,576 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:26,887 | INFO | [SEARCH] Direct click at client=(563,176)
+2025-11-01 23:27:26,887 | INFO | [SEARCH] Spot found! score=0.94
+2025-11-01 23:27:26,887 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:27,216 | INFO | [SEARCH] Direct click at client=(565,174)
+2025-11-01 23:27:27,216 | INFO | [SEARCH] Spot found! score=0.90
+2025-11-01 23:27:27,217 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:27,539 | INFO | [SEARCH] Direct click at client=(567,174)
+2025-11-01 23:27:27,539 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:27:27,540 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:27,856 | INFO | [SEARCH] Direct click at client=(567,174)
+2025-11-01 23:27:27,856 | INFO | [SEARCH] Spot found! score=0.95
+2025-11-01 23:27:27,856 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:28,180 | INFO | [SEARCH] Direct click at client=(561,168)
+2025-11-01 23:27:28,181 | INFO | [SEARCH] Spot found! score=0.95
+2025-11-01 23:27:28,181 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:28,497 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:27:28,497 | INFO | [SEARCH] Spot found! score=0.90
+2025-11-01 23:27:28,497 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:28,820 | INFO | [SEARCH] Direct click at client=(557,170)
+2025-11-01 23:27:28,820 | INFO | [SEARCH] Spot found! score=0.92
+2025-11-01 23:27:28,820 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:29,149 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:27:29,149 | INFO | [SEARCH] Spot found! score=0.90
+2025-11-01 23:27:29,149 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:29,472 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:27:29,472 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:27:29,472 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:29,789 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:27:29,789 | INFO | [SEARCH] Spot found! score=0.92
+2025-11-01 23:27:29,789 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:30,118 | INFO | [SEARCH] Direct click at client=(563,170)
+2025-11-01 23:27:30,118 | INFO | [SEARCH] Spot found! score=0.89
+2025-11-01 23:27:30,118 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:30,441 | INFO | [SEARCH] Direct click at client=(565,170)
+2025-11-01 23:27:30,442 | INFO | [SEARCH] Spot found! score=0.87
+2025-11-01 23:27:30,442 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:30,770 | INFO | [SEARCH] Direct click at client=(567,168)
+2025-11-01 23:27:30,770 | INFO | [SEARCH] Spot found! score=0.93
+2025-11-01 23:27:30,770 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:31,093 | INFO | [SEARCH] Direct click at client=(567,168)
+2025-11-01 23:27:31,094 | INFO | [SEARCH] Spot found! score=0.91
+2025-11-01 23:27:31,094 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:31,405 | INFO | [SEARCH] Direct click at client=(567,168)
+2025-11-01 23:27:31,405 | INFO | [SEARCH] Spot found! score=0.89
+2025-11-01 23:27:31,405 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:31,733 | INFO | [SEARCH] Direct click at client=(567,168)
+2025-11-01 23:27:31,734 | INFO | [SEARCH] Spot found! score=0.96
+2025-11-01 23:27:31,734 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:32,057 | INFO | [SEARCH] Direct click at client=(581,166)
+2025-11-01 23:27:32,058 | INFO | [SEARCH] Spot found! score=0.97
+2025-11-01 23:27:32,058 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:32,386 | INFO | [SEARCH] Direct click at client=(615,150)
+2025-11-01 23:27:32,386 | INFO | [SEARCH] Spot found! score=0.93
+2025-11-01 23:27:32,386 | ERROR | Loop error: BATTLE_END
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 291, in _loop
+    self._update_overlay(state, confidence)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrits-Bot-v2\src\capture_loop.py", line 326, in _update_overlay
+    BotState.BATTLE_END: (255, 0, 255, 255),   # Magenta
+  File "C:\Users\sahil\AppData\Local\Programs\Python\Python310\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BATTLE_END
+2025-11-01 23:27:32,599 | INFO | 🛑 Bot stopped.
+2025-11-01 23:28:58,563 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-01 23:28:58,564 | INFO | Bound to window: (x=754, y=216, w=1152, h=648)
+2025-11-01 23:28:58,564 | INFO | Input method: Direct Input
+2025-11-01 23:28:58,640 | INFO | ============================================================
+2025-11-01 23:28:58,641 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-01 23:28:58,641 | INFO | ============================================================
+2025-11-01 23:28:58,659 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:28:58,793 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:28:58,914 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:28:59,039 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:29:05,427 | INFO | [SEARCH] Direct click at client=(579,170)
+2025-11-01 23:29:05,428 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:29:05,647 | INFO | [SEARCH] Direct click at client=(579,170)
+2025-11-01 23:29:05,648 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:29:05,867 | INFO | [SEARCH] Direct click at client=(579,170)
+2025-11-01 23:29:05,867 | INFO | [SEARCH] ✓ Spot found! score=0.92
+2025-11-01 23:29:06,082 | INFO | [SEARCH] Direct click at client=(579,170)
+2025-11-01 23:29:06,082 | INFO | [SEARCH] ✓ Spot found! score=0.87
+2025-11-01 23:29:06,299 | INFO | [SEARCH] Direct click at client=(579,170)
+2025-11-01 23:29:06,299 | INFO | [SEARCH] ✓ Spot found! score=0.87
+2025-11-01 23:29:06,519 | INFO | [SEARCH] Direct click at client=(579,170)
+2025-11-01 23:29:06,519 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:29:06,739 | INFO | [SEARCH] Direct click at client=(579,170)
+2025-11-01 23:29:06,739 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:29:14,417 | INFO | 🛑 Bot stopped.
+2025-11-01 23:35:00,425 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-01 23:35:00,427 | INFO | Bound to window: (x=993, y=110, w=1152, h=648)
+2025-11-01 23:35:00,427 | INFO | Input method: Direct Input
+2025-11-01 23:35:00,507 | INFO | ============================================================
+2025-11-01 23:35:00,508 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-01 23:35:00,508 | INFO | ============================================================
+2025-11-01 23:35:00,522 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:35:00,625 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-01 23:35:00,626 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-01 23:35:00,744 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:35:00,844 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:35:00,845 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:35:01,062 | INFO | [SEARCH] Direct click at client=(561,168)
+2025-11-01 23:35:01,062 | INFO | [SEARCH] ✓ Spot found! score=0.88
+2025-11-01 23:35:01,276 | INFO | [SEARCH] Direct click at client=(563,168)
+2025-11-01 23:35:01,276 | INFO | [SEARCH] ✓ Spot found! score=0.87
+2025-11-01 23:35:01,495 | INFO | [SEARCH] Direct click at client=(563,168)
+2025-11-01 23:35:01,495 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-01 23:35:01,715 | INFO | [SEARCH] Direct click at client=(563,168)
+2025-11-01 23:35:01,716 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-01 23:35:08,569 | INFO | [SEARCH] Direct click at client=(563,168)
+2025-11-01 23:35:08,569 | INFO | [SEARCH] ✓ Spot found! score=0.90
+2025-11-01 23:35:08,783 | INFO | [SEARCH] Direct click at client=(563,168)
+2025-11-01 23:35:08,784 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-01 23:35:09,002 | INFO | [SEARCH] Direct click at client=(563,168)
+2025-11-01 23:35:09,002 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-01 23:35:09,222 | INFO | [SEARCH] Direct click at client=(541,152)
+2025-11-01 23:35:09,223 | INFO | [SEARCH] ✓ Spot found! score=0.99
+2025-11-01 23:35:09,441 | INFO | [SEARCH] Direct click at client=(499,130)
+2025-11-01 23:35:09,442 | INFO | [SEARCH] ✓ Spot found! score=0.99
+2025-11-01 23:35:09,660 | INFO | [SEARCH] Direct click at client=(445,108)
+2025-11-01 23:35:09,660 | INFO | [SEARCH] ✓ Spot found! score=0.82
+2025-11-01 23:35:09,881 | INFO | [SEARCH] Direct click at client=(391,86)
+2025-11-01 23:35:09,881 | INFO | [SEARCH] ✓ Spot found! score=0.91
+2025-11-01 23:35:10,094 | INFO | [SEARCH] Direct click at client=(359,76)
+2025-11-01 23:35:10,094 | INFO | [SEARCH] ✓ Spot found! score=0.92
+2025-11-01 23:35:10,313 | INFO | [SEARCH] Direct click at client=(167,158)
+2025-11-01 23:35:10,314 | INFO | [SEARCH] ✓ Spot found! score=0.73
+2025-11-01 23:35:10,533 | INFO | [SEARCH] Direct click at client=(129,144)
+2025-11-01 23:35:10,533 | INFO | [SEARCH] ✓ Spot found! score=0.73
+2025-11-01 23:35:10,746 | INFO | [SEARCH] Direct click at client=(79,126)
+2025-11-01 23:35:10,746 | INFO | [SEARCH] ✓ Spot found! score=0.73
+2025-11-01 23:35:16,301 | INFO | [SEARCH] Direct click at client=(103,76)
+2025-11-01 23:35:16,301 | INFO | [SEARCH] ✓ Spot found! score=0.60
+2025-11-01 23:35:16,514 | INFO | [SEARCH] Direct click at client=(119,86)
+2025-11-01 23:35:16,514 | INFO | [SEARCH] ✓ Spot found! score=0.72
+2025-11-01 23:35:16,733 | INFO | [SEARCH] Direct click at client=(135,104)
+2025-11-01 23:35:16,733 | INFO | [SEARCH] ✓ Spot found! score=0.72
+2025-11-01 23:35:16,953 | INFO | [SEARCH] Direct click at client=(145,118)
+2025-11-01 23:35:16,953 | INFO | [SEARCH] ✓ Spot found! score=0.72
+2025-11-01 23:35:17,166 | INFO | [SEARCH] Direct click at client=(151,130)
+2025-11-01 23:35:17,166 | INFO | [SEARCH] ✓ Spot found! score=0.74
+2025-11-01 23:35:17,367 | INFO | [SEARCH] Direct click at client=(153,136)
+2025-11-01 23:35:17,367 | INFO | [SEARCH] ✓ Spot found! score=0.72
+2025-11-01 23:35:17,581 | INFO | [SEARCH] Direct click at client=(153,140)
+2025-11-01 23:35:17,582 | INFO | [SEARCH] ✓ Spot found! score=0.72
+2025-11-01 23:35:17,800 | INFO | [SEARCH] Direct click at client=(155,142)
+2025-11-01 23:35:17,800 | INFO | [SEARCH] ✓ Spot found! score=0.72
+2025-11-01 23:35:18,020 | INFO | [SEARCH] Direct click at client=(159,146)
+2025-11-01 23:35:18,021 | INFO | [SEARCH] ✓ Spot found! score=0.74
+2025-11-01 23:35:18,239 | INFO | [SEARCH] Direct click at client=(179,158)
+2025-11-01 23:35:18,239 | INFO | [SEARCH] ✓ Spot found! score=0.74
+2025-11-01 23:35:18,453 | INFO | [SEARCH] Direct click at client=(195,168)
+2025-11-01 23:35:18,453 | INFO | [SEARCH] ✓ Spot found! score=0.71
+2025-11-01 23:35:18,673 | INFO | [SEARCH] Direct click at client=(213,178)
+2025-11-01 23:35:18,673 | INFO | [SEARCH] ✓ Spot found! score=0.72
+2025-11-01 23:35:18,904 | INFO | [SEARCH] Direct click at client=(223,186)
+2025-11-01 23:35:18,905 | INFO | [SEARCH] ✓ Spot found! score=0.74
+2025-11-01 23:35:19,123 | INFO | [SEARCH] Direct click at client=(409,104)
+2025-11-01 23:35:19,124 | INFO | [SEARCH] ✓ Spot found! score=0.79
+2025-11-01 23:35:19,342 | INFO | [SEARCH] Direct click at client=(429,112)
+2025-11-01 23:35:19,343 | INFO | [SEARCH] ✓ Spot found! score=0.85
+2025-11-01 23:35:19,562 | INFO | [SEARCH] Direct click at client=(467,126)
+2025-11-01 23:35:19,562 | INFO | [SEARCH] ✓ Spot found! score=0.95
+2025-11-01 23:35:19,776 | INFO | [SEARCH] Direct click at client=(511,146)
+2025-11-01 23:35:19,776 | INFO | [SEARCH] ✓ Spot found! score=0.93
+2025-11-01 23:35:19,996 | INFO | [SEARCH] Direct click at client=(537,158)
+2025-11-01 23:35:19,996 | INFO | [SEARCH] ✓ Spot found! score=0.88
+2025-11-01 23:35:20,215 | INFO | [SEARCH] Direct click at client=(547,164)
+2025-11-01 23:35:20,215 | INFO | [SEARCH] ✓ Spot found! score=0.90
+2025-11-01 23:35:20,428 | INFO | [SEARCH] Direct click at client=(553,166)
+2025-11-01 23:35:20,428 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:35:20,648 | INFO | [SEARCH] Direct click at client=(555,168)
+2025-11-01 23:35:20,648 | INFO | [SEARCH] ✓ Spot found! score=0.95
+2025-11-01 23:35:20,879 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:35:20,879 | INFO | [SEARCH] ✓ Spot found! score=0.87
+2025-11-01 23:35:21,093 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:35:21,093 | INFO | [SEARCH] ✓ Spot found! score=0.89
+2025-11-01 23:35:21,313 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:35:21,313 | INFO | [SEARCH] ✓ Spot found! score=0.93
+2025-11-01 23:35:21,526 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:35:21,526 | INFO | [SEARCH] ✓ Spot found! score=0.92
+2025-11-01 23:35:21,745 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:35:21,745 | INFO | [SEARCH] ✓ Spot found! score=0.87
+2025-11-01 23:35:21,964 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:35:21,965 | INFO | [SEARCH] ✓ Spot found! score=0.86
+2025-11-01 23:35:22,184 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:35:22,184 | INFO | [SEARCH] ✓ Spot found! score=0.93
+2025-11-01 23:35:22,403 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:35:22,403 | INFO | [SEARCH] ✓ Spot found! score=0.92
+2025-11-01 23:35:59,912 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:35:59,912 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:36:00,125 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:36:00,125 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:36:00,345 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:36:00,345 | INFO | [SEARCH] ✓ Spot found! score=0.93
+2025-11-01 23:36:00,558 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:36:00,558 | INFO | [SEARCH] ✓ Spot found! score=0.87
+2025-11-01 23:36:00,778 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:36:00,778 | INFO | [SEARCH] ✓ Spot found! score=0.87
+2025-11-01 23:36:00,991 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:36:00,991 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:36:01,211 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-01 23:36:01,211 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:45:42,297 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-01 23:45:42,300 | INFO | Bound to window: (x=0, y=23, w=2560, h=1369)
+2025-11-01 23:45:42,300 | INFO | Input method: Direct Input
+2025-11-01 23:45:42,394 | INFO | ============================================================
+2025-11-01 23:45:42,395 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-01 23:45:42,395 | INFO | ============================================================
+2025-11-01 23:45:42,437 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:45:42,626 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:45:44,628 | INFO | [SEARCH] Direct click at client=(1419,258)
+2025-11-01 23:45:44,628 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-01 23:45:44,908 | INFO | [SEARCH] Direct click at client=(1419,258)
+2025-11-01 23:45:44,908 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-01 23:45:45,170 | INFO | [SEARCH] Direct click at client=(1459,256)
+2025-11-01 23:45:45,170 | INFO | [SEARCH] ✓ Spot found! score=0.99
+2025-11-01 23:45:45,438 | INFO | [SEARCH] Direct click at client=(1511,256)
+2025-11-01 23:45:45,438 | INFO | [SEARCH] ✓ Spot found! score=0.92
+2025-11-01 23:45:45,700 | INFO | [SEARCH] Direct click at client=(1535,256)
+2025-11-01 23:45:45,700 | INFO | [SEARCH] ✓ Spot found! score=0.88
+2025-11-01 23:45:45,962 | INFO | [SEARCH] Direct click at client=(1543,256)
+2025-11-01 23:45:45,963 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-01 23:45:46,244 | INFO | [SEARCH] Direct click at client=(1547,256)
+2025-11-01 23:45:46,244 | INFO | [SEARCH] ✓ Spot found! score=0.98
+2025-11-01 23:46:14,928 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-01 23:46:14,930 | INFO | Bound to window: (x=993, y=110, w=1152, h=648)
+2025-11-01 23:46:14,930 | INFO | Input method: Direct Input
+2025-11-01 23:46:15,006 | INFO | ============================================================
+2025-11-01 23:46:15,007 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-01 23:46:15,007 | INFO | ============================================================
+2025-11-01 23:46:15,025 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:46:15,156 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:46:15,282 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:46:15,416 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:48:09,373 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-01 23:48:09,375 | INFO | Bound to window: (x=993, y=110, w=1152, h=648)
+2025-11-01 23:48:09,375 | INFO | Input method: Direct Input
+2025-11-01 23:48:09,453 | INFO | ============================================================
+2025-11-01 23:48:09,454 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-01 23:48:09,454 | INFO | ============================================================
+2025-11-01 23:48:09,469 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:48:09,601 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:48:09,726 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:48:09,853 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:49:34,596 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-01 23:49:34,598 | INFO | Bound to window: (x=993, y=110, w=1152, h=648)
+2025-11-01 23:49:34,598 | INFO | Input method: Direct Input
+2025-11-01 23:49:34,676 | INFO | ============================================================
+2025-11-01 23:49:34,676 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-01 23:49:34,676 | INFO | ============================================================
+2025-11-01 23:49:34,694 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:49:34,820 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:49:34,947 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:49:35,072 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:49:36,541 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-01 23:49:36,542 | INFO | [SEARCH] ✓ Spot found! score=0.90
+2025-11-01 23:49:36,761 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-01 23:49:36,761 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-01 23:49:36,974 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-01 23:49:36,975 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:49:37,188 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-01 23:49:37,188 | INFO | [SEARCH] ✓ Spot found! score=0.89
+2025-11-01 23:49:37,413 | INFO | [SEARCH] Direct click at client=(557,170)
+2025-11-01 23:49:37,413 | INFO | [SEARCH] ✓ Spot found! score=0.87
+2025-11-01 23:49:37,633 | INFO | [SEARCH] Direct click at client=(557,170)
+2025-11-01 23:49:37,633 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:49:37,846 | INFO | [SEARCH] Direct click at client=(557,170)
+2025-11-01 23:49:37,846 | INFO | [SEARCH] ✓ Spot found! score=0.91
+2025-11-01 23:49:38,066 | INFO | [SEARCH] Direct click at client=(557,170)
+2025-11-01 23:49:38,066 | INFO | [SEARCH] ✓ Spot found! score=0.87
+2025-11-01 23:49:38,286 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:49:38,286 | INFO | [SEARCH] ✓ Spot found! score=0.87
+2025-11-01 23:49:38,498 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:49:38,498 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:49:38,700 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:49:38,700 | INFO | [SEARCH] ✓ Spot found! score=0.92
+2025-11-01 23:49:38,915 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:49:38,916 | INFO | [SEARCH] ✓ Spot found! score=0.88
+2025-11-01 23:49:39,139 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:49:39,139 | INFO | [SEARCH] ✓ Spot found! score=0.87
+2025-11-01 23:49:39,340 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:49:39,340 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:49:39,553 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:49:39,553 | INFO | [SEARCH] ✓ Spot found! score=0.92
+2025-11-01 23:49:39,772 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:49:39,773 | INFO | [SEARCH] ✓ Spot found! score=0.88
+2025-11-01 23:49:39,993 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:49:39,993 | INFO | [SEARCH] ✓ Spot found! score=0.87
+2025-11-01 23:49:40,211 | INFO | [SEARCH] Direct click at client=(559,168)
+2025-11-01 23:49:40,212 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:49:40,413 | INFO | [SEARCH] Direct click at client=(555,168)
+2025-11-01 23:49:40,413 | INFO | [SEARCH] ✓ Spot found! score=0.95
+2025-11-01 23:49:40,627 | INFO | [SEARCH] Direct click at client=(529,168)
+2025-11-01 23:49:40,627 | INFO | [SEARCH] ✓ Spot found! score=0.97
+2025-11-01 23:49:40,845 | INFO | [SEARCH] Direct click at client=(493,174)
+2025-11-01 23:49:40,846 | INFO | [SEARCH] ✓ Spot found! score=0.98
+2025-11-01 23:49:41,059 | INFO | [SEARCH] Direct click at client=(461,178)
+2025-11-01 23:49:41,059 | INFO | [SEARCH] ✓ Spot found! score=0.98
+2025-11-01 23:49:41,278 | INFO | [SEARCH] Direct click at client=(451,180)
+2025-11-01 23:49:41,279 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-01 23:49:41,492 | INFO | [SEARCH] Direct click at client=(447,182)
+2025-11-01 23:49:41,492 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-01 23:49:41,711 | INFO | [SEARCH] Direct click at client=(435,180)
+2025-11-01 23:49:41,712 | INFO | [SEARCH] ✓ Spot found! score=0.92
+2025-11-01 23:49:41,937 | INFO | [SEARCH] Direct click at client=(429,180)
+2025-11-01 23:49:41,937 | INFO | [SEARCH] ✓ Spot found! score=0.91
+2025-11-01 23:49:42,150 | INFO | [SEARCH] Direct click at client=(427,180)
+2025-11-01 23:49:42,151 | INFO | [SEARCH] ✓ Spot found! score=0.91
+2025-11-01 23:49:42,358 | INFO | [SEARCH] Direct click at client=(427,180)
+2025-11-01 23:49:42,358 | INFO | [SEARCH] ✓ Spot found! score=0.88
+2025-11-01 23:49:49,669 | INFO | 🛑 Bot stopped.
+2025-11-01 23:50:26,575 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-01 23:50:26,576 | INFO | Bound to window: (x=993, y=110, w=1152, h=648)
+2025-11-01 23:50:26,576 | INFO | Input method: Direct Input
+2025-11-01 23:50:26,659 | INFO | ============================================================
+2025-11-01 23:50:26,659 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-01 23:50:26,660 | INFO | ============================================================
+2025-11-01 23:50:26,677 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:50:26,807 | INFO | [SEARCH] Entered search mode
+2025-11-01 23:50:26,941 | INFO | [SEARCH] Entered search mode

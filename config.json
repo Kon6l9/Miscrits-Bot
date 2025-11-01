@@ -1,239 +1,114 @@
 {
-  "battle": {
-    "enabled": true,
-    "capture_hp_percent": 10,
-    "attempts": 3,
-    "defeat_skill": "Skill 1",
-    "quick_defeat": true,
-    "rois": {
-      "comment": "ROI coordinates for 1152x648 Miscrits window - CALIBRATED FROM ACTUAL SCREENSHOTS",
-      "capture_rate": {
-        "x": 560,
-        "y": 235,
-        "w": 80,
-        "h": 40,
-        "description": "Capture percentage display (e.g., '31%') - centered above 'Capture!' text"
-      },
-      "enemy_hp_bar": {
-        "x": 755,
-        "y": 205,
-        "w": 70,
-        "h": 8,
-        "description": "Enemy HP bar (Kopper) - green fill, top right"
-      },
-      "enemy_hp_text": {
-        "x": 750,
-        "y": 210,
-        "w": 80,
-        "h": 20,
-        "description": "Enemy HP text (e.g., '127/127') - below enemy name"
-      },
-      "player_hp_bar": {
-        "x": 390,
-        "y": 205,
-        "w": 85,
-        "h": 8,
-        "description": "Player HP bar (Chamille Machla) - green fill, top left"
-      },
-      "player_hp_text": {
-        "x": 390,
-        "y": 210,
-        "w": 85,
-        "h": 20,
-        "description": "Player HP text - below player name"
-      },
-      "turn_indicator": {
-        "x": 450,
-        "y": 580,
-        "w": 250,
-        "h": 30,
-        "description": "Turn indicator banner ('It's your turn!') - above skills"
-      },
-      "skills_bar": {
-        "x": 340,
-        "y": 600,
-        "w": 540,
-        "h": 70,
-        "description": "Skills bar area with visible abilities"
-      },
-      "abilities_tab": {
-        "x": 380,
-        "y": 585,
-        "w": 80,
-        "h": 25,
-        "description": "Abilities tab button"
-      },
-      "items_tab": {
-        "x": 470,
-        "y": 585,
-        "w": 80,
-        "h": 25,
-        "description": "Items tab button"
-      },
-      "skill_slot_1": {
-        "x": 405,
-        "y": 628,
-        "description": "First visible skill (leftmost) - FOIL LIGHTNING BARB"
-      },
-      "skill_slot_2": {
-        "x": 488,
-        "y": 628,
-        "description": "Second skill - KILOBLITZ"
-      },
-      "skill_slot_3": {
-        "x": 655,
-        "y": 628,
-        "description": "Third skill - HYPER-POWER"
-      },
-      "skill_slot_4": {
-        "x": 738,
-        "y": 628,
-        "description": "Fourth skill (rightmost visible) - VOLTAGE"
-      },
-      "skill_arrow_left": {
-        "x": 330,
-        "y": 628,
-        "description": "Left arrow - scroll to previous skills (if exists)"
-      },
-      "skill_arrow_right": {
-        "x": 865,
-        "y": 628,
-        "description": "Right arrow - scroll to next skills"
-      },
-      "continue_button": {
-        "x": 576,
-        "y": 580,
-        "w": 100,
-        "h": 40,
-        "description": "Continue button after battle (center bottom, appears after victory)"
-      },
-      "victory_text": {
-        "x": 400,
-        "y": 200,
-        "w": 350,
-        "h": 80,
-        "description": "Victory/defeat message area (top center)"
-      },
-      "capture_text": {
-        "x": 530,
-        "y": 230,
-        "w": 100,
-        "h": 30,
-        "description": "'Capture!' text indicator - shows when capture opportunity available"
-      },
-      "battle_circles": {
-        "x": 350,
-        "y": 250,
-        "w": 180,
-        "h": 40,
-        "description": "Four circles indicator (left side, below player HP) - battle status"
-      },
-      "enemy_name": {
-        "x": 710,
-        "y": 185,
-        "w": 110,
-        "h": 20,
-        "description": "Enemy Miscrit name (e.g., 'Kopper')"
-      },
-      "player_name": {
-        "x": 355,
-        "y": 185,
-        "w": 130,
-        "h": 20,
-        "description": "Player Miscrit name (e.g., 'Chamille Machla')"
-      },
-      "miscrit_icon_center": {
-        "x": 595,
-        "y": 190,
-        "w": 50,
-        "h": 50,
-        "description": "Center 'M' medallion icon - battle indicator"
-      }
-    },
-    "capture_skill": "Skill 12"
+  "window_title_hint": "Miscrits",
+  "resolution": {
+    "width": 1920,
+    "height": 1080
   },
-  "roi_notes": {
-    "comment": "=== ROI CALIBRATION NOTES ===",
-    "game_resolution": "1152x648",
-    "calibrated_from": "Actual in-game screenshots",
-    "coordinate_system": "Top-left corner is (0,0)",
-    "measurement_method": "Pixel-perfect measurement from screenshots",
-    "key_observations": {
-      "1": "Capture percentage (31%) is clearly visible at top center",
-      "2": "HP bars are thin green/yellow/red bars below Miscrit names",
-      "3": "Skills are displayed in a horizontal row at bottom",
-      "4": "Four skill slots visible at once (example: FOIL LIGHTNING BARB, KILOBLITZ, HYPER-POWER, VOLTAGE)",
-      "5": "'It's your turn!' banner appears above skills when player can act",
-      "6": "Skills tab has two sections: 'Abilities' and 'Items'",
-      "7": "Right arrow visible at far right of skills bar for scrolling",
-      "8": "Four circular indicators on left side (battle progression?)"
-    },
-    "detection_strategy": {
-      "battle_detection": "Look for 'It's your turn!' text OR check for skill bar presence",
-      "capture_rate": "OCR the percentage number above 'Capture!' text (31% in screenshot)",
-      "hp_monitoring": "Track green bar fill percentage in hp_bar ROI",
-      "turn_ready": "Detect blue/white 'It's your turn!' banner appearance",
-      "battle_ended": "Detect disappearance of skill bar OR appearance of victory screen"
-    },
-    "skill_system_notes": {
-      "visible_at_once": 4,
-      "total_skills": "Unknown - need to test scrolling",
-      "navigation": "Right arrow at x=865 for scrolling",
-      "skill_width": "Approximately 70-80 pixels",
-      "skill_spacing": "Approximately 80-85 pixels between centers",
-      "tabs": "Abilities tab (default) and Items tab available"
-    }
-  },
-  "eligibility": {
-    "per_rarity": {
-      "Common": {
-        "enabled": false,
-        "min_ip_rating": "A",
-        "damage_skill": "Skill 11",
-        "capture_skill": "Skill 12"
-      },
-      "Rare": {
-        "enabled": false,
-        "min_ip_rating": "A",
-        "damage_skill": "Skill 11",
-        "capture_skill": "Skill 12"
-      },
-      "Epic": {
-        "enabled": false,
-        "min_ip_rating": "A",
-        "damage_skill": "Skill 11",
-        "capture_skill": "Skill 12"
-      },
-      "Exotic": {
-        "enabled": true,
-        "min_ip_rating": "A",
-        "damage_skill": "Skill 11",
-        "capture_skill": "Skill 12"
-      },
-      "Legendary": {
-        "enabled": true,
-        "min_ip_rating": "A",
-        "damage_skill": "Skill 11",
-        "capture_skill": "Skill 12"
-      }
-    }
+  "ui_scale": 1.0,
+  "capture_engine": "mss",
+  "hotkeys": {
+    "record_spot": "x",
+    "pause_resume": "f9",
+    "stop": "f10"
   },
   "search": {
-    "cooldown_seconds": 25,
-    "delay_click_ms": 10,
+    "use_custom_spots": true,
+    "cooldown_seconds": 5,
+    "delay_click_ms": 5,
     "search_delay_ms": 10000
   },
   "alerts": {
-    "play_sound": false,
+    "play_sound": true,
     "delay_after_alert_seconds": 0
   },
-  "debug": {
-    "show_preview": false
+  "battle": {
+    "capture_hp_percent": 45,
+    "attempts": 1,
+    "capture_mode": false,
+    "skill1_template": "assets/templates/skill1.png",
+    "skill2_template": "assets/templates/skill2.png",
+    "capture_button_template": "assets/templates/capture_button.png",
+    "confirm_button_template": "assets/templates/confirm_button.png",
+    "finish_button_template": "assets/templates/finish_button.png",
+    "hp_bar_roi": [
+      100,
+      100,
+      400,
+      20
+    ],
+    "name_roi": [
+      100,
+      60,
+      420,
+      60
+    ],
+    "rarity_roi": [
+      80,
+      140,
+      90,
+      30
+    ],
+    "grade_roi": [
+      520,
+      140,
+      90,
+      40
+    ]
+  },
+  "eligibility": {
+    "name_filter": [],
+    "per_rarity": {
+      "Common": {
+        "enabled": false,
+        "min_grade": "All"
+      },
+      "Rare": {
+        "enabled": true,
+        "min_grade": "A"
+      },
+      "Epic": {
+        "enabled": true,
+        "min_grade": "A+"
+      },
+      "Exotic": {
+        "enabled": true,
+        "min_grade": "S"
+      },
+      "Legendary": {
+        "enabled": true,
+        "min_grade": "S"
+      }
+    }
+  },
+  "world": {
+    "levelup_slot": 1,
+    "enable_bonus": false,
+    "levelup_ok_template": "assets/templates/levelup_ok.png"
   },
   "input": {
-    "backend": "directinput"
+    "backend": "pyautogui",
+    "hover_delay_ms": 250,
+    "move_duration_range": [
+      0.04,
+      0.11
+    ],
+    "click_delay_ms_range": [
+      80,
+      180
+    ],
+    "move_delay_ms_range": [
+      60,
+      140
+    ]
+  },
+  "logging": {
+    "file": "bot.log",
+    "level": "INFO"
   },
   "run": {
     "selected_spot_index": 0
+  },
+  "debug": {
+    "show_preview": true
   }
 }
