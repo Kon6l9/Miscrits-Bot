@@ -11,14 +11,14 @@
     "record_spot": "x",
     "pause_resume": "f9",
     "stop": "f10",
-    "comment": "Global hotkeys for bot control (optional, requires keyboard library)"
+    "comment": "Global hotkeys for bot control"
   },
   "search": {
     "use_custom_spots": true,
     "cooldown_seconds": 25,
     "delay_click_ms": 5,
     "search_delay_ms": 10000,
-    "comment": "search_delay_ms is how often to scan for the spot template (10000ms = 10 seconds)"
+    "comment": "search_delay_ms is scan interval (10000ms = 10 seconds)"
   },
   "alerts": {
     "play_sound": true,
@@ -28,77 +28,69 @@
   },
   "battle": {
     "enabled": true,
-    "capture_hp_percent": 80,
+    "capture_hp_percent": 10,
     "attempts": 1,
-    "capture_mode": false,
-    "auto_defeat": true,
-    "skill1_template": "assets/templates/skill1.png",
-    "skill2_template": "assets/templates/skill2.png",
-    "capture_button_template": "assets/templates/capture_button.png",
-    "confirm_button_template": "assets/templates/confirm_button.png",
-    "finish_button_template": "assets/templates/finish_button.png",
-    "hp_bar_roi": [
-      100,
-      100,
-      400,
-      20
-    ],
-    "name_roi": [
-      100,
-      60,
-      420,
-      60
-    ],
-    "rarity_roi": [
+    "capture_skill": "Skill 12",
+    "defeat_skill": "Skill 1",
+    "quick_defeat": false,
+    "capture_rate_roi": [
+      570,
+      350,
       80,
-      140,
-      90,
-      30
+      35
     ],
-    "grade_roi": [
-      520,
-      140,
-      90,
-      40
+    "hp_bar_roi": [
+      650,
+      85,
+      110,
+      12
     ],
-    "comment_battle": "Battle features are framework-ready but not fully implemented yet"
+    "comment_capture_rate_roi": "ROI where capture % is displayed (e.g., '35%', '90%'). Adjust X,Y,W,H to fit your screen.",
+    "comment_hp_bar_roi": "ROI of enemy HP bar for monitoring HP percentage",
+    "comment_skills": "Skill 1 = strongest (rightmost after scroll), Skill 12 = weakest (leftmost)",
+    "comment_capture_hp": "Capture when enemy HP drops to or below this percentage"
   },
   "eligibility": {
-    "name_filter": [],
     "per_rarity": {
       "Common": {
         "enabled": false,
-        "min_grade": "All",
-        "comment": "Common Miscrits disabled by default"
+        "min_ip_rating": "B+ and Below",
+        "damage_skill": "Skill 11",
+        "capture_skill": "Skill 12",
+        "comment": "Common Miscrits - usually disabled"
       },
       "Rare": {
         "enabled": false,
-        "min_grade": "A",
-        "comment": "Capture Rare with grade A or better"
+        "min_ip_rating": "A",
+        "damage_skill": "Skill 11",
+        "capture_skill": "Skill 12",
+        "comment": "Rare Miscrits - capture A+ or better"
       },
       "Epic": {
-        "enabled": false,
-        "min_grade": "A+",
-        "comment": "Capture Epic with grade A+ or better"
+        "enabled": true,
+        "min_ip_rating": "A+",
+        "damage_skill": "Skill 11",
+        "capture_skill": "Skill 12",
+        "comment": "Epic Miscrits - capture A+ or better"
       },
       "Exotic": {
-        "enabled": false,
-        "min_grade": "S",
-        "comment": "Capture Exotic with grade S or better"
+        "enabled": true,
+        "min_ip_rating": "S",
+        "damage_skill": "Skill 11",
+        "capture_skill": "Skill 12",
+        "comment": "Exotic Miscrits - very rare, capture all"
       },
       "Legendary": {
         "enabled": true,
-        "min_grade": "S",
-        "comment": "Capture all Legendary with grade S or better"
+        "min_ip_rating": "S",
+        "damage_skill": "Skill 11",
+        "capture_skill": "Skill 12",
+        "comment": "Legendary Miscrits - capture S or better"
       }
     },
-    "comment_eligibility": "Eligibility filters will be used once battle detection is implemented"
-  },
-  "world": {
-    "levelup_slot": 1,
-    "enable_bonus": false,
-    "levelup_ok_template": "assets/templates/levelup_ok.png",
-    "comment": "Auto-level bonus allocation (not yet implemented)"
+    "comment_ip_ratings": "Available: S+, S, A+, A, B+, B, C+, C, D+, D, F+, F, F-, 'B+ and Below'",
+    "comment_damage_skill": "Skill used to chip HP down (use weak skill like 11 or 12)",
+    "comment_capture_skill": "Skill used before capture attempt (optional, use weakest)"
   },
   "input": {
     "backend": "directinput",
@@ -114,7 +106,7 @@
       60,
       140
     ],
-    "comment_backend": "Options: 'directinput' (non-intrusive), 'pydirectinput' (game focus), 'pyautogui' (fallback)",
+    "comment_backend": "Options: 'directinput' (recommended), 'pydirectinput', 'pyautogui'",
     "comment_timing": "Random delays simulate human behavior"
   },
   "logging": {
@@ -125,7 +117,7 @@
     "comment_level": "Options: DEBUG, INFO, WARNING, ERROR"
   },
   "run": {
-    "selected_spot_index": 2,
+    "selected_spot_index": 0,
     "bound_hwnd": null,
     "comment": "Runtime state - managed by UI"
   },
@@ -139,7 +131,7 @@
     "template_scale": 0.5,
     "capture_method": "mss",
     "max_fps": 2,
-    "comment_scale": "Templates are downscaled for faster matching (0.5 = 50%)",
+    "comment_scale": "Templates downscaled for faster matching (0.5 = 50%)",
     "comment_fps": "Maximum scans per second (2 = every 0.5s minimum)"
   },
   "safety": {
@@ -147,5 +139,15 @@
     "error_cooldown_seconds": 3,
     "auto_stop_on_window_loss": true,
     "comment": "Safety features to prevent issues"
+  },
+  "ocr": {
+    "tesseract_path": "",
+    "capture_rate_preprocessing": {
+      "threshold_method": "otsu",
+      "invert": true,
+      "scale": 2.0
+    },
+    "comment_tesseract_path": "Optional: specify tesseract executable path if not in PATH",
+    "comment_preprocessing": "Image preprocessing settings for better OCR accuracy"
   }
 }

@@ -354,3 +354,37 @@
 2025-11-01 22:04:16,621 | INFO | ============================================================
 2025-11-01 22:04:16,854 | INFO | ✓ MATCH [0.961] at client(483,359) → clicked screen(487,535)
 2025-11-01 22:04:40,303 | INFO | Stop signal received
+2025-11-01 22:50:29,421 | INFO | Battle system enabled
+2025-11-01 22:50:29,421 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-01 22:50:29,423 | INFO | Template loaded: 37x43 pixels
+2025-11-01 22:50:29,425 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-01 22:50:29,425 | INFO | Client area: x=4, y=176, w=1152, h=648
+2025-11-01 22:50:29,727 | INFO | ============================================================
+2025-11-01 22:50:29,727 | INFO | Bot started - Press configured hotkeys to control
+2025-11-01 22:50:29,727 | INFO | Search interval: 10.0s
+2025-11-01 22:50:29,728 | INFO | Match threshold: 0.82
+2025-11-01 22:50:29,729 | INFO | ============================================================
+2025-11-01 22:50:29,988 | INFO | ✓ MATCH [0.886] at client(598,331) → clicked screen(602,507)
+2025-11-01 22:50:54,742 | INFO | Stop signal received
+2025-11-01 22:51:00,140 | INFO | ============================================================
+2025-11-01 22:51:00,140 | INFO | Bot stopped
+2025-11-01 22:51:00,141 | INFO | Session stats: 1 clicks, 1 matches, 2 misses, 0 errors
+2025-11-01 22:51:00,141 | INFO | ============================================================
+2025-11-01 22:51:04,036 | INFO | Battle system enabled
+2025-11-01 22:51:04,037 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-01 22:51:04,038 | INFO | Template loaded: 37x43 pixels
+2025-11-01 22:51:04,039 | INFO | Bound to 'Miscrits' (HWND=265402)
+2025-11-01 22:51:04,039 | INFO | Client area: x=4, y=263, w=1152, h=648
+2025-11-01 22:51:04,485 | INFO | ============================================================
+2025-11-01 22:51:04,486 | INFO | Bot started - Press configured hotkeys to control
+2025-11-01 22:51:04,486 | INFO | Search interval: 10.0s
+2025-11-01 22:51:04,486 | INFO | Match threshold: 0.82
+2025-11-01 22:51:04,487 | INFO | ============================================================
+2025-11-01 22:51:04,746 | INFO | ✓ MATCH [0.886] at client(598,331) → clicked screen(602,594)
+2025-11-01 22:51:35,078 | INFO | ✓ MATCH [0.825] at client(596,333) → clicked screen(600,596)
+2025-11-01 22:51:55,346 | INFO | ✓ MATCH [0.825] at client(596,333) → clicked screen(600,596)
+2025-11-01 22:52:03,902 | INFO | Stop signal received
+2025-11-01 22:52:05,346 | INFO | ============================================================
+2025-11-01 22:52:05,346 | INFO | Bot stopped
+2025-11-01 22:52:05,346 | INFO | Session stats: 3 clicks, 3 matches, 3 misses, 0 errors
+2025-11-01 22:52:05,346 | INFO | ============================================================
