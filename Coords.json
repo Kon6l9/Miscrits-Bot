@@ -10,6 +10,17 @@
         0,
         0
       ]
+    },
+    {
+      "name": "sadasd",
+      "template": "",
+      "threshold": 0.82,
+      "roi": [
+        0,
+        0,
+        0,
+        0
+      ]
     }
   ]
 }
