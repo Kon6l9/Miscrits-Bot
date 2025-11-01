@@ -1,0 +1,113 @@
+{
+  "window_title_hint": "Miscrits",
+  "resolution": {
+    "width": 1920,
+    "height": 1080
+  },
+  "ui_scale": 1.0,
+  "capture_engine": "mss",
+  "hotkeys": {
+    "record_spot": "x",
+    "pause_resume": "f9",
+    "stop": "f10"
+  },
+  "search": {
+    "use_custom_spots": true,
+    "cooldown_seconds": 25,
+    "delay_click_ms": 5,
+    "search_delay_ms": 10000
+  },
+  "alerts": {
+    "play_sound": true,
+    "delay_after_alert_seconds": 0
+  },
+  "battle": {
+    "capture_hp_percent": 45,
+    "attempts": 1,
+    "capture_mode": false,
+    "skill1_template": "assets/templates/skill1.png",
+    "skill2_template": "assets/templates/skill2.png",
+    "capture_button_template": "assets/templates/capture_button.png",
+    "confirm_button_template": "assets/templates/confirm_button.png",
+    "finish_button_template": "assets/templates/finish_button.png",
+    "hp_bar_roi": [
+      100,
+      100,
+      400,
+      20
+    ],
+    "name_roi": [
+      100,
+      60,
+      420,
+      60
+    ],
+    "rarity_roi": [
+      80,
+      140,
+      90,
+      30
+    ],
+    "grade_roi": [
+      520,
+      140,
+      90,
+      40
+    ]
+  },
+  "eligibility": {
+    "name_filter": [],
+    "per_rarity": {
+      "Common": {
+        "enabled": false,
+        "min_grade": "All"
+      },
+      "Rare": {
+        "enabled": true,
+        "min_grade": "A"
+      },
+      "Epic": {
+        "enabled": true,
+        "min_grade": "A+"
+      },
+      "Exotic": {
+        "enabled": true,
+        "min_grade": "S"
+      },
+      "Legendary": {
+        "enabled": true,
+        "min_grade": "S"
+      }
+    }
+  },
+  "world": {
+    "levelup_slot": 1,
+    "enable_bonus": false,
+    "levelup_ok_template": "assets/templates/levelup_ok.png"
+  },
+  "input": {
+    "backend": "pyautogui",
+    "move_duration_range": [
+      0.04,
+      0.11
+    ],
+    "click_delay_ms_range": [
+      80,
+      180
+    ],
+    "move_delay_ms_range": [
+      60,
+      140
+    ]
+  },
+  "logging": {
+    "file": "bot.log",
+    "level": "INFO"
+  },
+  "run": {
+    "selected_spot_index": 0
+  },
+  "debug": {
+    "show_preview": true
+  }
+}
