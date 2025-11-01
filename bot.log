@@ -462,3 +462,17 @@
 2025-11-01 23:44:59,848 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
 2025-11-01 23:45:09,944 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
 2025-11-01 23:45:20,008 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
+2025-11-01 23:45:30,088 | ERROR | Battle detection error: 'function' object has no attribute 'mss'
+2025-11-01 23:45:35,745 | INFO | 🛑 Stop signal received
+2025-11-01 23:45:40,156 | INFO | ============================================================
+2025-11-01 23:45:40,156 | INFO | 🛑 Bot stopped
+2025-11-01 23:45:40,156 | INFO | 📊 Session stats:
+2025-11-01 23:45:40,156 | INFO |    • Spot clicks: 1
+2025-11-01 23:45:40,156 | INFO |    • Template matches: 1
+2025-11-01 23:45:40,157 | INFO |    • Template misses: 5
+2025-11-01 23:45:40,157 | INFO |    • Total battles: 0
+2025-11-01 23:45:40,158 | INFO |    • Captures successful: 0
+2025-11-01 23:45:40,158 | INFO |    • Skipped (not eligible): 0
+2025-11-01 23:45:40,158 | INFO |    • Defeated: 0
+2025-11-01 23:45:40,158 | INFO |    • Errors: 0
+2025-11-01 23:45:40,159 | INFO | ============================================================
