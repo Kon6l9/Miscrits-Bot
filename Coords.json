@@ -32,6 +32,17 @@
         0,
         0
       ]
+    },
+    {
+      "name": "TEST1",
+      "template": "assets/templates/spots/spot_1762095196.png",
+      "threshold": 0.82,
+      "roi": [
+        0,
+        0,
+        0,
+        0
+      ]
     }
   ]
 }

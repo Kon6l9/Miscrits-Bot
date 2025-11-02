@@ -637,3 +637,210 @@
 2025-11-02 01:26:14,677 | INFO |    • Defeated: 1
 2025-11-02 01:26:14,677 | INFO | 
 2025-11-02 01:26:14,677 | INFO | ⏳ Cooldown: 25.0s before next search
+2025-11-02 20:38:22,990 | INFO | ⚔️ Battle system enabled
+2025-11-02 20:38:22,991 | INFO | Selected spot: 'TEST1'  threshold=0.82
+2025-11-02 20:38:22,995 | INFO | Template loaded: 72x102 pixels
+2025-11-02 20:38:22,997 | INFO | Bound to 'Miscrits' (HWND=460402)
+2025-11-02 20:38:22,997 | INFO | Client area: x=74, y=159, w=1152, h=648
+2025-11-02 20:38:23,433 | INFO | ============================================================
+2025-11-02 20:38:23,434 | INFO | 🤖 Bot started - Press configured hotkeys to control
+2025-11-02 20:38:23,435 | INFO | 🔍 Search interval: 1.0s
+2025-11-02 20:38:23,435 | INFO | 🎯 Match threshold: 0.82
+2025-11-02 20:38:23,435 | INFO | ⚔️  Auto-battle: ENABLED
+2025-11-02 20:38:23,435 | INFO | ============================================================
+2025-11-02 20:38:24,029 | INFO | ✓ MATCH [0.954] at client(510,249) → clicked screen(584,408)
+2025-11-02 20:38:24,029 | INFO | ⏳ Waiting for battle to start...
+2025-11-02 20:38:27,277 | INFO | 
+2025-11-02 20:38:27,278 | INFO | ╔════════════════════════════════════════════════════════════════════╗
+2025-11-02 20:38:27,278 | INFO | ║  🎮 BATTLE #1 STARTED                                          ║
+2025-11-02 20:38:27,278 | INFO | ╚════════════════════════════════════════════════════════════════════╝
+2025-11-02 20:38:27,278 | INFO | 
+2025-11-02 20:38:39,012 | WARNING | Turn timeout - proceeding anyway
+2025-11-02 20:38:39,513 | ERROR | Capture rate detection error: 'function' object has no attribute 'mss'
+2025-11-02 20:38:39,513 | WARNING | ⚠ Could not detect Miscrit info - defaulting to defeat
+2025-11-02 20:38:39,513 | INFO | ⚔️ Defeating Miscrit with Skill 1 (quick=True)
+2025-11-02 20:38:39,873 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 20:38:42,645 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 20:38:45,481 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 20:38:48,356 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 20:38:51,356 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 20:38:54,325 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 20:38:57,123 | INFO | ⚔️ Using Skill 1 (STRONGEST)
+2025-11-02 20:39:05,279 | WARNING | ⚠ Battle did not end within timeout
+2025-11-02 20:39:06,280 | INFO | Clicking Continue...
+2025-11-02 20:39:09,044 | INFO | ✓ Clicked Continue
+2025-11-02 20:39:09,044 | INFO | 
+2025-11-02 20:39:09,044 | INFO | 📊 Session Statistics:
+2025-11-02 20:39:09,045 | INFO |    • Total battles: 1
+2025-11-02 20:39:09,045 | INFO |    • Captures: 0
+2025-11-02 20:39:09,045 | INFO |    • Skipped: 0
+2025-11-02 20:39:09,045 | INFO |    • Defeated: 1
+2025-11-02 20:39:09,045 | INFO | 
+2025-11-02 20:39:09,046 | INFO | ⏳ Cooldown: 25.0s before next search
+2025-11-02 20:41:18,870 | INFO | ⚔️ Battle system enabled
+2025-11-02 20:41:18,870 | INFO | Selected spot: 'NewSpot'  threshold=0.82
+2025-11-02 20:41:18,891 | INFO | Template loaded: 37x43 pixels
+2025-11-02 20:41:18,893 | INFO | Bound to 'Miscrits' (HWND=460402)
+2025-11-02 20:41:18,893 | INFO | Client area: x=74, y=159, w=1152, h=648
+2025-11-02 20:41:19,326 | INFO | ============================================================
+2025-11-02 20:41:19,326 | INFO | 🤖 Bot started - Press configured hotkeys to control
+2025-11-02 20:41:19,327 | INFO | 🔍 Search interval: 1.0s
+2025-11-02 20:41:19,327 | INFO | 🎯 Match threshold: 0.82
+2025-11-02 20:41:19,327 | INFO | ⚔️  Auto-battle: ENABLED
+2025-11-02 20:41:19,329 | INFO | ============================================================
+2025-11-02 20:41:23,321 | INFO | ✓ MATCH [0.883] at client(602,343) → clicked screen(676,502)
+2025-11-02 20:41:23,321 | INFO | ⏳ Waiting for battle to start...
+2025-11-02 20:41:26,549 | INFO | 
+2025-11-02 20:41:26,549 | INFO | ╔════════════════════════════════════════════════════════════════════╗
+2025-11-02 20:41:26,550 | INFO | ║  🎮 BATTLE #1 STARTED                                          ║
+2025-11-02 20:41:26,550 | INFO | ╚════════════════════════════════════════════════════════════════════╝
+2025-11-02 20:41:26,550 | INFO | 
+2025-11-02 20:41:37,255 | ERROR | Capture rate detection error: 'function' object has no attribute 'mss'
+2025-11-02 20:41:37,255 | WARNING | ⚠ Could not detect Miscrit info - defaulting to defeat
+2025-11-02 20:41:37,255 | INFO | ⚔️ Defeating Miscrit with Skill 1 (quick=True)
+2025-11-02 20:41:37,558 | INFO | ✓ Miscrit defeated!
+2025-11-02 20:41:37,835 | INFO | ✓ Battle ended!
+2025-11-02 20:41:38,837 | INFO | Clicking Continue...
+2025-11-02 20:41:41,530 | INFO | ✓ Clicked Continue
+2025-11-02 20:41:41,530 | INFO | 
+2025-11-02 20:41:41,531 | INFO | 📊 Session Statistics:
+2025-11-02 20:41:41,531 | INFO |    • Total battles: 1
+2025-11-02 20:41:41,531 | INFO |    • Captures: 0
+2025-11-02 20:41:41,531 | INFO |    • Skipped: 0
+2025-11-02 20:41:41,531 | INFO |    • Defeated: 1
+2025-11-02 20:41:41,533 | INFO | 
+2025-11-02 20:41:41,533 | INFO | ⏳ Cooldown: 25.0s before next search
+2025-11-02 20:42:13,120 | INFO | ✓ MATCH [0.877] at client(602,343) → clicked screen(676,502)
+2025-11-02 20:42:13,120 | INFO | ⏳ Waiting for battle to start...
+2025-11-02 20:42:14,923 | INFO | 🛑 Stop signal received
+2025-11-02 20:42:16,122 | INFO | ============================================================
+2025-11-02 20:42:16,122 | INFO | 🛑 Bot stopped
+2025-11-02 20:42:16,122 | INFO | 📊 Session stats:
+2025-11-02 20:42:16,122 | INFO |    • Spot clicks: 2
+2025-11-02 20:42:16,123 | INFO |    • Template matches: 2
+2025-11-02 20:42:16,123 | INFO |    • Template misses: 8
+2025-11-02 20:42:16,123 | INFO |    • Total battles: 1
+2025-11-02 20:42:16,124 | INFO |    • Captures successful: 0
+2025-11-02 20:42:16,124 | INFO |    • Skipped (not eligible): 0
+2025-11-02 20:42:16,124 | INFO |    • Defeated: 1
+2025-11-02 20:42:16,124 | INFO |    • Errors: 0
+2025-11-02 20:42:16,124 | INFO | ============================================================
+2025-11-02 21:08:46,114 | INFO | ⚔️ Battle system enabled
+2025-11-02 21:08:46,114 | INFO | ⏱️ Cooldown: 24.0s after battles
+2025-11-02 21:08:46,115 | INFO | Selected: 'NewSpot' (threshold=0.82)
+2025-11-02 21:08:46,116 | INFO | Template: 37x43
+2025-11-02 21:08:46,117 | INFO | Window: 'Miscrits' (1152x648)
+2025-11-02 21:08:46,551 | INFO | ============================================================
+2025-11-02 21:08:46,551 | INFO | 🤖 Bot started
+2025-11-02 21:08:46,552 | INFO | 🔍 Search interval: 1.0s
+2025-11-02 21:08:46,552 | INFO | 🎯 Match threshold: 0.82
+2025-11-02 21:08:46,552 | INFO | ⚔️ Battle mode: CAPTURE
+2025-11-02 21:08:46,552 | INFO | ============================================================
+2025-11-02 21:08:46,579 | INFO | 
+2025-11-02 21:08:46,580 | INFO | ╔══════════════════════════════════════════════════╗
+2025-11-02 21:08:46,580 | INFO | ║  BATTLE #1                                       ║
+2025-11-02 21:08:46,580 | INFO | ╚══════════════════════════════════════════════════╝
+2025-11-02 21:08:58,887 | WARNING | Turn timeout
+2025-11-02 21:08:58,887 | ERROR | Capture rate detection error: 'function' object has no attribute 'mss'
+2025-11-02 21:08:58,887 | WARNING | Could not detect Miscrit info
+2025-11-02 21:08:58,887 | INFO | ⚔️ Quick defeat with Skill 1
+2025-11-02 21:08:59,554 | INFO | 🛑 Stopping...
+2025-11-02 21:09:04,064 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:09:12,052 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:09:16,598 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:09:24,487 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:09:32,475 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:09:40,353 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:09:48,297 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:09:52,523 | ERROR | Battle error: 'Battle' object has no attribute 'rois'
+Traceback (most recent call last):
+  File "Z:\Work\Own\Miscrits-Bot\src\battle.py", line 717, in handle_encounter
+    self.click_continue()
+  File "Z:\Work\Own\Miscrits-Bot\src\battle.py", line 692, in click_continue
+    roi = self.rois["continue_button"]
+          ^^^^^^^^^
+AttributeError: 'Battle' object has no attribute 'rois'
+2025-11-02 21:09:52,524 | INFO | ⚔️ Quick defeat with Skill 1
+2025-11-02 21:09:57,730 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:10:02,873 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:10:10,710 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:14:52,302 | INFO | ⚔️ Battle system enabled
+2025-11-02 21:14:52,302 | INFO | ⏱️ Cooldown: 24.0s after battles
+2025-11-02 21:14:52,303 | INFO | Selected: 'NewSpot' (threshold=0.82)
+2025-11-02 21:14:52,305 | INFO | Template: 37x43
+2025-11-02 21:14:52,307 | INFO | Window: 'Miscrits' (1152x648)
+2025-11-02 21:14:52,737 | INFO | ============================================================
+2025-11-02 21:14:52,738 | INFO | 🤖 Bot started
+2025-11-02 21:14:52,738 | INFO | 🔍 Search interval: 1.0s
+2025-11-02 21:14:52,738 | INFO | 🎯 Match threshold: 0.82
+2025-11-02 21:14:52,739 | INFO | ⚔️ Battle mode: CAPTURE
+2025-11-02 21:14:52,739 | INFO | ============================================================
+2025-11-02 21:14:52,767 | INFO | 
+2025-11-02 21:14:52,767 | INFO | ╔══════════════════════════════════════════════════╗
+2025-11-02 21:14:52,767 | INFO | ║  BATTLE #1                                       ║
+2025-11-02 21:14:52,767 | INFO | ╚══════════════════════════════════════════════════╝
+2025-11-02 21:15:05,075 | WARNING | Turn timeout
+2025-11-02 21:15:05,075 | ERROR | Capture rate detection error: 'function' object has no attribute 'mss'
+2025-11-02 21:15:05,075 | WARNING | Could not detect Miscrit info
+2025-11-02 21:15:05,075 | INFO | ⚔️ Quick defeat with Skill 1
+2025-11-02 21:15:10,229 | INFO | 🛑 Stopping...
+2025-11-02 21:15:10,252 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:15:18,241 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:15:26,163 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:15:34,087 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:15:41,975 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:15:49,897 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:15:57,741 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:16:01,982 | ERROR | Battle error: 'Battle' object has no attribute 'rois'
+Traceback (most recent call last):
+  File "Z:\Work\Own\Miscrits-Bot\src\battle.py", line 717, in handle_encounter
+    self.click_continue()
+  File "Z:\Work\Own\Miscrits-Bot\src\battle.py", line 692, in click_continue
+    roi = self.rois["continue_button"]
+          ^^^^^^^^^
+AttributeError: 'Battle' object has no attribute 'rois'
+2025-11-02 21:16:01,983 | INFO | ⚔️ Quick defeat with Skill 1
+2025-11-02 21:16:07,174 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:16:15,075 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:16:22,963 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:16:30,852 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:16:38,752 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:16:46,608 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:16:54,475 | INFO | ⚔️ Using Skill 1
+2025-11-02 21:16:58,700 | INFO | 📊 Session Stats:
+2025-11-02 21:16:58,700 | INFO |    Battles: 1
+2025-11-02 21:16:58,700 | INFO |    Captures: 0
+2025-11-02 21:16:58,700 | INFO |    Skipped: 0
+2025-11-02 21:16:58,701 | INFO |    Defeated: 2
+2025-11-02 21:16:58,986 | INFO | ✓ MATCH [0.947] → clicked (372,644)
+2025-11-02 21:16:59,239 | INFO | ⏳ Waiting for battle...
+2025-11-02 21:17:02,241 | INFO | ============================================================
+2025-11-02 21:17:02,241 | INFO | 📊 Final Statistics:
+2025-11-02 21:17:02,241 | INFO |    Spot clicks: 1
+2025-11-02 21:17:02,241 | INFO |    Matches: 1
+2025-11-02 21:17:02,242 | INFO |    Total battles: 1
+2025-11-02 21:17:02,242 | INFO |    Captures: 0
+2025-11-02 21:17:02,242 | INFO |    Skipped: 0
+2025-11-02 21:17:02,242 | INFO |    Defeated: 2
+2025-11-02 21:17:02,243 | INFO |    Errors: 0
+2025-11-02 21:17:02,243 | INFO | ============================================================
+2025-11-02 21:30:55,976 | INFO | ⚔️ Battle system enabled
+2025-11-02 21:30:55,977 | INFO | ⏱️ Cooldown: 24.0s after battles
+2025-11-02 21:30:55,977 | INFO | Selected: 'NewSpot' (threshold=0.82)
+2025-11-02 21:30:55,978 | INFO | Template: 37x43
+2025-11-02 21:30:55,981 | INFO | Window: 'Miscrits' (1152x648)
+2025-11-02 21:30:56,375 | INFO | ============================================================
+2025-11-02 21:30:56,375 | INFO | 🤖 Bot started
+2025-11-02 21:30:56,376 | INFO | 🔍 Search interval: 1.0s
+2025-11-02 21:30:56,376 | INFO | 🎯 Match threshold: 0.82
+2025-11-02 21:30:56,376 | INFO | ⚔️ Battle mode: CAPTURE
+2025-11-02 21:30:56,376 | INFO | ============================================================
+2025-11-02 21:30:56,400 | INFO | 
+2025-11-02 21:30:56,400 | INFO | ╔══════════════════════════════════════════════════╗
+2025-11-02 21:30:56,401 | INFO | ║  BATTLE #1                                       ║
+2025-11-02 21:30:56,401 | INFO | ╚══════════════════════════════════════════════════╝
+2025-11-02 21:31:00,693 | INFO | 🛑 Stopping...
+2025-11-02 21:31:08,719 | WARNING | Turn timeout
+2025-11-02 21:31:08,719 | ERROR | Capture rate detection error: 'function' object has no attribute 'mss'
+2025-11-02 21:31:08,719 | WARNING | Could not detect Miscrit info
+2025-11-02 21:31:08,719 | INFO | ⚔️ Quick defeat with Skill 1
