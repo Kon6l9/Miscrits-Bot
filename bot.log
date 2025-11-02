@@ -1786,3 +1786,2171 @@ AttributeError: BATTLE_END
 2025-11-01 23:50:26,677 | INFO | [SEARCH] Entered search mode
 2025-11-01 23:50:26,807 | INFO | [SEARCH] Entered search mode
 2025-11-01 23:50:26,941 | INFO | [SEARCH] Entered search mode
+2025-11-02 00:06:14,214 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 00:06:14,222 | INFO | Bound to window: (x=993, y=110, w=1152, h=648)
+2025-11-02 00:06:14,222 | INFO | Input method: Direct Input
+2025-11-02 00:06:14,303 | INFO | ============================================================
+2025-11-02 00:06:14,303 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-02 00:06:14,303 | INFO | ============================================================
+2025-11-02 00:06:14,320 | INFO | [SEARCH] Entered search mode
+2025-11-02 00:06:14,449 | INFO | [SEARCH] Entered search mode
+2025-11-02 00:06:14,577 | INFO | [SEARCH] Entered search mode
+2025-11-02 00:06:14,709 | INFO | [SEARCH] Entered search mode
+2025-11-02 00:06:15,944 | INFO | [SEARCH] Direct click at client=(425,180)
+2025-11-02 00:06:15,944 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-02 00:06:16,163 | INFO | [SEARCH] Direct click at client=(425,180)
+2025-11-02 00:06:16,163 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-02 00:06:16,377 | INFO | [SEARCH] Direct click at client=(427,178)
+2025-11-02 00:06:16,377 | INFO | [SEARCH] ✓ Spot found! score=0.97
+2025-11-02 00:06:16,596 | INFO | [SEARCH] Direct click at client=(453,174)
+2025-11-02 00:06:16,596 | INFO | [SEARCH] ✓ Spot found! score=1.00
+2025-11-02 00:06:16,797 | INFO | [SEARCH] Direct click at client=(497,172)
+2025-11-02 00:06:16,797 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-02 00:06:17,017 | INFO | [SEARCH] Direct click at client=(529,170)
+2025-11-02 00:06:17,017 | INFO | [SEARCH] ✓ Spot found! score=0.88
+2025-11-02 00:06:17,218 | INFO | [SEARCH] Direct click at client=(543,170)
+2025-11-02 00:06:17,218 | INFO | [SEARCH] ✓ Spot found! score=0.89
+2025-11-02 00:06:17,437 | INFO | [SEARCH] Direct click at client=(551,170)
+2025-11-02 00:06:17,438 | INFO | [SEARCH] ✓ Spot found! score=0.95
+2025-11-02 00:06:17,650 | INFO | [SEARCH] Direct click at client=(553,170)
+2025-11-02 00:06:17,650 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-02 00:06:20,698 | INFO | 🛑 Bot stopped.
+2025-11-02 00:19:35,186 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 00:19:35,188 | INFO | Bound to window: (x=993, y=110, w=1152, h=648)
+2025-11-02 00:19:35,188 | INFO | Input method: Direct Input
+2025-11-02 00:19:35,269 | INFO | ============================================================
+2025-11-02 00:19:35,269 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-02 00:19:35,269 | INFO | ============================================================
+2025-11-02 00:19:35,290 | INFO | [SEARCH] Entered search mode
+2025-11-02 00:19:35,386 | INFO | [SEARCH] Direct click at client=(557,170)
+2025-11-02 00:19:35,387 | INFO | [SEARCH] ✓ Spot found! score=0.97
+2025-11-02 00:19:35,506 | INFO | [SEARCH] Entered search mode
+2025-11-02 00:19:35,604 | INFO | [SEARCH] Direct click at client=(557,170)
+2025-11-02 00:19:35,605 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-02 00:19:35,824 | INFO | [SEARCH] Direct click at client=(557,170)
+2025-11-02 00:19:35,824 | INFO | [SEARCH] ✓ Spot found! score=0.89
+2025-11-02 00:19:36,043 | INFO | [SEARCH] Direct click at client=(557,170)
+2025-11-02 00:19:36,043 | INFO | [SEARCH] ✓ Spot found! score=0.87
+2025-11-02 00:19:36,281 | INFO | [SEARCH] Direct click at client=(557,170)
+2025-11-02 00:19:36,281 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-02 00:19:36,494 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-02 00:19:36,495 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-02 00:23:37,650 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 00:23:37,651 | INFO | Bound to window: (x=993, y=110, w=1152, h=648)
+2025-11-02 00:23:37,651 | INFO | Input method: Direct Input
+2025-11-02 00:23:37,731 | INFO | ============================================================
+2025-11-02 00:23:37,731 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-02 00:23:37,731 | INFO | ============================================================
+2025-11-02 00:23:37,788 | INFO | [SEARCH] Entered search mode
+2025-11-02 00:23:37,963 | INFO | [SEARCH] Entered search mode
+2025-11-02 00:23:38,133 | INFO | [SEARCH] Entered search mode
+2025-11-02 00:23:39,389 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-02 00:23:39,390 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-02 00:23:39,638 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-02 00:23:39,638 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-02 00:23:39,887 | INFO | [SEARCH] Direct click at client=(559,170)
+2025-11-02 00:23:39,887 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-02 00:23:40,135 | INFO | [SEARCH] Direct click at client=(561,170)
+2025-11-02 00:23:40,135 | INFO | [SEARCH] ✓ Spot found! score=0.90
+2025-11-02 00:23:40,386 | INFO | [SEARCH] Direct click at client=(561,170)
+2025-11-02 00:23:40,386 | INFO | [SEARCH] ✓ Spot found! score=0.89
+2025-11-02 00:23:40,648 | INFO | [SEARCH] Direct click at client=(561,170)
+2025-11-02 00:23:40,648 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-02 00:24:36,955 | INFO | [SEARCH] Direct click at client=(563,170)
+2025-11-02 00:24:36,955 | INFO | [SEARCH] ✓ Spot found! score=0.95
+2025-11-02 00:24:37,198 | INFO | [SEARCH] Direct click at client=(563,170)
+2025-11-02 00:24:37,198 | INFO | [SEARCH] ✓ Spot found! score=0.95
+2025-11-02 00:24:37,448 | INFO | [SEARCH] Direct click at client=(563,170)
+2025-11-02 00:24:37,448 | INFO | [SEARCH] ✓ Spot found! score=0.93
+2025-11-02 00:24:37,698 | INFO | [SEARCH] Direct click at client=(563,170)
+2025-11-02 00:24:37,699 | INFO | [SEARCH] ✓ Spot found! score=0.88
+2025-11-02 00:24:37,948 | INFO | [SEARCH] Direct click at client=(563,170)
+2025-11-02 00:24:37,948 | INFO | [SEARCH] ✓ Spot found! score=0.92
+2025-11-02 00:24:38,198 | INFO | [SEARCH] Direct click at client=(563,170)
+2025-11-02 00:24:38,199 | INFO | [SEARCH] ✓ Spot found! score=0.95
+2025-11-02 00:24:54,574 | INFO | [SEARCH] Direct click at client=(563,170)
+2025-11-02 00:24:54,574 | INFO | [SEARCH] ✓ Spot found! score=0.95
+2025-11-02 00:24:54,830 | INFO | [SEARCH] Direct click at client=(563,170)
+2025-11-02 00:24:54,830 | INFO | [SEARCH] ✓ Spot found! score=0.95
+2025-11-02 00:24:55,092 | INFO | [SEARCH] Direct click at client=(563,170)
+2025-11-02 00:24:55,092 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-02 00:24:55,342 | INFO | [SEARCH] Direct click at client=(565,170)
+2025-11-02 00:24:55,342 | INFO | [SEARCH] ✓ Spot found! score=0.87
+2025-11-02 00:24:55,585 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:24:55,586 | INFO | [SEARCH] ✓ Spot found! score=0.92
+2025-11-02 00:24:55,836 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:24:55,836 | INFO | [SEARCH] ✓ Spot found! score=0.97
+2025-11-02 00:24:56,086 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:24:56,086 | INFO | [SEARCH] ✓ Spot found! score=0.97
+2025-11-02 00:24:56,336 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:24:56,336 | INFO | [SEARCH] ✓ Spot found! score=0.89
+2025-11-02 00:24:56,597 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:24:56,598 | INFO | [SEARCH] ✓ Spot found! score=0.89
+2025-11-02 00:24:56,865 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:24:56,866 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-02 00:24:57,109 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:24:57,109 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-02 00:24:57,360 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:24:57,360 | INFO | [SEARCH] ✓ Spot found! score=0.89
+2025-11-02 00:24:57,610 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:24:57,610 | INFO | [SEARCH] ✓ Spot found! score=0.92
+2025-11-02 00:24:57,859 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:24:57,859 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-02 00:24:58,122 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:24:58,122 | INFO | [SEARCH] ✓ Spot found! score=0.94
+2025-11-02 00:24:58,365 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:24:58,365 | INFO | [SEARCH] ✓ Spot found! score=0.89
+2025-11-02 00:24:59,861 | INFO | 🛑 Bot stopped.
+2025-11-02 00:30:34,360 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 00:30:34,362 | INFO | Bound to window: (x=993, y=110, w=1152, h=648)
+2025-11-02 00:30:34,362 | INFO | Input method: Direct Input
+2025-11-02 00:30:34,444 | INFO | ============================================================
+2025-11-02 00:30:34,444 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-02 00:30:34,444 | INFO | ============================================================
+2025-11-02 00:30:34,498 | INFO | [SEARCH] Entered search mode
+2025-11-02 00:30:34,601 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:30:34,601 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-02 00:30:34,753 | INFO | [SEARCH] Entered search mode
+2025-11-02 00:30:34,849 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:30:34,849 | INFO | [SEARCH] ✓ Spot found! score=0.95
+2025-11-02 00:30:35,104 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:30:35,104 | INFO | [SEARCH] ✓ Spot found! score=0.89
+2025-11-02 00:30:35,352 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:30:35,353 | INFO | [SEARCH] ✓ Spot found! score=0.92
+2025-11-02 00:30:35,602 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 00:30:35,602 | INFO | [SEARCH] ✓ Spot found! score=0.96
+2025-11-02 00:37:01,392 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 00:37:01,395 | INFO | Bound to window: (x=993, y=110, w=1152, h=648)
+2025-11-02 00:37:01,395 | INFO | Input method: Direct Input
+2025-11-02 00:37:01,481 | INFO | ============================================================
+2025-11-02 00:37:01,482 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-02 00:37:01,482 | INFO | ============================================================
+2025-11-02 00:37:01,484 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 00:37:01,551 | INFO | [BATTLE] ⚔️  Battle detected! confidence=91.79%
+2025-11-02 00:37:03,549 | INFO | [BATTLE] Still in battle... confidence=85.48%
+2025-11-02 00:37:05,571 | INFO | [BATTLE] Still in battle... confidence=85.48%
+2025-11-02 00:37:07,646 | INFO | [BATTLE] Still in battle... confidence=85.48%
+2025-11-02 00:37:09,711 | INFO | [BATTLE] Still in battle... confidence=85.48%
+2025-11-02 00:37:11,722 | INFO | [BATTLE] Still in battle... confidence=85.48%
+2025-11-02 00:37:13,745 | INFO | [BATTLE] Still in battle... confidence=85.48%
+2025-11-02 00:37:15,746 | INFO | [BATTLE] Still in battle... confidence=85.57%
+2025-11-02 00:37:17,800 | INFO | [BATTLE] Still in battle... confidence=83.30%
+2025-11-02 00:37:19,851 | INFO | [BATTLE] Still in battle... confidence=86.94%
+2025-11-02 00:37:21,927 | INFO | [BATTLE] Still in battle... confidence=91.53%
+2025-11-02 00:37:23,982 | INFO | [BATTLE] Still in battle... confidence=90.28%
+2025-11-02 00:37:26,039 | INFO | [BATTLE] Still in battle... confidence=91.55%
+2025-11-02 00:37:28,048 | INFO | [BATTLE] Still in battle... confidence=82.72%
+2025-11-02 00:37:30,062 | INFO | [BATTLE] Still in battle... confidence=82.14%
+2025-11-02 00:37:32,095 | INFO | [BATTLE] Still in battle... confidence=82.14%
+2025-11-02 00:37:34,197 | INFO | [BATTLE] Still in battle... confidence=82.35%
+2025-11-02 00:37:36,325 | INFO | [BATTLE] Still in battle... confidence=82.27%
+2025-11-02 00:37:38,320 | INFO | [BATTLE] Still in battle... confidence=82.27%
+2025-11-02 00:37:40,328 | INFO | [BATTLE] Still in battle... confidence=82.27%
+2025-11-02 00:37:42,365 | INFO | [BATTLE] Still in battle... confidence=92.09%
+2025-11-02 00:44:56,727 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 00:44:56,729 | INFO | Bound to window: (x=993, y=110, w=1152, h=648)
+2025-11-02 00:44:56,729 | INFO | Input method: Direct Input
+2025-11-02 00:44:56,811 | INFO | ============================================================
+2025-11-02 00:44:56,811 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-02 00:44:56,811 | INFO | ============================================================
+2025-11-02 00:44:56,813 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 00:44:56,927 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-02 00:44:56,927 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 00:44:57,935 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-02 00:44:57,935 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 00:44:59,894 | INFO | [BATTLE] ⚔️  Battle detected! confidence=91.35%
+2025-11-02 00:45:01,887 | INFO | [BATTLE] Still in battle... confidence=91.35%
+2025-11-02 00:45:03,902 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:45:05,980 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:45:08,087 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:45:10,128 | INFO | [BATTLE] Still in battle... confidence=91.35%
+2025-11-02 00:45:12,168 | INFO | [BATTLE] Still in battle... confidence=91.35%
+2025-11-02 00:45:14,222 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:16,307 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:18,342 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:20,372 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:22,374 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:24,459 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:26,467 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:28,489 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:30,527 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:32,534 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:34,565 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:36,645 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:38,727 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:40,788 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:42,881 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:44,939 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:47,049 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:49,056 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:51,086 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:53,190 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:55,251 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:57,325 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:45:59,411 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:46:01,498 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:03,526 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:05,574 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:07,609 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:09,693 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:11,779 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:13,864 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:15,879 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:17,923 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:19,956 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:22,005 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:24,071 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:26,174 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:28,284 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:30,345 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:32,438 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:34,490 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:36,528 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:38,580 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:40,611 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:42,610 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:44,623 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:46,650 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:48,754 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:50,817 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:52,866 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:54,927 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:56,951 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:46:59,009 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:01,004 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:03,036 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:05,088 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:07,113 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:09,164 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:11,218 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:13,231 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:15,308 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:17,392 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:19,468 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:21,514 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:23,579 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:25,592 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:27,663 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:29,707 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:31,828 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:33,871 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:35,915 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:37,942 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:39,993 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:42,011 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:44,101 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:46,119 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:48,137 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:50,235 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:52,289 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:54,350 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:56,387 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:47:58,407 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:48:00,487 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:48:02,503 | INFO | [BATTLE] Still in battle... confidence=92.14%
+2025-11-02 00:48:04,584 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:48:06,701 | INFO | [BATTLE] Still in battle... confidence=85.31%
+2025-11-02 00:48:08,781 | INFO | [BATTLE] Still in battle... confidence=82.96%
+2025-11-02 00:48:10,850 | INFO | [BATTLE] Still in battle... confidence=86.74%
+2025-11-02 00:48:12,911 | INFO | [BATTLE] Still in battle... confidence=86.14%
+2025-11-02 00:48:14,998 | INFO | [BATTLE] Still in battle... confidence=83.88%
+2025-11-02 00:48:17,000 | INFO | [BATTLE] Still in battle... confidence=82.96%
+2025-11-02 00:48:19,111 | INFO | [BATTLE] Still in battle... confidence=82.97%
+2025-11-02 00:48:21,228 | INFO | [BATTLE] Still in battle... confidence=85.54%
+2025-11-02 00:48:23,295 | INFO | [BATTLE] Still in battle... confidence=89.27%
+2025-11-02 00:48:25,404 | INFO | [BATTLE] Still in battle... confidence=91.06%
+2025-11-02 00:48:27,403 | INFO | [BATTLE] Still in battle... confidence=92.09%
+2025-11-02 00:48:29,470 | INFO | [BATTLE] Still in battle... confidence=92.10%
+2025-11-02 00:48:31,474 | INFO | [BATTLE] Still in battle... confidence=92.09%
+2025-11-02 00:48:33,527 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:48:35,523 | INFO | [BATTLE] Still in battle... confidence=92.09%
+2025-11-02 00:48:37,600 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:48:39,613 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:48:41,703 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:48:43,781 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:48:45,773 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:48:47,864 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:48:49,879 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:48:51,965 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:48:54,028 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:48:56,077 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:48:58,123 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:00,137 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:02,247 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:04,327 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:06,332 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:08,338 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:10,387 | INFO | [BATTLE] Still in battle... confidence=90.98%
+2025-11-02 00:49:12,460 | INFO | [BATTLE] Still in battle... confidence=91.53%
+2025-11-02 00:49:14,528 | INFO | [BATTLE] Still in battle... confidence=88.27%
+2025-11-02 00:49:16,566 | INFO | [BATTLE] Still in battle... confidence=91.35%
+2025-11-02 00:49:18,587 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:49:20,652 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:49:22,649 | INFO | [BATTLE] Still in battle... confidence=91.33%
+2025-11-02 00:49:24,721 | INFO | [BATTLE] Still in battle... confidence=91.33%
+2025-11-02 00:49:26,751 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:49:28,812 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:30,872 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:32,941 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:34,966 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:36,993 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:39,072 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:41,162 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:43,191 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:45,246 | INFO | [BATTLE] Still in battle... confidence=92.09%
+2025-11-02 00:49:47,247 | INFO | [BATTLE] Still in battle... confidence=92.09%
+2025-11-02 00:49:49,332 | INFO | [BATTLE] Still in battle... confidence=92.09%
+2025-11-02 00:49:51,353 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:53,392 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:55,433 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:57,514 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:49:59,568 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:01,575 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:03,626 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:05,654 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:07,732 | INFO | [BATTLE] Still in battle... confidence=92.09%
+2025-11-02 00:50:09,821 | INFO | [BATTLE] Still in battle... confidence=92.09%
+2025-11-02 00:50:11,879 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:13,909 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:15,951 | INFO | [BATTLE] Still in battle... confidence=92.26%
+2025-11-02 00:50:18,008 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:20,066 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:22,077 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:24,176 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:26,256 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:28,302 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:30,340 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:32,345 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:34,371 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:36,479 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:38,515 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:40,523 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:42,541 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:44,614 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:46,626 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:48,673 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:50,752 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:52,858 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:54,924 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:56,961 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:50:59,027 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:51:01,116 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:51:03,148 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:51:05,259 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:51:07,333 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:51:09,443 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:51:11,523 | INFO | [BATTLE] Still in battle... confidence=92.09%
+2025-11-02 00:51:13,570 | INFO | [BATTLE] Still in battle... confidence=92.09%
+2025-11-02 00:51:15,687 | INFO | [BATTLE] Still in battle... confidence=92.20%
+2025-11-02 00:51:17,789 | INFO | [BATTLE] Still in battle... confidence=92.09%
+2025-11-02 00:57:33,457 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 00:57:33,459 | INFO | Bound to window: (x=993, y=110, w=1152, h=648)
+2025-11-02 00:57:33,459 | INFO | Input method: Direct Input
+2025-11-02 00:57:33,540 | INFO | ============================================================
+2025-11-02 00:57:33,540 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-02 00:57:33,541 | INFO | ============================================================
+2025-11-02 00:57:33,542 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 00:57:33,607 | INFO | [BATTLE] ⚔️  Battle detected! confidence=91.34%
+2025-11-02 00:57:35,639 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:57:37,710 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:57:39,776 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:57:41,785 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:57:43,850 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:57:45,850 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:57:47,951 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:57:49,952 | INFO | [BATTLE] Still in battle... confidence=91.33%
+2025-11-02 00:57:51,962 | INFO | [BATTLE] Still in battle... confidence=91.33%
+2025-11-02 00:57:53,972 | INFO | [BATTLE] Still in battle... confidence=91.33%
+2025-11-02 00:57:56,077 | INFO | [BATTLE] Still in battle... confidence=91.33%
+2025-11-02 00:57:58,087 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:58:00,172 | INFO | [BATTLE] Still in battle... confidence=91.33%
+2025-11-02 00:58:02,192 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:58:04,225 | INFO | [BATTLE] Still in battle... confidence=91.33%
+2025-11-02 00:58:06,312 | INFO | [BATTLE] Still in battle... confidence=91.33%
+2025-11-02 00:58:08,336 | INFO | [BATTLE] Still in battle... confidence=91.33%
+2025-11-02 00:58:10,408 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:58:12,509 | INFO | [BATTLE] Still in battle... confidence=91.34%
+2025-11-02 00:58:13,645 | INFO | 🛑 Bot stopped.
+2025-11-02 00:59:05,451 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 00:59:05,452 | INFO | Bound to window: (x=993, y=110, w=1152, h=648)
+2025-11-02 00:59:05,452 | INFO | Input method: Direct Input
+2025-11-02 00:59:05,529 | INFO | ============================================================
+2025-11-02 00:59:05,529 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-02 00:59:05,529 | INFO | ============================================================
+2025-11-02 00:59:05,531 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 00:59:05,585 | INFO | [BATTLE] ⚔️  Battle detected! confidence=100.00%
+2025-11-02 00:59:07,577 | INFO | [BATTLE] Still in battle... confidence=100.00%
+2025-11-02 00:59:09,581 | INFO | [BATTLE] Still in battle... confidence=100.00%
+2025-11-02 00:59:11,578 | INFO | [BATTLE] Still in battle... confidence=99.35%
+2025-11-02 00:59:13,657 | INFO | [BATTLE] Still in battle... confidence=100.00%
+2025-11-02 00:59:15,707 | INFO | [BATTLE] Still in battle... confidence=89.66%
+2025-11-02 00:59:17,813 | INFO | [BATTLE] Still in battle... confidence=89.66%
+2025-11-02 00:59:19,842 | INFO | [BATTLE] Still in battle... confidence=89.66%
+2025-11-02 00:59:21,854 | INFO | [BATTLE] Still in battle... confidence=89.66%
+2025-11-02 00:59:23,957 | INFO | [BATTLE] Still in battle... confidence=89.66%
+2025-11-02 00:59:25,974 | INFO | [BATTLE] Still in battle... confidence=94.95%
+2025-11-02 00:59:27,988 | INFO | [BATTLE] Still in battle... confidence=94.95%
+2025-11-02 00:59:30,104 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 00:59:32,175 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 00:59:34,272 | INFO | [BATTLE] Still in battle... confidence=94.95%
+2025-11-02 00:59:36,342 | INFO | [BATTLE] Still in battle... confidence=94.95%
+2025-11-02 00:59:38,345 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 00:59:40,426 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 00:59:42,548 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 00:59:44,630 | INFO | [SEARCH] Battle ended, resuming spot search...
+2025-11-02 00:59:44,630 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 00:59:49,815 | INFO | [BATTLE] ⚔️  Battle detected! confidence=95.03%
+2025-11-02 00:59:51,857 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 00:59:53,958 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 00:59:55,956 | INFO | [BATTLE] Still in battle... confidence=95.16%
+2025-11-02 00:59:58,012 | INFO | [BATTLE] Still in battle... confidence=95.17%
+2025-11-02 01:00:00,056 | INFO | [BATTLE] Still in battle... confidence=95.16%
+2025-11-02 01:00:02,139 | INFO | [BATTLE] Still in battle... confidence=95.16%
+2025-11-02 01:00:04,153 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 01:00:06,244 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 01:00:08,333 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 01:00:10,410 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 01:00:12,540 | INFO | [BATTLE] Still in battle... confidence=89.66%
+2025-11-02 01:00:14,631 | INFO | [BATTLE] Still in battle... confidence=95.08%
+2025-11-02 01:00:16,722 | INFO | [BATTLE] Still in battle... confidence=95.08%
+2025-11-02 01:00:18,782 | INFO | [BATTLE] Still in battle... confidence=94.95%
+2025-11-02 01:00:20,886 | INFO | [BATTLE] Still in battle... confidence=94.95%
+2025-11-02 01:00:22,940 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 01:00:24,970 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 01:00:26,984 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 01:00:29,012 | INFO | [BATTLE] Still in battle... confidence=95.03%
+2025-11-02 01:00:38,254 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 01:00:38,257 | INFO | Bound to window: (x=993, y=110, w=1152, h=648)
+2025-11-02 01:00:38,257 | INFO | Input method: Direct Input
+2025-11-02 01:00:38,337 | INFO | ============================================================
+2025-11-02 01:00:38,337 | INFO | 🤖 Bot started with STATE DETECTION enabled
+2025-11-02 01:00:38,337 | INFO | ============================================================
+2025-11-02 01:00:38,339 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 01:00:38,460 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-02 01:00:38,460 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:00:39,470 | INFO | [SEARCH] Direct click at client=(561,170)
+2025-11-02 01:00:39,470 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:00:41,535 | INFO | [BATTLE] ⚔️  Battle detected! confidence=100.00%
+2025-11-02 01:00:43,585 | INFO | [BATTLE] Still in battle... confidence=100.00%
+2025-11-02 01:00:45,652 | INFO | [BATTLE] Still in battle... confidence=100.00%
+2025-11-02 01:00:47,733 | INFO | [BATTLE] Still in battle... confidence=100.00%
+2025-11-02 01:00:49,828 | INFO | [BATTLE] Still in battle... confidence=100.00%
+2025-11-02 01:00:51,206 | INFO | 🛑 Bot stopped.
+2025-11-02 01:05:54,452 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 01:05:54,453 | INFO | Bound to window: (x=1019, y=304, w=1152, h=648)
+2025-11-02 01:05:54,454 | INFO | Input method: Direct Input
+2025-11-02 01:05:54,530 | INFO | [BATTLE_UI] Abilities loaded: False, Items loaded: False, thr=0.86
+2025-11-02 01:05:54,531 | INFO | ============================================================
+2025-11-02 01:05:54,531 | INFO | 🤖 Bot started with STATE DETECTION enabled (Abilities+Items+Run)
+2025-11-02 01:05:54,531 | INFO | ============================================================
+2025-11-02 01:05:54,533 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 01:06:00,116 | INFO | [SEARCH] Direct click at client=(561,170)
+2025-11-02 01:06:00,116 | INFO | [SEARCH] ✓ Spot found! score=0.95 - Clicked!
+2025-11-02 01:06:01,207 | INFO | [SEARCH] Direct click at client=(561,170)
+2025-11-02 01:06:01,207 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 01:08:34,971 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 01:08:34,972 | INFO | Bound to window: (x=704, y=372, w=1152, h=648)
+2025-11-02 01:08:34,972 | INFO | Input method: Direct Input
+2025-11-02 01:08:35,046 | INFO | ============================================================
+2025-11-02 01:08:35,047 | INFO | 🤖 Bot started with OCR battle confirmation (Abilities + Items + Run)
+2025-11-02 01:08:35,047 | INFO | ============================================================
+2025-11-02 01:08:35,049 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 01:08:35,179 | ERROR | [OCR] error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-02 01:08:36,186 | ERROR | [OCR] error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-02 01:08:37,283 | ERROR | [OCR] error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-02 01:08:38,298 | ERROR | [OCR] error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-02 01:08:39,305 | ERROR | [OCR] error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-02 01:08:40,442 | INFO | [SEARCH] Direct click at client=(115,228)
+2025-11-02 01:08:40,443 | INFO | [SEARCH] ✓ Spot found! score=0.63 - Clicked!
+2025-11-02 01:08:41,439 | ERROR | [OCR] error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-02 01:08:42,555 | ERROR | [OCR] error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-02 01:08:43,642 | ERROR | [OCR] error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-02 01:08:44,741 | ERROR | [OCR] error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-02 01:08:45,843 | ERROR | [OCR] error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-02 01:08:46,905 | ERROR | [OCR] error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-02 01:08:47,931 | ERROR | [OCR] error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-02 01:08:49,059 | ERROR | [OCR] error: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-02 01:08:50,193 | INFO | [SEARCH] Direct click at client=(115,228)
+2025-11-02 01:08:50,193 | INFO | [SEARCH] ✓ Spot found! score=0.63 - Clicked!
+2025-11-02 01:12:27,078 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 01:12:27,079 | INFO | Bound to window: (x=704, y=372, w=1152, h=648)
+2025-11-02 01:12:27,079 | INFO | Input method: Direct Input
+2025-11-02 01:12:27,158 | INFO | ============================================================
+2025-11-02 01:12:27,158 | INFO | 🤖 Bot started with OCR battle confirmation (Abilities + Items + Run)
+2025-11-02 01:12:27,158 | INFO | ============================================================
+2025-11-02 01:12:27,160 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 01:12:27,223 | ERROR | Loop error: name 'reader' is not defined
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 380, in _loop
+    battle_ready, br = self._check_battle_ready(frame_bgr)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 254, in _check_battle_ready
+    o = self._ocr_has_words(frame_bgr)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 233, in _ocr_has_words
+    results = reader.readtext(frame_bgr, detail=0)
+NameError: name 'reader' is not defined
+2025-11-02 01:12:28,307 | ERROR | Loop error: name 'reader' is not defined
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 380, in _loop
+    battle_ready, br = self._check_battle_ready(frame_bgr)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 254, in _check_battle_ready
+    o = self._ocr_has_words(frame_bgr)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 233, in _ocr_has_words
+    results = reader.readtext(frame_bgr, detail=0)
+NameError: name 'reader' is not defined
+2025-11-02 01:12:29,369 | ERROR | Loop error: name 'reader' is not defined
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 380, in _loop
+    battle_ready, br = self._check_battle_ready(frame_bgr)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 254, in _check_battle_ready
+    o = self._ocr_has_words(frame_bgr)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 233, in _ocr_has_words
+    results = reader.readtext(frame_bgr, detail=0)
+NameError: name 'reader' is not defined
+2025-11-02 01:12:30,439 | ERROR | Loop error: name 'reader' is not defined
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 380, in _loop
+    battle_ready, br = self._check_battle_ready(frame_bgr)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 254, in _check_battle_ready
+    o = self._ocr_has_words(frame_bgr)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 233, in _ocr_has_words
+    results = reader.readtext(frame_bgr, detail=0)
+NameError: name 'reader' is not defined
+2025-11-02 01:12:31,484 | ERROR | Loop error: name 'reader' is not defined
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 380, in _loop
+    battle_ready, br = self._check_battle_ready(frame_bgr)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 254, in _check_battle_ready
+    o = self._ocr_has_words(frame_bgr)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 233, in _ocr_has_words
+    results = reader.readtext(frame_bgr, detail=0)
+NameError: name 'reader' is not defined
+2025-11-02 01:12:32,525 | ERROR | Loop error: name 'reader' is not defined
+Traceback (most recent call last):
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 380, in _loop
+    battle_ready, br = self._check_battle_ready(frame_bgr)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 254, in _check_battle_ready
+    o = self._ocr_has_words(frame_bgr)
+  File "C:\Users\sahil\Desktop\miscrit backup\Miscrit 3\src\capture_loop.py", line 233, in _ocr_has_words
+    results = reader.readtext(frame_bgr, detail=0)
+NameError: name 'reader' is not defined
+2025-11-02 01:14:08,186 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 01:14:08,188 | INFO | Bound to window: (x=704, y=372, w=1152, h=648)
+2025-11-02 01:14:08,188 | INFO | Input method: Direct Input
+2025-11-02 01:14:09,581 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 01:14:09,582 | INFO | ============================================================
+2025-11-02 01:14:09,582 | INFO | 🤖 Bot started with OCR battle confirmation (Abilities + Items + Run)
+2025-11-02 01:14:09,583 | INFO | ============================================================
+2025-11-02 01:14:09,584 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 01:14:13,138 | INFO | [SEARCH] Direct click at client=(373,144)
+2025-11-02 01:14:13,139 | INFO | [SEARCH] ✓ Spot found! score=0.63 - Clicked!
+2025-11-02 01:14:14,194 | INFO | [SEARCH] Direct click at client=(417,154)
+2025-11-02 01:14:14,194 | INFO | [SEARCH] ✓ Spot found! score=0.69 - Clicked!
+2025-11-02 01:14:15,248 | INFO | [SEARCH] Direct click at client=(429,126)
+2025-11-02 01:14:15,249 | INFO | [SEARCH] ✓ Spot found! score=0.73 - Clicked!
+2025-11-02 01:14:16,248 | INFO | [SEARCH] Direct click at client=(433,100)
+2025-11-02 01:14:16,249 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:14:17,278 | INFO | [SEARCH] Direct click at client=(539,162)
+2025-11-02 01:14:17,278 | INFO | [SEARCH] ✓ Spot found! score=0.88 - Clicked!
+2025-11-02 01:14:18,297 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-02 01:14:18,297 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 01:14:19,346 | INFO | [SEARCH] Direct click at client=(561,170)
+2025-11-02 01:14:19,346 | INFO | [SEARCH] ✓ Spot found! score=0.95 - Clicked!
+2025-11-02 01:14:20,394 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-02 01:14:20,394 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 01:14:21,498 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-02 01:14:21,498 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:14:22,528 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-02 01:14:22,529 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:14:23,559 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-02 01:14:23,559 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:14:24,600 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-02 01:14:24,602 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:14:25,711 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-02 01:14:25,711 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:14:26,717 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-02 01:14:26,717 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:14:27,808 | INFO | [SEARCH] Direct click at client=(561,170)
+2025-11-02 01:14:27,808 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 01:14:28,918 | INFO | [SEARCH] Direct click at client=(525,168)
+2025-11-02 01:14:28,918 | INFO | [SEARCH] ✓ Spot found! score=0.87 - Clicked!
+2025-11-02 01:14:29,997 | INFO | [SEARCH] Direct click at client=(555,168)
+2025-11-02 01:14:29,997 | INFO | [SEARCH] ✓ Spot found! score=0.75 - Clicked!
+2025-11-02 01:14:31,039 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-02 01:14:31,040 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:14:32,052 | INFO | [SEARCH] Direct click at client=(453,124)
+2025-11-02 01:14:32,052 | INFO | [SEARCH] ✓ Spot found! score=0.93 - Clicked!
+2025-11-02 01:14:33,058 | INFO | [SEARCH] Direct click at client=(367,250)
+2025-11-02 01:14:33,058 | INFO | [SEARCH] ✓ Spot found! score=0.74 - Clicked!
+2025-11-02 01:14:34,168 | INFO | [SEARCH] Direct click at client=(533,154)
+2025-11-02 01:14:34,168 | INFO | [SEARCH] ✓ Spot found! score=0.95 - Clicked!
+2025-11-02 01:14:35,216 | INFO | [SEARCH] Direct click at client=(553,168)
+2025-11-02 01:14:35,216 | INFO | [SEARCH] ✓ Spot found! score=0.80 - Clicked!
+2025-11-02 01:14:36,210 | INFO | [SEARCH] Direct click at client=(429,108)
+2025-11-02 01:14:36,210 | INFO | [SEARCH] ✓ Spot found! score=0.77 - Clicked!
+2025-11-02 01:14:37,228 | INFO | [SEARCH] Direct click at client=(515,164)
+2025-11-02 01:14:37,228 | INFO | [SEARCH] ✓ Spot found! score=0.75 - Clicked!
+2025-11-02 01:15:06,086 | INFO | [BATTLE] Ready. run=94.97%  abilities=True  items=True
+2025-11-02 01:15:09,976 | INFO | [BATTLE] Still in battle. run=94.97% abil=True items=True
+2025-11-02 01:15:18,391 | INFO | [BATTLE] Still in battle. run=94.97% abil=True items=True
+2025-11-02 01:15:25,365 | INFO | [SEARCH] Battle UI missing. run=100.00% abil=False items=True
+2025-11-02 01:15:25,365 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 01:15:35,796 | INFO | [BATTLE] Ready. run=100.00%  abilities=True  items=True
+2025-11-02 01:15:38,378 | INFO | [SEARCH] Battle UI missing. run=94.88% abil=False items=False
+2025-11-02 01:15:38,379 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 01:17:08,965 | INFO | [BATTLE] Ready. run=94.97%  abilities=True  items=True
+2025-11-02 01:17:13,094 | INFO | [BATTLE] Still in battle. run=94.97% abil=True items=True
+2025-11-02 01:17:21,593 | INFO | [BATTLE] Still in battle. run=94.95% abil=True items=True
+2025-11-02 01:17:29,364 | INFO | [SEARCH] Battle UI missing. run=94.97% abil=False items=False
+2025-11-02 01:17:29,365 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 01:17:42,025 | INFO | [BATTLE] Ready. run=94.97%  abilities=True  items=True
+2025-11-02 01:17:45,759 | INFO | [BATTLE] Still in battle. run=94.97% abil=True items=True
+2025-11-02 01:17:52,874 | INFO | [BATTLE] Still in battle. run=94.97% abil=True items=True
+2025-11-02 01:17:59,227 | INFO | [BATTLE] Still in battle. run=94.97% abil=True items=True
+2025-11-02 01:18:04,876 | INFO | [SEARCH] Battle UI missing. run=94.97% abil=False items=True
+2025-11-02 01:18:04,876 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 01:18:21,424 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 01:18:21,426 | INFO | Bound to window: (x=704, y=372, w=1152, h=648)
+2025-11-02 01:18:21,426 | INFO | Input method: Direct Input
+2025-11-02 01:18:22,800 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 01:18:22,802 | INFO | ============================================================
+2025-11-02 01:18:22,802 | INFO | 🤖 Bot started with OCR battle confirmation (Abilities + Items + Run)
+2025-11-02 01:18:22,803 | INFO | ============================================================
+2025-11-02 01:18:22,805 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 01:18:25,591 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:18:28,172 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:18:30,903 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:18:33,468 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:18:36,237 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:18:38,900 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:18:41,750 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:18:44,523 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:18:47,076 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:18:49,528 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:18:52,093 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:18:54,536 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:18:54,747 | INFO | [SEARCH] Direct click at client=(425,176)
+2025-11-02 01:18:54,748 | INFO | [SEARCH] ✓ Spot found! score=0.95 - Clicked!
+2025-11-02 01:18:57,476 | INFO | [BATTLE-CHECK] run=89.57% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:19:00,256 | INFO | [BATTLE-CHECK] run=97.24% | Abilities=True (0.94) | Items=True (0.99) | ready=True
+2025-11-02 01:19:00,256 | INFO | [BATTLE] Ready. run=97.24%  abilities=True  items=True
+2025-11-02 01:19:02,732 | INFO | [BATTLE-CHECK] run=97.24% | Abilities=True (0.94) | Items=True (0.99) | ready=True
+2025-11-02 01:19:05,444 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:05,444 | INFO | [SEARCH] Battle UI missing. run=100.00% abil=False items=True
+2025-11-02 01:19:05,445 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 01:19:13,428 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:16,144 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:18,827 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:21,690 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:24,318 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:27,038 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:29,690 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:32,469 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:35,058 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:35,275 | INFO | [SEARCH] Direct click at client=(425,180)
+2025-11-02 01:19:35,275 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:19:37,981 | INFO | [BATTLE-CHECK] run=89.55% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:19:40,396 | INFO | [BATTLE-CHECK] run=94.79% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:19:42,651 | INFO | [BATTLE-CHECK] run=94.79% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:19:45,464 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:48,124 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:50,929 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:53,581 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:56,397 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:19:59,029 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:01,804 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:04,455 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:07,387 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:10,046 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:12,786 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:15,426 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:18,198 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:20,946 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:23,799 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:26,441 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:29,194 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:31,819 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:34,636 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:37,269 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:40,071 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:42,819 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:45,567 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:48,219 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:51,051 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:53,748 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:56,672 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:20:59,316 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:02,116 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:04,791 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:07,561 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:10,234 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:13,019 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:15,697 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:18,507 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:21,201 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:23,963 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:26,624 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:29,510 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:32,184 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:35,121 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:37,790 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:40,643 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:43,353 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:46,185 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:48,903 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:51,805 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:54,461 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:57,225 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:21:59,927 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:02,746 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:05,540 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:08,385 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:11,088 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:13,923 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:16,601 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:19,476 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:22,157 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:25,276 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:28,037 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:30,895 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:33,638 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:36,439 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:39,138 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:42,018 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:44,698 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:22:47,271 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:22:49,800 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:22:52,344 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:22:54,876 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:22:57,447 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:00,026 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:02,613 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:05,058 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:07,614 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:10,016 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:12,595 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:15,022 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:17,686 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:20,148 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:22,744 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:25,175 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:27,745 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:30,255 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:32,816 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:35,244 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:37,789 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:40,244 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:42,796 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:45,225 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:47,760 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:50,372 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:52,967 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:55,409 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:23:57,979 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:24:00,522 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:24:03,119 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:24:05,692 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:24:08,492 | INFO | [BATTLE-CHECK] run=94.97% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:24:11,409 | INFO | [BATTLE-CHECK] run=94.97% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:24:51,533 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 01:24:51,534 | INFO | Bound to window: (x=704, y=372, w=1152, h=648)
+2025-11-02 01:24:51,535 | INFO | Input method: Direct Input
+2025-11-02 01:24:53,083 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 01:24:53,084 | INFO | ============================================================
+2025-11-02 01:24:53,084 | INFO | 🤖 Bot started with OCR battle confirmation (Abilities + Items + Run)
+2025-11-02 01:24:53,084 | INFO | ============================================================
+2025-11-02 01:24:53,086 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 01:24:55,800 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:24:58,331 | INFO | [BATTLE-CHECK] run=94.92% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:24:58,557 | INFO | [SEARCH] Direct click at client=(557,170)
+2025-11-02 01:24:58,558 | INFO | [SEARCH] ✓ Spot found! score=0.95 - Clicked!
+2025-11-02 01:25:01,219 | INFO | [BATTLE-CHECK] run=89.65% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:25:01,433 | INFO | [SEARCH] Direct click at client=(557,170)
+2025-11-02 01:25:01,433 | INFO | [SEARCH] ✓ Spot found! score=0.95 - Clicked!
+2025-11-02 01:25:04,160 | INFO | [BATTLE-CHECK] run=89.65% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:25:04,388 | INFO | [SEARCH] Direct click at client=(381,258)
+2025-11-02 01:25:04,389 | INFO | [SEARCH] ✓ Spot found! score=0.74 - Clicked!
+2025-11-02 01:25:07,096 | INFO | [BATTLE-CHECK] run=89.65% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:25:07,307 | INFO | [SEARCH] Direct click at client=(467,180)
+2025-11-02 01:25:07,308 | INFO | [SEARCH] ✓ Spot found! score=0.97 - Clicked!
+2025-11-02 01:25:10,000 | INFO | [BATTLE-CHECK] run=89.63% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:25:10,214 | INFO | [SEARCH] Direct click at client=(557,174)
+2025-11-02 01:25:10,214 | INFO | [SEARCH] ✓ Spot found! score=0.83 - Clicked!
+2025-11-02 01:25:12,893 | INFO | [BATTLE-CHECK] run=89.65% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:25:13,113 | INFO | [SEARCH] Direct click at client=(381,260)
+2025-11-02 01:25:13,114 | INFO | [SEARCH] ✓ Spot found! score=0.74 - Clicked!
+2025-11-02 01:25:15,827 | INFO | [BATTLE-CHECK] run=89.66% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:25:16,038 | INFO | [SEARCH] Direct click at client=(463,182)
+2025-11-02 01:25:16,038 | INFO | [SEARCH] ✓ Spot found! score=0.99 - Clicked!
+2025-11-02 01:25:18,763 | INFO | [BATTLE-CHECK] run=89.66% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:25:18,973 | INFO | [SEARCH] Direct click at client=(557,174)
+2025-11-02 01:25:18,973 | INFO | [SEARCH] ✓ Spot found! score=0.82 - Clicked!
+2025-11-02 01:25:21,759 | INFO | [BATTLE-CHECK] run=89.64% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:25:24,446 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=True (0.53) | Items=True (1.00) | ready=True
+2025-11-02 01:25:24,446 | INFO | [BATTLE] Ready. run=100.00%  abilities=True  items=True
+2025-11-02 01:25:26,951 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=True (0.53) | Items=True (1.00) | ready=True
+2025-11-02 01:25:29,679 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:25:29,680 | INFO | [SEARCH] Battle UI missing. run=100.00% abil=False items=True
+2025-11-02 01:25:29,680 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 01:25:37,304 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:25:40,024 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:25:42,689 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:25:45,666 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:25:48,280 | INFO | [BATTLE-CHECK] run=100.00% | Abilities=False (0.00) | Items=True (1.00) | ready=False
+2025-11-02 01:25:51,834 | INFO | [BATTLE-CHECK] run=93.85% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:25:55,214 | INFO | [BATTLE-CHECK] run=93.85% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:25:55,428 | INFO | [SEARCH] Direct click at client=(557,174)
+2025-11-02 01:25:55,428 | INFO | [SEARCH] ✓ Spot found! score=0.95 - Clicked!
+2025-11-02 01:25:58,179 | INFO | [BATTLE-CHECK] run=89.64% | Abilities=False (0.00) | Items=False (0.00) | ready=False
+2025-11-02 01:25:58,391 | INFO | [SEARCH] Direct click at client=(567,174)
+2025-11-02 01:25:58,391 | INFO | [SEARCH] ✓ Spot found! score=0.88 - Clicked!
+2025-11-02 01:32:14,203 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 01:32:14,204 | INFO | Bound to window: (x=704, y=372, w=1152, h=648)
+2025-11-02 01:32:14,204 | INFO | Input method: Direct Input
+2025-11-02 01:32:15,602 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 01:32:15,603 | INFO | ============================================================
+2025-11-02 01:32:15,603 | INFO | 🤖 Bot started (Run + Yellow bar, optional OCR words)
+2025-11-02 01:32:15,603 | INFO | ============================================================
+2025-11-02 01:32:15,605 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 01:32:15,728 | INFO | [SEARCH] Direct click at client=(569,174)
+2025-11-02 01:32:15,728 | INFO | [SEARCH] ✓ Spot found! score=0.95 - Clicked!
+2025-11-02 01:32:15,774 | INFO | [BATTLE-CHECK] run=89.83% | yellow=0.02% | ready=False
+2025-11-02 01:32:15,926 | INFO | [BATTLE-CHECK] run=89.90% | yellow=0.98% | ready=False
+2025-11-02 01:32:16,084 | INFO | [BATTLE-CHECK] run=89.90% | yellow=0.93% | ready=False
+2025-11-02 01:32:16,234 | INFO | [BATTLE-CHECK] run=89.90% | yellow=0.93% | ready=False
+2025-11-02 01:32:16,392 | INFO | [BATTLE-CHECK] run=89.90% | yellow=0.91% | ready=False
+2025-11-02 01:32:16,549 | INFO | [BATTLE-CHECK] run=89.90% | yellow=0.92% | ready=False
+2025-11-02 01:32:16,770 | INFO | [SEARCH] Direct click at client=(569,170)
+2025-11-02 01:32:16,770 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 01:32:16,808 | INFO | [BATTLE-CHECK] run=89.92% | yellow=0.00% | ready=False
+2025-11-02 01:32:16,956 | INFO | [BATTLE-CHECK] run=94.94% | yellow=4.15% | ready=True
+2025-11-02 01:32:17,114 | INFO | [BATTLE-CHECK] run=94.89% | yellow=4.15% | ready=True
+2025-11-02 01:32:17,266 | INFO | [BATTLE-CHECK] run=94.94% | yellow=0.00% | ready=False
+2025-11-02 01:32:17,420 | INFO | [BATTLE-CHECK] run=10.72% | yellow=0.00% | ready=False
+2025-11-02 01:32:17,571 | INFO | [BATTLE-CHECK] run=9.14% | yellow=0.00% | ready=False
+2025-11-02 01:32:17,742 | INFO | [BATTLE-CHECK] run=94.79% | yellow=0.00% | ready=False
+2025-11-02 01:32:17,779 | INFO | [BATTLE-CHECK] run=94.79% | yellow=0.00% | ready=False
+2025-11-02 01:32:17,939 | INFO | [BATTLE-CHECK] run=94.79% | yellow=0.14% | ready=False
+2025-11-02 01:32:18,090 | INFO | [BATTLE-CHECK] run=94.79% | yellow=1.71% | ready=False
+2025-11-02 01:32:18,233 | INFO | [BATTLE-CHECK] run=99.46% | yellow=16.73% | ready=True
+2025-11-02 01:32:18,380 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:18,518 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:18,663 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:18,823 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:18,824 | INFO | [BATTLE] Ready. run=100.00% yellow=18.89%
+2025-11-02 01:32:18,850 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:18,987 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:19,134 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:19,270 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:19,409 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:19,548 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:19,687 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:19,828 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:19,981 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:20,112 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:20,251 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:20,397 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:20,538 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:20,680 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:20,824 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:20,824 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.46%
+2025-11-02 01:32:20,852 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:20,991 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:21,127 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:21,272 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:21,410 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:21,557 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:21,695 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:21,836 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:21,972 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:22,113 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:22,257 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:22,397 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:22,536 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:22,676 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:22,816 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:22,955 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:22,955 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.45%
+2025-11-02 01:32:22,980 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:23,113 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:23,251 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:23,398 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:23,530 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:23,669 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:23,816 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:23,963 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:24,095 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:24,233 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:24,375 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:24,518 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:24,665 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:24,798 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:24,942 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:25,079 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:25,079 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.45%
+2025-11-02 01:32:25,106 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:25,250 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:25,392 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:25,528 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:25,668 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:25,807 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:25,944 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:26,083 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:26,222 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:26,360 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:26,500 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:26,640 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:26,779 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:26,925 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:27,064 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:27,203 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:27,204 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.45%
+2025-11-02 01:32:27,228 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:27,373 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:27,512 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:27,652 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:27,792 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:27,943 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:28,088 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:28,234 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:28,373 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:28,512 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:28,653 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:28,791 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:28,932 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:29,072 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:29,210 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:29,210 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.46%
+2025-11-02 01:32:29,236 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:29,387 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:29,525 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:29,665 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:29,806 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:29,943 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:30,089 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:30,227 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:30,368 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:30,506 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:30,646 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:30,785 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:30,930 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:31,070 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:31,210 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:31,354 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:31,355 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.46%
+2025-11-02 01:32:31,378 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:31,528 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:31,664 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:31,807 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:31,957 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:32,105 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:32,246 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:32,382 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:32,525 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:32,668 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:32,806 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:32,945 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:33,092 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:33,229 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:33,370 | INFO | [BATTLE-CHECK] run=100.00% | yellow=25.66% | ready=True
+2025-11-02 01:32:33,370 | INFO | [BATTLE] Still in battle. run=100.00% yellow=25.66%
+2025-11-02 01:32:33,396 | INFO | [BATTLE-CHECK] run=100.00% | yellow=25.66% | ready=True
+2025-11-02 01:32:33,539 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:32:33,678 | INFO | [BATTLE-CHECK] run=99.29% | yellow=19.45% | ready=True
+2025-11-02 01:32:33,810 | INFO | [BATTLE-CHECK] run=95.41% | yellow=19.46% | ready=True
+2025-11-02 01:32:33,956 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.37% | ready=True
+2025-11-02 01:32:34,097 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.32% | ready=True
+2025-11-02 01:32:34,234 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.31% | ready=True
+2025-11-02 01:32:34,373 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.32% | ready=True
+2025-11-02 01:32:34,513 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.72% | ready=True
+2025-11-02 01:32:34,650 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:34,791 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.77% | ready=True
+2025-11-02 01:32:34,936 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:35,070 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:35,216 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:35,354 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:35,494 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:35,494 | INFO | [BATTLE] Still in battle. run=100.00% yellow=18.89%
+2025-11-02 01:32:35,519 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:35,664 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:35,812 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:35,957 | INFO | [BATTLE-CHECK] run=100.00% | yellow=0.00% | ready=False
+2025-11-02 01:32:36,114 | INFO | [BATTLE-CHECK] run=89.77% | yellow=0.00% | ready=False
+2025-11-02 01:32:36,272 | INFO | [BATTLE-CHECK] run=89.90% | yellow=0.00% | ready=False
+2025-11-02 01:32:36,430 | INFO | [BATTLE-CHECK] run=89.91% | yellow=0.66% | ready=False
+2025-11-02 01:32:36,596 | INFO | [BATTLE-CHECK] run=89.55% | yellow=0.80% | ready=False
+2025-11-02 01:32:36,757 | INFO | [BATTLE-CHECK] run=89.67% | yellow=0.47% | ready=False
+2025-11-02 01:32:36,915 | INFO | [BATTLE-CHECK] run=92.48% | yellow=0.48% | ready=False
+2025-11-02 01:32:37,076 | INFO | [BATTLE-CHECK] run=92.55% | yellow=0.48% | ready=False
+2025-11-02 01:32:37,230 | INFO | [BATTLE-CHECK] run=93.04% | yellow=0.52% | ready=False
+2025-11-02 01:32:37,388 | INFO | [BATTLE-CHECK] run=93.15% | yellow=0.51% | ready=False
+2025-11-02 01:32:37,540 | INFO | [BATTLE-CHECK] run=94.20% | yellow=0.51% | ready=False
+2025-11-02 01:32:37,540 | INFO | [SEARCH] Battle UI missing. run=94.20% yellow=0.51%
+2025-11-02 01:32:37,540 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 01:32:42,591 | INFO | [BATTLE-CHECK] run=94.20% | yellow=0.51% | ready=False
+2025-11-02 01:32:42,806 | INFO | [SEARCH] Direct click at client=(465,164)
+2025-11-02 01:32:42,807 | INFO | [SEARCH] ✓ Spot found! score=1.00 - Clicked!
+2025-11-02 01:32:42,846 | INFO | [BATTLE-CHECK] run=89.57% | yellow=0.62% | ready=False
+2025-11-02 01:32:43,004 | INFO | [BATTLE-CHECK] run=89.59% | yellow=0.59% | ready=False
+2025-11-02 01:32:43,157 | INFO | [BATTLE-CHECK] run=89.71% | yellow=0.53% | ready=False
+2025-11-02 01:32:43,313 | INFO | [BATTLE-CHECK] run=89.65% | yellow=0.59% | ready=False
+2025-11-02 01:32:43,472 | INFO | [BATTLE-CHECK] run=89.67% | yellow=0.76% | ready=False
+2025-11-02 01:32:43,629 | INFO | [BATTLE-CHECK] run=89.56% | yellow=0.82% | ready=False
+2025-11-02 01:32:43,837 | INFO | [SEARCH] Direct click at client=(551,168)
+2025-11-02 01:32:43,837 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:32:43,878 | INFO | [BATTLE-CHECK] run=89.40% | yellow=0.86% | ready=False
+2025-11-02 01:32:44,037 | INFO | [BATTLE-CHECK] run=89.56% | yellow=0.00% | ready=False
+2025-11-02 01:32:44,188 | INFO | [BATTLE-CHECK] run=94.94% | yellow=3.62% | ready=True
+2025-11-02 01:32:44,346 | INFO | [BATTLE-CHECK] run=94.92% | yellow=4.15% | ready=True
+2025-11-02 01:32:44,502 | INFO | [BATTLE-CHECK] run=94.98% | yellow=3.88% | ready=True
+2025-11-02 01:32:44,657 | INFO | [BATTLE-CHECK] run=10.72% | yellow=0.00% | ready=False
+2025-11-02 01:32:44,825 | INFO | [BATTLE-CHECK] run=9.14% | yellow=0.00% | ready=False
+2025-11-02 01:32:44,860 | INFO | [BATTLE-CHECK] run=9.14% | yellow=0.00% | ready=False
+2025-11-02 01:32:45,018 | INFO | [BATTLE-CHECK] run=94.78% | yellow=0.00% | ready=False
+2025-11-02 01:32:45,180 | INFO | [BATTLE-CHECK] run=94.78% | yellow=0.00% | ready=False
+2025-11-02 01:32:45,338 | INFO | [BATTLE-CHECK] run=94.80% | yellow=1.71% | ready=False
+2025-11-02 01:32:45,483 | INFO | [BATTLE-CHECK] run=99.46% | yellow=8.48% | ready=True
+2025-11-02 01:32:45,630 | INFO | [BATTLE-CHECK] run=98.84% | yellow=18.83% | ready=True
+2025-11-02 01:32:45,779 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:45,929 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:45,930 | INFO | [BATTLE] Ready. run=100.00% yellow=18.89%
+2025-11-02 01:32:45,954 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:46,089 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:46,238 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:46,373 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:46,518 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:46,659 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:46,793 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:46,932 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:47,077 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:47,216 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:47,358 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:47,501 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:47,643 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:47,787 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:47,927 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:47,927 | INFO | [BATTLE] Still in battle. run=100.00% yellow=18.89%
+2025-11-02 01:32:47,952 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:32:48,096 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:48,244 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:32:48,413 | INFO | [BATTLE-CHECK] run=94.97% | yellow=0.00% | ready=False
+2025-11-02 01:32:48,580 | INFO | [BATTLE-CHECK] run=94.97% | yellow=0.00% | ready=False
+2025-11-02 01:32:48,748 | INFO | [BATTLE-CHECK] run=94.97% | yellow=0.00% | ready=False
+2025-11-02 01:32:48,914 | INFO | [BATTLE-CHECK] run=94.97% | yellow=0.00% | ready=False
+2025-11-02 01:32:49,078 | INFO | [BATTLE-CHECK] run=94.97% | yellow=0.00% | ready=False
+2025-11-02 01:32:49,241 | INFO | [BATTLE-CHECK] run=94.97% | yellow=0.00% | ready=False
+2025-11-02 01:32:49,409 | INFO | [BATTLE-CHECK] run=94.97% | yellow=0.00% | ready=False
+2025-11-02 01:32:49,573 | INFO | [BATTLE-CHECK] run=94.97% | yellow=0.00% | ready=False
+2025-11-02 01:32:49,731 | INFO | [BATTLE-CHECK] run=94.97% | yellow=0.00% | ready=False
+2025-11-02 01:32:49,897 | INFO | [BATTLE-CHECK] run=94.97% | yellow=0.00% | ready=False
+2025-11-02 01:32:50,056 | INFO | [BATTLE-CHECK] run=94.97% | yellow=0.00% | ready=False
+2025-11-02 01:32:50,056 | INFO | [SEARCH] Battle UI missing. run=94.97% yellow=0.00%
+2025-11-02 01:32:50,057 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 01:32:55,104 | INFO | [BATTLE-CHECK] run=94.97% | yellow=0.00% | ready=False
+2025-11-02 01:32:55,320 | INFO | [SEARCH] Direct click at client=(557,168)
+2025-11-02 01:32:55,320 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:32:55,370 | INFO | [BATTLE-CHECK] run=89.66% | yellow=0.93% | ready=False
+2025-11-02 01:32:55,533 | INFO | [BATTLE-CHECK] run=89.81% | yellow=0.93% | ready=False
+2025-11-02 01:32:55,687 | INFO | [BATTLE-CHECK] run=89.66% | yellow=0.92% | ready=False
+2025-11-02 01:32:55,843 | INFO | [BATTLE-CHECK] run=89.60% | yellow=0.90% | ready=False
+2025-11-02 01:32:56,000 | INFO | [BATTLE-CHECK] run=89.62% | yellow=0.93% | ready=False
+2025-11-02 01:32:56,162 | INFO | [BATTLE-CHECK] run=89.57% | yellow=0.88% | ready=False
+2025-11-02 01:32:56,380 | INFO | [SEARCH] Direct click at client=(563,170)
+2025-11-02 01:32:56,380 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 01:32:56,423 | INFO | [BATTLE-CHECK] run=89.57% | yellow=0.92% | ready=False
+2025-11-02 01:32:56,578 | INFO | [BATTLE-CHECK] run=89.38% | yellow=0.92% | ready=False
+2025-11-02 01:32:56,744 | INFO | [BATTLE-CHECK] run=89.36% | yellow=0.93% | ready=False
+2025-11-02 01:32:56,901 | INFO | [BATTLE-CHECK] run=89.37% | yellow=0.93% | ready=False
+2025-11-02 01:32:57,051 | INFO | [BATTLE-CHECK] run=89.37% | yellow=0.92% | ready=False
+2025-11-02 01:32:57,209 | INFO | [BATTLE-CHECK] run=89.38% | yellow=0.93% | ready=False
+2025-11-02 01:32:57,425 | INFO | [SEARCH] Direct click at client=(565,168)
+2025-11-02 01:32:57,425 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 01:32:57,468 | INFO | [BATTLE-CHECK] run=89.38% | yellow=0.93% | ready=False
+2025-11-02 01:32:57,627 | INFO | [BATTLE-CHECK] run=89.57% | yellow=0.92% | ready=False
+2025-11-02 01:32:57,782 | INFO | [BATTLE-CHECK] run=89.59% | yellow=0.91% | ready=False
+2025-11-02 01:32:57,933 | INFO | [BATTLE-CHECK] run=89.62% | yellow=0.93% | ready=False
+2025-11-02 01:32:58,093 | INFO | [BATTLE-CHECK] run=89.58% | yellow=0.90% | ready=False
+2025-11-02 01:32:58,248 | INFO | [BATTLE-CHECK] run=89.57% | yellow=0.92% | ready=False
+2025-11-02 01:32:58,468 | INFO | [SEARCH] Direct click at client=(567,170)
+2025-11-02 01:32:58,468 | INFO | [SEARCH] ✓ Spot found! score=0.92 - Clicked!
+2025-11-02 01:32:58,507 | INFO | [BATTLE-CHECK] run=89.44% | yellow=0.92% | ready=False
+2025-11-02 01:36:21,165 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762015022870.png  thr=0.50
+2025-11-02 01:36:21,167 | INFO | Bound to window: (x=704, y=372, w=1152, h=648)
+2025-11-02 01:36:21,167 | INFO | Input method: Direct Input
+2025-11-02 01:36:22,566 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 01:36:22,567 | INFO | ============================================================
+2025-11-02 01:36:22,567 | INFO | 🤖 Bot started (Run + Yellow bar, optional OCR words)
+2025-11-02 01:36:22,567 | INFO | ============================================================
+2025-11-02 01:36:22,568 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 01:36:22,681 | INFO | [SEARCH] Direct click at client=(569,168)
+2025-11-02 01:36:22,682 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 01:36:23,669 | INFO | [SEARCH] Direct click at client=(569,168)
+2025-11-02 01:36:23,669 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 01:36:24,637 | INFO | [BATTLE-CHECK] run=94.80% | yellow=0.00% | ready=False
+2025-11-02 01:36:25,626 | INFO | [BATTLE-CHECK] run=100.00% | yellow=18.89% | ready=True
+2025-11-02 01:36:25,627 | INFO | [BATTLE] Ready. run=100.00% yellow=18.89%
+2025-11-02 01:36:27,621 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:36:27,621 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.46%
+2025-11-02 01:36:29,620 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:36:29,620 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.45%
+2025-11-02 01:36:31,625 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:36:31,625 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.45%
+2025-11-02 01:36:33,632 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:36:33,633 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.46%
+2025-11-02 01:36:35,632 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:36:35,632 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.46%
+2025-11-02 01:36:37,641 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:36:37,642 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.45%
+2025-11-02 01:36:39,630 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:36:39,630 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.45%
+2025-11-02 01:36:41,638 | INFO | [BATTLE-CHECK] run=100.00% | yellow=10.34% | ready=True
+2025-11-02 01:36:41,639 | INFO | [BATTLE] Still in battle. run=100.00% yellow=10.34%
+2025-11-02 01:36:43,643 | INFO | [BATTLE-CHECK] run=100.00% | yellow=1.71% | ready=False
+2025-11-02 01:36:43,643 | INFO | [SEARCH] Battle UI missing. run=100.00% yellow=1.71%
+2025-11-02 01:36:43,643 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 01:36:48,707 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.46% | ready=True
+2025-11-02 01:36:48,707 | INFO | [BATTLE] Ready. run=100.00% yellow=19.46%
+2025-11-02 01:36:50,692 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:36:50,692 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.45%
+2025-11-02 01:36:52,697 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:36:52,697 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.45%
+2025-11-02 01:36:54,705 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:36:54,705 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.45%
+2025-11-02 01:36:56,704 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:36:56,704 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.45%
+2025-11-02 01:36:58,704 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:36:58,705 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.45%
+2025-11-02 01:37:00,711 | INFO | [BATTLE-CHECK] run=100.00% | yellow=19.45% | ready=True
+2025-11-02 01:37:00,711 | INFO | [BATTLE] Still in battle. run=100.00% yellow=19.45%
+2025-11-02 01:37:01,094 | INFO | 🛑 Bot stopped.
+2025-11-02 01:46:30,867 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762027281700.png  thr=0.50
+2025-11-02 01:46:30,874 | INFO | Bound to window: (x=704, y=372, w=1152, h=648)
+2025-11-02 01:46:30,874 | INFO | Input method: Direct Input
+2025-11-02 01:46:32,294 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 01:46:32,294 | INFO | ============================================================
+2025-11-02 01:46:32,295 | INFO | 🤖 Bot started (Run + tiles, optional OCR)
+2025-11-02 01:46:32,295 | INFO | ============================================================
+2025-11-02 01:46:32,297 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 01:46:32,413 | INFO | [SEARCH] Direct click at client=(610,166)
+2025-11-02 01:46:32,413 | INFO | [SEARCH] ✓ Spot found! score=0.99 - Clicked!
+2025-11-02 01:46:33,412 | INFO | [SEARCH] Direct click at client=(594,172)
+2025-11-02 01:46:33,414 | INFO | [SEARCH] ✓ Spot found! score=0.88 - Clicked!
+2025-11-02 01:46:34,445 | INFO | [BATTLE-CHECK] run=8.89% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 01:46:35,526 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:46:35,526 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:46:37,592 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:46:37,592 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:46:39,688 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:46:39,688 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:46:41,725 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:46:41,725 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:46:43,810 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:46:43,810 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:46:45,860 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:46:45,860 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:46:47,960 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.97%) | ready=True
+2025-11-02 01:46:47,960 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.97%
+2025-11-02 01:46:50,047 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 27.09%) | ready=True
+2025-11-02 01:46:50,047 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=27.09%
+2025-11-02 01:46:52,144 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 27.09%) | ready=True
+2025-11-02 01:46:52,144 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=27.09%
+2025-11-02 01:46:54,204 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 27.09%) | ready=True
+2025-11-02 01:46:54,204 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=27.09%
+2025-11-02 01:46:56,262 | INFO | [BATTLE-CHECK] run=89.56% | tiles=1 (cov 2.11%) | ready=False
+2025-11-02 01:46:56,262 | INFO | [SEARCH] Battle UI missing. run=89.56% tiles=1 cov=2.11%
+2025-11-02 01:46:56,262 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 01:47:01,494 | INFO | [SEARCH] Direct click at client=(634,98)
+2025-11-02 01:47:01,495 | INFO | [SEARCH] ✓ Spot found! score=0.87 - Clicked!
+2025-11-02 01:47:02,513 | INFO | [SEARCH] Direct click at client=(600,164)
+2025-11-02 01:47:02,513 | INFO | [SEARCH] ✓ Spot found! score=0.60 - Clicked!
+2025-11-02 01:47:03,499 | INFO | [BATTLE-CHECK] run=9.14% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 01:47:04,549 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:47:04,550 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:47:06,537 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:47:06,537 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:47:08,604 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:47:08,604 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:47:10,670 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:47:10,671 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:47:12,734 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:47:12,734 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:47:14,818 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:47:14,818 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:47:16,825 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:47:16,825 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:47:18,852 | INFO | [BATTLE-CHECK] run=89.69% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 01:47:18,853 | INFO | [SEARCH] Battle UI missing. run=89.69% tiles=0 cov=0.00%
+2025-11-02 01:47:18,853 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 01:48:00,651 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762027281700.png  thr=0.50
+2025-11-02 01:48:00,653 | INFO | Bound to window: (x=704, y=372, w=1152, h=648)
+2025-11-02 01:48:00,653 | INFO | Input method: Direct Input
+2025-11-02 01:48:02,052 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 01:48:02,052 | INFO | ============================================================
+2025-11-02 01:48:02,052 | INFO | 🤖 Bot started (Run + tiles, optional OCR)
+2025-11-02 01:48:02,052 | INFO | ============================================================
+2025-11-02 01:48:02,054 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 01:48:02,171 | INFO | [SEARCH] Direct click at client=(592,172)
+2025-11-02 01:48:02,172 | INFO | [SEARCH] ✓ Spot found! score=0.98 - Clicked!
+2025-11-02 01:48:03,207 | INFO | [SEARCH] Direct click at client=(592,172)
+2025-11-02 01:48:03,207 | INFO | [SEARCH] ✓ Spot found! score=0.98 - Clicked!
+2025-11-02 01:48:04,166 | INFO | [BATTLE-CHECK] run=94.79% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 01:48:05,212 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:05,212 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:07,302 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:07,303 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:09,321 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:09,321 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:11,344 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:11,344 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:13,429 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:13,429 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:15,484 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:15,484 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:17,515 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:17,515 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:19,586 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:19,586 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:21,678 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:21,678 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:23,768 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:23,768 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:25,849 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:25,849 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:27,891 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:27,891 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:29,932 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:29,933 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:32,025 | INFO | [BATTLE-CHECK] run=94.80% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 01:48:32,025 | INFO | [SEARCH] Battle UI missing. run=94.80% tiles=0 cov=0.00%
+2025-11-02 01:48:32,025 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 01:48:37,261 | INFO | [SEARCH] Direct click at client=(592,172)
+2025-11-02 01:48:37,261 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 01:48:38,303 | INFO | [SEARCH] Direct click at client=(592,172)
+2025-11-02 01:48:38,304 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:48:39,262 | INFO | [BATTLE-CHECK] run=94.79% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 01:48:40,253 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:40,253 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:42,338 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 21.56%) | ready=True
+2025-11-02 01:48:42,338 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=21.56%
+2025-11-02 01:48:44,370 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 21.28%) | ready=True
+2025-11-02 01:48:44,371 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=21.28%
+2025-11-02 01:48:46,393 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 21.28%) | ready=True
+2025-11-02 01:48:46,393 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=21.28%
+2025-11-02 01:48:48,460 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:48,460 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:50,520 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:50,521 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:48:52,606 | INFO | [BATTLE-CHECK] run=100.00% | tiles=4 (cov 20.32%) | ready=True
+2025-11-02 01:48:52,606 | INFO | [BATTLE] Still in battle. run=100.00% tiles=4 cov=20.32%
+2025-11-02 01:48:54,656 | INFO | [BATTLE-CHECK] run=100.00% | tiles=4 (cov 20.32%) | ready=True
+2025-11-02 01:48:54,657 | INFO | [BATTLE] Still in battle. run=100.00% tiles=4 cov=20.32%
+2025-11-02 01:48:56,696 | INFO | [BATTLE-CHECK] run=100.00% | tiles=4 (cov 20.32%) | ready=True
+2025-11-02 01:48:56,697 | INFO | [BATTLE] Still in battle. run=100.00% tiles=4 cov=20.32%
+2025-11-02 01:48:58,757 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:48:58,757 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:49:00,835 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:49:00,836 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:49:02,884 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:49:02,885 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:49:04,945 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:49:04,945 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:49:07,059 | INFO | [BATTLE-CHECK] run=94.91% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 01:49:07,060 | INFO | [SEARCH] Battle UI missing. run=94.91% tiles=0 cov=0.00%
+2025-11-02 01:49:07,060 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 01:49:12,237 | INFO | [BATTLE-CHECK] run=94.38% | tiles=2 (cov 62.87%) | ready=False
+2025-11-02 01:49:13,336 | INFO | [BATTLE-CHECK] run=94.38% | tiles=2 (cov 62.87%) | ready=False
+2025-11-02 01:49:14,429 | INFO | [BATTLE-CHECK] run=94.38% | tiles=2 (cov 62.87%) | ready=False
+2025-11-02 01:49:15,485 | INFO | [BATTLE-CHECK] run=94.39% | tiles=1 (cov 2.11%) | ready=False
+2025-11-02 01:49:16,573 | INFO | [BATTLE-CHECK] run=94.39% | tiles=1 (cov 2.11%) | ready=False
+2025-11-02 01:49:17,613 | INFO | [BATTLE-CHECK] run=94.39% | tiles=1 (cov 2.11%) | ready=False
+2025-11-02 01:49:18,712 | INFO | [BATTLE-CHECK] run=94.39% | tiles=1 (cov 2.11%) | ready=False
+2025-11-02 01:49:19,801 | INFO | [BATTLE-CHECK] run=94.39% | tiles=1 (cov 2.11%) | ready=False
+2025-11-02 01:49:20,937 | INFO | [SEARCH] Direct click at client=(592,172)
+2025-11-02 01:49:20,937 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 01:49:21,949 | INFO | [SEARCH] Direct click at client=(580,172)
+2025-11-02 01:49:21,949 | INFO | [SEARCH] ✓ Spot found! score=0.95 - Clicked!
+2025-11-02 01:49:22,895 | INFO | [BATTLE-CHECK] run=10.72% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 01:49:23,942 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:49:23,943 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:49:26,001 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:49:26,001 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:49:28,077 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:49:28,077 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:49:30,173 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:49:30,173 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:58:21,852 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762027281700.png  thr=0.50
+2025-11-02 01:58:21,854 | INFO | Bound to window: (x=704, y=372, w=1152, h=648)
+2025-11-02 01:58:21,854 | INFO | Input method: Direct Input
+2025-11-02 01:58:23,234 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 01:58:23,235 | INFO | ============================================================
+2025-11-02 01:58:23,235 | INFO | 🤖 Bot started (Run + tiles, optional OCR)
+2025-11-02 01:58:23,235 | INFO | ============================================================
+2025-11-02 01:58:23,237 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 01:58:23,350 | INFO | [SEARCH] Direct click at client=(580,172)
+2025-11-02 01:58:23,350 | INFO | [SEARCH] ✓ Spot found! score=0.97 - Clicked!
+2025-11-02 01:58:24,363 | INFO | [SEARCH] Direct click at client=(580,172)
+2025-11-02 01:58:24,363 | INFO | [SEARCH] ✓ Spot found! score=0.97 - Clicked!
+2025-11-02 01:58:25,342 | INFO | [BATTLE-CHECK] run=94.79% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 01:58:26,386 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:58:26,386 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:58:28,443 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 01:58:28,443 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 01:58:30,097 | INFO | 🛑 Bot stopped.
+2025-11-02 02:05:53,532 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762027281700.png  thr=0.50
+2025-11-02 02:05:53,533 | INFO | Bound to window: (x=704, y=372, w=1152, h=648)
+2025-11-02 02:05:53,533 | INFO | Input method: Direct Input
+2025-11-02 02:05:54,922 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 02:05:54,923 | INFO | ============================================================
+2025-11-02 02:05:54,923 | INFO | 🤖 Bot started (Run + tiles, optional OCR)
+2025-11-02 02:05:54,923 | INFO | ============================================================
+2025-11-02 02:05:54,926 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 02:05:55,038 | INFO | [SEARCH] Direct click at client=(580,172)
+2025-11-02 02:05:55,039 | INFO | [SEARCH] ✓ Spot found! score=0.97 - Clicked!
+2025-11-02 02:05:56,069 | INFO | [SEARCH] Direct click at client=(580,172)
+2025-11-02 02:05:56,069 | INFO | [SEARCH] ✓ Spot found! score=0.97 - Clicked!
+2025-11-02 02:05:57,137 | INFO | [BATTLE-CHECK] run=95.19% | tiles=3 (cov 8.49%) | ready=True
+2025-11-02 02:05:57,137 | INFO | [BATTLE] Ready. run=95.19% tiles=3 cov=8.49%
+2025-11-02 02:05:59,151 | INFO | [BATTLE-CHECK] run=95.19% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:05:59,151 | INFO | [BATTLE] Still in battle. run=95.19% tiles=5 cov=26.89%
+2025-11-02 02:06:01,235 | INFO | [BATTLE-CHECK] run=94.95% | tiles=2 (cov 13.13%) | ready=False
+2025-11-02 02:06:01,235 | INFO | [SEARCH] Battle UI missing. run=94.95% tiles=2 cov=13.13%
+2025-11-02 02:06:01,236 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 02:06:06,389 | INFO | [BATTLE-CHECK] run=99.99% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:06:06,390 | INFO | [BATTLE] Ready. run=99.99% tiles=5 cov=26.89%
+2025-11-02 02:06:08,474 | INFO | [BATTLE-CHECK] run=99.99% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:06:08,474 | INFO | [BATTLE] Still in battle. run=99.99% tiles=5 cov=26.89%
+2025-11-02 02:06:10,565 | INFO | [BATTLE-CHECK] run=94.95% | tiles=3 (cov 3.82%) | ready=True
+2025-11-02 02:06:10,566 | INFO | [BATTLE] Still in battle. run=94.95% tiles=3 cov=3.82%
+2025-11-02 02:06:12,588 | INFO | [BATTLE-CHECK] run=94.95% | tiles=9 (cov 8.03%) | ready=True
+2025-11-02 02:06:12,589 | INFO | [BATTLE] Still in battle. run=94.95% tiles=9 cov=8.03%
+2025-11-02 02:06:14,715 | INFO | [BATTLE-CHECK] run=94.97% | tiles=8 (cov 8.00%) | ready=True
+2025-11-02 02:06:14,715 | INFO | [BATTLE] Still in battle. run=94.97% tiles=8 cov=8.00%
+2025-11-02 02:06:16,783 | INFO | [BATTLE-CHECK] run=94.95% | tiles=3 (cov 3.82%) | ready=True
+2025-11-02 02:06:16,783 | INFO | [BATTLE] Still in battle. run=94.95% tiles=3 cov=3.82%
+2025-11-02 02:06:18,895 | INFO | [BATTLE-CHECK] run=94.95% | tiles=6 (cov 6.05%) | ready=True
+2025-11-02 02:06:18,895 | INFO | [BATTLE] Still in battle. run=94.95% tiles=6 cov=6.05%
+2025-11-02 02:06:20,937 | INFO | [BATTLE-CHECK] run=94.95% | tiles=7 (cov 7.62%) | ready=True
+2025-11-02 02:06:20,937 | INFO | [BATTLE] Still in battle. run=94.95% tiles=7 cov=7.62%
+2025-11-02 02:06:22,977 | INFO | [BATTLE-CHECK] run=94.97% | tiles=7 (cov 6.44%) | ready=True
+2025-11-02 02:06:22,977 | INFO | [BATTLE] Still in battle. run=94.97% tiles=7 cov=6.44%
+2025-11-02 02:06:25,033 | INFO | [BATTLE-CHECK] run=94.97% | tiles=7 (cov 6.44%) | ready=True
+2025-11-02 02:06:25,033 | INFO | [BATTLE] Still in battle. run=94.97% tiles=7 cov=6.44%
+2025-11-02 02:06:27,112 | INFO | [BATTLE-CHECK] run=94.97% | tiles=7 (cov 6.44%) | ready=True
+2025-11-02 02:06:27,113 | INFO | [BATTLE] Still in battle. run=94.97% tiles=7 cov=6.44%
+2025-11-02 02:06:29,140 | INFO | [BATTLE-CHECK] run=94.97% | tiles=7 (cov 6.44%) | ready=True
+2025-11-02 02:06:29,141 | INFO | [BATTLE] Still in battle. run=94.97% tiles=7 cov=6.44%
+2025-11-02 02:06:31,235 | INFO | [BATTLE-CHECK] run=94.95% | tiles=8 (cov 8.00%) | ready=True
+2025-11-02 02:06:31,235 | INFO | [BATTLE] Still in battle. run=94.95% tiles=8 cov=8.00%
+2025-11-02 02:06:33,307 | INFO | [BATTLE-CHECK] run=94.95% | tiles=8 (cov 8.01%) | ready=True
+2025-11-02 02:06:33,307 | INFO | [BATTLE] Still in battle. run=94.95% tiles=8 cov=8.01%
+2025-11-02 02:06:35,361 | INFO | [BATTLE-CHECK] run=95.48% | tiles=8 (cov 23.78%) | ready=True
+2025-11-02 02:06:35,361 | INFO | [BATTLE] Still in battle. run=95.48% tiles=8 cov=23.78%
+2025-11-02 02:06:37,450 | INFO | [BATTLE-CHECK] run=95.48% | tiles=8 (cov 23.78%) | ready=True
+2025-11-02 02:06:37,450 | INFO | [BATTLE] Still in battle. run=95.48% tiles=8 cov=23.78%
+2025-11-02 02:06:39,543 | INFO | [BATTLE-CHECK] run=95.19% | tiles=7 (cov 22.66%) | ready=True
+2025-11-02 02:06:39,543 | INFO | [BATTLE] Still in battle. run=95.19% tiles=7 cov=22.66%
+2025-11-02 02:06:41,611 | INFO | [BATTLE-CHECK] run=95.19% | tiles=6 (cov 6.69%) | ready=True
+2025-11-02 02:06:41,611 | INFO | [BATTLE] Still in battle. run=95.19% tiles=6 cov=6.69%
+2025-11-02 02:06:43,621 | INFO | [BATTLE-CHECK] run=95.19% | tiles=6 (cov 6.69%) | ready=True
+2025-11-02 02:06:43,623 | INFO | [BATTLE] Still in battle. run=95.19% tiles=6 cov=6.69%
+2025-11-02 02:06:45,737 | INFO | [BATTLE-CHECK] run=95.19% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:06:45,738 | INFO | [SEARCH] Battle UI missing. run=95.19% tiles=0 cov=0.00%
+2025-11-02 02:06:45,738 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 02:06:50,911 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.86%) | ready=False
+2025-11-02 02:06:52,013 | INFO | [BATTLE-CHECK] run=95.18% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:06:53,080 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.69%) | ready=False
+2025-11-02 02:06:54,159 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.86%) | ready=False
+2025-11-02 02:06:55,239 | INFO | [BATTLE-CHECK] run=95.18% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:06:56,329 | INFO | [BATTLE-CHECK] run=95.18% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:06:57,386 | INFO | [BATTLE-CHECK] run=95.18% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:06:58,457 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.86%) | ready=False
+2025-11-02 02:06:59,457 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.86%) | ready=False
+2025-11-02 02:07:00,531 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.86%) | ready=False
+2025-11-02 02:07:01,665 | INFO | [SEARCH] Direct click at client=(650,136)
+2025-11-02 02:07:01,665 | INFO | [SEARCH] ✓ Spot found! score=0.72 - Clicked!
+2025-11-02 02:07:02,647 | INFO | [SEARCH] Direct click at client=(662,206)
+2025-11-02 02:07:02,647 | INFO | [SEARCH] ✓ Spot found! score=0.90 - Clicked!
+2025-11-02 02:07:03,775 | INFO | [SEARCH] Direct click at client=(728,238)
+2025-11-02 02:07:03,775 | INFO | [SEARCH] ✓ Spot found! score=0.98 - Clicked!
+2025-11-02 02:07:04,827 | INFO | [BATTLE-CHECK] run=95.18% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:07:05,831 | INFO | [BATTLE-CHECK] run=95.18% | tiles=2 (cov 1.62%) | ready=False
+2025-11-02 02:07:06,887 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.63%) | ready=False
+2025-11-02 02:07:07,962 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.63%) | ready=False
+2025-11-02 02:07:09,054 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.63%) | ready=False
+2025-11-02 02:07:10,150 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.63%) | ready=False
+2025-11-02 02:07:11,193 | INFO | [BATTLE-CHECK] run=95.18% | tiles=3 (cov 2.01%) | ready=True
+2025-11-02 02:07:11,194 | INFO | [BATTLE] Ready. run=95.18% tiles=3 cov=2.01%
+2025-11-02 02:07:13,288 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.63%) | ready=False
+2025-11-02 02:07:13,289 | INFO | [SEARCH] Battle UI missing. run=95.18% tiles=1 cov=0.63%
+2025-11-02 02:07:13,289 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 02:07:18,460 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.63%) | ready=False
+2025-11-02 02:07:19,522 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.63%) | ready=False
+2025-11-02 02:07:20,581 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.63%) | ready=False
+2025-11-02 02:07:21,671 | INFO | [BATTLE-CHECK] run=95.18% | tiles=2 (cov 1.32%) | ready=False
+2025-11-02 02:07:22,679 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.63%) | ready=False
+2025-11-02 02:07:23,738 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.63%) | ready=False
+2025-11-02 02:07:24,818 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.63%) | ready=False
+2025-11-02 02:07:25,921 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.69%) | ready=False
+2025-11-02 02:07:27,004 | INFO | [BATTLE-CHECK] run=95.18% | tiles=2 (cov 1.58%) | ready=False
+2025-11-02 02:07:28,071 | INFO | [BATTLE-CHECK] run=94.97% | tiles=7 (cov 6.63%) | ready=True
+2025-11-02 02:07:28,071 | INFO | [BATTLE] Ready. run=94.97% tiles=7 cov=6.63%
+2025-11-02 02:07:30,110 | INFO | [BATTLE-CHECK] run=95.18% | tiles=7 (cov 6.63%) | ready=True
+2025-11-02 02:07:30,110 | INFO | [BATTLE] Still in battle. run=95.18% tiles=7 cov=6.63%
+2025-11-02 02:07:32,153 | INFO | [BATTLE-CHECK] run=95.18% | tiles=7 (cov 6.63%) | ready=True
+2025-11-02 02:07:32,154 | INFO | [BATTLE] Still in battle. run=95.18% tiles=7 cov=6.63%
+2025-11-02 02:07:34,238 | INFO | [BATTLE-CHECK] run=95.18% | tiles=1 (cov 0.86%) | ready=False
+2025-11-02 02:07:34,239 | INFO | [SEARCH] Battle UI missing. run=95.18% tiles=1 cov=0.86%
+2025-11-02 02:07:34,239 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 02:07:39,467 | INFO | [SEARCH] Direct click at client=(1000,164)
+2025-11-02 02:07:39,467 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 02:07:40,485 | INFO | [SEARCH] Direct click at client=(1004,166)
+2025-11-02 02:07:40,485 | INFO | [SEARCH] ✓ Spot found! score=0.84 - Clicked!
+2025-11-02 02:07:41,570 | INFO | [SEARCH] Direct click at client=(1004,166)
+2025-11-02 02:07:41,570 | INFO | [SEARCH] ✓ Spot found! score=0.86 - Clicked!
+2025-11-02 02:07:42,570 | INFO | [SEARCH] Direct click at client=(1004,166)
+2025-11-02 02:07:42,571 | INFO | [SEARCH] ✓ Spot found! score=0.90 - Clicked!
+2025-11-02 02:07:43,582 | INFO | [SEARCH] Direct click at client=(1004,166)
+2025-11-02 02:07:43,582 | INFO | [SEARCH] ✓ Spot found! score=0.86 - Clicked!
+2025-11-02 02:07:44,588 | INFO | [SEARCH] Direct click at client=(1004,166)
+2025-11-02 02:07:44,588 | INFO | [SEARCH] ✓ Spot found! score=0.90 - Clicked!
+2025-11-02 02:07:45,613 | INFO | [SEARCH] Direct click at client=(1004,164)
+2025-11-02 02:07:45,613 | INFO | [SEARCH] ✓ Spot found! score=0.93 - Clicked!
+2025-11-02 02:07:46,649 | INFO | [SEARCH] Direct click at client=(1010,164)
+2025-11-02 02:07:46,649 | INFO | [SEARCH] ✓ Spot found! score=0.97 - Clicked!
+2025-11-02 02:07:47,663 | INFO | [SEARCH] Direct click at client=(1010,164)
+2025-11-02 02:07:47,663 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 02:07:48,740 | INFO | [SEARCH] Direct click at client=(1010,164)
+2025-11-02 02:07:48,740 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 02:07:49,837 | INFO | [SEARCH] Direct click at client=(1016,164)
+2025-11-02 02:07:49,838 | INFO | [SEARCH] ✓ Spot found! score=0.80 - Clicked!
+2025-11-02 02:07:50,929 | INFO | [SEARCH] Direct click at client=(1018,174)
+2025-11-02 02:07:50,929 | INFO | [SEARCH] ✓ Spot found! score=0.97 - Clicked!
+2025-11-02 02:07:51,953 | INFO | [SEARCH] Direct click at client=(1018,174)
+2025-11-02 02:07:51,954 | INFO | [SEARCH] ✓ Spot found! score=0.97 - Clicked!
+2025-11-02 02:07:52,784 | INFO | 🛑 Bot stopped.
+2025-11-02 02:17:26,888 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762027281700.png  thr=0.50
+2025-11-02 02:17:26,889 | INFO | Bound to window: (x=1374, y=107, w=1152, h=648)
+2025-11-02 02:17:26,890 | INFO | Input method: Direct Input
+2025-11-02 02:17:28,402 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 02:17:28,403 | INFO | ============================================================
+2025-11-02 02:17:28,403 | INFO | 🤖 Bot started (Run + tiles, optional OCR)
+2025-11-02 02:17:28,403 | INFO | ============================================================
+2025-11-02 02:17:28,405 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 02:17:28,532 | INFO | [SEARCH] Direct click at client=(592,172)
+2025-11-02 02:17:28,532 | INFO | [SEARCH] ✓ Spot found! score=0.98 - Clicked!
+2025-11-02 02:17:29,545 | INFO | [SEARCH] Direct click at client=(592,172)
+2025-11-02 02:17:29,545 | INFO | [SEARCH] ✓ Spot found! score=0.98 - Clicked!
+2025-11-02 02:17:30,557 | INFO | [SEARCH] Direct click at client=(592,172)
+2025-11-02 02:17:30,557 | INFO | [SEARCH] ✓ Spot found! score=0.98 - Clicked!
+2025-11-02 02:17:31,581 | INFO | [SEARCH] Direct click at client=(592,172)
+2025-11-02 02:17:31,581 | INFO | [SEARCH] ✓ Spot found! score=0.98 - Clicked!
+2025-11-02 02:17:32,636 | INFO | [SEARCH] Direct click at client=(592,172)
+2025-11-02 02:17:32,636 | INFO | [SEARCH] ✓ Spot found! score=0.98 - Clicked!
+2025-11-02 02:17:33,610 | INFO | [BATTLE-CHECK] run=94.79% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:17:34,672 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:17:34,673 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:17:36,760 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:17:36,762 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:17:38,808 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:17:38,810 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:17:40,903 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:17:40,904 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:17:42,963 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:17:42,965 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:17:45,068 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:17:45,069 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:17:47,093 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:17:47,095 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:17:49,099 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:17:49,102 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:17:51,210 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:17:51,212 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:17:53,235 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:17:53,237 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:17:55,279 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:17:55,281 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:17:57,338 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:17:57,339 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:17:59,408 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:17:59,410 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:01,440 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:01,442 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:03,475 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:03,478 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:05,547 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:05,549 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:07,643 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:07,645 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:09,732 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:09,733 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:11,817 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:11,819 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:13,922 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:13,924 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:15,941 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:15,942 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:18,024 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:18,026 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:20,067 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:20,069 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:22,183 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:22,185 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:24,236 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:24,238 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:26,241 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:26,243 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:28,346 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:28,348 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:30,363 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:30,365 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:32,495 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:32,497 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:34,558 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:34,560 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:36,649 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:36,651 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:38,647 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:38,649 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:40,725 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:40,727 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:42,764 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:42,766 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:44,865 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:44,867 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:46,944 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:46,945 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:49,039 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:49,041 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:51,137 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:51,138 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:53,185 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:53,187 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:55,284 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:55,286 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:57,364 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:57,367 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:18:59,459 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:18:59,461 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:01,559 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:01,561 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:03,600 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:03,602 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:05,611 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:05,613 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:07,629 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:07,631 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:09,702 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:09,704 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:11,699 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:11,701 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:13,789 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:13,791 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:15,806 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:15,808 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:17,910 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:17,911 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:20,007 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:20,008 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:22,074 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:22,076 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:24,202 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:24,204 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:26,284 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:26,287 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:28,352 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:28,354 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:30,415 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:30,416 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:32,503 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:32,504 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:34,556 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:34,559 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:36,556 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:36,559 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:38,652 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:38,654 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:40,649 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:40,651 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:42,661 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:42,662 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:44,681 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:44,682 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:46,755 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:46,757 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:48,829 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:48,831 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:50,854 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:50,856 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:52,958 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:19:52,959 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:19:55,039 | INFO | [BATTLE-CHECK] run=94.95% | tiles=7 (cov 5.39%) | ready=True
+2025-11-02 02:19:55,041 | INFO | [BATTLE] Still in battle. run=94.95% tiles=7 cov=5.39%
+2025-11-02 02:19:57,078 | INFO | [BATTLE-CHECK] run=95.01% | tiles=5 (cov 3.80%) | ready=True
+2025-11-02 02:19:57,080 | INFO | [BATTLE] Still in battle. run=95.01% tiles=5 cov=3.80%
+2025-11-02 02:20:04,761 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762027281700.png  thr=0.50
+2025-11-02 02:20:04,762 | INFO | Bound to window: (x=1374, y=107, w=1152, h=648)
+2025-11-02 02:20:04,762 | INFO | Input method: Direct Input
+2025-11-02 02:20:06,142 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 02:20:06,142 | INFO | ============================================================
+2025-11-02 02:20:06,143 | INFO | 🤖 Bot started (Run + tiles, optional OCR)
+2025-11-02 02:20:06,143 | INFO | ============================================================
+2025-11-02 02:20:06,144 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 02:20:06,203 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:20:06,204 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:20:08,265 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:20:08,267 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:20:10,356 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:20:10,357 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:20:12,439 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:20:12,441 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:20:14,506 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:20:14,507 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:20:16,514 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:20:16,516 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:20:18,540 | INFO | [BATTLE-CHECK] run=89.56% | tiles=1 (cov 2.11%) | ready=False
+2025-11-02 02:20:18,543 | INFO | [SEARCH] Battle UI missing. run=89.56% tiles=1 cov=2.11%
+2025-11-02 02:20:18,543 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 02:20:23,709 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:20:23,709 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:20:25,800 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:20:25,802 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:20:27,835 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:20:27,838 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:20:29,910 | INFO | [BATTLE-CHECK] run=89.55% | tiles=1 (cov 2.11%) | ready=False
+2025-11-02 02:20:29,913 | INFO | [SEARCH] Battle UI missing. run=89.55% tiles=1 cov=2.11%
+2025-11-02 02:20:29,913 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 02:20:35,079 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:20:35,079 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:20:37,126 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:20:37,128 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:20:39,213 | INFO | [BATTLE-CHECK] run=89.60% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:20:39,215 | INFO | [SEARCH] Battle UI missing. run=89.60% tiles=0 cov=0.00%
+2025-11-02 02:20:39,215 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 02:20:44,399 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:20:45,482 | INFO | [BATTLE-CHECK] run=95.67% | tiles=1 (cov 20.83%) | ready=False
+2025-11-02 02:20:46,543 | INFO | [BATTLE-CHECK] run=94.92% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:20:47,627 | INFO | [BATTLE-CHECK] run=94.93% | tiles=1 (cov 3.03%) | ready=False
+2025-11-02 02:20:48,739 | INFO | [SEARCH] Direct click at client=(774,38)
+2025-11-02 02:20:48,739 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 02:20:49,801 | INFO | [BATTLE-CHECK] run=94.48% | tiles=1 (cov 3.47%) | ready=False
+2025-11-02 02:20:50,874 | INFO | [BATTLE-CHECK] run=94.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:20:51,954 | INFO | [BATTLE-CHECK] run=93.29% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:20:53,042 | INFO | [BATTLE-CHECK] run=10.77% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:20:54,092 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:20:54,093 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:20:56,151 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:20:56,153 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:20:58,242 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:20:58,244 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:00,291 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:00,293 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:02,379 | INFO | [BATTLE-CHECK] run=92.58% | tiles=2 (cov 13.93%) | ready=False
+2025-11-02 02:21:02,381 | INFO | [SEARCH] Battle UI missing. run=92.58% tiles=2 cov=13.93%
+2025-11-02 02:21:02,381 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 02:21:07,554 | INFO | [BATTLE-CHECK] run=10.77% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:21:08,552 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:08,553 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:10,640 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:10,641 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:12,680 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:12,681 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:14,713 | INFO | [BATTLE-CHECK] run=89.90% | tiles=1 (cov 24.49%) | ready=False
+2025-11-02 02:21:14,715 | INFO | [SEARCH] Battle UI missing. run=89.90% tiles=1 cov=24.49%
+2025-11-02 02:21:14,716 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 02:21:19,888 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:19,889 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:21,953 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:21,954 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:24,018 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:24,020 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:26,055 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:26,057 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:28,109 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:28,111 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:30,133 | INFO | [BATTLE-CHECK] run=100.00% | tiles=4 (cov 20.32%) | ready=True
+2025-11-02 02:21:30,135 | INFO | [BATTLE] Still in battle. run=100.00% tiles=4 cov=20.32%
+2025-11-02 02:21:32,219 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:32,220 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:34,308 | INFO | [BATTLE-CHECK] run=89.39% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:21:34,311 | INFO | [SEARCH] Battle UI missing. run=89.39% tiles=0 cov=0.00%
+2025-11-02 02:21:34,311 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 02:21:39,469 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:39,470 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:41,559 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:41,560 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:43,565 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:43,567 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:45,649 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:45,651 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:47,740 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:21:47,742 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:21:49,857 | INFO | [BATTLE-CHECK] run=89.56% | tiles=1 (cov 2.11%) | ready=False
+2025-11-02 02:21:49,859 | INFO | [SEARCH] Battle UI missing. run=89.56% tiles=1 cov=2.11%
+2025-11-02 02:21:49,859 | INFO | [COOLDOWN] Waiting 5.0s before next search...
+2025-11-02 02:21:55,082 | INFO | [SEARCH] Direct click at client=(592,184)
+2025-11-02 02:21:55,082 | INFO | [SEARCH] ✓ Spot found! score=0.95 - Clicked!
+2025-11-02 02:21:56,112 | INFO | [SEARCH] Direct click at client=(592,184)
+2025-11-02 02:21:56,112 | INFO | [SEARCH] ✓ Spot found! score=0.91 - Clicked!
+2025-11-02 02:21:57,143 | INFO | [SEARCH] Direct click at client=(592,184)
+2025-11-02 02:21:57,143 | INFO | [SEARCH] ✓ Spot found! score=0.91 - Clicked!
+2025-11-02 02:21:58,234 | INFO | [SEARCH] Direct click at client=(592,184)
+2025-11-02 02:21:58,234 | INFO | [SEARCH] ✓ Spot found! score=0.91 - Clicked!
+2025-11-02 02:21:59,234 | INFO | [SEARCH] Direct click at client=(592,184)
+2025-11-02 02:21:59,234 | INFO | [SEARCH] ✓ Spot found! score=0.95 - Clicked!
+2025-11-02 02:22:00,283 | INFO | [SEARCH] Direct click at client=(592,184)
+2025-11-02 02:22:00,283 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 02:22:01,295 | INFO | [SEARCH] Direct click at client=(712,178)
+2025-11-02 02:22:01,296 | INFO | [SEARCH] ✓ Spot found! score=0.93 - Clicked!
+2025-11-02 02:22:02,253 | INFO | [BATTLE-CHECK] run=10.22% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:22:03,329 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:03,330 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:05,390 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:05,392 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:07,426 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:07,428 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:09,523 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:09,525 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:11,516 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:11,518 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:13,541 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:13,542 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:15,658 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:15,660 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:17,741 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:17,743 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:19,825 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:19,827 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:21,868 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:21,869 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:23,978 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:23,980 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:26,007 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:26,009 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:28,055 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:28,056 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:30,116 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:30,118 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:32,130 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:32,131 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:34,153 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:34,155 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:36,214 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:36,216 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:38,305 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:38,307 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:40,397 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:40,398 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:42,474 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:42,476 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:44,595 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:44,597 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:46,698 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:46,700 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:48,769 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:48,770 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:50,827 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:50,828 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:52,898 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:52,901 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:55,017 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:55,019 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:57,062 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:57,065 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:22:59,137 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:22:59,138 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:01,213 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:23:01,215 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:03,275 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:23:03,276 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:05,329 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:23:05,331 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:07,404 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:23:07,405 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:09,414 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:23:09,416 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:11,510 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:23:11,512 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:13,540 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:23:13,542 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:15,632 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:23:15,635 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:17,692 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:23:17,694 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:19,796 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:23:19,798 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:21,839 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:23:21,841 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:23,888 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:23:23,889 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:25,965 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:23:25,966 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:27,984 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:23:27,986 | INFO | [BATTLE] Still in battle. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:23:30,057 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 23.49%) | ready=True
+2025-11-02 02:23:30,059 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=23.49%
+2025-11-02 02:23:32,095 | INFO | [BATTLE-CHECK] run=95.45% | tiles=7 (cov 5.74%) | ready=True
+2025-11-02 02:23:32,097 | INFO | [BATTLE] Still in battle. run=95.45% tiles=7 cov=5.74%
+2025-11-02 02:23:34,155 | INFO | [BATTLE-CHECK] run=95.46% | tiles=3 (cov 3.50%) | ready=True
+2025-11-02 02:23:34,157 | INFO | [BATTLE] Still in battle. run=95.46% tiles=3 cov=3.50%
+2025-11-02 02:23:36,198 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.30%) | ready=True
+2025-11-02 02:23:36,201 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.30%
+2025-11-02 02:23:38,267 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.33%) | ready=True
+2025-11-02 02:23:38,268 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.33%
+2025-11-02 02:23:40,322 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.28%) | ready=True
+2025-11-02 02:23:40,324 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.28%
+2025-11-02 02:23:42,411 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.30%) | ready=True
+2025-11-02 02:23:42,413 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.30%
+2025-11-02 02:23:44,499 | INFO | [BATTLE-CHECK] run=95.45% | tiles=7 (cov 5.95%) | ready=True
+2025-11-02 02:23:44,501 | INFO | [BATTLE] Still in battle. run=95.45% tiles=7 cov=5.95%
+2025-11-02 02:23:46,501 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.30%) | ready=True
+2025-11-02 02:23:46,503 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.30%
+2025-11-02 02:23:48,543 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.28%) | ready=True
+2025-11-02 02:23:48,544 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.28%
+2025-11-02 02:23:50,566 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.30%) | ready=True
+2025-11-02 02:23:50,568 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.30%
+2025-11-02 02:23:52,647 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.30%) | ready=True
+2025-11-02 02:23:52,649 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.30%
+2025-11-02 02:23:54,649 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.30%) | ready=True
+2025-11-02 02:23:54,651 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.30%
+2025-11-02 02:23:56,747 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.30%) | ready=True
+2025-11-02 02:23:56,749 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.30%
+2025-11-02 02:23:58,846 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.28%) | ready=True
+2025-11-02 02:23:58,848 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.28%
+2025-11-02 02:24:00,913 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.28%) | ready=True
+2025-11-02 02:24:00,915 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.28%
+2025-11-02 02:24:03,010 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.30%) | ready=True
+2025-11-02 02:24:03,012 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.30%
+2025-11-02 02:24:05,120 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.30%) | ready=True
+2025-11-02 02:24:05,122 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.30%
+2025-11-02 02:24:07,180 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.30%) | ready=True
+2025-11-02 02:24:07,181 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.30%
+2025-11-02 02:24:09,289 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.28%) | ready=True
+2025-11-02 02:24:09,291 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.28%
+2025-11-02 02:24:11,303 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.30%) | ready=True
+2025-11-02 02:24:11,305 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.30%
+2025-11-02 02:24:13,375 | INFO | [BATTLE-CHECK] run=95.45% | tiles=8 (cov 7.30%) | ready=True
+2025-11-02 02:24:13,377 | INFO | [BATTLE] Still in battle. run=95.45% tiles=8 cov=7.30%
+2025-11-02 02:24:15,426 | INFO | [BATTLE-CHECK] run=95.45% | tiles=7 (cov 5.95%) | ready=True
+2025-11-02 02:24:15,428 | INFO | [BATTLE] Still in battle. run=95.45% tiles=7 cov=5.95%
+2025-11-02 02:30:32,081 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762027281700.png  thr=0.50
+2025-11-02 02:30:32,082 | INFO | Bound to window: (x=989, y=144, w=1152, h=648)
+2025-11-02 02:30:32,082 | INFO | Input method: Direct Input
+2025-11-02 02:30:33,520 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 02:30:33,521 | INFO | ============================================================
+2025-11-02 02:30:33,521 | INFO | 🤖 Bot started (Run + tiles, optional OCR)
+2025-11-02 02:30:33,521 | INFO | ============================================================
+2025-11-02 02:30:33,523 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 02:30:33,651 | INFO | [SEARCH] Direct click at client=(722,176)
+2025-11-02 02:30:33,653 | INFO | [SEARCH] ✓ Spot found! score=0.87 - Clicked!
+2025-11-02 02:30:34,652 | INFO | [SEARCH] Direct click at client=(608,176)
+2025-11-02 02:30:34,652 | INFO | [SEARCH] ✓ Spot found! score=0.62 - Clicked!
+2025-11-02 02:30:35,731 | INFO | [BATTLE-CHECK] run=10.75% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:30:36,821 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:30:36,822 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:30:38,808 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:30:40,899 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:30:42,984 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:30:45,037 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:30:47,114 | INFO | [BATTLE-CHECK] run=89.55% | tiles=1 (cov 2.11%) | ready=False
+2025-11-02 02:30:47,118 | INFO | [SEARCH] Battle UI missing. run=89.55% tiles=1 cov=2.11%
+2025-11-02 02:30:52,338 | INFO | [SEARCH] Direct click at client=(654,180)
+2025-11-02 02:30:52,338 | INFO | [SEARCH] ✓ Spot found! score=0.91 - Clicked!
+2025-11-02 02:30:53,357 | INFO | [SEARCH] Direct click at client=(498,162)
+2025-11-02 02:30:53,357 | INFO | [SEARCH] ✓ Spot found! score=0.93 - Clicked!
+2025-11-02 02:30:54,404 | INFO | [SEARCH] Direct click at client=(364,206)
+2025-11-02 02:30:54,404 | INFO | [SEARCH] ✓ Spot found! score=0.87 - Clicked!
+2025-11-02 02:30:55,461 | INFO | [BATTLE-CHECK] run=94.88% | tiles=3 (cov 8.49%) | ready=True
+2025-11-02 02:30:55,461 | INFO | [BATTLE] Ready. run=94.88% tiles=3 cov=8.49%
+2025-11-02 02:30:57,483 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:30:59,530 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:31:01,596 | INFO | [BATTLE-CHECK] run=87.80% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:01,600 | INFO | [SEARCH] Battle UI missing. run=87.80% tiles=0 cov=0.00%
+2025-11-02 02:31:06,766 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:31:06,767 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:31:08,759 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:31:10,833 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:31:12,843 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:31:14,881 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:31:16,892 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:31:18,970 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:31:21,062 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:31:23,117 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:31:25,142 | INFO | [BATTLE-CHECK] run=94.80% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:25,146 | INFO | [SEARCH] Battle UI missing. run=94.80% tiles=0 cov=0.00%
+2025-11-02 02:31:30,386 | INFO | [SEARCH] Direct click at client=(294,332)
+2025-11-02 02:31:30,386 | INFO | [SEARCH] ✓ Spot found! score=0.99 - Clicked!
+2025-11-02 02:31:31,440 | INFO | [BATTLE-CHECK] run=0.00% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:32,496 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:33,588 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:34,700 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:35,819 | INFO | [BATTLE-CHECK] run=94.84% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:36,916 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:37,976 | INFO | [BATTLE-CHECK] run=95.32% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:39,000 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:40,052 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:41,127 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:42,229 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:43,286 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:44,350 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:45,442 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:46,545 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:47,606 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:48,680 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:49,751 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:50,829 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:51,921 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:53,001 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:54,060 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:55,194 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:56,248 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:57,343 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:58,423 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:31:59,513 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:00,628 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:01,725 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:02,796 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:03,909 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:04,904 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:05,914 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:06,922 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:08,028 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:09,047 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:10,058 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:11,076 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:12,100 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:13,126 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:14,131 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:15,223 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:16,305 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:17,337 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:18,434 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:19,440 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:20,538 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:21,555 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:22,584 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:23,655 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:24,662 | INFO | [BATTLE-CHECK] run=94.85% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:25,753 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:26,853 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:27,943 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:29,042 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:30,120 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:31,237 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:32,343 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:33,447 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:34,538 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:35,637 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:36,739 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:37,828 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:38,890 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:39,951 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:41,046 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:42,167 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:43,255 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:44,378 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:45,432 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:46,503 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:47,523 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:48,599 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:49,613 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:50,621 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:51,713 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:52,781 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:53,796 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:54,855 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:55,857 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:56,949 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:58,057 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:32:59,173 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:00,298 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:01,335 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:02,367 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:03,432 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:04,450 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:05,482 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:06,526 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:07,648 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:08,724 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:09,846 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:10,919 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:12,036 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:13,152 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:14,228 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:15,242 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:16,255 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:17,311 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:18,360 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:19,470 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:20,531 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:21,611 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:22,706 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:23,848 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:24,904 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:25,922 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:27,017 | INFO | [BATTLE-CHECK] run=94.95% | tiles=1 (cov 0.93%) | ready=False
+2025-11-02 02:33:28,126 | INFO | [BATTLE-CHECK] run=94.95% | tiles=1 (cov 1.24%) | ready=False
+2025-11-02 02:33:29,141 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:30,241 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:31,370 | INFO | [BATTLE-CHECK] run=94.95% | tiles=3 (cov 2.74%) | ready=True
+2025-11-02 02:33:31,370 | INFO | [BATTLE] Ready. run=94.95% tiles=3 cov=2.74%
+2025-11-02 02:33:33,435 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:33,440 | INFO | [SEARCH] Battle UI missing. run=94.95% tiles=0 cov=0.00%
+2025-11-02 02:33:38,626 | INFO | [BATTLE-CHECK] run=94.95% | tiles=2 (cov 1.88%) | ready=False
+2025-11-02 02:33:39,735 | INFO | [BATTLE-CHECK] run=94.95% | tiles=2 (cov 1.88%) | ready=False
+2025-11-02 02:33:40,768 | INFO | [BATTLE-CHECK] run=94.95% | tiles=2 (cov 1.88%) | ready=False
+2025-11-02 02:33:41,776 | INFO | [BATTLE-CHECK] run=94.95% | tiles=2 (cov 1.88%) | ready=False
+2025-11-02 02:33:42,862 | INFO | [BATTLE-CHECK] run=94.95% | tiles=2 (cov 1.88%) | ready=False
+2025-11-02 02:33:43,957 | INFO | [BATTLE-CHECK] run=94.95% | tiles=2 (cov 1.88%) | ready=False
+2025-11-02 02:33:45,073 | INFO | [BATTLE-CHECK] run=94.95% | tiles=2 (cov 1.87%) | ready=False
+2025-11-02 02:33:46,142 | INFO | [BATTLE-CHECK] run=94.95% | tiles=2 (cov 1.87%) | ready=False
+2025-11-02 02:33:47,234 | INFO | [BATTLE-CHECK] run=94.95% | tiles=2 (cov 1.69%) | ready=False
+2025-11-02 02:33:48,309 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:49,427 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:50,551 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:51,617 | INFO | [BATTLE-CHECK] run=94.95% | tiles=1 (cov 0.63%) | ready=False
+2025-11-02 02:33:52,642 | INFO | [BATTLE-CHECK] run=94.95% | tiles=1 (cov 0.97%) | ready=False
+2025-11-02 02:33:53,691 | INFO | [BATTLE-CHECK] run=94.95% | tiles=1 (cov 0.95%) | ready=False
+2025-11-02 02:33:54,700 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:55,744 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:56,761 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:57,864 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:58,879 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:33:59,948 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:01,023 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:02,055 | INFO | [BATTLE-CHECK] run=94.95% | tiles=1 (cov 0.87%) | ready=False
+2025-11-02 02:34:03,146 | INFO | [BATTLE-CHECK] run=95.03% | tiles=1 (cov 0.87%) | ready=False
+2025-11-02 02:34:04,220 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:05,351 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:06,468 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:07,565 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:08,648 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:09,752 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:10,825 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:11,927 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:13,018 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:14,127 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:15,188 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:16,264 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:17,351 | INFO | [BATTLE-CHECK] run=95.03% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:18,443 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:19,455 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:20,539 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:21,644 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:22,724 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:23,756 | INFO | [BATTLE-CHECK] run=94.95% | tiles=2 (cov 1.59%) | ready=False
+2025-11-02 02:34:24,863 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:25,963 | INFO | [BATTLE-CHECK] run=94.95% | tiles=3 (cov 2.37%) | ready=True
+2025-11-02 02:34:25,963 | INFO | [BATTLE] Ready. run=94.95% tiles=3 cov=2.37%
+2025-11-02 02:34:28,061 | INFO | [BATTLE-CHECK] run=94.95% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:28,067 | INFO | [SEARCH] Battle UI missing. run=94.95% tiles=0 cov=0.00%
+2025-11-02 02:34:37,655 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762027281700.png  thr=0.50
+2025-11-02 02:34:37,656 | INFO | Bound to window: (x=693, y=294, w=1152, h=648)
+2025-11-02 02:34:37,656 | INFO | Input method: Direct Input
+2025-11-02 02:34:39,111 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 02:34:39,112 | INFO | ============================================================
+2025-11-02 02:34:39,112 | INFO | 🤖 Bot started (Run + tiles, optional OCR)
+2025-11-02 02:34:39,112 | INFO | ============================================================
+2025-11-02 02:34:39,114 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 02:34:39,232 | INFO | [SEARCH] Direct click at client=(590,182)
+2025-11-02 02:34:39,232 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 02:34:40,323 | INFO | [SEARCH] Direct click at client=(590,182)
+2025-11-02 02:34:40,323 | INFO | [SEARCH] ✓ Spot found! score=0.94 - Clicked!
+2025-11-02 02:34:41,348 | INFO | [SEARCH] Direct click at client=(590,172)
+2025-11-02 02:34:41,348 | INFO | [SEARCH] ✓ Spot found! score=0.95 - Clicked!
+2025-11-02 02:34:42,408 | INFO | [SEARCH] Direct click at client=(712,180)
+2025-11-02 02:34:42,409 | INFO | [SEARCH] ✓ Spot found! score=0.96 - Clicked!
+2025-11-02 02:34:43,445 | INFO | [BATTLE-CHECK] run=10.72% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:34:44,509 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:34:44,510 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:34:46,538 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:34:48,581 | INFO | [BATTLE-CHECK] run=99.93% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:35:06,632 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762027281700.png  thr=0.50
+2025-11-02 02:35:06,634 | INFO | Bound to window: (x=693, y=294, w=1152, h=648)
+2025-11-02 02:35:06,634 | INFO | Input method: Direct Input
+2025-11-02 02:35:08,073 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 02:35:08,074 | INFO | ============================================================
+2025-11-02 02:35:08,074 | INFO | 🤖 Bot started (Run + tiles, optional OCR)
+2025-11-02 02:35:08,074 | INFO | ============================================================
+2025-11-02 02:35:08,076 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 02:35:08,139 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:35:08,140 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:35:10,150 | INFO | [BATTLE-CHECK] run=95.85% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:35:12,230 | INFO | [BATTLE-CHECK] run=95.85% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:35:14,290 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:35:16,380 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:35:18,398 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:35:20,458 | INFO | [BATTLE-CHECK] run=95.85% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:35:22,513 | INFO | [BATTLE-CHECK] run=97.82% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:35:23,323 | INFO | 🛑 Bot stopped.
+2025-11-02 02:35:31,732 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762027281700.png  thr=0.50
+2025-11-02 02:35:31,733 | INFO | Bound to window: (x=693, y=294, w=1152, h=648)
+2025-11-02 02:35:31,733 | INFO | Input method: Direct Input
+2025-11-02 02:35:33,156 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 02:35:33,157 | INFO | ============================================================
+2025-11-02 02:35:33,157 | INFO | 🤖 Bot started (Run + tiles, optional OCR)
+2025-11-02 02:35:33,157 | INFO | ============================================================
+2025-11-02 02:35:33,159 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 02:35:33,225 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:35:33,225 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:35:35,232 | INFO | [BATTLE-CHECK] run=95.19% | tiles=6 (cov 30.10%) | ready=True
+2025-11-02 02:35:37,315 | INFO | [BATTLE-CHECK] run=95.19% | tiles=6 (cov 30.10%) | ready=True
+2025-11-02 02:35:39,366 | INFO | [BATTLE-CHECK] run=95.19% | tiles=6 (cov 30.10%) | ready=True
+2025-11-02 02:35:41,412 | INFO | [BATTLE-CHECK] run=95.19% | tiles=6 (cov 30.10%) | ready=True
+2025-11-02 02:35:43,474 | INFO | [BATTLE-CHECK] run=95.19% | tiles=6 (cov 30.10%) | ready=True
+2025-11-02 02:35:45,569 | INFO | [BATTLE-CHECK] run=95.19% | tiles=6 (cov 30.10%) | ready=True
+2025-11-02 02:39:31,385 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762027281700.png  thr=0.50
+2025-11-02 02:39:37,035 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762027281700.png  thr=0.50
+2025-11-02 02:39:37,036 | INFO | Bound to window: (x=693, y=294, w=1152, h=648)
+2025-11-02 02:39:37,036 | INFO | Input method: Direct Input
+2025-11-02 02:39:38,440 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 02:39:38,442 | INFO | ============================================================
+2025-11-02 02:39:38,442 | INFO | 🤖 Bot started (Run + tiles, optional OCR)
+2025-11-02 02:39:38,442 | INFO | ============================================================
+2025-11-02 02:39:38,444 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 02:39:38,567 | INFO | [SEARCH] Direct click at client=(722,180)
+2025-11-02 02:39:38,567 | INFO | [SEARCH] ✓ Spot found! score=0.87 - Clicked!
+2025-11-02 02:39:39,561 | INFO | [SEARCH] Direct click at client=(690,180)
+2025-11-02 02:39:39,561 | INFO | [SEARCH] ✓ Spot found! score=0.61 - Clicked!
+2025-11-02 02:39:40,630 | INFO | [BATTLE-CHECK] run=10.09% | tiles=0 (cov 0.00%) | ready=False
+2025-11-02 02:39:41,685 | INFO | [BATTLE-CHECK] run=79.50% | tiles=1 (cov 1.47%) | ready=False
+2025-11-02 02:39:42,753 | INFO | [BATTLE-CHECK] run=79.50% | tiles=1 (cov 1.47%) | ready=False
+2025-11-02 02:39:43,782 | INFO | [BATTLE-CHECK] run=79.50% | tiles=1 (cov 1.47%) | ready=False
+2025-11-02 02:39:44,850 | INFO | [BATTLE-CHECK] run=79.50% | tiles=1 (cov 1.47%) | ready=False
+2025-11-02 02:39:45,958 | INFO | [BATTLE-CHECK] run=79.50% | tiles=1 (cov 1.47%) | ready=False
+2025-11-02 02:39:47,003 | INFO | [BATTLE-CHECK] run=79.50% | tiles=1 (cov 1.47%) | ready=False
+2025-11-02 02:39:48,113 | INFO | [BATTLE-CHECK] run=79.50% | tiles=1 (cov 1.47%) | ready=False
+2025-11-02 02:39:49,216 | INFO | [BATTLE-CHECK] run=95.29% | tiles=1 (cov 1.47%) | ready=False
+2025-11-02 02:39:50,320 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:39:50,321 | INFO | [BATTLE] Ready. run=95.30% tiles=3 cov=2.95%
+2025-11-02 02:39:52,366 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:39:54,426 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:39:56,548 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:39:58,591 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:00,663 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:02,705 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:04,723 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:06,797 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:08,832 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:10,895 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:12,974 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:15,070 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:17,167 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:19,240 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:21,253 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:23,362 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:25,454 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:27,529 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:29,551 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:31,655 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:40:33,692 | INFO | [BATTLE-CHECK] run=95.30% | tiles=3 (cov 2.95%) | ready=True
+2025-11-02 02:42:37,230 | INFO | Selected spot 'Papa'  template=assets/templates/spots/1762027281700.png  thr=0.50
+2025-11-02 02:42:37,232 | INFO | Bound to window: (x=1069, y=386, w=1152, h=648)
+2025-11-02 02:42:37,232 | INFO | Input method: Direct Input
+2025-11-02 02:42:38,614 | INFO | [OCR] EasyOCR initialized (gpu=False)
+2025-11-02 02:42:38,615 | INFO | ============================================================
+2025-11-02 02:42:38,615 | INFO | 🤖 Bot started (Run + tiles, optional OCR)
+2025-11-02 02:42:38,615 | INFO | ============================================================
+2025-11-02 02:42:38,617 | INFO | 🤖 Starting in SEARCH mode...
+2025-11-02 02:42:38,678 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:42:38,678 | INFO | [BATTLE] Ready. run=100.00% tiles=5 cov=26.89%
+2025-11-02 02:42:40,725 | INFO | [BATTLE-CHECK] run=100.00% | tiles=5 (cov 26.89%) | ready=True
+2025-11-02 02:42:42,046 | INFO | 🛑 Bot stopped.

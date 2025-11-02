@@ -102,7 +102,6 @@
     ]
   },
   "logging": {
-    "file": "bot.log",
     "level": "INFO"
   },
   "run": {

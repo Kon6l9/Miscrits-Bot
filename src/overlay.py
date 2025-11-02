@@ -156,33 +156,40 @@ class Overlay:
         img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         draw = ImageDraw.Draw(img)
 
+        # --- draw rectangles (thick + faint fill + black under-stroke) ---
         for (x1, y1, x2, y2, color) in rects:
-            c = color if color else (0, 255, 0, 200)
-            draw.rectangle([x1, y1, x2, y2], outline=c, width=2)
+            r, g, b, a = color if color else (0, 255, 0, 220)
+            # 1) faint fill so it’s visible on any background
+            fill_a = max(40, min(80, a // 3))
+            draw.rectangle([x1, y1, x2, y2], fill=(r, g, b, fill_a))
+            # 2) black “glow” under-stroke, thicker
+            draw.rectangle([x1, y1, x2, y2], outline=(0, 0, 0, 200), width=6)
+            # 3) colored main stroke
+            draw.rectangle([x1+1, y1+1, x2-1, y2-1], outline=(r, g, b, a), width=4)
 
-        fnt = _font(16)
+        # --- texts (with black shadow) ---
+        fnt = _font(18)
         for (x, y, text, color) in texts:
-            c = color if color else (0, 255, 0, 200)
-            draw.text((x, y), text, fill=c, font=fnt)
+            r, g, b, a = color if color else (0, 255, 0, 220)
+            draw.text((x+1, y+1), text, fill=(0, 0, 0, 220), font=fnt)
+            draw.text((x, y), text, fill=(r, g, b, a), font=fnt)
 
-        # Convert to BGRA (Windows expects that) and copy into DIB section memory
-        bgra = np.asarray(img, dtype=np.uint8)[:, :, [2, 1, 0, 3]]  # RGBA -> BGRA
+        # Convert to BGRA and copy into DIB
+        bgra = np.asarray(img, dtype=np.uint8)[:, :, [2, 1, 0, 3]]
         memmove(self.bits_ptr, bgra.ctypes.data, bgra.size)
 
-        # Position/size overlay without activating it
+        # Stick to the client rect
         win32gui.SetWindowPos(
             self.hwnd, win32con.HWND_TOPMOST, L, T, W, H,
             SWP_NOACTIVATE | SWP_SHOWWINDOW
         )
 
-        # Alpha blend the DIB section to the layered window
         blend = BLENDFUNCTION()
-        blend.BlendOp = 0          # AC_SRC_OVER
+        blend.BlendOp = 0
         blend.BlendFlags = 0
         blend.SourceConstantAlpha = 255
         blend.AlphaFormat = AC_SRC_ALPHA
 
-        # UpdateLayeredWindow expects src POINT=(0,0), dst POINT=(L,T), size=(W,H)
         win32gui.UpdateLayeredWindow(
             self.hwnd, 0, (L, T), (W, H),
             self.memdc.GetSafeHdc(), (0, 0), 0, byref(blend), ULW_ALPHA

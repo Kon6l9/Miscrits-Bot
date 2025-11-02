@@ -5,6 +5,7 @@ import threading
 import tkinter as tk
 from tkinter import ttk, messagebox
 import json, time
+from datetime import datetime
 
 from PIL import Image, ImageTk, ImageGrab
 from .capture_loop import Bot
@@ -88,6 +89,7 @@ class BotUI:
         frame = self.tab_capture
         frame.grid_columnconfigure(0, weight=1, minsize=420)
         frame.grid_columnconfigure(1, weight=1, minsize=360)
+        frame.grid_rowconfigure(1, weight=1)  # let bottom log stretch
 
         # LEFT: Rarities
         left = ttk.LabelFrame(frame, text="Per-Rarity Rules (optional; doesn’t affect spot clicking)")
@@ -124,6 +126,18 @@ class BotUI:
 
         ttk.Label(right, text="Delay after alert (seconds):").grid(row=5, column=0, sticky="e", padx=6, pady=4)
         ttk.Spinbox(right, from_=0, to=30, textvariable=self.var_alert_delay, width=6).grid(row=5, column=1, sticky="w")
+
+        # BOTTOM: Live Mode Log
+        log_frame = ttk.LabelFrame(frame, text="Live Mode Log")
+        log_frame.grid(row=1, column=0, columnspan=2, sticky="nsew", padx=6, pady=(0,6))
+        log_frame.grid_columnconfigure(0, weight=1)
+        log_frame.grid_rowconfigure(0, weight=1)
+
+        self.txt_capture_log = tk.Text(log_frame, height=10, wrap="none")
+        yscroll = ttk.Scrollbar(log_frame, orient="vertical", command=self.txt_capture_log.yview)
+        self.txt_capture_log.configure(yscrollcommand=yscroll.set)
+        self.txt_capture_log.grid(row=0, column=0, sticky="nsew", padx=(6,0), pady=6)
+        yscroll.grid(row=0, column=1, sticky="ns", padx=(0,6), pady=6)
 
     def _build_run_controls(self):
         frame = ttk.Frame(self.tab_capture)
@@ -182,7 +196,6 @@ class BotUI:
         ttk.Button(tool, text="Add New Spot", command=self._popup_add_new_spot).pack(side="left", padx=(0, 6))
         ttk.Button(tool, text="Apply Clipboard", command=self.apply_clipboard_to_selected).pack(side="left", padx=(0, 6))
 
-        # style for taller rows
         style = ttk.Style(self.root)
         style.configure("Spots.Treeview", rowheight=32)
         style.configure("Spots.Treeview.Heading", padding=(6, 4))
@@ -201,7 +214,6 @@ class BotUI:
         self.tree_spots.column("delete",  width=90,  anchor="center")
         self.tree_spots.grid(row=2, column=0, sticky="nsew", padx=6, pady=6)
 
-        # keep buttons aligned; also render on first paint
         for ev in ("<Configure>", "<<TreeviewSelect>>", "<ButtonRelease-1>",
                    "<MouseWheel>", "<KeyRelease-Up>", "<KeyRelease-Down>", "<Map>"):
             self.tree_spots.bind(ev, lambda e: self._refresh_action_buttons())
@@ -211,7 +223,6 @@ class BotUI:
 
     # ---- Spots helpers/actions ----
     def _resolve_template_abs(self, p: str) -> str:
-        """Resolve a template path relative to BASE_DIR."""
         if not p:
             return ""
         return p if os.path.isabs(p) else os.path.join(BASE_DIR, p)
@@ -224,12 +235,11 @@ class BotUI:
     def _row_tuple(self, s):
         name = s.get("name", "Spot")
         th   = float(s.get("threshold", 0.85))
-        return (name, f"{th:.2f}", "", "", "")  # buttons overlayed
+        return (name, f"{th:.2f}", "", "", "")
 
     def _reload_spots_tree(self):
         for iid in self.tree_spots.get_children():
             self.tree_spots.delete(iid)
-        # destroy existing overlay buttons
         for btns in self._row_btns.values():
             for b in btns.values():
                 try: b.destroy()
@@ -252,18 +262,14 @@ class BotUI:
         except Exception:
             return None
 
-    # overlay buttons
     def _ensure_buttons_for_iid(self, iid):
         if iid in self._row_btns:
             return
         idx = int(iid)
 
-        def on_edit(i=idx):
-            self._popup_edit_spot(i)
-        def on_delete(i=idx):
-            self._delete_spot_by_index(i)
-        def on_preview(i=idx):
-            self._open_preview(i)
+        def on_edit(i=idx):   self._popup_edit_spot(i)
+        def on_delete(i=idx): self._delete_spot_by_index(i)
+        def on_preview(i=idx):self._open_preview(i)
 
         edit_btn = ttk.Button(self.tree_spots, text="Edit", width=8, command=on_edit)
         del_btn  = ttk.Button(self.tree_spots, text="Delete", width=8, command=on_delete)
@@ -361,7 +367,7 @@ class BotUI:
                 th = float(th_var.get())
             except Exception:
                 th = 0.85
-            th = max(0.10, min(0.98, th))   # clamp range
+            th = max(0.10, min(0.98, th))
             spots[idx]["name"] = name
             spots[idx]["threshold"] = th
             _write_json(SPOTS_PATH, {"spots": spots})
@@ -389,7 +395,6 @@ class BotUI:
         img = Image.open(path)
         win = tk.Toplevel(self.root)
         win.title(f"Preview: {spots[idx].get('name','Spot')}")
-        # fit image into max 640x480 while keeping ratio
         max_w, max_h = 640, 480
         w, h = img.size
         scale = min(max_w / w, max_h / h, 1.0)
@@ -397,7 +402,7 @@ class BotUI:
             img = img.resize((int(w * scale), int(h * scale)), Image.LANCZOS)
         tkimg = ImageTk.PhotoImage(img)
         lbl = ttk.Label(win, image=tkimg)
-        lbl.image = tkimg  # keep ref
+        lbl.image = tkimg
         lbl.pack(padx=10, pady=10)
         self._center_popup(win)
         win.grab_set()
@@ -442,7 +447,6 @@ class BotUI:
             messagebox.showerror("Apply Clipboard", f"Failed to save image: {e}")
             return
 
-        # store relative path so capture_loop resolves with base_dir
         rel = os.path.relpath(fpath, BASE_DIR).replace("\\", "/")
         data = _read_json(SPOTS_PATH, {"spots": []})
         spots = data.get("spots", [])
@@ -515,7 +519,6 @@ class BotUI:
             messagebox.showwarning("Start", "Pick a spot in Capture tab (Spot to farm).")
             return
 
-        # Find the selected index in Coords.json
         data = _read_json(SPOTS_PATH, {"spots": []})
         spots = data.get("spots", [])
         try:
@@ -528,17 +531,14 @@ class BotUI:
             messagebox.showwarning("Start", "The selected spot has no image yet. Use Apply Clipboard on the Spots tab.")
             return
 
-        # Write selected index to config (what Bot expects)
         cfg = _read_json(CFG_PATH, {})
         cfg.setdefault("run", {})["selected_spot_index"] = int(sel_idx)
         _write_json(CFG_PATH, cfg)
 
-        # Save other settings
         self.save_cfg(silent=True)
 
-        # Create Bot with (cfg_path, base_dir)
         try:
-            self.bot = Bot(CFG_PATH, BASE_DIR)
+            self.bot = Bot(CFG_PATH, BASE_DIR, ui_mode_cb=self._bot_mode_event)
         except TypeError as e:
             messagebox.showerror("Start", f"Bot init failed: {e}")
             return
@@ -548,17 +548,19 @@ class BotUI:
         self.btn_start.configure(state="disabled")
         self.btn_stop.configure(state="normal")
         self._log("[UI] Bot started.")
+        self._append_capture_log("INFO", "Bot started")
 
     def run(self):
         try:
-            # Bot.start() blocks, so run it inside the thread
             self.bot.start()
         except Exception as e:
             self._log(f"[Bot] Error: {e}")
+            self._append_capture_log("ERROR", f"Bot error: {e}")
         finally:
             self.btn_start.configure(state="normal")
             self.btn_stop.configure(state="disabled")
             self._log("[UI] Bot stopped.")
+            self._append_capture_log("INFO", "Bot stopped")
 
     def stop_bot(self):
         try:
@@ -568,6 +570,24 @@ class BotUI:
             pass
         self.btn_start.configure(state="normal")
         self.btn_stop.configure(state="disabled")
+
+    # -------- Live Capture Log helpers --------
+    def _append_capture_log(self, mode: str, line: str):
+        def _do():
+            ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            self.txt_capture_log.insert("end", f"{ts}  {mode:<6}  {line}\n")
+            self.txt_capture_log.see("end")
+        self.root.after(0, _do)
+
+    def _bot_mode_event(self, mode: str, info: dict):
+        run = info.get("run", 0.0)
+        tiles = info.get("tiles_count", 0)
+        cov = info.get("tiles_coverage", 0.0)
+        extra = f"run={run:.0%} tiles={tiles} cov={cov:.1%}"
+        rar = info.get("enemy_rarity")
+        if rar:
+            extra += f"  rarity={rar}"
+        self._append_capture_log(mode, extra)
 
     # ---------------- LOGGING ----------------
     def _tail_log(self):

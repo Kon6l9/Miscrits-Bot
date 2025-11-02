@@ -37,7 +37,7 @@ class BattleDetector:
         self.required_consecutive = 2
         
         # Detection threshold for run button
-        self.run_button_threshold = 0.75
+        self.run_button_threshold = 0.60  # Lowered from 0.75 for testing
         
         # Load run button template
         run_button_path = os.path.join(base_dir, "assets", "templates", "battle", "run_button.png")
@@ -121,26 +121,91 @@ class BattleDetector:
             print("[DEBUG] ERROR: Search region is empty!")
             return False, 0.0
         
-        # Perform template matching
-        try:
-            result = cv2.matchTemplate(search_region, self.run_button_template, cv2.TM_CCOEFF_NORMED)
-            min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
-        except Exception as e:
-            print(f"[DEBUG] Template matching error: {e}")
-            return False, 0.0
+        # Try multiple scales (0.8x to 1.2x)
+        scales = [1.0, 0.9, 1.1, 0.8, 1.2]
+        best_score = 0.0
+        best_loc = None
+        best_scale = 1.0
+        
+        for scale in scales:
+            # Resize template
+            if scale != 1.0:
+                tw = int(self.run_button_template.shape[1] * scale)
+                th = int(self.run_button_template.shape[0] * scale)
+                if tw < 10 or th < 10:  # Skip if too small
+                    continue
+                scaled_template = cv2.resize(self.run_button_template, (tw, th))
+            else:
+                scaled_template = self.run_button_template
+            
+            # Check if template fits in search region
+            if scaled_template.shape[0] > search_region.shape[0] or \
+               scaled_template.shape[1] > search_region.shape[1]:
+                continue
+        
+            # Perform template matching
+            # Try TM_CCOEFF_NORMED first (best for exact matches)
+            try:
+                result = cv2.matchTemplate(search_region, scaled_template, cv2.TM_CCOEFF_NORMED)
+                min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
+                
+                # If score is low, also try TM_CCORR_NORMED (more tolerant)
+                if max_val < 0.5:
+                    result2 = cv2.matchTemplate(search_region, scaled_template, cv2.TM_CCORR_NORMED)
+                    min_val2, max_val2, min_loc2, max_loc2 = cv2.minMaxLoc(result2)
+                    if max_val2 > max_val:
+                        if self._debug_counter % 30 == 0:
+                            print(f"[DEBUG] TM_CCORR_NORMED gave better score: {max_val2:.3f} vs {max_val:.3f}")
+                        max_val = max_val2
+                        max_loc = max_loc2
+                
+                # Track best match across all scales
+                if max_val > best_score:
+                    best_score = max_val
+                    best_loc = max_loc
+                    best_scale = scale
+                        
+            except Exception as e:
+                if self._debug_counter % 30 == 0:
+                    print(f"[DEBUG] Template matching error at scale {scale}: {e}")
+                continue
+        
+        max_val = best_score
+        max_loc = best_loc
         
         # DEBUG: Show best match score periodically
         if self._debug_counter % 30 == 0:
-            print(f"[DEBUG] Best match score: {max_val:.3f} (threshold: {self.run_button_threshold})")
-        
+            print(f"[DEBUG] Best match score: {max_val:.3f} at scale {best_scale:.1f}x (threshold: {self.run_button_threshold})")
+            
+            # Save debug images every 30 frames when score is decent
+            if max_val > 0.2 and max_loc is not None:
+                debug_dir = os.path.join(self.base_dir, "debug_frames")
+                os.makedirs(debug_dir, exist_ok=True)
+                
+                # Save search region
+                search_path = os.path.join(debug_dir, f"search_region_{int(time.time())}.png")
+                cv2.imwrite(search_path, search_region)
+                
+                # Draw match location on search region
+                debug_region = search_region.copy()
+                th = int(self.run_button_template.shape[0] * best_scale)
+                tw = int(self.run_button_template.shape[1] * best_scale)
+                cv2.rectangle(debug_region, max_loc, 
+                            (max_loc[0] + tw, max_loc[1] + th), (0, 255, 0), 2)
+                match_path = os.path.join(debug_dir, f"match_debug_{int(time.time())}.png")
+                cv2.imwrite(match_path, debug_region)
+                
+                print(f"[DEBUG] Saved debug frames to {debug_dir}/")
+
+                
         # Check if match is good enough
-        found = max_val >= self.run_button_threshold
+        found = max_val >= self.run_button_threshold and max_loc is not None
         
         if found:
             # Calculate position in full frame
             btn_x = max_loc[0]
             btn_y = max_loc[1] + search_y_start
-            print(f"[STATE] ✓ Run button detected at ({btn_x}, {btn_y}) - score: {max_val:.3f}")
+            print(f"[STATE] ✓ Run button detected at ({btn_x}, {btn_y}) - score: {max_val:.3f} (scale: {best_scale:.1f}x)")
         
         return found, max_val
     
