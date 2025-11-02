@@ -1,10 +1,11 @@
-# src/battle.py - Enhanced Battle System with Phase Tracking
+# src/battle.py - Fixed Battle System with proper MSS usage
 import time
 import cv2
 import numpy as np
 import re
 from enum import Enum
 from typing import Optional, Tuple, Dict, List
+from mss import mss
 from .utils import ip_rating_meets_minimum
 
 # ============================================================================
@@ -30,7 +31,7 @@ class BattlePhase(Enum):
 
 IP_RATINGS_ORDER = ["S+", "S", "A+", "A", "B+", "B", "C+", "C", "D+", "D", "F+", "F", "F-"]
 
-# Updated capture rate table from the provided image
+# Capture rate table
 CAPTURE_RATE_TABLE_100HP = {
     "F-": {"Common": 45, "Rare": 35, "Epic": 25, "Exotic": 15, "Legendary": 100},
     "F": {"Common": 43, "Rare": 33, "Epic": 23, "Exotic": 13, "Legendary": 100},
@@ -45,16 +46,6 @@ CAPTURE_RATE_TABLE_100HP = {
     "A+": {"Common": 30, "Rare": 20, "Epic": 10, "Exotic": 1, "Legendary": 89},
     "S": {"Common": 28, "Rare": 18, "Epic": 8, "Exotic": 1, "Legendary": 87},
     "S+": {"Common": 27, "Rare": 17, "Epic": 7, "Exotic": 1, "Legendary": 86},
-}
-
-CAPTURE_RATE_TABLE_1HP = {
-    "C+": {"Legendary": 95},
-    "B": {"Legendary": 93},
-    "B+": {"Legendary": 92},
-    "A": {"Exotic": 99, "Legendary": 90},
-    "A+": {"Exotic": 99, "Legendary": 89},
-    "S": {"Exotic": 97, "Legendary": 87},
-    "S+": {"Exotic": 96, "Legendary": 86},
 }
 
 # ROI Definitions for 1152x648 resolution
@@ -126,7 +117,7 @@ class PhaseTracker:
             "duration": duration
         })
         
-        self.log.debug(f"Phase transition: {self.current_phase.value} -> {new_phase.value} (took {duration:.1f}s)")
+        self.log.debug(f"Phase: {self.current_phase.value} → {new_phase.value} ({duration:.1f}s)")
         self.current_phase = new_phase
         self.phase_start_time = time.time()
     
@@ -173,30 +164,32 @@ class BattleDetector:
     
     def detect_battle_phase(self) -> BattlePhase:
         """Detect current battle phase from screen"""
-        # Check for victory screen
-        if self._detect_victory_screen():
-            return BattlePhase.BATTLE_WON
-        
-        # Check for capture dialog
-        if self._detect_capture_dialog():
-            return BattlePhase.CAPTURE_SUCCESS
-        
-        # Check for turn indicator
-        if self._detect_turn_ready():
-            return BattlePhase.TURN_READY
-        
-        # Check for battle indicators (HP bars, skills visible)
-        if self._detect_battle_ui():
-            return BattlePhase.TURN_WAITING
-        
-        return BattlePhase.NOT_IN_BATTLE
-    
-    def _detect_battle_ui(self) -> bool:
-        """Detect if battle UI is present"""
         try:
-            from mss import mss
-            roi = self.rois["skills_bar"]
+            # Check for victory screen
+            if self._detect_victory_screen():
+                return BattlePhase.BATTLE_WON
             
+            # Check for capture dialog
+            if self._detect_capture_dialog():
+                return BattlePhase.CAPTURE_SUCCESS
+            
+            # Check for turn indicator
+            if self._detect_turn_ready():
+                return BattlePhase.TURN_READY
+            
+            # Check for battle indicators
+            if self._detect_battle_ui():
+                return BattlePhase.TURN_WAITING
+            
+            return BattlePhase.NOT_IN_BATTLE
+        except Exception as e:
+            self.log.debug(f"Battle detection error: {e}")
+            return BattlePhase.NOT_IN_BATTLE
+    
+    def _capture_roi(self, roi_key: str) -> Optional[np.ndarray]:
+        """Capture a specific ROI region"""
+        try:
+            roi = self.rois[roi_key]
             with mss() as sct:
                 monitor = {
                     "left": roi["x"],
@@ -205,116 +198,75 @@ class BattleDetector:
                     "height": roi["h"]
                 }
                 grab = sct.grab(monitor)
-                frame = np.array(grab)[:, :, :3]
-            
-            if frame.size == 0:
-                return False
-            
-            # Check for skill bar colors
-            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-            edges = cv2.Canny(gray, 50, 150)
-            edge_ratio = np.count_nonzero(edges) / edges.size
-            
-            return edge_ratio > 0.05
-        except Exception:
+                frame = np.array(grab)[:, :, :3]  # Drop alpha channel
+                return frame
+        except Exception as e:
+            self.log.debug(f"ROI capture error ({roi_key}): {e}")
+            return None
+    
+    def _detect_battle_ui(self) -> bool:
+        """Detect if battle UI is present"""
+        frame = self._capture_roi("skills_bar")
+        if frame is None or frame.size == 0:
             return False
+        
+        # Check for skill bar colors/edges
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        edges = cv2.Canny(gray, 50, 150)
+        edge_ratio = np.count_nonzero(edges) / edges.size
+        
+        return edge_ratio > 0.05
     
     def _detect_turn_ready(self) -> bool:
         """Detect 'It's your turn!' indicator"""
-        try:
-            from mss import mss
-            roi = self.rois["turn_indicator"]
-            
-            with mss() as sct:
-                monitor = {
-                    "left": roi["x"],
-                    "top": roi["y"],
-                    "width": roi["w"],
-                    "height": roi["h"]
-                }
-                grab = sct.grab(monitor)
-                frame = np.array(grab)[:, :, :3]
-            
-            if frame.size == 0:
-                return False
-            
-            frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            hsv = cv2.cvtColor(frame_rgb, cv2.COLOR_RGB2HSV)
-            
-            # Blue banner detection
-            blue_lower = np.array([100, 50, 50])
-            blue_upper = np.array([130, 255, 255])
-            blue_mask = cv2.inRange(hsv, blue_lower, blue_upper)
-            blue_ratio = np.count_nonzero(blue_mask) / blue_mask.size
-            
-            return blue_ratio > 0.15
-        except Exception:
+        frame = self._capture_roi("turn_indicator")
+        if frame is None or frame.size == 0:
             return False
+        
+        frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        hsv = cv2.cvtColor(frame_rgb, cv2.COLOR_RGB2HSV)
+        
+        # Blue banner detection
+        blue_lower = np.array([100, 50, 50])
+        blue_upper = np.array([130, 255, 255])
+        blue_mask = cv2.inRange(hsv, blue_lower, blue_upper)
+        blue_ratio = np.count_nonzero(blue_mask) / blue_mask.size
+        
+        return blue_ratio > 0.15
     
     def _detect_victory_screen(self) -> bool:
         """Detect 'You Win!' victory screen"""
-        try:
-            from mss import mss
-            roi = self.rois["victory_text"]
-            
-            with mss() as sct:
-                monitor = {
-                    "left": roi["x"],
-                    "top": roi["y"],
-                    "width": roi["w"],
-                    "height": roi["h"]
-                }
-                grab = sct.grab(monitor)
-                frame = np.array(grab)[:, :, :3]
-            
-            if frame.size == 0:
-                return False
-            
-            frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            hsv = cv2.cvtColor(frame_rgb, cv2.COLOR_RGB2HSV)
-            
-            # Green victory banner
-            green_lower = np.array([40, 50, 50])
-            green_upper = np.array([80, 255, 255])
-            green_mask = cv2.inRange(hsv, green_lower, green_upper)
-            green_ratio = np.count_nonzero(green_mask) / green_mask.size
-            
-            return green_ratio > 0.1
-        except Exception:
+        frame = self._capture_roi("victory_text")
+        if frame is None or frame.size == 0:
             return False
+        
+        frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        hsv = cv2.cvtColor(frame_rgb, cv2.COLOR_RGB2HSV)
+        
+        # Green victory banner
+        green_lower = np.array([40, 50, 50])
+        green_upper = np.array([80, 255, 255])
+        green_mask = cv2.inRange(hsv, green_lower, green_upper)
+        green_ratio = np.count_nonzero(green_mask) / green_mask.size
+        
+        return green_ratio > 0.1
     
     def _detect_capture_dialog(self) -> bool:
-        """Detect capture success dialog with Keep/Release buttons"""
-        try:
-            from mss import mss
-            roi = self.rois["capture_dialog"]
-            
-            with mss() as sct:
-                monitor = {
-                    "left": roi["x"],
-                    "top": roi["y"],
-                    "width": roi["w"],
-                    "height": roi["h"]
-                }
-                grab = sct.grab(monitor)
-                frame = np.array(grab)[:, :, :3]
-            
-            if frame.size == 0:
-                return False
-            
-            # Look for orange/yellow capture dialog
-            frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            hsv = cv2.cvtColor(frame_rgb, cv2.COLOR_RGB2HSV)
-            
-            # Orange/yellow dialog detection
-            orange_lower = np.array([10, 100, 100])
-            orange_upper = np.array([30, 255, 255])
-            orange_mask = cv2.inRange(hsv, orange_lower, orange_upper)
-            orange_ratio = np.count_nonzero(orange_mask) / orange_mask.size
-            
-            return orange_ratio > 0.15
-        except Exception:
+        """Detect capture success dialog"""
+        frame = self._capture_roi("capture_dialog")
+        if frame is None or frame.size == 0:
             return False
+        
+        frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        hsv = cv2.cvtColor(frame_rgb, cv2.COLOR_RGB2HSV)
+        
+        # Orange/yellow dialog detection
+        orange_lower = np.array([10, 100, 100])
+        orange_upper = np.array([30, 255, 255])
+        orange_mask = cv2.inRange(hsv, orange_lower, orange_upper)
+        orange_ratio = np.count_nonzero(orange_mask) / orange_mask.size
+        
+        return orange_ratio > 0.15
 
 # ============================================================================
 # SKILL MANAGER
@@ -341,9 +293,9 @@ class SkillManager:
         return ((skill_num - 1) // 4) + 1
     
     def navigate_to_skill(self, skill_num: int):
-        """Navigate to page containing target skill using arrow keys"""
+        """Navigate to page containing target skill"""
         if not (1 <= skill_num <= 12):
-            self.log.error(f"Invalid skill number: {skill_num}")
+            self.log.error(f"Invalid skill: {skill_num}")
             return False
         
         target_page = self.get_page_for_skill(skill_num)
@@ -351,21 +303,18 @@ class SkillManager:
         if target_page == self.current_page:
             return True
         
-        # Calculate navigation
+        # Navigate
         if target_page > self.current_page:
-            # Press right arrow
             for _ in range(target_page - self.current_page):
                 self.io.key("right")
                 time.sleep(0.3)
         else:
-            # Press left arrow
             for _ in range(self.current_page - target_page):
                 self.io.key("left")
                 time.sleep(0.3)
         
         self.current_page = target_page
         self._update_visible_skills()
-        
         return True
     
     def _update_visible_skills(self):
@@ -412,7 +361,7 @@ class HPMonitor:
             
             hsv = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
             
-            # Detect all HP bar colors
+            # Detect HP bar colors
             green_mask = cv2.inRange(hsv, np.array([40, 50, 50]), np.array([80, 255, 255]))
             yellow_mask = cv2.inRange(hsv, np.array([20, 50, 50]), np.array([40, 255, 255]))
             red_mask = cv2.inRange(hsv, np.array([0, 50, 50]), np.array([10, 255, 255]))
@@ -458,6 +407,7 @@ class CaptureRateDetector:
             self.has_ocr = True
         except ImportError:
             self.has_ocr = False
+            self.log.warning("Tesseract not available - capture rate detection limited")
     
     def detect_capture_rate(self) -> Optional[int]:
         """Read capture rate percentage"""
@@ -514,7 +464,7 @@ class CaptureRateDetector:
 # ============================================================================
 
 class Battle:
-    """Enhanced battle controller with phase management"""
+    """Enhanced battle controller"""
     
     def __init__(self, cfg, vision, input_ctl, log, base_dir):
         self.cfg = cfg
@@ -530,10 +480,10 @@ class Battle:
         self.capture_detector = CaptureRateDetector(cfg, vision, log)
         self.phase_tracker = PhaseTracker(log)
         
-        # ADD THIS LINE - Store reference to rois for easy access
+        # Store reference to rois
         self.rois = self.detector.rois
         
-        # Battle mode configuration
+        # Battle configuration
         self.battle_mode = cfg.get("battle", {}).get("mode", "capture")
         
         # Statistics
@@ -650,8 +600,7 @@ class Battle:
                 self.phase_tracker.transition_to(BattlePhase.CAPTURE_SUCCESS)
                 
                 time.sleep(1.0)
-                # FIXED: Use self.detector.rois instead of self.rois
-                keep_roi = self.detector.rois["keep_button"]
+                keep_roi = self.rois["keep_button"]
                 self.io.click_xy(keep_roi["x"], keep_roi["y"])
                 self.stats["captures_successful"] += 1
                 
@@ -678,6 +627,7 @@ class Battle:
             phase = self.detector.detect_battle_phase()
             
             if phase in [BattlePhase.BATTLE_WON, BattlePhase.BATTLE_END]:
+                self.log.info("✓ Miscrit defeated!")
                 break
             
             self.wait_for_turn(5.0)
@@ -689,13 +639,24 @@ class Battle:
     def click_continue(self):
         """Click Continue button after battle"""
         time.sleep(1.5)
+        
+        # Wait for battle end screen
+        max_wait = 5
+        start = time.time()
+        while time.time() - start < max_wait:
+            phase = self.detector.detect_battle_phase()
+            if phase == BattlePhase.BATTLE_WON:
+                self.log.info("✓ Battle ended!")
+                break
+            time.sleep(0.5)
+        
         roi = self.rois["continue_button"]
         self.io.click_xy(roi["x"], roi["y"])
         self.log.info("✓ Clicked Continue")
         time.sleep(1.5)
     
     def handle_encounter(self) -> bool:
-        """Main battle handler with phase tracking"""
+        """Main battle handler"""
         try:
             self.stats["total_battles"] += 1
             self.phase_tracker.reset()
@@ -742,12 +703,8 @@ class Battle:
                     self.log.warning("Capture failed - defeating")
                     self.defeat_quickly()
             
-            # Wait for battle end
-            time.sleep(2.0)
-            phase = self.detector.detect_battle_phase()
-            
-            if phase == BattlePhase.BATTLE_WON:
-                self.click_continue()
+            # Wait for battle end and click continue
+            self.click_continue()
             
             self.phase_tracker.transition_to(BattlePhase.BATTLE_END)
             return True
@@ -787,13 +744,13 @@ class BattleManager:
         self.battle_count = 0
         self.log = log
         self.last_battle_end = 0
-        self.cooldown_duration = 24.0  # Default cooldown (reduced by trait)
+        self.cooldown_duration = 24.0
         
         # Check for cooldown reduction trait
         if cfg.get("traits", {}).get("cooldown_reduction", False):
-            self.cooldown_duration = 24.0  # 24s with trait
+            self.cooldown_duration = 24.0
         else:
-            self.cooldown_duration = 34.0  # 34s without trait
+            self.cooldown_duration = 34.0
     
     def check_and_handle_battle(self) -> bool:
         """Check for battle and handle if detected"""
@@ -837,17 +794,3 @@ class BattleManager:
     def get_statistics(self) -> Dict:
         """Get battle statistics"""
         return self.battle.get_stats()
-
-# ROI helper for UI calibration
-def save_rois_to_config(cfg_path: str, custom_rois: Dict = None):
-    """Save ROI configuration"""
-    import json
-    
-    with open(cfg_path, 'r', encoding='utf-8') as f:
-        cfg = json.load(f)
-    
-    rois = custom_rois if custom_rois else DEFAULT_ROIS
-    cfg['battle']['rois'] = rois
-    
-    with open(cfg_path, 'w', encoding='utf-8') as f:
-        json.dump(cfg, f, indent=2)

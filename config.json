@@ -59,7 +59,10 @@
     "show_preview": false
   },
   "input": {
-    "backend": "directinput"
+    "backend": "directinput",
+    "move_duration_range": [0.04, 0.11],
+    "click_delay_ms_range": [80, 180],
+    "move_delay_ms_range": [60, 140]
   },
   "window_title_hint": "Miscrits",
   "hotkeys": {

@@ -1,4 +1,4 @@
-# src/capture_loop.py - Enhanced with cooldown management
+# src/capture_loop.py - Fixed with proper spot detection and battle handling
 import os, json, time
 import cv2
 import numpy as np
@@ -39,7 +39,7 @@ class Bot:
         # Config variables
         self.show_preview = bool(self.cfg.get("debug", {}).get("show_preview", False))
         self.search_delay = max(
-            1.0, float(self.cfg.get("search", {}).get("search_delay_ms", 10000)) / 1000.0
+            1.0, float(self.cfg.get("search", {}).get("search_delay_ms", 1000)) / 1000.0
         )
 
         self.overlay: Overlay | None = None
@@ -75,9 +75,9 @@ class Bot:
         self.battle_manager = None
         
         # Cooldown tracking
-        self.cooldown_duration = 24.0  # Default with trait
+        self.cooldown_duration = 24.0
         if not self.cfg.get("traits", {}).get("cooldown_reduction", False):
-            self.cooldown_duration = 34.0  # Without trait
+            self.cooldown_duration = 34.0
         
         if self.battle_enabled:
             from .battle import BattleManager
@@ -179,18 +179,21 @@ class Bot:
         self.log.info(f"⏸️ {status}")
 
     def _loop(self):
-        """Main bot loop with improved cooldown management"""
+        """Main bot loop with improved battle and cooldown handling"""
         L, T, W, H = self.window_xywh
-        sct = mss()
         
         consecutive_errors = 0
         max_errors = 5
         
         last_battle_check = 0
-        battle_check_interval = 1.5
+        battle_check_interval = 0.5  # Check more frequently
         
         cooldown_end_time = 0
         last_cooldown_log = 0
+        
+        # Track last click to prevent spam
+        last_click_time = 0
+        min_click_interval = 2.0
 
         while self.running:
             try:
@@ -204,8 +207,9 @@ class Bot:
                     except:
                         pass
 
-                # Check if in cooldown
                 current_time = time.time()
+                
+                # Check if in cooldown
                 if current_time < cooldown_end_time:
                     remaining = cooldown_end_time - current_time
                     
@@ -226,7 +230,7 @@ class Bot:
                     time.sleep(0.5)
                     continue
 
-                # Battle detection
+                # Battle detection (more frequent checks)
                 if self.battle_enabled and current_time - last_battle_check >= battle_check_interval:
                     last_battle_check = current_time
                     
@@ -244,11 +248,17 @@ class Bot:
                         last_cooldown_log = current_time
                         continue
 
-                # Spot detection
+                # Spot detection (only if not in cooldown and enough time passed since last click)
+                if current_time - last_click_time < min_click_interval:
+                    time.sleep(0.2)
+                    continue
+
+                # Capture screen
                 try:
-                    frame_bgr = np.array(
-                        sct.grab({"left": L, "top": T, "width": W, "height": H})
-                    )[:, :, :3]
+                    with mss() as sct:
+                        frame_bgr = np.array(
+                            sct.grab({"left": L, "top": T, "width": W, "height": H})
+                        )[:, :, :3]
                 except Exception as e:
                     self.log.error(f"Screen capture failed: {e}")
                     consecutive_errors += 1
@@ -260,7 +270,7 @@ class Bot:
 
                 consecutive_errors = 0
 
-                # Template matching
+                # Template matching (multi-scale)
                 frame_small = cv2.resize(frame_bgr, (0, 0), fx=0.5, fy=0.5)
                 res = cv2.matchTemplate(frame_small, self.tpl_small, cv2.TM_CCOEFF_NORMED)
                 _, maxv, _, maxloc = cv2.minMaxLoc(res)
@@ -271,9 +281,11 @@ class Bot:
                 found = maxv >= self.threshold
 
                 if found:
+                    # Calculate center of match
                     cx = x + self.tpl_w // 2
                     cy = y + self.tpl_h // 2
                     
+                    # Convert to screen coordinates
                     screen_x = L + cx
                     screen_y = T + cy
 
@@ -281,6 +293,7 @@ class Bot:
                         self.io.click_xy(screen_x, screen_y)
                         self.stats["clicks"] += 1
                         self.stats["matches"] += 1
+                        last_click_time = current_time
                         
                         self.log.info(f"✓ MATCH [{maxv:.3f}] → clicked ({screen_x},{screen_y})")
                         
@@ -292,7 +305,7 @@ class Bot:
                             except:
                                 pass
                         
-                        # Wait for battle
+                        # Wait for battle to start
                         if self.battle_enabled:
                             self.log.info("⏳ Waiting for battle...")
                             time.sleep(2.0)
